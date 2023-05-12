@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+	
+		dove_red_star = {
+		picture = dove_red_star
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -10.00
+				monthly_population = 0.05
+			}
+		}
+	}
