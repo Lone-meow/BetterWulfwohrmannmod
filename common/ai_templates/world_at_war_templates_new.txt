@@ -1,0 +1,42 @@
+
+################
+### INFANTRY ###
+################
+
+#OG_infantry_template = {
+#	roles = { infantry }
+#	upgrade_prio = {base = 1}
+#	match_to_count = 0.5
+#
+#	#blocked_for = {}
+#	#available_for = {}
+#
+#	### Early ###
+#	early_infantry_template = {
+#		#enable = {}
+#		upgrade_prio = {
+#			factor = 0.01
+#			#modifier = {factor = 1}
+#		}
+#		production_prio = { factor = 0.01 }
+#
+#		# TEMPLATE
+#		target_width = 18
+#		width_weight = 1
+#		column_swap_factor = 1.5
+#		reinforce_prio = 1
+#
+#		target_template = {
+#			weight = 0.95
+#			match_value = 10000
+#
+#			regiments = {
+#				infantry = 9
+#			}
+#
+#			support = {
+#				engineer = 1
+#				artillery = 1
+#			}
+#		}
+#	}

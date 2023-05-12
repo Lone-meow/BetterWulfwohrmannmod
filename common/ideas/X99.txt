@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+	
+		communist_refugees = {
+		picture = communist_refugees
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_cost = 10.00
+				monthly_population = 1.00
+
+			}
+		}
+	}

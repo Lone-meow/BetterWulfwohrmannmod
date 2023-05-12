@@ -1,0 +1,42 @@
+music_station = "PB_Original_C"
+
+music = {
+	name = "ANewWorld"
+	file = "ANewWorld.ogg"
+}
+
+music = {
+	name = "Despondance"
+	file = "Despondance.ogg"
+}
+
+music = {
+	name = "ItHungers"
+	file = "ItHungers.ogg"
+}
+
+music = {
+	name = "Misere"
+	file = "Misere.ogg"
+}
+
+music = {
+	name = "Mefiant"
+	file = "Mefiant.ogg"
+}
+
+music = {
+	name = "PunchIn"
+	file = "PunchIn.ogg"
+}
+
+music = {
+	name = "Razormaiden"
+	file = "Razormaiden.ogg"
+}
+
+music = {
+	name = "Requiem"
+	file = "Requiem.ogg"
+}
+

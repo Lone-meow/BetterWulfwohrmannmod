@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+
+		wealth_of_orenburg = {
+
+		picture = wealth_of_orenburg
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				research_speed_factor = 0.025
+				monthly_population = 0.05
+			}
+		}
+	}

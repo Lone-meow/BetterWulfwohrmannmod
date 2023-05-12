@@ -1,0 +1,473 @@
+﻿#######################
+### SHIP NAME LISTS ###
+#######################
+
+### REGULAR DESTROYER NAMES###
+WORLD_AT_WAR_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HMS "							
+	fallback_name = "Destroyer %s"					
+
+	unique = {
+	}
+}
+
+### NYMPHS DESTROYER NAMES ###
+WORLD_AT_WAR_DD_NYMPHS = {
+	name = NAME_THEME_NYMPHS_DESTROYERS
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HMS "							
+	fallback_name = "Nymph %s"					
+
+	unique = {
+	Aba
+	Abarbarea
+		"Acaste"
+		"Acraea"
+		"Actaea"
+		"Admete"
+		"Adrasteia"
+		"Aegina"
+		"Aegle"
+		"Aethra"
+		"Aetna"
+		"Aglaopheme"
+		"Aganippe"
+		"Agaue"
+		"Aia"
+		"Albunea"
+		"Alcinoe"
+		"Amalthea"
+		"Amatheia"
+		"Amphinome"
+		"Amphirho"
+		"Amphithoe"
+		"Amphitrite"
+		"Amymone"
+		"Anchiroe"
+		"Anippe"
+		"Annaed"
+		"Anthedon"
+		"Anthracia"
+		"Archidemia"
+		"Arethusa"
+		"Argiope"
+		"Argyra"
+		"Apseudes"
+		"Appias"
+		"Arethusa"
+		"Argia"
+		"Ascra"
+		"Asia"
+		"Asopis"
+		"Asterodia"
+		"Asterope"
+		"Astyoche"
+		"Automate"
+		"Autonoe"
+		"Bateia"
+		"Beroe"
+		"Bistonis"
+		"Byze"
+		"Byzia"
+		"Callianassa"
+		"Callianeira"
+		"Calliphaea"
+		"Callirhoe"
+		"Caliadne"
+		"Calypso"
+		"Camarina"
+		"Capheira"
+		"Cerceis"
+		"Castalia"
+		"Ceto"
+		"Chalcis"
+		"Charybdis"
+		"Chesias"
+		"Chione"
+		"Chlidanope"
+		"Chryseis"
+		"Cleide"
+		"Cleochareia"
+		"Cleodora"
+		"Cleomede"
+		"Cleone"
+		"Clonia"
+		"Clio"
+		"Clitemneste"
+		"Clymene"
+		"Clytie"
+		"Cnossia"
+		"Comaetho"
+		"Combe"
+		"Corcyra"
+		"Corycia"
+		"Coronis"
+		"Coryphe"
+		"Cranto"
+		"Cretheis"
+		"Creneis"
+		"Creusa"
+		"Cyanea"
+		"Cydippe"
+		"Cymatolege"
+		"Cymo"
+		"Cymodoce"
+		"Cymothoe"
+		"Cyane"
+		"Cyrene"
+		"Daeira"
+		"Danais"
+		"Daphne"
+		"Daulis"
+		"Deino"
+		"Deiopea"
+		"Dercetis"
+		"Dero"
+		"Dexamene"
+		"Diogeneia"
+		"Dione"
+		"Diopatre"
+		"Dirce"
+		"Dodone"
+		"Doris"
+		"Doto"
+		"Drosera"
+		"Drymo"
+		"Dynamene"
+		"Echenais"
+		"Eione"
+		"Electra"
+		"Ephyra"
+		"Erato"
+		"Euagore"
+		"Euagoreis"
+		"Euboea"
+		"Eucrante"
+		"Eudora"
+		"Eulimene"
+		"Eumolpe"
+		"Euneica"
+		"Eunice"
+		"Eunoe"
+		"Eupheme"
+		"Eupompe"
+		"Europa"
+		"Eurryroe"
+		"Eurydice"
+		"Eurynome"
+		"Evadne"
+		"Galatea"
+		"Galaxaura"
+		"Galene"
+		"Gargaphia"
+		"Glauce"
+		"Glaucia"
+		"Glauconome"
+		"Hagno"
+		"Halie"
+		"Halimede"
+		"Harmonia"
+		"Harpina"
+		"Hercyna"
+		"Hesione"
+		"Hesperia"
+		"Hestyaea"
+		"Hieromneme"
+		"Himerope"
+		"Hippe"
+		"Hippo"
+		"Hipponoe"
+		"Hippothoe"
+		"Hyperia"
+		"Iache"
+		"Iaera"
+		"Ianassa"
+		"Ianeira"
+		"Ianthe"
+		"Iasis"
+		"Io"
+		"Ione"
+		"Ismene"
+		"Ismenis"
+		"Ida"
+		"Idyia"
+		"Iphianassa"
+		"Langia"
+		"Laomedeia"
+		"Lara"
+		"Leiagore"
+		"Lethe"
+		"Leucippe"
+		"Leucosia"
+		"Leucothoe"
+		"Libethrias"
+		"Libye"
+		"Ligea"
+		"Ligeia"
+		"Lilaea"
+		"Limnaee"
+		"Limnoreia"
+		"Liriope"
+		"Lotis"
+		"Lycorias"
+		"Lyris"
+		"Lysianassa"
+		"Lysithoe"
+		"Maera"
+		"Magea"
+		"Malis"
+		"Melaina"
+		"Melia"
+		"Meliboea"
+		"Melite"
+		"Melobosis"
+		"Methone"
+		"Memphis"
+		"Menestho"
+		"Menippe"
+		"Mentis"
+		"Merope"
+		"Messeis"
+		"Metis"
+		"Metope"
+		"Midea"
+		"Milichie"
+		"Minthe"
+		"Molpe"
+		"Mopsopia"
+		"Moria"
+		"Mycene"
+		"Myrtoessa"
+		"Nacole"
+		"Nais"
+		"Nana"
+		"Nausithoe"
+		"Neaera"
+		"Neda"
+		"Neis"
+		"Nemea"
+		"Nemertes"
+		"Nemesis"
+		"Neomeris"
+		"Nesaea"
+		"Neso"
+		"Nicaea"
+		"Nomia"
+		"Nonacris"
+		"Nycheia"
+		"Ocyrhoe"
+		"Opis"
+		"Oreithyia"
+		"Ornea"
+		"Orseis"
+		"Ortygia"
+		"Pallas"
+		"Panopea"
+		"Paria"
+		"Parthenope"
+		"Pasiphae"
+		"Pasithea"
+		"Pasithoe"
+		"Pegaea"
+		"Pegasis"
+		"Peirene"
+		"Peitho"
+		"Periboea"
+		"Pero"
+		"Perse"
+		"Petra"
+		"Petraea"
+		"Peuce"
+		"Phaeno"
+		"Pharmaceia"
+		"Pherusa"
+		"Philia"
+		"Philodice"
+		"Philyra"
+		"Phrixa"
+		"Phyllodoce"
+		"Physadeia"
+		"Pisinoe"
+		"Pitane"
+		"Pleione"
+		"Plexaura"
+		"Plouto"
+		"Polydora"
+		"Polynoe"
+		"Polyphe"
+		"Polyxo"
+		"Pontomedusa"
+		"Pontoporeia"
+		"Praxithea"
+		"Pronoe"
+		"Prosymna"
+		"Proto"
+		"Protomedeia"
+		"Prymno"
+		"Psamathe"
+		"Psanis"
+		"Raidne"
+		"Rhodea"
+		"Rhodope"
+		"Rhodos"
+		"Salamis"
+		"Salmacis"
+		"Samia"
+		"Sao"
+		"Sinope"
+		"Sparta"
+		"Speio"
+		"Stilbe"
+		"Stilbo"
+		"Strophia"
+		"Strymo"
+		"Styx"
+		"Syllis"
+		"Symaethis"
+		"Synallaxis"
+		"Syrinx"
+		"Tanagra"
+		"Teles"
+		"Telesto"
+		"Telphousa"
+		"Temenitis"
+		"Tereine"
+		"Thaleia"
+		"Thebe"
+		"Theia"
+		"Theisoa"
+		"Thelxiope"
+		"Themisto"
+		"Thespeia"
+		"Thetis"
+		"Thoe"
+		"Thraike"
+		"Thronia"
+		"Tiasa"
+		"Tritonis"
+		"Tyche"
+		"Urania"
+		"Xanderirhoe"
+		"Xantho"
+		"Zeuxippe"
+		"Zeuxo"
+
+	}
+}
+
+### LIGHT CRUISER NAMES ###
+WORLD_AT_WAR_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "HMS "							
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+	}
+}
+
+### HEAVY CRUISER NAMES ###
+WORLD_AT_WAR_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "HMS "							
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+	}
+}
+
+### BATTLESHIP NAMES ###
+WORLD_AT_WAR_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "HMS "							
+	fallback_name = "Battleship %s"		
+
+	unique = {
+	}
+}
+
+### BATTLECRUISER NAMES ###
+WORLD_AT_WAR_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "HMS "							
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+WORLD_AT_WAR_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "HMS "							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+	}
+}
+
+
+### SUBMARINES ###
+WORLD_AT_WAR_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "HMS "							
+	fallback_name = "Submarine %s"
+	
+	unique = {
+	}
+}
+
+

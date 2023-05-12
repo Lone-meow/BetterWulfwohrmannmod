@@ -1,0 +1,1372 @@
+a_economy_decisions_x = {
+		
+	test_decision = {
+		visible = {
+			always = no
+		}
+		available = {
+		}
+		complete_effect = {
+		}
+		modifier = {
+		}
+    	remove_effect = {
+		}
+		cost = 50
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	economy_menu_open_x = {
+		icon = gre_investment_decisions
+		visible = {
+			NOT = {has_country_flag = economy_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = economy_menu_flag_x
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	economy_menu_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = economy_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = economy_menu_flag_x
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	research_slot_0 = {
+		icon = generic_research
+		visible = {
+			has_country_flag = economy_menu_flag_x
+		}
+		available = {
+			amount_research_slots < 8
+			num_of_civilian_factories_available_for_projects > 15
+		}
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		days_remove = 140
+		cost = 150
+		fire_only_once = yes
+		remove_effect = { 
+			set_country_flag = research_flag_x
+			custom_effect_tooltip = fire_only_once_yes_tooltip
+			add_research_slot = 1
+		}
+	}
+################################################################################################################################################################################################
+	research_slot_1 = {
+		icon = generic_research
+		visible = {
+			has_country_flag = research_flag_x
+			has_country_flag = economy_menu_flag_x
+		}
+		available = {
+			#num_of_civilian_factories_available_for_projects > 15
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+			research_speed_factor = 0.03
+		}
+
+		days_remove = 120
+		cost = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	civilian_bonds = {
+		icon = ger_mefo_bills
+		visible = {
+			has_country_flag = economy_menu_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			NOT = { has_idea = debt_repayment_civ }
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 0
+		days_remove = 180
+		days_re_enable = 0
+		fire_only_once = no
+		remove_effect = {
+			add_timed_idea = { idea = debt_repayment days = 50 }
+			add_offsite_building = { type = industrial_complex level =-3 }
+		}
+		complete_effect = {
+			add_offsite_building = { type = industrial_complex level =3 }
+		}
+	}
+
+################################################################################################################################################################################################
+    military_bonds = {
+		icon = ger_mefo_bills
+		visible = {
+			has_country_flag = economy_menu_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			NOT = { has_idea = debt_repayment_mil }
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 0
+		days_remove = 180
+		days_re_enable = 0
+		fire_only_once = no
+		remove_effect = {
+			add_timed_idea = { idea = debt_repayment days = 65 }
+			add_offsite_building = { type = arms_factory level =-3 }
+		}
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level =3 }
+		}
+	}
+################################################################################################################################################################################################
+	dev_menu_open_x = {
+		icon = infiltrate_state
+		visible = {
+			NOT = {has_country_flag = dev_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = dev_menu_flag_x
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	dev_menu_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = dev_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = dev_menu_flag_x
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	state_dev_menu_open_x = {
+		icon = infiltrate_state
+		visible = {
+			has_country_flag = dev_menu_flag_x
+			NOT = {has_country_flag = state_dev_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = state_dev_menu_flag_x
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	state_dev_menu_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = dev_menu_flag_x
+			has_country_flag = state_dev_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = state_dev_menu_flag_x
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+    state_development_0 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 10
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = wasteland
+                    has_state_category = enclave
+                    has_state_category = tiny_island
+					has_state_category = small_island
+					has_state_category = pastoral
+					has_state_category = rural
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = fuel_silo
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_manpower = 25000
+				set_state_category = town
+            }
+			random_owned_controlled_state = {
+				add_manpower = -25000
+            }
+			add_manpower = 1000
+        }
+        modifier = {
+            civilian_factory_use = 10
+        }
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 999
+		}
+		custom_cost_text = cost_civ10_pp100_mp1000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -1000
+			}
+		}
+        days_remove = 100
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	state_development_1 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 12
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_state_category = town
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = infrastructure
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = large_town
+				add_manpower = 50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 5000
+        }
+        modifier = {
+            civilian_factory_use = 12
+        }
+		custom_cost_trigger = {
+			has_political_power > 119
+			has_manpower > 4999
+		}
+		custom_cost_text = cost_civ12_pp120_mp5000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -120
+				add_manpower = -5000
+			}
+		}
+        days_remove = 120
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	state_development_2 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 14
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_state_category = large_town
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = city
+				add_manpower = 100000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 10000
+        }
+        modifier = {
+            civilian_factory_use = 14
+        }
+		custom_cost_trigger = {
+			has_political_power > 139
+			has_manpower > 9999
+		}
+		custom_cost_text = cost_civ14_pp140_mp10000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -140
+				add_manpower = -10000
+			}
+		}
+        days_remove = 140
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	state_development_3 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 16
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_state_category = city
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = large_city
+				add_manpower = 250000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 25000
+        }
+        modifier = {
+            civilian_factory_use = 16
+        }
+		custom_cost_trigger = {
+			has_political_power > 159
+			has_manpower > 24999
+		}
+		custom_cost_text = cost_civ16_pp160_mp25000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -160
+				add_manpower = -25000
+			}
+		}
+        days_remove = 160
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	state_development_4 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 18
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_state_category = large_city
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = metropolis
+				add_manpower = 500000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 50000
+        }
+        modifier = {
+            civilian_factory_use = 18
+        }
+		custom_cost_trigger = {
+			has_political_power > 179
+			has_manpower > 49999
+		}
+		custom_cost_text = cost_civ18_pp180_mp50000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -180
+				add_manpower = -50000
+			}
+		}
+        days_remove = 180
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	state_development_5 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 20
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_state_category = metropolis
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = infrastructure
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = synthetic_refinery
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = megalopolis
+				add_manpower = 1000000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 100000
+        }
+        modifier = {
+            civilian_factory_use = 20
+        }
+		custom_cost_trigger = {
+			has_political_power > 199
+			has_manpower > 99999
+		}
+		custom_cost_text = cost_civ20_pp200_mp100000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -200
+				add_manpower = -100000
+			}
+		}
+        days_remove = 200
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	kr_state_development_special_type_0 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 8
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = zero_island
+					has_state_category = one_island
+					has_state_category = minor_port
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = dockyard
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_manpower = 8000
+				set_state_category = port
+            }
+			random_owned_controlled_state = {
+				add_manpower = -8000
+            }
+			add_manpower = 800
+        }
+        modifier = {
+            civilian_factory_use = 8
+        }
+		custom_cost_trigger = {
+			has_political_power > 79
+			has_manpower > 799
+		}
+		custom_cost_text = cost_civ8_pp80_mp800
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -80
+				add_manpower = -800
+			}
+		}
+        days_remove = 80
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	kr_state_development_special_type_1 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 10
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = port
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = dockyard
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = major_port
+				add_manpower = 20000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -20000
+            }
+			add_manpower = 1000
+        }
+        modifier = {
+            civilian_factory_use = 10
+        }
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 999
+		}
+		custom_cost_text = cost_civ10_pp100_mp1000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -1000
+			}
+		}
+        days_remove = 100
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+################################################################################################################################################################################################
+    kr_state_development_0 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 10
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = one
+                    has_state_category = two
+					has_state_category = three
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = fuel_silo
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_manpower = 25000
+				set_state_category = four
+            }
+			random_owned_controlled_state = {
+				add_manpower = -25000
+            }
+			add_manpower = 1000
+        }
+        modifier = {
+            civilian_factory_use = 10
+        }
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 999
+		}
+		custom_cost_text = cost_civ10_pp100_mp1000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -1000
+			}
+		}
+        days_remove = 100
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	kr_state_development_1 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 12
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = four
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = infrastructure
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = five
+				add_manpower = 50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 5000
+        }
+        modifier = {
+            civilian_factory_use = 12
+        }
+		custom_cost_trigger = {
+			has_political_power > 119
+			has_manpower > 4999
+		}
+		custom_cost_text = cost_civ12_pp120_mp5000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -120
+				add_manpower = -5000
+			}
+		}
+        days_remove = 120
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	kr_state_development_2 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 14
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = five
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = six
+				add_manpower = 100000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 10000
+        }
+        modifier = {
+            civilian_factory_use = 14
+        }
+		custom_cost_trigger = {
+			has_political_power > 139
+			has_manpower > 9999
+		}
+		custom_cost_text = cost_civ14_pp140_mp10000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -140
+				add_manpower = -10000
+			}
+		}
+        days_remove = 140
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	kr_state_development_3 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 16
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = six
+					has_state_category = seven
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = eight
+				add_manpower = 250000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 25000
+        }
+        modifier = {
+            civilian_factory_use = 16
+        }
+		custom_cost_trigger = {
+			has_political_power > 159
+			has_manpower > 24999
+		}
+		custom_cost_text = cost_civ16_pp160_mp25000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -160
+				add_manpower = -25000
+			}
+		}
+        days_remove = 160
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	kr_state_development_4 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 18
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = eight
+					has_state_category = nine
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = ten
+				add_manpower = 500000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 50000
+        }
+        modifier = {
+            civilian_factory_use = 18
+        }
+		custom_cost_trigger = {
+			has_political_power > 179
+			has_manpower > 49999
+		}
+		custom_cost_text = cost_civ18_pp180_mp50000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -180
+				add_manpower = -50000
+			}
+		}
+        days_remove = 180
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+	kr_state_development_5 = {
+		icon = infiltrate_state
+        available = {
+            num_of_civilian_factories_available_for_projects > 20
+        }
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_state_category = ten
+					has_state_category = eleven
+				}
+			}
+		}
+        remove_effect = {
+			FROM = {
+				add_building_construction = {
+                   	type = infrastructure
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+                 	instant_build = yes
+               	}
+				add_building_construction = {
+                   	type = synthetic_refinery
+                  	level = 1
+                 	instant_build = yes
+               	}
+				set_state_category = twelve
+				add_manpower = 1000000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			random_owned_controlled_state = {
+				add_manpower = -50000
+            }
+			add_manpower = 100000
+        }
+        modifier = {
+            civilian_factory_use = 20
+        }
+		custom_cost_trigger = {
+			has_political_power > 199
+			has_manpower > 99999
+		}
+		custom_cost_text = cost_civ20_pp200_mp100000
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -200
+				add_manpower = -100000
+			}
+		}
+        days_remove = 200
+        days_re_enable = 0
+        fire_only_once = no
+        visible = {
+			has_country_flag = state_dev_menu_flag_x
+			has_country_flag = dev_menu_flag_x
+		}
+    }
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	confiscate_menu_open_x = {
+		icon = generic_scorched_earth
+		visible = {
+			has_country_flag = dev_menu_flag_x
+			NOT = {has_country_flag = confiscate_menu_open_falg_x}
+		}
+		complete_effect = {
+			set_country_flag = confiscate_menu_open_falg_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	confiscate_menu_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = confiscate_menu_open_falg_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = confiscate_menu_open_falg_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+#################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+	factory_relocation_civ_x = {
+		icon = generic_scorched_earth
+		visible = {
+			has_country_flag = dev_menu_flag_x
+			has_country_flag = confiscate_menu_open_falg_x
+		}
+		available = {
+			random_owned_controlled_state = {
+                limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+		        	}
+                }
+            }
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				industrial_complex > 0
+				NOT = {is_core_of = ROOT}
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		complete_effect = {
+			add_stability = -0.01
+		}
+		remove_effect = {
+			FROM = {
+				remove_building = {
+                   	type = industrial_complex
+                  	level = 1
+               	}
+				add_resistance = 25
+				add_resistance_target = 5
+			}
+			random_owned_controlled_state = {
+                limit = {
+					is_core_of = ROOT
+                }
+				add_building_construction = {
+                   	type = industrial_complex
+                  	level = 1
+					instant_build = yes
+               	}
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+		        }
+            }
+		}
+		cost = 30
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = yes
+		fire_only_once = no
+	}
+#################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+	factory_relocation_mil_x = {
+		icon = generic_scorched_earth
+		visible = {
+			has_country_flag = dev_menu_flag_x
+			has_country_flag = confiscate_menu_open_falg_x
+		}
+		available = {
+			random_owned_controlled_state = {
+                limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+		        	}
+                }
+            }
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				arms_factory > 0
+				NOT = {is_core_of = ROOT}
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		complete_effect = {
+			add_stability = -0.01
+		}
+		remove_effect = {
+			FROM = {
+				remove_building = {
+                   	type = arms_factory
+                  	level = 1
+               	}
+				add_resistance = 25
+				add_resistance_target = 5
+			}
+			random_owned_controlled_state = {
+                limit = {
+					is_core_of = ROOT
+                }
+				add_building_construction = {
+                   	type = arms_factory
+                  	level = 1
+					instant_build = yes
+               	}
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+		        }
+            }
+		}
+		cost = 30
+		days_remove = 70
+		days_re_enable = 0
+		fire_only_once = no
+	}
+}

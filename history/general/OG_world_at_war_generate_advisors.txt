@@ -1,0 +1,2554 @@
+
+
+every_possible_country = {
+	limit = {
+		is_modded_country_trigger = yes
+	}
+
+	##########################
+	### POLITICAL ADVISORS ###
+	##########################
+
+	generate_character = {
+		token_base = XYZ_popular_figurehead
+		#name=
+		portraits={
+			army={small="GFX_idea_POL_wojtek"}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = popular_figurehead
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				popular_figurehead
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 10
+					has_stability < 0.5
+				}
+				modifier = {
+					factor = 0
+					has_stability > 0.85
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_propaganda_expert
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_joseph_goebbels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_propaganda_expert
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				propaganda_expert
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 10
+					has_war_support < 0.5
+				}
+				modifier = {
+					factor = 0
+					has_war_support > 0.9
+				}
+			}
+		}
+	}
+	generate_character = {
+		token_base = XYZ_prince_of_terror
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_prince_of_terror
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				prince_of_terror
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					garrison_manpower_need > 500
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_silent_workhorse
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_silent_workhorse
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				silent_workhorse
+			}
+			cost = 150
+			ai_will_do = {factor = 50}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_compassionate_gentleman
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_ENG_oswald_mosley"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_compassionate_gentleman
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				compassionate_gentleman
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_smooth_talking_charmer
+		#name=
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_female_europe"}
+		}
+		gender = female
+		advisor={
+			slot = political_advisor
+			idea_token = smooth_talking_charmer
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 150
+			ai_will_do = {factor = 0.5}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_editor
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_ENG_george_orwell"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_editor
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				editor
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_appeaser
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_lin_sen"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_appeaser
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				appeaser
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_sharp_tongued_lawyer
+		#name=
+		portraits={
+			civilian={
+				small="GFX_portrait_SWI_robert_eibel_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_sharp_tongued_lawyer
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				sharp_tongued_lawyer
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_religious_icon
+		#name=
+		portraits={
+			civilian={
+				small="GFX_portrait_ITA_papa_pio_xii_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XYZ_religious_icon
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				religious_icon
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	########################
+	### ECONOMY ADVISORS ###
+	########################
+
+	generate_character = {
+		token_base = XYZ_fortification_engineer
+		#name=
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_1"}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = fortification_engineer
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				fortification_engineer
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_quartermaster_general
+		#name=
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_5"}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = quartermaster_general
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				quartermaster_general
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_war_industrialist
+		#name=
+		portraits={
+			army={small="GFX_portrait_ITA_italo_balbo_small"}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = war_industrialist
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				war_industrialist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					num_of_military_factories < 5
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_armaments_organizer
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_armaments_organizer
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				armaments_organizer
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_captain_of_industry
+		#name=
+		portraits={
+			army={small="GFX_idea_ita_mario_roatta_political_advisor"}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_captain_of_industry
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				captain_of_industry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					num_of_civilian_factories < 5
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_economist
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_hjalmar_schacht"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_economist
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				economist
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_financial_expert
+		#name=
+		portraits={
+			civilian={
+				small="GFX_portrait_ITA_antonio_pesenti_small"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_financial_expert
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				financial_expert
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_technocrat
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_HUN_kalman_kanya"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_technocrat
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				technocrat
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_dealbroker
+		#name=
+		portraits={
+			civilian={
+				small="GFX_portrait_SWI_carl_stucki_small"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_dealbroker
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				dealbroker
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_tenacious_negotiator
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_SPA_martin_de_riquer"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_tenacious_negotiator
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				tenacious_negotiator
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_agrarian_union_leader
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_HUN_gyula_gombos_de_jakfa"
+			}
+		}
+		advisor={
+			slot = economy_advisor
+			idea_token = XYZ_agrarian_union_leader
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				agrarian_union_leader
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	#############################
+	### INTELLIGENCE ADVISORS ###
+	#############################
+
+	generate_character = {
+		token_base = XYZ_backroom_backstabber
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_SOV_vyacheslav_molotov"	#GFX_idea_generic_political_advisor_europe_6
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_backroom_backstabber
+			ledger = civilian
+			allowed = {}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_head_of_intelligence
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_ger_wilhelm_canaris"
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_head_of_intelligence
+			ledger = civilian
+			allowed = {}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				head_of_intelligence
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					is_spymaster = yes
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_mastermind_code_cracker
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_eng_alan_turing"
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_mastermind_code_cracker
+			ledger = civilian
+			allowed = {}
+			available = {
+				has_intelligence_agency = yes
+				has_done_agency_upgrade = upgrade_form_department
+			}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				mastermind_code_cracker
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_partisans_organizer
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_YUG_milovan_djilas"
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_partisans_organizer
+			ledger = civilian
+			allowed = {}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				partisans_organizer
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_professional_agitator
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_SOV_lev_trotsky"
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_professional_agitator
+			ledger = civilian
+			allowed = {}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				professional_agitator
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_head_of_national_security
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_GER_generic_2"
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_head_of_national_security
+			ledger = civilian
+			allowed = {}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				head_of_national_security
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_spider_in_the_web
+		#name=
+		portraits={
+			civilian={
+				small="GFX_portrait_SWI_max_leo_keller_small"
+			}
+		}
+		advisor={
+			slot = intelligence_advisor
+			idea_token = XYZ_spider_in_the_web
+			ledger = civilian
+			allowed = {}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {
+				spider_in_the_web
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	#########################
+	### IDEOLOGY ADVISORS ###
+	#########################
+
+	generate_character = {
+		token_base = XYZ_democracy_nepotist
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_alexander_kerensky"
+			}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_democracy_nepotist
+			ledger = civilian
+			allowed = {}
+			available = {
+				has_government = democratic
+			}
+			visible = {
+				has_government = democratic
+			}
+			traits = {
+				ideology_advisor_trait_democracy_nepotist
+			}
+			cost = 150
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_neutrality_nepotist
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_alexander_kerensky"
+			}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_neutrality_nepotist
+			ledger = civilian
+			allowed = {}
+			available = {
+				has_government = neutrality
+			}
+			visible = {
+				has_government = neutrality
+			}
+			traits = {
+				ideology_advisor_trait_neutrality_nepotist
+			}
+			cost = 150
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_fascism_nepotist
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_alexander_kerensky"
+			}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_fascism_nepotist
+			ledger = civilian
+			allowed = {}
+			available = {
+				has_government = fascism
+			}
+			visible = {
+				has_government = fascism
+			}
+			traits = {
+				ideology_advisor_trait_fascism_nepotist
+			}
+			cost = 150
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_communism_nepotist
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_alexander_kerensky"
+			}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_communism_nepotist
+			ledger = civilian
+			allowed = {}
+			available = {
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+			}
+			traits = {
+				ideology_advisor_trait_communism_nepotist
+			}
+			cost = 150
+			ai_will_do = {factor = 0}
+		}
+	}
+
+
+	generate_character = {
+		token_base = XYZ_ideological_crusader
+		#name=
+		portraits={
+			civilian={
+				small="GFX_idea_bul_nikola_petkov"
+			}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_ideological_crusader
+			ledger = civilian
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				ideological_crusader
+			}
+			cost = 150
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_democratic_reformer
+		#name=
+		portraits={
+			army={small="GFX_idea_ENG_winston_churchill"}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_democratic_reformer
+			ledger = civilian
+			allowed = {}
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			visible = {}
+			traits = {
+				democratic_reformer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							is_historical_focus_on = yes
+							has_government = neutrality
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = fascism
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_staunch_monarchist
+		#name=
+		portraits={
+			army={small="GFX_idea_HOL_antonie_pannekoek"}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_staunch_monarchist
+			ledger = civilian
+			allowed = {}
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			visible = {}
+			traits = {
+				staunch_monarchist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							is_historical_focus_on = yes
+							has_government = democratic
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = fascism
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_fascist_demagogue
+		#name=
+		portraits={
+			army={small="GFX_idea_heinrich_himmler"}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_fascist_demagogue
+			ledger = civilian
+			allowed = {}
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			visible = {}
+			traits = {
+				fascist_demagogue
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							is_historical_focus_on = yes
+							has_government = democratic
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = communism
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = neutrality
+						}
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_communist_revolutionary
+		#name=
+		portraits={
+			army={small="GFX_idea_SOV_lev_kamenev"}
+		}
+		advisor={
+			slot = ideology_advisor
+			idea_token = XYZ_communist_revolutionary
+			ledger = civilian
+			allowed = {}
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			visible = {}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					OR = {
+						AND = {
+							is_historical_focus_on = yes
+							has_government = democratic
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = fascism
+						}
+						AND = {
+							is_historical_focus_on = yes
+							has_government = neutrality
+						}
+					}
+				}
+			}
+		}
+	}
+
+	##########################
+	### CIVILIAN THEORISTS ###
+	##########################
+
+	generate_character = {
+		token_base = XYZ_rocket_scientist
+		#name=
+		portraits={
+			army={small="GFX_idea_von_braun"}
+		}
+		advisor={
+			slot = theorist
+			idea_token = XYZ_rocket_scientist
+			ledger = air
+			allowed = {}
+			traits  = {rocket_scientist}
+			research_bonus = {rocketry = 0.15}
+			cost = 100
+			ai_will_do = {factor = 0.5}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_nuclear_scientist
+		#name=
+		portraits={
+			army={small="GFX_idea_heisenberg"}
+		}
+		advisor={
+			slot = theorist
+			idea_token = XYZ_nuclear_scientist
+			ledger = army
+			allowed = {}
+			traits  = {nuclear_scientist}
+			research_bonus = {nuclear = 0.15}
+			cost = 100
+			ai_will_do = {factor = 0.5}
+		}
+	}
+
+	##########################
+	### MILITARY THEORISTS ###
+	##########################
+
+	generate_character = {
+		token_base = XYZ_military_theorist
+		#name=
+		portraits={
+			army={small="GFX_idea_europe_generic_6"}
+		}
+		advisor={
+			slot = army_theorist
+			idea_token = XYZ_military_theorist
+			ledger = army
+			allowed = {}
+			traits  = {military_theorist}
+			cost = 100
+			ai_will_do = {factor = 10}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_administrator
+		#name=
+		portraits={
+			army={small="GFX_idea_chester_nimitz"}
+		}
+		advisor={
+			slot = army_theorist
+			idea_token = XYZ_army_administrator
+			ledger = army
+			allowed = {}
+			traits  = {army_administrator}
+			cost = 100
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_retired_army_officer
+		#name=
+		portraits={
+			army={small="GFX_idea_south_america_generic_land_6"}
+		}
+		advisor={
+			slot = army_theorist
+			idea_token = XYZ_retired_army_officer
+			ledger = army
+			allowed = {}
+			traits  = {retired_army_officer}
+			cost = 100
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	#####################
+	### AIR THEORISTS ###
+	#####################
+
+	generate_character = {
+		token_base = XYZ_air_warfare_theorist
+		#name=
+		portraits={
+			army={small="GFX_idea_generic_air_europe_2"}
+		}
+		advisor={
+			slot = air_theorist
+			idea_token = XYZ_air_warfare_theorist
+			ledger = air
+			allowed = {}
+			traits  = {air_warfare_theorist}
+			cost = 100
+			ai_will_do = {factor = 10}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_administrator
+		#name=
+		portraits={
+			army={small="GFX_idea_charles_portal"}
+		}
+		advisor={
+			slot = air_theorist
+			idea_token = XYZ_air_administrator
+			ledger = air
+			allowed = {}
+			traits  = {air_administrator}
+			cost = 100
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_retired_air_officer
+		#name=
+		portraits={
+			army={small="GFX_idea_carl_spaatz"}
+		}
+		advisor={
+			slot = air_theorist
+			idea_token = XYZ_retired_air_officer
+			ledger = air
+			allowed = {}
+			traits  = {retired_air_officer}
+			cost = 100
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	######################
+	### NAVY THEORISTS ###
+	######################
+
+	generate_character = {
+		token_base = XYZ_naval_theorist
+		#name=
+		portraits={
+			army={small="GFX_idea_generic_navy_europe_3"}
+		}
+		advisor={
+			slot = navy_theorist
+			idea_token = XYZ_naval_theorist
+			ledger = navy
+			allowed = {}
+			traits  = {naval_theorist}
+			cost = 100
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 10
+					has_navy_size = {
+						size > 0
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_administrator
+		#name=
+		portraits={
+			army={small="GFX_idea_ENG_generic_navy_1"}
+		}
+		advisor={
+			slot = navy_theorist
+			idea_token = XYZ_navy_administrator
+			ledger = navy
+			allowed = {}
+			traits  = {navy_administrator}
+			cost = 100
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_retired_navy_officer
+		#name=
+		portraits={
+			army={small="GFX_idea_ENG_generic_navy_2"}
+		}
+		advisor={
+			slot = navy_theorist
+			idea_token = XYZ_retired_navy_officer
+			ledger = navy
+			allowed = {}
+			traits  = {retired_navy_officer}
+			cost = 100
+			ai_will_do = {factor = 0}
+		}
+	}
+
+	###################
+	### Army Chiefs ###
+	###################
+
+	generate_character = {
+		token_base = XYZ_army_chief_old_guard
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_old_guard"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_old_guard
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_old_guard
+			}
+			cost = 0
+			#removal_cost = 50
+			#can_be_fired = no	#Ok let's not be evil...
+			#on_remove = {
+			#	effect_tooltip = {
+			#		ROOT = {add_political_power = -50}
+			#	}
+			#}
+			ai_will_do = {factor = 1}
+		}
+	}
+
+
+	generate_character = {
+		token_base = XYZ_army_chief_reform
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_reform"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_reform
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_reform_1
+			}
+			#cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_drill
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_drill"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_drill
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_organizational
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_organizational"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_organizational
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_planning
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_planning"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_planning
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_planning_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_offensive
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_offensive"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_offensive
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_defensive
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_defensive"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_defensive
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_maneuver
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_maneuver"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_maneuver
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_maneuver_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+
+	generate_character = {
+		token_base = XYZ_army_chief_morale
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_morale"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_morale
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_morale_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_chief_entrenchment
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_chief_entrenchment"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XYZ_army_chief_entrenchment
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				army_chief_entrenchment_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	##################
+	### Air Chiefs ###
+	##################
+
+	generate_character = {
+		token_base = XYZ_air_chief_old_guard
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_chief_old_guard"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = XYZ_air_chief_old_guard
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				air_chief_old_guard
+			}
+			cost = 0
+			#removal_cost = 50
+			#can_be_fired = no
+			#on_remove = {
+			#	effect_tooltip = {
+			#		ROOT = {add_political_power = -50}
+			#	}
+			#}
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_chief_reform
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_chief_reform"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = XYZ_air_chief_reform
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				air_chief_reform_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_chief_all_weather
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_chief_all_weather"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = XYZ_air_chief_all_weather
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				air_chief_all_weather_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_chief_night_operations
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_chief_night_operations"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = XYZ_air_chief_night_operations
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				air_chief_night_operations_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_chief_safety
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_chief_safety"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = XYZ_air_chief_safety
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				air_chief_safety_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_chief_ground_support
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_chief_ground_support"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = XYZ_air_chief_ground_support
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	###################
+	### Navy Chiefs ###
+	###################
+
+	generate_character = {
+		token_base = XYZ_navy_chief_old_guard
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_old_guard"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_old_guard
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_old_guard
+			}
+			cost = 0
+			#removal_cost = 50
+			#can_be_fired = no
+			#on_remove = {
+			#	effect_tooltip = {
+			#		ROOT = {add_political_power = -50}
+			#	}
+			#}
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_chief_reform
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_reform"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_reform
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_reform_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_chief_decisive_battle
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_decisive_battle"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_decisive_battle
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_navy_size = {
+						size > 0
+						type = capital_ship
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_chief_commerce_raiding
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_commerce_raiding"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_commerce_raiding
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_navy_size = {
+						size > 0
+						type = submarine
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_chief_naval_aviation
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_naval_aviation"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_naval_aviation
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_naval_aviation_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_chief_maneuver
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_maneuver"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_maneuver
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_chief_small_fleet_organizer
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_chief_small_fleet_organizer"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XYZ_navy_chief_small_fleet_organizer
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = {
+				navy_chief_small_fleet_organizer_1
+			}
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	#########################
+	### ARMY HIGH COMMAND ###
+	#########################
+
+	generate_character = {
+		token_base = XYZ_army_infantry
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_infantry"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_infantry
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_infantry_1 }
+			cost = 50
+			ai_will_do = {factor = 50}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_commando
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_commando"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_commando
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_commando_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					OR = {
+						has_template_containing_unit = mountaineers
+						has_template_containing_unit = paratrooper
+						has_template_containing_unit = marine
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_artillery
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_artillery"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_artillery
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_artillery_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 10
+					OR =  {
+						has_template_containing_unit = artillery_brigade
+						has_template_containing_unit = artillery
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_logistics
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_logistics"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_logistics
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_logistics_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_planning
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_planning"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_planning
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_planning_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_regrouping
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_regrouping"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_regrouping
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_regrouping_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_entrenchment
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_entrenchment"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_entrenchment
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_entrenchment_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_cavalry
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_cavalry"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_cavalry
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_cavalry_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_template_containing_unit = cavalry
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_CombinedArms
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_CombinedArms"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_CombinedArms
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_CombinedArms_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_armored
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_armored"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_armored
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_armored_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 40
+					has_army_size = {
+						size > 0
+						type = armor
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_army_concealment
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_army_concealment"
+			}
+		}
+		advisor={
+			slot = army_high_command
+			idea_token = XYZ_army_concealment
+			ledger = army
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { army_concealment_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	########################
+	### AIR HIGH COMMAND ###
+	########################
+
+	generate_character = {
+		token_base = XYZ_air_air_superiority
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_air_superiority"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_air_superiority
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_air_superiority_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_deployed_air_force_size = {
+						size > 0
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_close_air_support
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_close_air_support"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_close_air_support
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_close_air_support_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_deployed_air_force_size = {
+						size > 0
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_tactical_bombing
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_tactical_bombing"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_tactical_bombing
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_tactical_bombing_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_strategic_bombing
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_strategic_bombing"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_strategic_bombing
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_strategic_bombing_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_bomber_interception
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_bomber_interception"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_bomber_interception
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_bomber_interception_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_pilot_training
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_pilot_training"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_pilot_training
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_pilot_training_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_air_combat_training
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_air_combat_training"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_air_combat_training
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_air_combat_training_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_air_naval_strike
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_naval_strike"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_naval_strike
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_naval_strike_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+	generate_character = {
+		token_base = XYZ_air_airborne
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_air_airborne"
+			}
+		}
+		advisor={
+			slot = air_high_command
+			idea_token = XYZ_air_airborne
+			ledger = air
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { air_airborne_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	#########################
+	### NAVY HIGH COMMAND ###
+	#########################
+
+	generate_character = {
+		token_base = XYZ_navy_amphibious_assault
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_amphibious_assault"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_amphibious_assault
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_amphibious_assault_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_fleet_logistics
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_fleet_logistics"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_fleet_logistics
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_fleet_logistics_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_anti_submarine
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_anti_submarine"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_anti_submarine
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_anti_submarine_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_submarine
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_submarine"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_submarine
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_submarine_1 }
+			cost = 50
+			ai_will_do = {factor = 1}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_screen
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_screen"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_screen
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_screen_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_navy_size = {
+						size > 0
+						type = screen_ship
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_capital_ship
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_capital_ship"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_capital_ship
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_capital_ship_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_navy_size = {
+						size > 0
+						type = capital_ship
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_carrier
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_carrier"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_carrier
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_carrier_1 }
+			cost = 50
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_navy_size = {
+						size > 0
+						type = carrier
+					}
+				}
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = XYZ_navy_naval_air_defense
+		#name=
+		portraits={
+			army={
+				small="GFX_idea_XYZ_navy_naval_air_defense"
+			}
+		}
+		advisor={
+			slot = navy_high_command
+			idea_token = XYZ_navy_naval_air_defense
+			ledger = navy
+			allowed = {}
+			available = {}
+			visible = {}
+			traits = { navy_naval_air_defense_1 }
+			cost = 50
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+}
+
+every_possible_country = {
+	limit = {
+		is_modded_country_trigger = yes
+	}
+
+	# XYZ_army_chief_old_guard = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_reform = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_drill = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_organizational = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_planning = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_offensive = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_defensive = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_maneuver = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_morale = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_chief_entrenchment = { set_character_flag = military_academy_eligible_flag }
+
+	# XYZ_air_chief_old_guard = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_chief_reform = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_chief_all_weather = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_chief_night_operations = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_chief_safety = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_chief_ground_support = { set_character_flag = military_academy_eligible_flag }
+
+	# XYZ_navy_chief_old_guard = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_chief_reform = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_chief_decisive_battle = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_chief_commerce_raiding = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_chief_naval_aviation = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_chief_maneuver = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_chief_small_fleet_organizer = { set_character_flag = military_academy_eligible_flag }
+
+	XYZ_army_infantry = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_commando = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_artillery = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_logistics = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_planning = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_regrouping = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_entrenchment = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_cavalry = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_CombinedArms = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_armored = { set_character_flag = military_academy_eligible_flag }
+	XYZ_army_concealment = { set_character_flag = military_academy_eligible_flag }
+
+	XYZ_air_air_superiority = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_close_air_support = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_tactical_bombing = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_strategic_bombing = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_bomber_interception = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_pilot_training = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_air_combat_training = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_naval_strike = { set_character_flag = military_academy_eligible_flag }
+	XYZ_air_airborne = { set_character_flag = military_academy_eligible_flag }
+
+	XYZ_navy_amphibious_assault = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_fleet_logistics = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_anti_submarine = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_submarine = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_screen = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_capital_ship = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_carrier = { set_character_flag = military_academy_eligible_flag }
+	XYZ_navy_naval_air_defense = { set_character_flag = military_academy_eligible_flag }
+
+}
+
+

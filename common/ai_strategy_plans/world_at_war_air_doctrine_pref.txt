@@ -1,0 +1,136 @@
+
+################################
+### AIR DOCTRINE PREFERENCES ###
+################################
+
+### Strategic Destruction ###
+
+world_at_war_strategic_destruction_plan = {
+	name = "Strategic Destruction plan"
+	desc = ""
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}}
+
+
+
+	#ai_national_focuses = {
+	#	OG_fighter_focus = 2
+	#	OG_CAS_effort = 2
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		heavy_air = 10
+		plane_modules_tech = 10
+		air_superiority = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		heavy_aircraft_manufacturer = 2
+		air_strategic_bombing_1 = 2
+		air_strategic_bombing_2 = 2
+		air_strategic_bombing_3 = 2
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+### Battlefield Support ###
+
+world_at_war_battlefield_support_plan = {
+	name = "Battlefield Support plan"
+	desc = ""
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_battlefield_support_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_battlefield_support_preference_flag}}}
+
+
+	#ai_national_focuses = {
+	#	OG_fighter_focus = 2
+	#	OG_CAS_effort = 2
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		cas_bomber = 10
+		plane_modules_tech = 10
+		formation_flying = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		CAS_manufacturer = 2
+		air_close_air_support_1 = 2
+		air_close_air_support_2 = 2
+		air_close_air_support_3 = 2
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+### Operational Integrity ###
+
+world_at_war_battlefield_support_plan = {
+	name = "Operational Integrity plan"
+	desc = ""
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_operational_integrity_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_operational_integrity_preference_flag}}}
+
+
+	#ai_national_focuses = {
+	#	OG_fighter_focus = 2
+	#	OG_CAS_effort = 2
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		medium_air = 10
+		plane_modules_tech = 10
+		force_rotation = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		medium_aircraft_manufacturer = 2
+		air_tactical_bombing_1 = 2
+		air_tactical_bombing_2 = 2
+		air_tactical_bombing_3 = 2
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+

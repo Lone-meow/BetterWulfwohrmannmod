@@ -1,0 +1,30 @@
+
+state = {
+	id = 637
+	name = "STATE_637" #Kamchatka
+
+	history = {
+		owner = Y72
+		add_core_of = Y72
+		buildings = {
+			infrastructure = 1
+			12207 = {
+				naval_base = 1
+			}
+		}
+		1935.1.2 = {
+			owner = Z11
+			controller = Z11
+			add_core_of = Z11
+		}
+	}
+
+	provinces = {
+		1823 1839 1863 4728 7878 12207 12522 
+	}
+	manpower = 48831
+	buildings_max_level_factor = 1
+	state_category = "pastoral"
+	#impassable = yes
+	local_supplies = 0.0 
+}

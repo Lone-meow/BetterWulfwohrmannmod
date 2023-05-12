@@ -1,0 +1,30 @@
+
+state={
+	id=444
+	name="STATE_444" # Baluchistan
+	manpower = 463500
+	
+	state_category = wasteland
+
+	history={
+		victory_points = {
+			8066 1
+		}
+		owner = Y56
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = Y56
+		1935.1.2 = {
+			owner = Y55
+			controller = Y55
+			add_core_of = Y55
+		}
+	}
+
+	provinces={
+		1179 5043 5075 7917 8013 8066 12761 12774 
+	}
+
+	local_supplies=0.0 
+}

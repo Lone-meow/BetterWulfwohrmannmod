@@ -1,0 +1,3313 @@
+choose_your_leader_catagory_5 = {
+
+
+	MAL_Shenton_Thomas = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Shenton Thomas"
+				    picture = "GFX_portrait_malaya_shenton_thomas"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Shenton Thomas"
+				    picture = "GFX_portrait_malaya_shenton_thomas"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Shenton Thomas"
+				    picture = "GFX_portrait_malaya_shenton_thomas"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Shenton Thomas"
+				    picture = "GFX_portrait_malaya_shenton_thomas"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Aisin_Gioro_Puyi = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Puyi"
+				    picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Puyi"
+				    picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Puyi"
+				    picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Puyi"
+				    picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Xuantong = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Xuantong"
+				    picture = "GFX_portrait_man_henry_pu_yi_emperor"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Xuantong"
+				    picture = "GFX_portrait_man_henry_pu_yi_emperor"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Xuantong"
+				    picture = "GFX_portrait_man_henry_pu_yi_emperor"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Xuantong"
+				    picture = "GFX_portrait_man_henry_pu_yi_emperor"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Zhang_Haipeng = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Zhang Haipeng"
+				    picture = "GFX_portrait_man_zhang_haipeng"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Zhang Haipeng"
+				    picture = "GFX_portrait_man_zhang_haipeng"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Zhang Haipeng"
+				    picture = "GFX_portrait_man_zhang_haipeng"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Zhang Haipeng"
+				    picture = "GFX_portrait_man_zhang_haipeng"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Zhang_Jinghui = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Zhang Jinghui"
+				    picture = "GFX_portrait_man_zhang_jinghui"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Zhang Jinghui"
+				    picture = "GFX_portrait_man_zhang_jinghui"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Zhang Jinghui"
+				    picture = "GFX_portrait_man_zhang_jinghui"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Zhang Jinghui"
+				    picture = "GFX_portrait_man_zhang_jinghui"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Aisin_Gioro_Xiqia = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Xiqia"
+				    picture = "GFX_portrait_man_aisin_gioro_xiqia"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Xiqia"
+				    picture = "GFX_portrait_man_aisin_gioro_xiqia"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Xiqia"
+				    picture = "GFX_portrait_man_aisin_gioro_xiqia"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Aisin Gioro Xiqia"
+				    picture = "GFX_portrait_man_aisin_gioro_xiqia"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Yoshiko_Kawashima = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_man_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_man_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_man_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_man_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Yoshiko_Kawashima_2 = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Yoshiko Kawashima"
+				    picture = "GFX_portrait_yoshiko_kawashima"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Alexander_von_Falkenhausen = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Alexander von Falkenhausen"
+				    picture = "GFX_portrait_chi_alexander_von_falkenhausen"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Alexander von Falkenhausen"
+				    picture = "GFX_portrait_chi_alexander_von_falkenhausen"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Alexander von Falkenhausen"
+				    picture = "GFX_portrait_chi_alexander_von_falkenhausen"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Alexander von Falkenhausen"
+				    picture = "GFX_portrait_chi_alexander_von_falkenhausen"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MAN_Aleksandr_Cherepanov = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Aleksandr Cherepanov"
+				    picture = "GFX_portrait_sov_aleksandr_cherepanov"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Aleksandr Cherepanov"
+				    picture = "GFX_portrait_sov_aleksandr_cherepanov"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Aleksandr Cherepanov"
+				    picture = "GFX_portrait_sov_aleksandr_cherepanov"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Aleksandr Cherepanov"
+				    picture = "GFX_portrait_sov_aleksandr_cherepanov"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	Randomize_Your_Leader_MAN = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+			country_event = {
+               id = ChooseYourLeaderMNO.1
+            }
+	    }
+    }
+	
+	MEN_Prince_Demchugdongrub = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Prince Demchugdongrub"
+				    picture = "GFX_portrait_men_demchugdongrub"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Prince Demchugdongrub"
+				    picture = "GFX_portrait_men_demchugdongrub"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Prince Demchugdongrub"
+				    picture = "GFX_portrait_men_demchugdongrub"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Prince Demchugdongrub"
+				    picture = "GFX_portrait_men_demchugdongrub"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Lazaro_Cardenas = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Lázaro Cárdenas"
+				    picture = "gfx/leaders/MEX/Portrait_MEX_Lazaro_Cardenas.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Lázaro Cárdenas"
+				    picture = "gfx/leaders/MEX/Portrait_MEX_Lazaro_Cardenas.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Lázaro Cárdenas"
+				    picture = "gfx/leaders/MEX/Portrait_MEX_Lazaro_Cardenas.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Lázaro Cárdenas"
+				    picture = "gfx/leaders/MEX/Portrait_MEX_Lazaro_Cardenas.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Salvador_Abascal = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Salvador Abascal"
+				    picture = "GFX_Portrait_MEX_Salvador_Abascal"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Salvador Abascal"
+				    picture = "GFX_Portrait_MEX_Salvador_Abascal"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Salvador Abascal"
+				    picture = "GFX_Portrait_MEX_Salvador_Abascal"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Salvador Abascal"
+				    picture = "GFX_Portrait_MEX_Salvador_Abascal"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Adolfo_de_la_Huerta = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Adolfo de la Huerta"
+				    picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Adolfo de la Huerta"
+				    picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Adolfo de la Huerta"
+				    picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Adolfo de la Huerta"
+				    picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Dionisio_Encina = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Dionisio Encina"
+				    picture = "GFX_Portrait_MEX_Dionisio_Encina"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Dionisio Encina"
+				    picture = "GFX_Portrait_MEX_Dionisio_Encina"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Dionisio Encina"
+				    picture = "GFX_Portrait_MEX_Dionisio_Encina"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Dionisio Encina"
+				    picture = "GFX_Portrait_MEX_Dionisio_Encina"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Hernan_Laborde = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Hernán Laborde"
+				    picture = "GFX_portrait_MEX_hernan_laborde"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Hernán Laborde"
+				    picture = "GFX_portrait_MEX_hernan_laborde"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Hernán Laborde"
+				    picture = "GFX_portrait_MEX_hernan_laborde"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Hernán Laborde"
+				    picture = "GFX_portrait_MEX_hernan_laborde"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Plutarco_E_Calles = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_civil"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_civil"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_civil"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_civil"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Vicente_Lombardo = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Vicente Lombardo"
+				    picture = "GFX_portrait_MEX_vicente_lombardo"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Vicente Lombardo"
+				    picture = "GFX_portrait_MEX_vicente_lombardo"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Vicente Lombardo"
+				    picture = "GFX_portrait_MEX_vicente_lombardo"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Vicente Lombardo"
+				    picture = "GFX_portrait_MEX_vicente_lombardo"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Saturnino_Cedillo = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Leon_Trotsky = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Leon Trotsky"
+				    picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Leon Trotsky"
+				    picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Leon Trotsky"
+				    picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Leon Trotsky"
+				    picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Francisco_Mugica = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Francisco Múgica"
+				    picture = "GFX_portrait_MEX_francisco_mugica"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Francisco Múgica"
+				    picture = "GFX_portrait_MEX_francisco_mugica"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Francisco Múgica"
+				    picture = "GFX_portrait_MEX_francisco_mugica"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Francisco Múgica"
+				    picture = "GFX_portrait_MEX_francisco_mugica"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Manuel_Avila_Camacho = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_civil"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_civil"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_civil"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_civil"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Luis_Maria_Martinez = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Luis María Martínez"
+				    picture = "GFX_portrait_MEX_Luis_Maria_Martinez"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Luis María Martínez"
+				    picture = "GFX_portrait_MEX_Luis_Maria_Martinez"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Luis María Martínez"
+				    picture = "GFX_portrait_MEX_Luis_Maria_Martinez"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Luis María Martínez"
+				    picture = "GFX_portrait_MEX_Luis_Maria_Martinez"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Luis_Farell = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Luis Farell"
+				    picture = "GFX_portrait_MEX_luis_farell"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Luis Farell"
+				    picture = "GFX_portrait_MEX_luis_farell"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Luis Farell"
+				    picture = "GFX_portrait_MEX_luis_farell"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Luis Farell"
+				    picture = "GFX_portrait_MEX_luis_farell"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Gildardo_Magana = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Gildardo Magaña"
+				    picture = "GFX_portrait_MEX_gildardo_magana"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Gildardo Magaña"
+				    picture = "GFX_portrait_MEX_gildardo_magana"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Gildardo Magaña"
+				    picture = "GFX_portrait_MEX_gildardo_magana"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Gildardo Magaña"
+				    picture = "GFX_portrait_MEX_gildardo_magana"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Abelardo_L_Rodriguez = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Abelardo L. Rodríguez"
+				    picture = "GFX_portrait_MEX_abelardo_rodriguez"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Abelardo L. Rodríguez"
+				    picture = "GFX_portrait_MEX_abelardo_rodriguez"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Abelardo L. Rodríguez"
+				    picture = "GFX_portrait_MEX_abelardo_rodriguez"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Abelardo L. Rodríguez"
+				    picture = "GFX_portrait_MEX_abelardo_rodriguez"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Manuel_Avila_Camacho_2 = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_military"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_military"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_military"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Manuel Ávila Camacho"
+				    picture = "GFX_portrait_MEX_avila_military"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Othon_P_Blanco_Nunez_de_Caceres = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Othón P. Blanco Núñez de Cáceres"
+				    picture = "GFX_portrait_MEX_othon_blanco"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Othón P. Blanco Núñez de Cáceres"
+				    picture = "GFX_portrait_MEX_othon_blanco"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Othón P. Blanco Núñez de Cáceres"
+				    picture = "GFX_portrait_MEX_othon_blanco"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Othón P. Blanco Núñez de Cáceres"
+				    picture = "GFX_portrait_MEX_othon_blanco"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Heriberto_Jara_Corona = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Heriberto Jara Corona"
+				    picture = "GFX_portrait_MEX_heriberto_corona"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Heriberto Jara Corona"
+				    picture = "GFX_portrait_MEX_heriberto_corona"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Heriberto Jara Corona"
+				    picture = "GFX_portrait_MEX_heriberto_corona"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Heriberto Jara Corona"
+				    picture = "GFX_portrait_MEX_heriberto_corona"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Plutarco_E_Calles_General = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_military"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_military"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_military"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Plutarco E. Calles"
+				    picture = "GFX_portrait_MEX_calles_military"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Saturnino_Cedillo_Martinez = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo Martínez"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo Martínez"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo Martínez"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Saturnino Cedillo Martínez"
+				    picture = "GFX_portrait_MEX_saturnino_cedillo"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Jose_Gonzalo_Escobar = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "José Gonzalo Escobar"
+				    picture = "GFX_portrait_MEX_jose_gonzalo_escobar"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "José Gonzalo Escobar"
+				    picture = "GFX_portrait_MEX_jose_gonzalo_escobar"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "José Gonzalo Escobar"
+				    picture = "GFX_portrait_MEX_jose_gonzalo_escobar"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "José Gonzalo Escobar"
+				    picture = "GFX_portrait_MEX_jose_gonzalo_escobar"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MEX_Jesus_Degollado_Guizar = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Jesús Degollado Guízar"
+				    picture = "GFX_portrait_MEX_jesus_degollado_guizar"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Jesús Degollado Guízar"
+				    picture = "GFX_portrait_MEX_jesus_degollado_guizar"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Jesús Degollado Guízar"
+				    picture = "GFX_portrait_MEX_jesus_degollado_guizar"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Jesús Degollado Guízar"
+				    picture = "GFX_portrait_MEX_jesus_degollado_guizar"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	Randomize_Your_Leader_MEX = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_MEX
+		}
+		complete_effect = {
+			country_event = {
+               id = ChooseYourLeaderMNO.2
+            }
+	    }
+    }
+	
+	MNT_Blazo_Dukanovic = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MNT
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Blažo Đukanović"
+				    picture = "GFX_portrait_MNT_blazo_dukanovic"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Blažo Đukanović"
+				    picture = "GFX_portrait_MNT_blazo_dukanovic"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Blažo Đukanović"
+				    picture = "GFX_portrait_MNT_blazo_dukanovic"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Blažo Đukanović"
+				    picture = "GFX_portrait_MNT_blazo_dukanovic"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	MON_Anandyn_Amar = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MON
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Anandyn Amar"
+				    picture = "GFX_portrait_mon_anandyn_amar"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Anandyn Amar"
+				    picture = "GFX_portrait_mon_anandyn_amar"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Anandyn Amar"
+				    picture = "GFX_portrait_mon_anandyn_amar"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Anandyn Amar"
+				    picture = "GFX_portrait_mon_anandyn_amar"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NEP_Juddha_Rana = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NEP
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Juddha Rana"
+				    picture = "GFX_portrait_nepal_portrait_juddah_rana"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Juddha Rana"
+				    picture = "GFX_portrait_nepal_portrait_juddah_rana"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Juddha Rana"
+				    picture = "GFX_portrait_nepal_portrait_juddah_rana"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Juddha Rana"
+				    picture = "GFX_portrait_nepal_portrait_juddah_rana"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NIC_Anastasio_Somoza_Garcia = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NIC
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Anastasio Somoza García"
+				    picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Anastasio Somoza García"
+				    picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Anastasio Somoza García"
+				    picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Anastasio Somoza García"
+				    picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NOR_Johan_Nygaardsvold = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NOR
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Johan Nygaardsvold"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Johan Nygaardsvold"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Johan Nygaardsvold"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Johan Nygaardsvold"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NOR_Vidkun_Quisling = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NOR
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Vidkun Quisling"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Vidkun Quisling"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Vidkun Quisling"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Vidkun Quisling"
+				    picture = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	Randomize_Your_Leader_NOR = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_NOR
+		}
+		complete_effect = {
+			country_event = {
+               id = ChooseYourLeaderMNO.3
+            }
+	    }
+    }
+	
+	NZL_Michael_Joseph_Savage = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Michael Joseph Savage"
+				    picture = "GFX_NZL_michael_joseph_savage"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Michael Joseph Savage"
+				    picture = "GFX_NZL_michael_joseph_savage"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Michael Joseph Savage"
+				    picture = "GFX_NZL_michael_joseph_savage"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Michael Joseph Savage"
+				    picture = "GFX_NZL_michael_joseph_savage"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Sidney_Holland = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Sidney Holland"
+				    picture = "GFX_NZL_sidney_holland"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Sidney Holland"
+				    picture = "GFX_NZL_sidney_holland"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Sidney Holland"
+				    picture = "GFX_NZL_sidney_holland"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Sidney Holland"
+				    picture = "GFX_NZL_sidney_holland"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_John_Ormond = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "John Ormond"
+				    picture = "GFX_NZL_john_ormond"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "John Ormond"
+				    picture = "GFX_NZL_john_ormond"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "John Ormond"
+				    picture = "GFX_NZL_john_ormond"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "John Ormond"
+				    picture = "GFX_NZL_john_ormond"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Elsie_Farrelly = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Elsie Farrelly"
+				    picture = "GFX_NZL_elsie_farrelly"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Elsie Farrelly"
+				    picture = "GFX_NZL_elsie_farrelly"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Elsie Farrelly"
+				    picture = "GFX_NZL_elsie_farrelly"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Elsie Farrelly"
+				    picture = "GFX_NZL_elsie_farrelly"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Peter_Fraser = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Peter Fraser"
+				    picture = "gfx/leaders/NZL/Portrait_NewZealand_Peter_Fraser.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Peter Fraser"
+				    picture = "gfx/leaders/NZL/Portrait_NewZealand_Peter_Fraser.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Peter Fraser"
+				    picture = "gfx/leaders/NZL/Portrait_NewZealand_Peter_Fraser.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Peter Fraser"
+				    picture = "gfx/leaders/NZL/Portrait_NewZealand_Peter_Fraser.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Bernard_Freyberg = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Bernard Freyberg"
+				    picture = "GFX_NZL_bernard_freyberg"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Bernard Freyberg"
+				    picture = "GFX_NZL_bernard_freyberg"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Bernard Freyberg"
+				    picture = "GFX_NZL_bernard_freyberg"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Bernard Freyberg"
+				    picture = "GFX_NZL_bernard_freyberg"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Robert_Row = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Robert Row"
+				    picture = "GFX_NZL_robert_row"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Robert Row"
+				    picture = "GFX_NZL_robert_row"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Robert Row"
+				    picture = "GFX_NZL_robert_row"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Robert Row"
+				    picture = "GFX_NZL_robert_row"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_William_Stevens = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "William Stevens"
+				    picture = "GFX_NZL_william_stevens"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "William Stevens"
+				    picture = "GFX_NZL_william_stevens"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "William Stevens"
+				    picture = "GFX_NZL_william_stevens"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "William Stevens"
+				    picture = "GFX_NZL_william_stevens"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Edmund_Rupert_Drummond = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Edmund Rupert Drummond"
+				    picture = "GFX_NZL_edmund_drummond"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Edmund Rupert Drummond"
+				    picture = "GFX_NZL_edmund_drummond"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Edmund Rupert Drummond"
+				    picture = "GFX_NZL_edmund_drummond"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Edmund Rupert Drummond"
+				    picture = "GFX_NZL_edmund_drummond"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	NZL_Peter_Phipps = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Peter Phipps"
+				    picture = "GFX_NZL_peter_phipps"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Peter Phipps"
+				    picture = "GFX_NZL_peter_phipps"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Peter Phipps"
+				    picture = "GFX_NZL_peter_phipps"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Peter Phipps"
+				    picture = "GFX_NZL_peter_phipps"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	Randomize_Your_Leader_NZL = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_NZL
+		}
+		complete_effect = {
+			country_event = {
+               id = ChooseYourLeaderMNO.4
+            }
+	    }
+    }
+	
+	OMA_Said_bin_Taimur = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_OMA
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Said bin Taimur"
+				    picture = "GFX_portrait_oman_said_bin_taimur"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Said bin Taimur"
+				    picture = "GFX_portrait_oman_said_bin_taimur"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Said bin Taimur"
+				    picture = "GFX_portrait_oman_said_bin_taimur"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Said bin Taimur"
+				    picture = "GFX_portrait_oman_said_bin_taimur"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+}

@@ -1,0 +1,28 @@
+state={
+	id=72
+	name="STATE_72"
+	manpower = 152000
+	
+	state_category = rural
+	
+	history={
+		owner = Y15
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = Y15
+
+		1935.1.2 = {
+			owner = Y16
+			controller = Y16
+			add_core_of = Y16
+		}
+	}
+
+	provinces={
+		9551 9567 
+	}
+
+	local_supplies=1.0 
+}

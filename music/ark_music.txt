@@ -1,0 +1,33 @@
+music_station = "PB_Original_B"
+
+music = {
+	song = "Electric_West"
+}
+
+music = {
+	song = "HaigHovels"
+}
+
+music = {
+	song = "MindsMachines"
+}
+
+music = {
+	song = "Underground"
+}
+
+music = {
+	song = "MechanicalMan"
+}
+
+music = {
+	song = "Ragtag_Commoners"
+}
+
+music = {
+	song = "Postwar"
+}
+
+music = {
+	song = "Autofactory"
+}

@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+	
+		white_house = {
+		picture = white_house
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_cost = -10.00
+				monthly_population = 0.05
+			}
+		}
+	}

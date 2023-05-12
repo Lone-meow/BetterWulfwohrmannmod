@@ -1,0 +1,2781 @@
+cyl_other_catagory = {
+
+	CYL_CLR_All_Flags = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = CYL_AFA
+			clr_country_flag = CYL_AFG
+			clr_country_flag = CYL_ALB
+			clr_country_flag = CYL_AOI
+			clr_country_flag = CYL_ARG
+			clr_country_flag = CYL_AST
+   			clr_country_flag = CYL_AUS
+   			clr_country_flag = CYL_BEL
+   			clr_country_flag = CYL_BHU
+   			clr_country_flag = CYL_BOL
+   			clr_country_flag = CYL_BRA
+   			clr_country_flag = CYL_BUL
+   			clr_country_flag = CYL_CAN
+   			clr_country_flag = CYL_CHI
+   			clr_country_flag = CYL_CHL
+   			clr_country_flag = CYL_COL
+   			clr_country_flag = CYL_COS
+   			clr_country_flag = CYL_CRO
+   			clr_country_flag = CYL_CSA
+   			clr_country_flag = CYL_CUB
+   			clr_country_flag = CYL_CZE
+   			clr_country_flag = CYL_DDR
+			clr_country_flag = CYL_DNZ
+   			clr_country_flag = CYL_DEN
+   			clr_country_flag = CYL_DOM
+			clr_country_flag = CYL_DON
+   			clr_country_flag = CYL_ECU
+   			clr_country_flag = CYL_EGY
+   			clr_country_flag = CYL_ELS
+   			clr_country_flag = CYL_ENG
+   			clr_country_flag = CYL_EST
+   			clr_country_flag = CYL_ETH
+   			clr_country_flag = CYL_FIN
+   			clr_country_flag = CYL_FRA
+   			clr_country_flag = CYL_GER
+   			clr_country_flag = CYL_GRE
+   			clr_country_flag = CYL_GUA
+   			clr_country_flag = CYL_GXC
+   			clr_country_flag = CYL_HAI
+   			clr_country_flag = CYL_HOL
+   			clr_country_flag = CYL_HON
+   			clr_country_flag = CYL_HUN
+   			clr_country_flag = CYL_ICE
+   			clr_country_flag = CYL_INS
+   			clr_country_flag = CYL_IRE
+   			clr_country_flag = CYL_IRQ
+   			clr_country_flag = CYL_ITA
+   			clr_country_flag = CYL_JAP
+   			clr_country_flag = CYL_KAZ
+			clr_country_flag = CYL_KUB
+			clr_country_flag = CYL_KSH
+   			clr_country_flag = CYL_KUR
+   			clr_country_flag = CYL_LAT
+   			clr_country_flag = CYL_LBA
+   			clr_country_flag = CYL_LIB
+   			clr_country_flag = CYL_LIT
+   			clr_country_flag = CYL_LUX
+   			clr_country_flag = CYL_MAL
+   			clr_country_flag = CYL_MAN
+   			clr_country_flag = CYL_MEN
+   			clr_country_flag = CYL_MEX
+   			clr_country_flag = CYL_MON
+			clr_country_flag = CYL_MNT
+   			clr_country_flag = CYL_NEP
+   			clr_country_flag = CYL_NIC
+   			clr_country_flag = CYL_NOR
+   			clr_country_flag = CYL_NZL
+   			clr_country_flag = CYL_OMA
+   			clr_country_flag = CYL_PAL
+   			clr_country_flag = CYL_PAN
+   			clr_country_flag = CYL_PAR
+   			clr_country_flag = CYL_PER
+   			clr_country_flag = CYL_PHI
+   			clr_country_flag = CYL_POL
+   			clr_country_flag = CYL_POR
+   			clr_country_flag = CYL_PRC
+   			clr_country_flag = CYL_PRU
+   			clr_country_flag = CYL_RAJ
+			clr_country_flag = CYL_RIF
+   			clr_country_flag = CYL_ROM
+   		    clr_country_flag = CYL_SAF
+   			clr_country_flag = CYL_SAU
+   			clr_country_flag = CYL_SHX
+   			clr_country_flag = CYL_SIA
+   			clr_country_flag = CYL_SIK
+			clr_country_flag = CYL_SIL
+   			clr_country_flag = CYL_SLO
+   			clr_country_flag = CYL_SOV
+   			clr_country_flag = CYL_SPR
+   			clr_country_flag = CYL_SWE
+   			clr_country_flag = CYL_SWI
+   			clr_country_flag = CYL_TAN
+   			clr_country_flag = CYL_TIB
+   			clr_country_flag = CYL_TUR
+   			clr_country_flag = CYL_URG
+   			clr_country_flag = CYL_USA
+   			clr_country_flag = CYL_VEN
+   			clr_country_flag = CYL_WGR
+   			clr_country_flag = CYL_XSM
+   			clr_country_flag = CYL_YEM
+   			clr_country_flag = CYL_YUG
+   			clr_country_flag = CYL_YUN
+			set_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_AFG = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_AFG
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ALB = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ALB
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ARG = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ARG
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_AFA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_AFA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_AST = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_AST
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_AUS = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_AUS
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_BEL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_BEL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_BHU = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_BHU
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_BOL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_BOL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_BRA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_BRA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_BUL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_BUL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CAN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CAN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CHL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CHL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CHI = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CHI
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_COL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_COL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PRC = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PRC
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_COS = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_COS
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CSA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CSA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CRO = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CRO
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CUB = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CUB
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_CZE = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_CZE
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_DNZ = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_DNZ
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_DEN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_DEN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_DOM = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_DOM
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_DON = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_DON
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_DDR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_DDR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ECU = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ECU
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_EGY = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_EGY
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ELS = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ELS
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_EST = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_EST
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ETH = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ETH
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_FIN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_FIN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_FRA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_FRA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_GER = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_GER
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_GRE = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_GRE
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_GXC = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_GXC
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_GUA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_GUA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_HAI = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_HAI
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_HON = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_HON
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_HUN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_HUN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ICE = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ICE
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_INS = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_INS
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PER = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PER
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_IRQ = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_IRQ
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_IRE = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_IRE
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_AOI = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_AOI
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ITA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ITA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_JAP = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_JAP
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_KSH = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_KSH
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_KAZ = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_KAZ
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_KUB = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_KUB
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_KUR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_KUR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_LAT = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_LAT
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_LBA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_LBA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_LIB = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_LIB
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_LIT = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_LIT
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_LUX = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_LUX
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_MAL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_MAL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_MAN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_MAN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_MEN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_MEN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_MEX = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_MEX
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_MON = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_MON
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_MNT = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_MNT
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_NEP = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_NEP
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_HOL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_HOL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_NZL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_NZL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_NIC = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_NIC
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_NOR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_NOR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_OMA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_OMA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PAL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PAL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PAN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PAN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PAR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PAR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PRU = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PRU
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_PHI = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_PHI
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_POL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_POL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_POR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_POR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_RAJ = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_RAJ
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_RIF = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_RIF
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ROM = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ROM
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SAU = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SAU
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SHX = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SHX
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SIA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SIA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SIL = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SIL
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SIK = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SIK
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SLO = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SLO
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SAF = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SAF
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SOV = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SOV
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SPR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SPR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SWE = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SWE
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_SWI = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_SWI
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_TAN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_TAN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_TIB = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_TIB
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_TUR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_TUR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_ENG = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_ENG
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_USA = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_USA
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_URG = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_URG
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_VEN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_VEN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_WGR = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_WGR
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_XSM = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_XSM
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_YEM = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_YEM
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_YUG = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_YUG
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CYL_Get_YUN = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			has_country_flag = CYL_No_Flags
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = CYL_YUN
+			clr_country_flag = CYL_No_Flags
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

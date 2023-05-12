@@ -1,0 +1,33 @@
+state=
+{
+	id=766
+	name="STATE_766"
+	manpower = 566600
+	
+	state_category = rural
+	
+	history= {
+		victory_points = {
+			6727 1
+		}
+		add_core_of = Z14
+		owner = Z14
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			6727 = {
+				naval_base = 1
+			}
+		}
+		1935.1.2 = {
+			owner = Y11
+			controller = Y11
+			add_core_of = Y11
+		}
+	}
+	provinces=
+	{
+3701 3704 6727 6743	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,104 @@
+music_station = "hrr_music"
+
+# General:
+music = {
+	name = "Ashes"
+	file = "Ashes.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Both Ways"
+	file = "BothWays.ogg"
+	volume = 0.65
+}
+music = {
+	name = "At Any Cost"
+	file = "AtAnyCost.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Epilogue"
+	file = "Epilogue.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Exodus"
+	file = "Exodus.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Fortress"
+	file = "Fortress.ogg"
+	volume = 0.65
+}
+music = {
+	name = "From The Vault"
+	file = "FromTheVault.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Ghosts and Glass"
+	file = "GhostsandGlass.ogg"
+	volume = 0.65
+}
+music = {
+	name = "New Alexandria"
+	file = "NewAlexandria.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The Package"
+	file = "ThePackage.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Walking Away"
+	file = "WalkingAway.ogg"
+	volume = 0.65
+}
+music = {
+	name = "We Remember"
+	file = "WeRemember.ogg"
+	volume = 0.65
+}
+music = {
+	name = "We're Not Going Anywhere"
+	file = "WereNotGoingAnywhere.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Long Night of Solace"
+	file = "LongNightOfSolace.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Nightfall"
+	file = "Nightfal.ogg"
+	volume = 0.65
+}
+music = {
+	name = "ONI Sword Base"
+	file = "ONISwordBase.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Winter Contingency"
+	file = "WinterContingency.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Overture"
+	file = "Overture.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Tip of the Spear"
+	file = "TipoftheSpear.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Never Surrender"
+	file = "NeverSurrender.ogg"
+	volume = 0.65
+}
+

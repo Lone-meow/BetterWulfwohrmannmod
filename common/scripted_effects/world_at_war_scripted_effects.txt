@@ -1,0 +1,7327 @@
+
+
+OG_pick_military_academy_slot_effect = {
+	hidden_effect = {
+		### TRAINING SLOT 1 ###
+		if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_1_icon_frame = OG_military_academy_empty_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_1_icon_frame = OG_new_military_academy_training }
+			hidden_effect = {
+				if = { #Debug -> Faster time
+					limit = {
+						has_country_flag = OG_debug_fast_military_training_flag
+					}
+					set_country_flag = { flag = OG_officer_in_training_photo_1_days_remaining_flag days = 5 }
+				}
+				else = {
+					set_country_flag = { flag = OG_officer_in_training_photo_1_days_remaining_flag days = 365 }
+				}
+			}
+		}
+		### TRAINING SLOT 2 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_2_icon_frame = OG_military_academy_empty_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_2_icon_frame = OG_new_military_academy_training }
+
+			hidden_effect = {
+				if = { #Debug -> Faster time
+					limit = {
+						has_country_flag = OG_debug_fast_military_training_flag
+					}
+					set_country_flag = { flag = OG_officer_in_training_photo_2_days_remaining_flag days = 5 }
+				}
+				else = {
+					set_country_flag = { flag = OG_officer_in_training_photo_2_days_remaining_flag days = 365 }
+				}
+			}
+		}
+		### TRAINING SLOT 3 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_3_icon_frame = OG_military_academy_empty_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_3_icon_frame = OG_new_military_academy_training }
+			hidden_effect = {
+				if = { #Debug -> Faster time
+					limit = {
+						has_country_flag = OG_debug_fast_military_training_flag
+					}
+					set_country_flag = { flag = OG_officer_in_training_photo_3_days_remaining_flag days = 5 }
+				}
+				else = {
+					set_country_flag = { flag = OG_officer_in_training_photo_3_days_remaining_flag days = 365 }
+				}
+			}
+		}
+		### TRAINING SLOT 4 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_4_icon_frame = OG_military_academy_empty_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_4_icon_frame = OG_new_military_academy_training }
+			hidden_effect = {
+				if = { #Debug -> Faster time
+					limit = {
+						has_country_flag = OG_debug_fast_military_training_flag
+					}
+					set_country_flag = { flag = OG_officer_in_training_photo_4_days_remaining_flag days = 5 }
+				}
+				else = {
+					set_country_flag = { flag = OG_officer_in_training_photo_4_days_remaining_flag days = 365 }
+				}
+			}
+		}
+		### TRAINING SLOT 5 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_5_icon_frame = OG_military_academy_empty_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_5_icon_frame = OG_new_military_academy_training }
+			hidden_effect = {
+				if = { #Debug -> Faster time
+					limit = {
+						has_country_flag = OG_debug_fast_military_training_flag
+					}
+					set_country_flag = { flag = OG_officer_in_training_photo_5_days_remaining_flag days = 5 }
+				}
+				else = {
+					set_country_flag = { flag = OG_officer_in_training_photo_5_days_remaining_flag days = 365 }
+				}
+			}
+		}
+		### TRAINING SLOT 6 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_6_icon_frame = OG_military_academy_empty_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_6_icon_frame = OG_new_military_academy_training }
+			hidden_effect = {
+				if = { #Debug -> Faster time
+					limit = {
+						has_country_flag = OG_debug_fast_military_training_flag
+					}
+					set_country_flag = { flag = OG_officer_in_training_photo_6_days_remaining_flag days = 5 }
+				}
+				else = {
+					set_country_flag = { flag = OG_officer_in_training_photo_6_days_remaining_flag days = 365 }
+				}
+			}
+		}
+
+
+
+
+		set_variable = { OG_new_military_academy_training = 0 } # Reset var
+	}
+}
+
+
+
+OG_reset_military_academy_slot_effect = {
+	hidden_effect = {
+		### TRAINING SLOT 1 ###
+		if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_1_icon_frame = OG_military_academy_training_to_remove }
+			}
+			set_variable = { OG_officer_in_training_photo_1_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		### TRAINING SLOT 2 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_2_icon_frame = OG_military_academy_training_to_remove }
+			}
+			set_variable = { OG_officer_in_training_photo_2_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		### TRAINING SLOT 3 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_3_icon_frame = OG_military_academy_training_to_remove }
+			}
+			set_variable = { OG_officer_in_training_photo_3_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		### TRAINING SLOT 4 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_4_icon_frame = OG_military_academy_training_to_remove }
+			}
+			set_variable = { OG_officer_in_training_photo_4_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		### TRAINING SLOT 5 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_5_icon_frame = OG_military_academy_training_to_remove }
+			}
+			set_variable = { OG_officer_in_training_photo_5_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		### TRAINING SLOT 6 ###
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_6_icon_frame = OG_military_academy_training_to_remove }
+			}
+			set_variable = { OG_officer_in_training_photo_6_icon_frame = OG_military_academy_empty_slot_index }
+		}
+
+
+		set_variable = { OG_military_academy_training_to_remove = 0 } # Reset var
+	}
+}
+
+OG_unlock_military_academy_slot_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_1_icon_frame = OG_military_academy_locked_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_1_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_2_icon_frame = OG_military_academy_locked_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_2_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_3_icon_frame = OG_military_academy_locked_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_3_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_4_icon_frame = OG_military_academy_locked_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_4_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_5_icon_frame = OG_military_academy_locked_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_5_icon_frame = OG_military_academy_empty_slot_index }
+		}
+		else_if = {
+			limit = {
+				check_variable = { OG_officer_in_training_photo_6_icon_frame = OG_military_academy_locked_slot_index }
+			}
+			set_variable = { OG_officer_in_training_photo_6_icon_frame = OG_military_academy_empty_slot_index }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+world_at_war_ai_aggression_scripted_effect = { # Fascist & Communist AI aggression.
+
+	random_country = { # / every_country
+		#limit = {
+		#	OR = {
+		#		has_government = democratic
+		#		has_government = neutrality
+		#	}
+		#}
+		random_neighbor_country = { # / every_neighbor_country
+			limit = {
+				is_ai = yes
+				has_war = no
+				NOT = {
+					is_guaranteed_by = PREV
+					is_in_faction_with = PREV
+					has_government = PREV
+					PREV = {is_subject_of = THIS}
+					#has_non_aggression_pact_with = PREV
+				}
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+
+			if = {
+				limit = {
+					tag = X01
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X01	# These flags regulate AI aggressiveness through the AI strategy file.
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X02
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X02
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X03
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X03
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X04
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X04
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X05
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X05
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X06
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X06
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X07
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X07
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X08
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X08
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X09
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X09
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X10
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X10
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X11
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X11
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X12
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X12
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X13
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X13
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X14
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X14
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X15
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X15
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X16
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X16
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X17
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X17
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X18
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X18
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X19
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X19
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X20
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X20
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X21
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X21
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X22
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X22
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X23
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X23
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X24
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X24
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X25
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X25
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X26
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X26
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X27
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X27
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X28
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X28
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X29
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X29
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X30
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X30
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X31
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X31
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X32
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X32
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X33
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X33
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X34
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X34
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X35
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X35
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X36
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X36
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X37
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X37
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X38
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X38
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X39
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X39
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X40
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X40
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X41
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X41
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X42
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X42
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X43
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X43
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X44
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X44
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X45
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X45
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X46
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X46
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X47
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X47
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X48
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X48
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X49
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X49
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X50
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X50
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X51
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X51
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X52
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X52
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X53
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X53
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X54
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X54
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X55
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X55
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X56
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X56
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X57
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X57
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X58
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X58
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X59
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X59
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X60
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X60
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X61
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X61
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X62
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X62
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X63
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X63
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X64
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X64
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X65
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X65
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X66
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X66
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X67
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X67
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X68
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X68
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X69
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X69
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X70
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X70
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X71
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X71
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X72
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X72
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X73
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X73
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X74
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X74
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X75
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X75
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X76
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X76
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X77
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X77
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X78
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X78
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X79
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X79
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X80
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X80
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X81
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X81
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X82
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X82
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X83
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X83
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X84
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X84
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X85
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X85
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X86
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X86
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X87
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X87
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X88
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X88
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X89
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X89
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X90
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X90
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X91
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X91
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X92
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X92
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X93
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X93
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X94
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X94
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X95
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X95
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X96
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X96
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X97
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X97
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X98
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X98
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = X99
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_X99
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y01
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y01
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y02
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y02
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y03
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y03
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y04
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y04
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y05
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y05
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y06
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y06
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y07
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y07
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y08
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y08
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y09
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y09
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y10
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y10
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y11
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y11
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y12
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y12
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y13
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y13
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y14
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y14
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y15
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y15
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y16
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y16
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y17
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y17
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y18
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y18
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y19
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y19
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y20
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y20
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y21
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y21
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y22
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y22
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y23
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y23
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y24
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y24
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y25
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y25
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y26
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y26
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y27
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y27
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y28
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y28
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y29
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y29
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y30
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y30
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y31
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y31
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y32
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y32
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y33
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y33
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y34
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y34
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y35
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y35
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y36
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y36
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y37
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y37
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y38
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y38
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y39
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y39
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y40
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y40
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y41
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y41
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y42
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y42
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y43
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y43
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y44
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y44
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y45
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y45
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y46
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y46
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y47
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y47
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y48
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y48
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y49
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y49
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y50
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y50
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y51
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y51
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y52
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y52
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y53
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y53
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y54
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y54
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y55
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y55
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y56
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y56
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y57
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y57
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y58
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y58
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y59
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y59
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y60
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y60
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y61
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y61
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y62
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y62
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y63
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y63
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y64
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y64
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y65
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y65
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y66
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y66
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y67
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y67
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y68
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y68
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y69
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y69
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y70
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y70
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y71
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y71
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y72
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y72
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y73
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y73
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y74
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y74
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y75
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y75
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y76
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y76
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y77
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y77
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y78
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y78
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y79
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y79
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y80
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y80
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y81
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y81
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y82
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y82
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y83
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y83
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y84
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y84
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y85
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y85
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y86
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y86
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y87
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y87
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y88
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y88
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y89
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y89
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y90
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y90
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y91
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y91
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y92
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y92
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y93
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y93
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y94
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y94
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y95
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y95
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y96
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y96
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y97
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y97
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y98
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y98
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Y99
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Y99
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z01
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z01
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z02
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z02
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z03
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z03
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z04
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z04
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z05
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z05
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z06
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z06
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z07
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z07
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z08
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z08
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z09
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z09
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z10
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z10
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z11
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z11
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z12
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z12
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z13
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z13
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z14
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z14
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z15
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z15
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z16
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z16
+						days = 365
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = Z17
+				}
+				PREV = {
+					set_country_flag = {
+						flag = OG_mark_for_death_flag_Z17
+						days = 365
+						value = 1
+					}
+				}
+			}
+
+
+
+
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+### OLD EFFECT ###
+#world_at_war_ai_aggression_scripted_effect = { # Fascist & Communist AI aggression.
+#
+#	random_country = { # / every_country
+#		#limit = {
+#		#	OR = {
+#		#		has_government = democratic
+#		#		has_government = neutrality
+#		#	}
+#		#}
+#		random_neighbor_country = { # / every_neighbor_country
+#			limit = {
+#				is_ai = yes
+#				has_war = no
+#				#any_claim = no #Don't use this!
+#				NOT = {
+#					is_guaranteed_by = PREV
+#					is_in_faction_with = PREV
+#					has_government = PREV
+#					PREV = {is_subject_of = THIS}
+#					#has_non_aggression_pact_with = PREV
+#				}
+#				OR = {
+#					has_government = fascism
+#					has_government = communism
+#				}
+#			}
+#			add_ai_strategy = {
+#				type = conquer
+#				target = PREV
+#				value = 100
+#			}
+#			add_ai_strategy = {
+#				type = declare_war
+#				id = PREV
+#				value = 100
+#			}
+#			add_ai_strategy = {
+#				type = antagonize
+#				id = PREV 
+#				value = 50
+#			}
+#			add_ai_strategy = {
+#				type = diplo_action_desire
+#				id = PREV
+#				target = generate_wargoal
+#				value = 100
+#			}
+#			PREV = {
+#				add_ai_strategy = {
+#					type = prepare_for_war
+#					id = PREV
+#					value = 50
+#				}
+#			}
+#			if = {
+#				limit = {
+#					strength_ratio = {
+#						tag = PREV
+#						ratio > 1
+#					}
+#				}
+#				add_ai_strategy = {
+#					type = consider_weak
+#					id = PREV
+#					value = 10
+#				}
+#			}
+#		}
+#	}
+#}
+
+world_at_war_nuclear_casualties_scripted_effect = {
+	set_temp_variable = { temp_state_death_variable = THIS.state_population } #state_population_k
+	#multiply_temp_variable = { temp_state_death_variable = -0.45 }	#-0.05
+	multiply_temp_variable = {
+		var = temp_state_death_variable
+		value = -0.45
+	}
+	round_temp_variable = temp_state_death_variable
+	add_manpower = var:temp_state_death_variable
+}
+
+
+
+### LEADER TRAITS RANDOMIZER ###
+
+# Since the add_trait effect for country leaders REQUIRES ideology to be specified, different scripted effects are thus also required. Fuck you Paradox.
+
+country_leader_trait_randomizer_liberalism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = liberalism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = liberalism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = liberalism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = liberalism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_socialism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = socialism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = social_reformer
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = socialism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = socialism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = socialism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_conservatism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = conservatism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = social_reformer
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = conservatism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = conservatism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = conservatism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_centrism_democratic_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = centrism_democratic
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = centrism_democratic
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = centrism_democratic
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = centrism_democratic
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_military_junta_subideology_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = military_junta_subideology
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = military_junta_subideology
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = military_junta_subideology
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = military_junta_subideology
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_theocracy_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = theocracy
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = theocracy
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = theocracy
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = theocracy
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_oligarchism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = oligarchism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = oligarchism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = oligarchism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = oligarchism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_despotism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = despotism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = despotism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = despotism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = despotism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_gen_nazism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = gen_nazism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = gen_nazism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = gen_nazism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = gen_nazism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_fascism_ideology_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = fascism_ideology
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = fascism_ideology
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = fascism_ideology
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = fascism_ideology
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_ultranationalism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = ultranationalism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = ultranationalism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = ultranationalism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_falangism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = falangism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = falangism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = falangism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = falangism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_ultranationalism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = ultranationalism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = ultranationalism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = ultranationalism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = ultranationalism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_marxism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = marxism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = marxism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = marxism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = marxism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_anarchist_communism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = anarchist_communism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = anarchist_communism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = anarchist_communism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anarchist_communism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_anti_revisionism_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = anti_revisionism
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = anti_revisionism
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = anti_revisionism
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = anti_revisionism
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+country_leader_trait_randomizer_internationalism_subideology_scripted_effect = {
+	random_character = {
+		limit = {
+			#is_country_leader = yes
+			can_be_country_leader = yes
+			has_ideology = internationalism_subideology
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_ideology_group = democratic
+					}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = social_reformer
+				}
+			}
+			110 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = syncretic_revanchist
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = communism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = ambitious_union_boss
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = popular_figurehead
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = communism
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = anti_communist_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = propaganda_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = technocrat
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = silent_workhorse
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_ideology_group = democratic
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = prince_of_terror
+				}
+			}
+			#10 = {
+			#	modifier = {
+			#		factor = 0
+			#		is_female = no
+			#	}
+			#	add_trait = {
+			#		character = THIS
+			#		ideology = internationalism_subideology
+			#		trait = princess_of_terror
+			#	}
+			#}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = compassionate_gentleman
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = backroom_backstabber
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = smooth_talking_charmer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = ideological_crusader
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = fortification_engineer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = war_industrialist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = captain_of_industry
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = financial_expert
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = economist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = editor
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = armaments_organizer
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = reluctant_interventionist
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = quartermaster_general
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = neutrality}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = appeaser
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = tenacious_negotiator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = national_integralist
+				}
+			}
+			#10 = {
+			#	add_trait = {
+			#		 character = THIS
+			#		 ideology = internationalism_subideology
+			#		 trait = retired_officer
+			#	}
+			#}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {has_ideology_group = fascism}
+				}
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = eager_collaborator
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = dealbroker
+				}
+			}
+			10 = {
+				add_trait = {
+					 character = THIS
+					 ideology = internationalism_subideology
+					 trait = hawk
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

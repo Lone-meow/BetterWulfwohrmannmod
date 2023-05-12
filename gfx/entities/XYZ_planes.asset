@@ -1,0 +1,3805 @@
+
+#############
+### LIGHT ###
+#############
+
+entity = {
+	name = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0 node = "gun2"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle" 
+		event = { trigger_once = yes sound = { soundeffect = "airplane_idle" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } } 
+		}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.144
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X01_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X02_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X03_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X04_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X05_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X06_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X07_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X08_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X09_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X10_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X11_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X12_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X13_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X14_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X15_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X16_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X17_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X18_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X19_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X20_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X21_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X22_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X23_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X24_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X25_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X26_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X27_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X28_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X29_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X30_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X31_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X32_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X33_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X34_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X35_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X36_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X37_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X38_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X39_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X40_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X41_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X42_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X43_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X44_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X45_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X46_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X47_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X48_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X49_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X50_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X51_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X52_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X53_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X54_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X55_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X56_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X57_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X58_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X59_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X60_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X61_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X62_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X63_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X64_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X65_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X66_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X67_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X68_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X69_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X70_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X71_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X72_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X73_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X74_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X75_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X76_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X77_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X78_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X79_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X80_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X81_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X82_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X83_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X84_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X85_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X86_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X87_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X88_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X89_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "X90_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "X91_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "X92_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "X93_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "X94_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "X95_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "X96_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "X97_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "X98_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "X99_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y01_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y02_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y03_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y04_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y05_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y06_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y07_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y08_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y09_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y10_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y11_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y12_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y13_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y14_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y15_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y16_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y17_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y18_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y19_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y20_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y21_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y22_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y23_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y24_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y25_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y26_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y27_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y28_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y29_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y30_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y31_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y32_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y33_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y34_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y35_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y36_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y37_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y38_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y39_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y40_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y41_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y42_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y43_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y44_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y45_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y46_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y47_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y48_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y49_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y50_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y51_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y52_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y53_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y54_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y55_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y56_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y57_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y58_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y59_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y60_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y61_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y62_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y63_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y64_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y65_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y66_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y67_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y68_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y69_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y70_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y71_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y72_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y73_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y74_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y75_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y76_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y77_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y78_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y79_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y80_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y81_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y82_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y83_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y84_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y85_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y86_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y87_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y88_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y89_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Y90_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Y91_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Y92_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Y93_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Y94_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Y95_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Y96_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Y97_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Y98_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Y99_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Z01_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Z02_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Z03_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Z04_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Z05_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Z06_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Z07_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "purple_plane_light_mesh"
+	name = "Z08_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "burgundy_plane_light_mesh"
+	name = "Z09_light_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "red_plane_light_mesh"
+	name = "Z10_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "orange_plane_light_mesh"
+	name = "Z11_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "yellow_plane_light_mesh"
+	name = "Z12_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "brown_plane_light_mesh"
+	name = "Z13_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "lime_plane_light_mesh"
+	name = "Z14_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "green_plane_light_mesh"
+	name = "Z15_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "azure_plane_light_mesh"
+	name = "Z16_light_plane_entity"
+}
+entity = {
+	clone = "XTEMP_light_plane_entity"
+	pdxmesh = "blue_plane_light_mesh"
+	name = "Z17_light_plane_entity"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##############
+### MEDIUM ###
+##############
+
+
+
+
+
+entity = {
+	name = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_mg_7-92mm_quad" } }
+		event = { time = 0 node = "gun2"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { time = 0 node = "gun3"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "POL_heavy_fighter_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_whistleLayer_medium" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } } 
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.122
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X01_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X02_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X03_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X04_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X05_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X06_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X07_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X08_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X09_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X10_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X11_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X12_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X13_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X14_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X15_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X16_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X17_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X18_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X19_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X20_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X21_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X22_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X23_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X24_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X25_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X26_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X27_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X28_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X29_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X30_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X31_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X32_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X33_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X34_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X35_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X36_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X37_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X38_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X39_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X40_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X41_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X42_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X43_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X44_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X45_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X46_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X47_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X48_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X49_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X50_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X51_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X52_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X53_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X54_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X55_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X56_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X57_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X58_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X59_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X60_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X61_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X62_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X63_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X64_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X65_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X66_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X67_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X68_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X69_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X70_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X71_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X72_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X73_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X74_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X75_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X76_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X77_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X78_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X79_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X80_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X81_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X82_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X83_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X84_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X85_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X86_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X87_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X88_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X89_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "X90_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "X91_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "X92_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "X93_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "X94_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "X95_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "X96_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "X97_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "X98_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "X99_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y01_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y02_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y03_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y04_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y05_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y06_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y07_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y08_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y09_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y10_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y11_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y12_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y13_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y14_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y15_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y16_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y17_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y18_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y19_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y20_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y21_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y22_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y23_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y24_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y25_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y26_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y27_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y28_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y29_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y30_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y31_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y32_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y33_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y34_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y35_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y36_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y37_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y38_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y39_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y40_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y41_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y42_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y43_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y44_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y45_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y46_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y47_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y48_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y49_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y50_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y51_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y52_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y53_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y54_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y55_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y56_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y57_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y58_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y59_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y60_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y61_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y62_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y63_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y64_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y65_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y66_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y67_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y68_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y69_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y70_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y71_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y72_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y73_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y74_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y75_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y76_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y77_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y78_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y79_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y80_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y81_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y82_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y83_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y84_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y85_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y86_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y87_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y88_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y89_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Y90_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Y91_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Y92_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Y93_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Y94_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Y95_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Y96_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Y97_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Y98_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Y99_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Z01_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Z02_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Z03_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Z04_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Z05_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Z06_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Z07_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "purple_plane_medium_mesh"
+	name = "Z08_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "burgundy_plane_medium_mesh"
+	name = "Z09_medium_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "red_plane_medium_mesh"
+	name = "Z10_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "orange_plane_medium_mesh"
+	name = "Z11_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "yellow_plane_medium_mesh"
+	name = "Z12_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "brown_plane_medium_mesh"
+	name = "Z13_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "lime_plane_medium_mesh"
+	name = "Z14_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "green_plane_medium_mesh"
+	name = "Z15_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "azure_plane_medium_mesh"
+	name = "Z16_medium_plane_entity"
+}
+entity = {
+	clone = "XTEMP_medium_plane_entity"
+	pdxmesh = "blue_plane_medium_mesh"
+	name = "Z17_medium_plane_entity"
+}
+
+
+
+#############
+### HEAVY ###
+#############
+
+entity = {
+	name = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 node = "bomb"	particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "GER_nav_bomber_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "global_airplane_heavy_close_layer" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "engine1"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine3"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X01_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X02_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X03_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X04_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X05_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X06_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X07_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X08_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X09_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X10_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X11_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X12_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X13_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X14_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X15_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X16_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X17_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X18_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X19_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X20_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X21_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X22_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X23_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X24_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X25_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X26_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X27_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X28_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X29_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X30_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X31_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X32_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X33_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X34_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X35_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X36_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X37_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X38_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X39_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X40_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X41_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X42_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X43_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X44_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X45_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X46_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X47_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X48_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X49_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X50_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X51_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X52_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X53_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X54_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X55_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X56_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X57_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X58_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X59_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X60_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X61_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X62_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X63_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X64_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X65_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X66_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X67_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X68_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X69_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X70_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X71_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X72_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X73_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X74_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X75_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X76_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X77_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X78_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X79_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X80_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X81_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X82_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X83_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X84_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X85_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X86_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X87_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X88_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X89_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "X90_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "X91_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "X92_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "X93_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "X94_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "X95_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "X96_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "X97_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "X98_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "X99_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y01_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y02_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y03_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y04_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y05_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y06_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y07_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y08_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y09_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y10_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y11_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y12_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y13_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y14_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y15_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y16_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y17_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y18_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y19_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y20_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y21_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y22_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y23_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y24_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y25_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y26_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y27_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y28_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y29_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y30_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y31_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y32_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y33_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y34_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y35_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y36_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y37_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y38_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y39_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y40_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y41_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y42_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y43_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y44_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y45_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y46_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y47_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y48_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y49_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y50_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y51_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y52_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y53_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y54_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y55_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y56_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y57_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y58_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y59_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y60_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y61_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y62_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y63_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y64_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y65_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y66_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y67_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y68_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y69_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y70_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y71_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y72_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y73_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y74_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y75_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y76_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y77_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y78_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y79_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y80_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y81_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y82_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y83_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y84_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y85_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y86_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y87_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y88_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y89_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Y90_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Y91_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Y92_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Y93_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Y94_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Y95_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Y96_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Y97_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Y98_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Y99_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Z01_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Z02_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Z03_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Z04_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Z05_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Z06_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Z07_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "purple_plane_heavy_mesh"
+	name = "Z08_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "burgundy_plane_heavy_mesh"
+	name = "Z09_heavy_plane_entity"
+}
+
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "red_plane_heavy_mesh"
+	name = "Z10_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "orange_plane_heavy_mesh"
+	name = "Z11_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "yellow_plane_heavy_mesh"
+	name = "Z12_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "brown_plane_heavy_mesh"
+	name = "Z13_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "lime_plane_heavy_mesh"
+	name = "Z14_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "green_plane_heavy_mesh"
+	name = "Z15_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "azure_plane_heavy_mesh"
+	name = "Z16_heavy_plane_entity"
+}
+entity = {
+	clone = "XTEMP_heavy_plane_entity"
+	pdxmesh = "blue_plane_heavy_mesh"
+	name = "Z17_heavy_plane_entity"
+}
+
+
+
+
+
+
+
+
+
+
+
+entity = {
+	name = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "orange_light_interwar_plane_mesh"
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_mg_7-92mm_twin" } }
+		event = { time = 0 node = "gun2"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "HUN_fighter_0" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_whistleLayer_light" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } } 
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.110
+}
+
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "azure_light_interwar_plane_mesh"
+	name = "XYZ_azure_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "blue_light_interwar_plane_mesh"
+	name = "XYZ_blue_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "brown_light_interwar_plane_mesh"
+	name = "XYZ_brown_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "burgundy_light_interwar_plane_mesh"
+	name = "XYZ_burgundy_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "green_light_interwar_plane_mesh"
+	name = "XYZ_green_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "lime_light_interwar_plane_mesh"
+	name = "XYZ_lime_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "orange_light_interwar_plane_mesh"
+	name = "XYZ_orange_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "purple_light_interwar_plane_mesh"
+	name = "XYZ_purple_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "red_light_interwar_plane_mesh"
+	name = "XYZ_red_light_interwar_plane_entity"
+}
+entity = {
+	clone = "XYZ_TEMP_light_interwar_plane_entity"
+	pdxmesh = "yellow_light_interwar_plane_mesh"
+	name = "XYZ_yellow_light_interwar_plane_entity"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+entity = {
+	name = "XYZ_TEMP_CAS_plane_entity"
+	pdxmesh = "orange_CAS_plane_mesh"
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "light_tank_attack_barrel_particle" keep_particle = yes sound = { soundeffect = "light_armour_fire" } }
+		event = { time = 0 node = "gun2"	particle = "light_tank_attack_barrel_particle" keep_particle = yes }
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "GER_CAS_2" } }
+		event = { trigger_once = yes sound = { soundeffect = "global_airplane_light_close_layer" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.122
+}
+
+entity = {
+	clone = "XYZ_TEMP_CAS_plane_entity"
+	pdxmesh = "orange_CAS_plane_mesh"
+	name = "XYZ_orange_CAS_plane_entity"
+}
+
+
+
+
+
+entity = {
+	name = "XYZ_TEMP_NAV_bomber_plane_entity"
+	pdxmesh = "orange_NAV_bomber_plane_mesh"
+	
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0 node = "gun2"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { time = 0 node = "gun3"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { time = 0 node = "gun4"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+				
+		
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_idle" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "engine1"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.135
+}
+
+
+entity = {
+	clone = "XYZ_TEMP_NAV_bomber_plane_entity"
+	pdxmesh = "orange_NAV_bomber_plane_mesh"
+	name = "XYZ_orange_NAV_bomber_plane_entity"
+}
+
+
+
+
+
+entity = { 
+	name = "XYZ_TEMP_light_jet_plane_entity"
+	pdxmesh = "generic_plane_jet_mesh"
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_ger_jet_fire" } }
+		event = { time = 0.3 node = "gun2"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 node = "bomb"	particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "engine1"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.19
+}
+
+entity = {
+	clone = "XYZ_TEMP_light_jet_plane_entity"
+	pdxmesh = "orange_light_jet_plane_mesh"
+	name = "XYZ_orange_light_jet_plane_entity"
+}
+
+
+### MEDIUM ###
+
+
+entity = {
+	name = "XYZ_TEMP_medium_interwar_plane_entity"
+	pdxmesh = "orange_medium_interwar_plane_mesh"
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "wep_mg131_single" } }
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "GER_tac_bomber_0" } }
+		event = { trigger_once = yes sound = { soundeffect = "global_airplane_light_close_layer" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "engine1"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.144
+}
+
+entity = {
+	clone = "XYZ_TEMP_medium_interwar_plane_entity"
+	pdxmesh = "orange_medium_interwar_plane_mesh"
+	name = "XYZ_orange_medium_interwar_plane_entity"
+}
+
+
+
+
+
+
+### HEAVY FIGHTER ###
+
+entity = {
+    name = "XYZ_TEMP_heavy_fighter_plane_entity"
+	pdxmesh = "orange_heavy_fighter_plane_mesh"
+	
+	state = { name = "fire" animation = "idle" 
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0 node = "gun2"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		
+	}
+	state = { name = "bomb" animation = "idle" 
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_idle" } }
+	}
+	state = { name = "crash" animation = "idle" 
+		event = { time = 0 node = "engine1"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle" 
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.145
+}
+
+entity = {
+	clone = "XYZ_TEMP_heavy_fighter_plane_entity"
+	pdxmesh = "orange_heavy_fighter_plane_mesh"
+	name = "XYZ_orange_heavy_fighter_plane_entity"
+}
+
+
+
+
+
+
+
+### MEDIUM JET PLANE ###
+
+entity = {
+	name = "XYZ_TEMP_medium_jet_plane_entity"
+	pdxmesh = "orange_medium_jet_plane_mesh"
+
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1" particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0 node = "gun2" particle = "plane_mg_muzzle_particle" keep_particle = yes }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "engine1" particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2" particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.155
+}
+
+entity = {
+	clone = "XYZ_TEMP_medium_jet_plane_entity"
+	pdxmesh = "orange_medium_jet_plane_mesh"
+	name = "XYZ_orange_medium_jet_plane_entity"
+}
+
+
+
+
+
+
+### HEAVY ###
+
+
+
+entity = {
+	name = "XYZ_TEMP_heavy_interwar_plane_entity"
+	pdxmesh = "orange_heavy_interwar_plane_mesh"
+
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 node = "bomb"	particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_medium_idle_01" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "engine1"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.18
+}
+
+
+entity = {
+	clone = "XYZ_TEMP_heavy_interwar_plane_entity"
+	pdxmesh = "orange_heavy_interwar_plane_mesh"
+	name = "XYZ_orange_heavy_interwar_plane_entity"
+}
+
+
+# Maritime Patrol #
+
+entity = {
+	name = "XYZ_TEMP_maritime_patrol_plane_entity"
+	pdxmesh = "orange_maritime_patrol_plane_mesh"
+
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1" particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "engine1" particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine2" particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine3" particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { time = 0 node = "engine4" particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+	}
+	scale = 0.21
+}
+
+entity = {
+	clone = "XYZ_TEMP_maritime_patrol_plane_entity"
+	pdxmesh = "orange_maritime_patrol_plane_mesh"
+	name = "XYZ_orange_maritime_patrol_plane_entity"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,214 @@
+
+#################################
+### LAND DOCTRINE PREFERENCES ###
+#################################
+
+### Mobile Warfare ###
+
+world_at_war_mobile_warfare_plan = {
+	name = "Mobile Warfare Plan"
+	desc = "Mobile Warfare plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_mobile_warfare_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_mobile_warfare_preference_flag}}}
+
+
+	#ai_national_focuses = {
+	#	OG_motorization_effort = 2.0
+	#	OG_cavalry_effort = 2.0
+	#	OG_logistics_effort = 2.0
+	#	OG_maintenance_effort = 2.0
+	#	OG_armor_effort = 2.0
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		armor = 10
+		motorised_infantry = 10
+		cat_mobile_warfare = 1000
+		cat_superior_firepower = 0
+		cat_grand_battle_plan = 0
+		cat_mass_assault = 0
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		motorized_equipment_manufacturer = 2
+		medium_tank_manufacturer = 2
+		army_armored_1 = 5
+		army_armored_2 = 10
+		army_armored_3 = 20
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = X05
+		value = 49
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+### Superior Firepower ###
+
+world_at_war_superior_firepower_plan = {
+	name = "Superior Firepower Plan"
+	desc = "Superior Firepower plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_superior_firepower_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_superior_firepower_preference_flag}}}
+
+
+	#ai_national_focuses = {
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		artillery = 10
+		infantry_weapons = 10
+		cat_mobile_warfare = 0
+		cat_superior_firepower = 1000
+		cat_grand_battle_plan = 0
+		cat_mass_assault = 0
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		artillery_manufacturer = 2
+		army_artillery_1 = 5
+		army_artillery_2 = 10
+		army_artillery_3 = 20
+	}
+	ai_strategy = {
+		type = antagonize
+		id = X05
+		value = 49
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+### Grand Battleplan ###
+
+world_at_war_grand_battleplan_plan = {
+	name = "Grand Battleplan Plan"
+	desc = "Grand Battleplan plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_grand_battleplan_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_grand_battleplan_preference_flag}}}
+
+
+	#ai_national_focuses = {
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		artillery = 10
+		infantry_weapons = 10
+		cat_mobile_warfare = 0
+		cat_superior_firepower = 0
+		cat_grand_battle_plan = 1000
+		cat_mass_assault = 0
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		infantry_equipment_manufacturer = 2
+		army_planning_1 = 5
+		army_planning_2 = 10
+		army_planning_3 = 20
+		army_chief_planning_1 = 5
+		army_chief_planning_2 = 10
+		army_chief_planning_3 = 20
+	}
+	ai_strategy = {
+		type = antagonize
+		id = X05
+		value = 49
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+### Mass Assault ###
+
+world_at_war_mass_assault_plan = {
+	name = "Mass Assault Plan"
+	desc = "Mass Assault plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}}
+
+	#ai_national_focuses = {
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		artillery = 2
+		infantry_weapons = 2
+		cat_mobile_warfare = 0
+		cat_superior_firepower = 0
+		cat_grand_battle_plan = 0
+		cat_mass_assault = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		infantry_equipment_manufacturer = 2
+		army_regrouping_1 = 5
+		army_regrouping_2 = 10
+		army_regrouping_3 = 20
+		army_chief_morale_1 = 5
+		army_chief_morale_2 = 10
+		army_chief_morale_3 = 20
+	}
+	ai_strategy = {
+		type = antagonize
+		id = X05
+		value = 49
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+
+

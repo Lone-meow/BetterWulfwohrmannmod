@@ -1,0 +1,1815 @@
+
+### The first leader that gets generated in each ideology becomes the leader for the entire ideology group. The other ones will just sit invisibly in the background, but can become active through the ideological commitment events you get in the focus tree. Traits are randomized through a startup on_action command. /Snus
+
+####################################
+### DEMOCRATIC STARTING IDEOLOGY ###
+####################################
+
+### SOCIALISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_socialism_trigger = yes
+	}
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = socialism_leader					# token will be TAG_token_base
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	socialism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	despotism_leader = { set_character_flag = current_neutrality_leader_flag }
+
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	fascism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	marxism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+### LIBERALISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_liberalism_trigger = yes
+	}
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	liberalism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	military_junta_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	fascism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	marxism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+### CONSERVATISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_conservatism_trigger = yes
+	}
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	conservatism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	oligarchism_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	nazism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	internationalism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+####################################
+### NEUTRALITY STARTING IDEOLOGY ###
+####################################
+
+### military_junta ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_military_junta_trigger = yes
+	}
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	socialism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	military_junta_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	falangism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	internationalism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+### MILITARY JUNTA STRATOCRACY ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_oligarchism_trigger = yes
+	}
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	liberalism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	oligarchism_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	ultranationalism_leader = { set_character_flag = current_fascism_leader_flag }
+
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	anti_revisionism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+### DESPOTISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_despotism_trigger = yes
+	}
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	centrism_democratic_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	despotism_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	nazism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	anarchism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+#################################
+### FASCISM STARTING IDEOLOGY ###
+#################################
+
+### NAZISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_gen_nazism_trigger = yes
+	}
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	liberalism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	military_junta_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	nazism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	anti_revisionism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+### FASCISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_fascism_ideology_trigger = yes
+	}
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	socialism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	oligarchism_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	fascism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	anarchism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+###################################
+### COMMUNISM STARTING IDEOLOGY ###
+###################################
+
+### MARXISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_marxism_trigger = yes
+	}
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	conservatism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	theocracy_leader = { set_character_flag = current_neutrality_leader_flag }
+
+	generate_character = {
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	ultranationalism_leader = { set_character_flag = current_fascism_leader_flag }
+
+	generate_character = {
+		token_base = fascism_leader
+		country_leader={
+			ideology=fascism_ideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	marxism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+### ANARCHISM ###
+
+every_possible_country = {
+	limit = {
+		starting_ideology_anarchist_communism_trigger = yes
+	}
+
+	generate_character = {	# DEMOCRATIC LEADER
+		token_base = conservatism_leader
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	conservatism_leader = { set_character_flag = current_democratic_leader_flag }
+	generate_character = {
+		token_base = centrism_democratic_leader
+		country_leader={
+			ideology=centrism_democratic
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = socialism_leader
+		country_leader={
+			ideology=socialism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = liberalism_leader
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# NEUTRALITY LEADER
+		token_base = despotism_leader
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	despotism_leader = { set_character_flag = current_neutrality_leader_flag }
+	generate_character = {
+		token_base = theocracy_leader
+		country_leader={
+			ideology=theocracy
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = oligarchism_leader
+		country_leader={
+			ideology=oligarchism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = military_junta_leader
+		country_leader={
+			ideology=military_junta_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# FASCISM LEADER
+		token_base = falangism_leader
+		country_leader={
+			ideology=falangism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	falangism_leader = { set_character_flag = current_fascism_leader_flag }
+	generate_character = {
+		token_base = ultranationalism_leader
+		country_leader={
+			ideology=ultranationalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base =
+		country_leader={
+			ideology=
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = nazism_leader
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+
+	generate_character = {	# COMMUNISM LEADER
+		token_base = anarchism_leader
+		country_leader={
+			ideology=anarchist_communism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	anarchism_leader = { set_character_flag = current_communism_leader_flag }
+	generate_character = {
+		token_base = internationalism_leader
+		country_leader={
+			ideology=internationalism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = marxism_leader
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+	generate_character = {
+		token_base = anti_revisionism_leader
+		country_leader={
+			ideology=anti_revisionism
+			expire="2000.1.1.1"
+			id=-1
+			traits={ }
+		}
+		portraits = {}
+	}
+}
+
+
+every_possible_country = {				# Looks silly, but no other fucking way to scope these guys... Or wait, maybe there is, but now I've already done all of this so whatever...
+	limit = {
+		is_modded_country_trigger = yes
+	}
+
+	socialism_leader = { set_character_flag = socialism_leader_flag }
+	liberalism_leader = { set_character_flag = liberalism_leader_flag }
+	conservatism_leader = { set_character_flag = conservatism_leader_flag }
+	centrism_democratic_leader = { set_character_flag = centrism_democratic_leader_flag }
+
+	military_junta_leader = { set_character_flag = military_junta_leader_flag }
+	theocracy_leader = { set_character_flag = theocracy_leader_flag }
+	oligarchism_leader = { set_character_flag = oligarchism_leader_flag }
+	despotism_leader = { set_character_flag = despotism_leader_flag }
+
+	nazism_leader = { set_character_flag = nazism_leader_flag }
+	fascism_leader = { set_character_flag = fascism_leader_flag }
+	falangism_leader = { set_character_flag = falangism_leader_flag }
+	ultranationalism_leader = { set_character_flag = ultranationalism_leader_flag }
+
+	marxism_leader = { set_character_flag = marxism_leader_flag }
+	anarchism_leader = { set_character_flag = anarchism_leader_flag }
+	anti_revisionism_leader = { set_character_flag = anti_revisionism_leader_flag }
+	internationalism_leader = { set_character_flag = internationalism_leader_flag }
+
+}
+
+

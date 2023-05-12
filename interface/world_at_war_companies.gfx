@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_OG_generic_train_designer"
+		texturefile = "gfx/interface/companies/OG_generic_train_designer.dds"
+	}
+
+} # SPRITE TYPE END CAT

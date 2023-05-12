@@ -1,0 +1,862 @@
+﻿add_namespace = ChooseYourLeaderSTU
+
+country_event = { # 6 leaders
+	id = ChooseYourLeaderSTU.1
+	title = ChooseYourLeaderSTU.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderSTU.1.a
+		hidden_effect = {
+            random_list = {
+                16 = {
+                    activate_decision = SAF_J_B_M_Hertzog
+                }
+                16 = {
+                    activate_decision = SAF_Jan_Smuts
+                }
+                16 = {
+                    activate_decision = SAF_D_F_Malan
+                }
+				16 = {
+                    activate_decision = SAF_Moses_Kotane
+                }
+				16 = {
+                    activate_decision = SAF_George_Edwin_Brink
+                }
+                16 = {
+                    activate_decision = SAF_Guy_Hallifax
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 80 leaders
+	id = ChooseYourLeaderSTU.2
+	title = ChooseYourLeaderSTU.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderSTU.2.a
+		hidden_effect = {
+            random_list = {
+                1 = {
+                    activate_decision = SOV_Iosif_Stalin
+                }
+                1 = {
+                    activate_decision = SOV_Tsar_Joseph_I
+                }
+                1 = {
+                    activate_decision = SOV_Konstantin_Rodzaevsky
+                }
+				1 = {
+                    activate_decision = SOV_Vladimir_III
+                }
+				1 = {
+                    activate_decision = SOV_Tsar_Vsevolod_I
+                }
+				1 = {
+                    activate_decision = SOV_Metropolitan_Meletius
+                }
+                1 = {
+                    activate_decision = SOV_The_Supreme_Soviet
+                }
+				1 = {
+                    activate_decision = SOV_The_Provisional_Government
+                }
+                1 = {
+                    activate_decision = SOV_Lev_Trotsky
+                }
+                1 = {
+                    activate_decision = SOV_Lavrenty_Beriya
+                }
+				1 = {
+                    activate_decision = SOV_Ivan_Smirnov
+                }
+				1 = {
+                    activate_decision = SOV_Nikolay_Bukharin
+                }
+                1 = {
+                    activate_decision = SOV_Aleksey_Rykov
+                }
+				1 = {
+                    activate_decision = SOV_Grigory_Zinovyev
+                }
+                1 = {
+                    activate_decision = SOV_Lev_Kamenev
+                }
+                1 = {
+                    activate_decision = SOV_Viktor_Baydalakov
+                }
+				1 = {
+                    activate_decision = SOV_Alexandra_Kollontai
+                }
+				1 = {
+                    activate_decision = SOV_Alexandra_Kollontai_2
+                }
+                1 = {
+                    activate_decision = SOV_Georgy_Zhukov
+                }
+				1 = {
+                    activate_decision = SOV_Konstantin_Rokossovsky
+                }
+                1 = {
+                    activate_decision = SOV_Aleksandr_Vasilevsky
+                }
+                1 = {
+                    activate_decision = SOV_Boris_Shaposhnikov
+                }
+				1 = {
+                    activate_decision = SOV_Nikolai_Vatutin
+                }
+				1 = {
+                    activate_decision = SOV_Ivan_Konev
+                }
+                1 = {
+                    activate_decision = SOV_Semyon_Timoshenko
+                }
+				1 = {
+                    activate_decision = SOV_Kliment_Voroshilov
+                }
+                1 = {
+                    activate_decision = SOV_Mikhail_Tukhachevsky
+                }
+                1 = {
+                    activate_decision = SOV_Semyon_Budyonny
+                }
+				1 = {
+                    activate_decision = SOV_Aleksandr_Yegorov
+                }
+				1 = {
+                    activate_decision = SOV_Vasily_Blyukher
+                }
+                1 = {
+                    activate_decision = SOV_Anton_Denikin
+                }
+				1 = {
+                    activate_decision = SOV_Pyotr_Krasnov
+                }
+                1 = {
+                    activate_decision = SOV_Konstantin_Nechayev
+                }
+                1 = {
+                    activate_decision = SOV_Vladimir_Kosmin
+                }
+				1 = {
+                    activate_decision = SOV_Aleksandr_Rodzyanko
+                }
+				1 = {
+                    activate_decision = SOV_Andrey_Shkuro
+                }
+                1 = {
+                    activate_decision = SOV_Ivan_Chernyakhovsky
+                }
+				1 = {
+                    activate_decision = SOV_Issa_Pliyev
+                }
+                1 = {
+                    activate_decision = SOV_Leonid_Govorov
+                }
+                1 = {
+                    activate_decision = SOV_Grigory_Kulik
+                }
+				1 = {
+                    activate_decision = SOV_Kirill_Meretskov
+                }
+				1 = {
+                    activate_decision = SOV_Filipp_Golikov
+                }
+                1 = {
+                    activate_decision = SOV_Andrey_Yeryomenko
+                }
+				1 = {
+                    activate_decision = SOV_Georgiy_Zakharov
+                }
+				1 = {
+                    activate_decision = SOV_Yakov_Cherevichenko
+                }
+				1 = {
+                    activate_decision = SOV_Max_Reyter
+                }
+				1 = {
+                    activate_decision = SOV_Nikandr_Chibisov
+                }
+				1 = {
+                    activate_decision = SOV_Vasily_Kuznetsov
+                }
+				1 = {
+                    activate_decision = SOV_Andrey_Vlasov
+                }
+				1 = {
+                    activate_decision = SOV_Ivan_Fedyuninsky
+                }
+				1 = {
+                    activate_decision = SOV_Maksim_Purkayev
+                }
+				1 = {
+                    activate_decision = SOV_Kuzma_Galitsky
+                }
+				1 = {
+                    activate_decision = SOV_Markian_Popov
+                }
+				1 = {
+                    activate_decision = SOV_Nikolai_Berzarin
+                }
+				1 = {
+                    activate_decision = SOV_Alexander_Gorbatov
+                }
+				1 = {
+                    activate_decision = SOV_Kirill_Moskalenko
+                }
+				1 = {
+                    activate_decision = SOV_Dmitry_Lelyushenko
+                }
+				1 = {
+                    activate_decision = SOV_Andrei_Grechko
+                }
+				1 = {
+                    activate_decision = SOV_Rodion_Malinovsky
+                }
+				1 = {
+                    activate_decision = SOV_Vasily_Chuikov
+                }
+				1 = {
+                    activate_decision = SOV_Vitaly_Primakov
+                }
+				1 = {
+                    activate_decision = SOV_Vasily_Korzh
+                }
+				1 = {
+                    activate_decision = SOV_Sidor_Kovpak
+                }
+				1 = {
+                    activate_decision = SOV_Lev_Dovator
+                }
+				1 = {
+                    activate_decision = SOV_Pavel_Rybalko
+                }
+				1 = {
+                    activate_decision = SOV_Grigory_Semyonov
+                }
+				1 = {
+                    activate_decision = SOV_Filipp_Oktyabrskiy
+                }
+				1 = {
+                    activate_decision = SOV_Sergey_Gorshkov
+                }
+				1 = {
+                    activate_decision = SOV_Gordey_Levchenko
+                }
+				1 = {
+                    activate_decision = SOV_Arseniy_Golovko
+                }
+				1 = {
+                    activate_decision = SOV_Vladimir_Kasatonov
+                }
+				1 = {
+                    activate_decision = SOV_Hazi_Aslanov
+                }
+				1 = {
+                    activate_decision = SOV_Pdxcon_Magic_Winner
+                }
+				1 = {
+                    activate_decision = SOV_Alexander_Rado
+                }
+				1 = {
+                    activate_decision = SOV_Kim_Philby
+                }
+				1 = {
+                    activate_decision = SOV_Richard_Sorge
+                }
+				1 = {
+                    activate_decision = SOV_Dmitry_Medvedev
+                }
+				1 = {
+                    activate_decision = SOV_Nikolai_Kuznetsov
+                }
+				1 = {
+                    activate_decision = SOV_Ursula_Kuczynski
+                }
+				1 = {
+                    activate_decision = SOV_Ramon_Mercader
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+	
+country_event = { # 45 leaders
+	id = ChooseYourLeaderSTU.3
+	title = ChooseYourLeaderSTU.3.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderSTU.3.a
+		hidden_effect = {
+            random_list = {
+                2 = {
+                    activate_decision = SPR_Niceto_Alcala_Zamora
+                }
+                2 = {
+                    activate_decision = SPR_Manuel_Azana
+                }
+                2 = {
+                    activate_decision = SPR_Jose_Diaz
+                }
+				2 = {
+                    activate_decision = SPR_Jose_Diaz_2
+                }
+                2 = {
+                    activate_decision = SPR_Francisco_Franco
+                }
+                2 = {
+                    activate_decision = SPR_Francisco_Franco_2
+                }
+				2 = {
+                    activate_decision = SPR_Jose_Antonio_Primo_de_Rivera
+                }
+                2 = {
+                    activate_decision = SPR_Manuel_Fal_Conde
+                }
+                2 = {
+                    activate_decision = SPR_Emilio_Mola
+                }
+				2 = {
+                    activate_decision = SPR_Julian_Gorkin
+                }
+                2 = {
+                    activate_decision = SPR_Anarchist_Commune
+                }
+                2 = {
+                    activate_decision = SPR_Jose_Sanjurjo
+                }
+				2 = {
+                    activate_decision = SPR_Javier_I
+                }
+                2 = {
+                    activate_decision = SPR_Alfonso_XIII
+                }
+                2 = {
+                    activate_decision = SPR_Jaime_IV
+                }
+				2 = {
+                    activate_decision = SPR_Alfonso_Carlos_I
+                }
+				2 = {
+                    activate_decision = SPR_Military_Junta
+                }
+                2 = {
+                    activate_decision = SPR_Vicente_Rojo_Lluch
+                }
+                2 = {
+                    activate_decision = SPR_Jose_Miaja
+                }
+				2 = {
+                    activate_decision = SPR_Jose_Asensio_Torrado
+                }
+                2 = {
+                    activate_decision = SPR_Valentin_Gonzalez
+                }
+				2 = {
+                    activate_decision = SPR_Enrique_Lister
+                }
+                2 = {
+                    activate_decision = SPR_Juan_Modesto
+                }
+				2 = {
+                    activate_decision = SPR_Antonio_Cordon_Garcia
+                }
+                2 = {
+                    activate_decision = SPR_Janos_Galicz
+                }
+                2 = {
+                    activate_decision = SPR_Mohamed_Meziane
+                }
+				2 = {
+                    activate_decision = SPR_Gonzalo_Queipo_de_Llano
+                }
+                2 = {
+                    activate_decision = SPR_Juan_Yague
+                }
+                2 = {
+                    activate_decision = SPR_Agustin_Munoz_Grandes
+                }
+				2 = {
+                    activate_decision = SPR_Jose_Enrique_Varela
+                }
+                2 = {
+                    activate_decision = SPR_Miguel_Cabanellas
+                }
+                2 = {
+                    activate_decision = SPR_Jose_Millan_Astray
+                }
+				2 = {
+                    activate_decision = SPR_Buenaventura_Durruti
+                }
+                2 = {
+                    activate_decision = SPR_Eduardo_Medrano_Rivas
+                }
+                2 = {
+                    activate_decision = SPR_Lina_Odena
+                }
+				2 = {
+                    activate_decision = SPR_Cipriano_Mera
+                }
+                2 = {
+                    activate_decision = SPR_Mate_Zalka
+                }
+                2 = {
+                    activate_decision = SPR_Miguel_Buiza_Fernandez_Palacios
+                }
+				2 = {
+                    activate_decision = SPR_Luis_Carrero_Blanco
+                }
+				2 = {
+                    activate_decision = SPR_Juan_Pujol
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 35 leaders
+	id = ChooseYourLeaderSTU.4
+	title = ChooseYourLeaderSTU.4.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderSTU.4.a
+		hidden_effect = {
+            random_list = {
+                2 = {
+                    activate_decision = TUR_Ismet_Inonu
+                }
+                2 = {
+                    activate_decision = TUR_Mustafa_Kemal_Ataturk
+                }
+                2 = {
+                    activate_decision = TUR_Sefik_Husnu
+                }
+				2 = {
+                    activate_decision = TUR_Celal_Bayar
+                }
+                2 = {
+                    activate_decision = TUR_Mehmet_Recep_Peker
+                }
+                2 = {
+                    activate_decision = TUR_Fevzi_Cakmak
+                }
+				2 = {
+                    activate_decision = TUR_Sevket_Sureyya_Aydemir
+                }
+                2 = {
+                    activate_decision = TUR_Adnan_Menderes
+                }
+                2 = {
+                    activate_decision = TUR_Halife_Abdulmecid_Efendi
+                }
+				2 = {
+                    activate_decision = TUR_Refet_Pasha
+                }
+                2 = {
+                    activate_decision = TUR_Abdulmejid_II
+                }
+                2 = {
+                    activate_decision = TUR_Durrusehvar_I
+                }
+				2 = {
+                    activate_decision = TUR_Huseyin_Nihal_Atsiz
+                }
+				2 = {
+                    activate_decision = TUR_Fahrettin_Altay
+                }
+                2 = {
+                    activate_decision = TUR_Kazim_Orbay
+                }
+                2 = {
+                    activate_decision = TUR_Cemil_Cahit_Toydemir
+                }
+				2 = {
+                    activate_decision = TUR_Izzettin_Calıslar
+                }
+                2 = {
+                    activate_decision = TUR_Abdurrahman_Nafiz_Gurman
+                }
+                2 = {
+                    activate_decision = TUR_Kazim_Karabekir
+                }
+				2 = {
+                    activate_decision = TUR_Mustafa_Muglali
+                }
+                2 = {
+                    activate_decision = TUR_Mehmet_Salih_Omurtak
+                }
+                2 = {
+                    activate_decision = TUR_Hayrullah_Fisek
+                }
+				2 = {
+                    activate_decision = TUR_Mehmet_Nuri_Yamut
+                }
+                2 = {
+                    activate_decision = TUR_Hans_von_Luck
+                }
+                2 = {
+                    activate_decision = TUR_Wilhelm_Ritter_von_Thoma
+                }
+				2 = {
+                    activate_decision = TUR_Hazi_Aslanov
+                }
+                2 = {
+                    activate_decision = TUR_Mustafa_Kemal_Ataturk_2
+                }
+                2 = {
+                    activate_decision = TUR_Fakhri_Pasha
+                }
+				2 = {
+                    activate_decision = TUR_Ahmet_Fevzi_Pasha
+                }
+                2 = {
+                    activate_decision = TUR_Mehmet_Esat_Pasha
+                }
+                2 = {
+                    activate_decision = TUR_Sadik_Altincan
+                }
+				2 = {
+                    activate_decision = TUR_Sukru_Okan
+                }
+                2 = {
+                    activate_decision = TUR_Mehmet_Ali_Ulgen
+                }
+                2 = {
+                    activate_decision = TUR_Ferdinando_Umberto_Filippo_Adalberto
+                }
+				2 = {
+                    activate_decision = TUR_Ruzi_Nazar
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 49 leaders
+	id = ChooseYourLeaderSTU.5
+	title = ChooseYourLeaderSTU.5.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderSTU.5.a
+		hidden_effect = {
+            random_list = {
+                2 = {
+                    activate_decision = USA_Franklin_Delano_Roosevelt
+                }
+                2 = {
+                    activate_decision = USA_William_Dudley_Pelley
+                }
+                2 = {
+                    activate_decision = USA_Earl_Browder
+                }
+				2 = {
+                    activate_decision = USA_Alf_Landon
+                }
+                2 = {
+                    activate_decision = USA_Wendell_Wilkie
+                }
+                2 = {
+                    activate_decision = USA_Thomas_E_Dewey
+                }
+				2 = {
+                    activate_decision = USA_Harry_S_Truman
+                }
+                2 = {
+                    activate_decision = USA_Adam_Hilt
+                }
+                2 = {
+                    activate_decision = USA_Charles_Lindbergh
+                }
+				2 = {
+                    activate_decision = USA_Wallis_I
+                }
+                2 = {
+                    activate_decision = USA_George_S_Patton
+                }
+                2 = {
+                    activate_decision = USA_Omar_Bradley
+                }
+				2 = {
+                    activate_decision = USA_Dwight_D_Eisenhower
+                }
+                2 = {
+                    activate_decision = USA_Geoffrey_Keyes
+                }
+                2 = {
+                    activate_decision = USA_Lucian_Truscott
+                }
+				2 = {
+                    activate_decision = USA_Mark_Clark
+                }
+                2 = {
+                    activate_decision = USA_Douglas_MacArthur
+                }
+                2 = {
+                    activate_decision = USA_Walter_Krueger
+                }
+				2 = {
+                    activate_decision = USA_Lloyd_Fredendall
+                }
+                2 = {
+                    activate_decision = USA_Leslie_McNair
+                }
+                2 = {
+                    activate_decision = USA_Jonathan_Wainwright
+                }
+				2 = {
+                    activate_decision = USA_Russell_Hartle
+                }
+                2 = {
+                    activate_decision = USA_Leonard_Gerow
+                }
+                2 = {
+                    activate_decision = USA_Edward_Brooks
+                }
+				2 = {
+                    activate_decision = USA_Clarence_Huebner
+                }
+                2 = {
+                    activate_decision = USA_Alexander_Patch
+                }
+                2 = {
+                    activate_decision = USA_William_Simpson
+                }
+				2 = {
+                    activate_decision = USA_J_Lawton_Collins
+                }
+                2 = {
+                    activate_decision = USA_Courtney_Hodges
+                }
+                2 = {
+                    activate_decision = USA_Joseph_Stilwell
+                }
+				2 = {
+                    activate_decision = USA_Oscar_Griswold
+                }
+                2 = {
+                    activate_decision = USA_Maurice_Rose
+                }
+                2 = {
+                    activate_decision = USA_Alexander_Vandegrift
+                }
+				2 = {
+                    activate_decision = USA_Fritz_Kuhn
+                }
+				2 = {
+                    activate_decision = USA_Carl_Spaatz
+                }
+                2 = {
+                    activate_decision = USA_Henry_H_Arnold
+                }
+				2 = {
+                    activate_decision = USA_Ira_C_Eaker
+                }
+				2 = {
+                    activate_decision = USA_Jimmy_Doolittle
+                }
+                2 = {
+                    activate_decision = USA_Ernest_King
+                }
+                2 = {
+                    activate_decision = USA_Chester_W_Nimitz
+                }
+				2 = {
+                    activate_decision = USA_William_Halsey_Jr
+                }
+                2 = {
+                    activate_decision = USA_Frank_Jack_Fletcher
+                }
+                2 = {
+                    activate_decision = USA_Raymond_A_Spruance
+                }
+				2 = {
+                    activate_decision = USA_Harold_Rainsford_Stark
+                }
+                2 = {
+                    activate_decision = USA_Arleigh_Burke
+                }
+                2 = {
+                    activate_decision = USA_Charles_M_Cooke_Jr
+                }
+				2 = {
+                    activate_decision = USA_Nathan_F_Twining
+                }
+                2 = {
+                    activate_decision = USA_Josephine_Baker
+                }
+                2 = {
+                    activate_decision = USA_Virginia_Hall
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 43 leaders
+	id = ChooseYourLeaderSTU.6
+	title = ChooseYourLeaderSTU.6.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderSTU.6.a
+		hidden_effect = {
+            random_list = {
+                2 = {
+                    activate_decision = SWI_Federal_Assembly
+                }
+                2 = {
+                    activate_decision = SWI_Federal_Council
+                }
+                2 = {
+                    activate_decision = SWI_Federal_Council_2
+                }
+				2 = {
+                    activate_decision = SWI_Max_Leo_Keller
+                }
+                2 = {
+                    activate_decision = SWI_Henri_Guisan
+                }
+                2 = {
+                    activate_decision = SWI_Albert_Meyer
+                }
+				2 = {
+                    activate_decision = SWI_Johannes_Baumann
+                }
+                2 = {
+                    activate_decision = SWI_Herman_Obrecht
+                }
+                2 = {
+                    activate_decision = SWI_Karl_Kobelt
+                }
+				2 = {
+                    activate_decision = SWI_Max_Petitpierre
+                }
+                2 = {
+                    activate_decision = SWI_Marcel_Pilet_Golaz
+                }
+                2 = {
+                    activate_decision = SWI_Walther_Stampfli
+                }
+				2 = {
+                    activate_decision = SWI_Walter_Stucki
+                }
+                2 = {
+                    activate_decision = SWI_Eduard_Von_Steiger
+                }
+                2 = {
+                    activate_decision = SWI_Friedrich_Wahlen
+                }
+				2 = {
+                    activate_decision = SWI_Rudolf_Minger
+                }
+                2 = {
+                    activate_decision = SWI_Carl_Stucki
+                }
+                2 = {
+                    activate_decision = SWI_August_Lindt
+                }
+				2 = {
+                    activate_decision = SWI_Saly_Mayer
+                }
+                2 = {
+                    activate_decision = SWI_Philip_Etter
+                }
+                2 = {
+                    activate_decision = SWI_Enrico_Celio
+                }
+				2 = {
+                    activate_decision = SWI_Ernst_Nobs
+                }
+                2 = {
+                    activate_decision = SWI_Robert_Grimm
+                }
+                2 = {
+                    activate_decision = SWI_Hans_Oprecht
+                }
+				2 = {
+                    activate_decision = SWI_Max_Weber
+                }
+                2 = {
+                    activate_decision = SWI_Jakob_Schaffner
+                }
+                2 = {
+                    activate_decision = SWI_Robert_Tobler
+                }
+				2 = {
+                    activate_decision = SWI_Rolf_Henne
+                }
+                2 = {
+                    activate_decision = SWI_Adolf_Furrer
+                }
+                2 = {
+                    activate_decision = SWI_Hans_Hausamann
+                }
+				2 = {
+                    activate_decision = SWI_Clara_Thalmann
+                }
+                2 = {
+                    activate_decision = SWI_Lucien_Tronchet
+                }
+                2 = {
+                    activate_decision = SWI_Max_Waibel
+                }
+				2 = {
+                    activate_decision = SWI_Jakob_Labhart
+                }
+				2 = {
+                    activate_decision = SWI_Jakob_Huber
+                }
+                2 = {
+                    activate_decision = SWI_Roger_Masson
+                }
+				2 = {
+                    activate_decision = SWI_Giuseppe_Motta
+                }
+				2 = {
+                    activate_decision = SWI_Ernst_Wetter
+                }
+                2 = {
+                    activate_decision = SWI_Georg_von_Trapp
+                }
+                2 = {
+                    activate_decision = SWI_Rudolf_Roessler
+                }
+				2 = {
+                    activate_decision = SWI_Robert_Eibel
+                }
+                2 = {
+                    activate_decision = SWI_Franz_Riedweg
+                }
+                2 = {
+                    activate_decision = SWI_David_Frankfurter
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

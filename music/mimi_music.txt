@@ -1,0 +1,33 @@
+music_station = "PB_Original_C"
+
+music = {
+	song = "ANewWorld"
+}
+
+music = {
+	song = "Despondance"
+}
+
+music = {
+	song = "ItHungers"
+}
+
+music = {
+	song = "Misere"
+}
+
+music = {
+	song = "Mefiant"
+}
+
+music = {
+	song = "PunchIn"
+}
+
+music = {
+	song = "Razormaiden"
+}
+
+music = {
+	song = "Requiem"
+}

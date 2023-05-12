@@ -1,0 +1,29 @@
+
+state={
+	id=846
+	name="STATE_846"
+	manpower = 160553
+	state_category = town
+	resources={
+		aluminium=15 # was: 24 
+	}
+	history={
+		owner = X98
+		victory_points = { 9600 1 }
+		buildings = {
+			infrastructure = 2 
+			industrial_complex = 1
+		}
+		add_core_of = X98
+		1935.1.2 = {
+			owner = Y02
+			controller = Y02
+			add_core_of = Y02
+			remove_core_of = X98
+		}
+	}
+	provinces={
+		9600 3641 
+	}
+	local_supplies=0.0  
+}

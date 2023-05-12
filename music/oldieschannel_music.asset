@@ -1,0 +1,136 @@
+music_station = "PB_Oldies"
+
+music = {
+	name = "Music_for_Night_People"
+	file = "Music_for_Night_People.ogg"
+}
+
+music = {
+	name = "How_Deep_is_the_Ocean"
+	file = "How_Deep_is_the_Ocean.ogg"
+}
+
+music = {
+	name = "Change_My_Tune"
+	file = "Change_My_Tune.ogg"
+}
+
+music = {
+	name = "My_Foolish_Heart"
+	file = "My_Foolish_Heart.ogg"
+}
+
+music = {
+	name = "Nearer_My_God"
+	file = "Nearer_My_God.ogg"
+}
+
+music = {
+	name = "Sposin"
+	file = "Sposin.ogg"
+}
+
+music = {
+	name = "This_Time_Its_Real"
+	file = "This_Time_Its_Real.ogg"
+}
+
+music = {
+	name = "You_were_meant_for_me"
+	file = "You_were_meant_for_me.ogg"
+}
+
+music = {
+	name = "Everybody_Loves_My_Baby"
+	file = "Everybody_Loves_My_Baby.ogg"
+}
+
+music = {
+	name = "Roses_in_December"
+	file = "Roses_in_December.ogg"
+}
+
+music = {
+	name = "A_Little_Birdie"
+	file = "A_Little_Birdie.ogg"
+}
+
+music = {
+	name = "Banana_Bones"
+	file = "Banana_Bones.ogg"
+}
+
+music = {
+	name = "Way_Back_Home"
+	file = "Way_Back_Home.ogg"
+}
+
+music = {
+	name = "Meet_Again"
+	file = "Meet_Again.ogg"
+}
+
+music = {
+	name = "End_of_the_World"
+	file = "End_of_the_World.ogg"
+}
+
+music = {
+	name = "Long_Long_Time"
+	file = "Long_Long_Time.ogg"
+}
+
+music = {
+	name = "Shboom"
+	file = "Shboom.ogg"
+}
+
+music = {
+	name = "You_were_there"
+	file = "You_were_there.ogg"
+}
+
+music = {
+	name = "Heartaches"
+	file = "Heartaches.ogg"
+}
+
+music = {
+	name = "Lullaby_Leaves"
+	file = "Lullaby_Leaves.ogg"
+}
+
+music = {
+	name = "St_James_Infirmary"
+	file = "St_James_Infirmary.ogg"
+}
+
+music = {
+	name = "Misbehavin"
+	file = "Misbehavin.ogg"
+}
+
+music = {
+	name = "Forgotten_Now"
+	file = "Forgotten_Now.ogg"
+}
+
+music = {
+	name = "Dream_a_Little_Dream"
+	file = "Dream_a_Little_Dream.ogg"
+}
+
+music = {
+	name = "Midnight_Stars"
+	file = "Midnight_Stars.ogg"
+}
+
+music = {
+	name = "Jitters"
+	file = "Jitters.ogg"
+}
+
+music = {
+	name = "Aint_Got_Nobody"
+	file = "Aint_Got_Nobody.ogg"
+}

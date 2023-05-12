@@ -1,0 +1,36 @@
+
+state={
+	id=184
+	name="STATE_184"
+	manpower = 382500
+
+	state_category = rural
+
+	resources={
+		chromium=11.000
+	}
+
+	history={
+		victory_points = {
+			11905 1 
+		}
+		owner = Y09
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+		add_core_of = Y09
+		1935.1.2 = {
+			owner = Y08
+			controller = Y08
+			add_core_of = Y08
+		}
+	}
+
+	provinces={
+		9791 9930 11774 11905 
+	}
+
+	local_supplies=9.0 
+}

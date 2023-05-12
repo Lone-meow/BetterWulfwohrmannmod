@@ -1,0 +1,1065 @@
+OG_debug_flag_decision_category = {
+
+###
+
+	TEST_flag_decision = {
+		icon = generic_research
+
+		available = {
+
+		}
+		visible = {
+			is_debug = yes
+			always = no
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	drop_flag_decision = {
+		icon = generic_break_treaty
+
+		available = {
+		}
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			drop_cosmetic_tag = yes
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+### 1 ###
+
+	ideology_group_1_flag_options_SHOW = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			NOT = {has_country_flag = show_ideology_group_1_flag_options_flag}
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = show_ideology_group_1_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_options_HIDE = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = show_ideology_group_1_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+	ideology_group_1_flag_decision_red = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_red}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_red
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_orange = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_orange}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_orange
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_brown = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_brown}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_brown
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_yellow = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_yellow}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_yellow
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_lime = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_lime}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_lime
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_green = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_green}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_green
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_azure = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_azure}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_azure
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_blue = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_blue}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_blue
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_purple = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_purple}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_purple
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_1_flag_decision_burgundy = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_1_burgundy}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_1_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_1_burgundy
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+### 2 ###
+
+	ideology_group_2_flag_options_SHOW = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			NOT = {has_country_flag = show_ideology_group_2_flag_options_flag}
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = show_ideology_group_2_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_options_HIDE = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = show_ideology_group_2_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+	ideology_group_2_flag_decision_red = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_red}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_red
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_orange = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_orange}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_orange
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_brown = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_brown}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_brown
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_yellow = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_yellow}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_yellow
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_lime = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_lime}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_lime
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_green = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_green}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_green
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_azure = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_azure}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_azure
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_blue = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_blue}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_blue
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_purple = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_purple}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_purple
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_2_flag_decision_burgundy = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_2_burgundy}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_2_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_2_burgundy
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+### 3 ###
+
+	ideology_group_3_flag_options_SHOW = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			NOT = {has_country_flag = show_ideology_group_3_flag_options_flag}
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = show_ideology_group_3_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_options_HIDE = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = show_ideology_group_3_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+	ideology_group_3_flag_decision_red = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_red}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_red
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_orange = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_orange}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_orange
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_brown = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_brown}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_brown
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_yellow = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_yellow}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_yellow
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_lime = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_lime}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_lime
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_green = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_green}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_green
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_azure = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_azure}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_azure
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_blue = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_blue}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_blue
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_purple = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_purple}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_purple
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_3_flag_decision_burgundy = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_3_burgundy}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_3_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_3_burgundy
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+### 4 ###
+
+	ideology_group_4_flag_options_SHOW = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			NOT = {has_country_flag = show_ideology_group_4_flag_options_flag}
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = show_ideology_group_4_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_options_HIDE = {
+		icon = generic_decision
+
+		available = {
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = show_ideology_group_4_flag_options_flag
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+	ideology_group_4_flag_decision_red = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_red}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_red
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_orange = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_orange}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_orange
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_brown = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_brown}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_brown
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_yellow = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_yellow}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_yellow
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_lime = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_lime}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_lime
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_green = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_green}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_green
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_azure = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_azure}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_azure
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_blue = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_blue}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_blue
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_purple = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_purple}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_purple
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	ideology_group_4_flag_decision_burgundy = {
+		icon = generic_form_nation
+
+		available = {
+			NOT = {has_cosmetic_tag = XYZ_4_burgundy}
+		}
+		visible = {
+			has_country_flag = show_ideology_group_4_flag_options_flag
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_cosmetic_tag = XYZ_4_burgundy
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+
+} #CAT END
+
+

@@ -1,0 +1,3627 @@
+ on_actions = {
+	on_startup = {
+		effect = {
+			
+#########################
+### STATE INTEGRATION ###
+#########################
+
+		### State Categories ###
+		# megalopolis				# 1
+		# metropolis 				# 2
+		# large_city  				# 3
+		# city         				# 4
+		# large_town   				# 5
+		# town        				# 6
+		# rural        				# 7
+		# pastoral    				# 8
+		# small_island 				# 9
+		# tiny_island				# 10
+		# enclave      				# 11
+		# wasteland   				# 12
+
+
+			### MEGALOPOLIS ###
+			every_state = {
+				limit = {
+					has_state_category = megalopolis
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 120 }
+				set_variable = { OG_peaceful_manpower_cost					= 1200 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 1200 }
+
+				set_variable = { OG_forceful_manpower_cost					= 12000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 12000 }
+			}
+
+			### METROPOLIS ###
+			every_state = {
+				limit = {
+					has_state_category = metropolis
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 110 }
+				set_variable = { OG_peaceful_manpower_cost					= 1100 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 1100 }
+
+				set_variable = { OG_forceful_manpower_cost					= 11000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 11000 }
+			}
+
+			### LARGE CITY ###
+			every_state = {
+				limit = {
+					has_state_category = large_city
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 100 }
+				set_variable = { OG_peaceful_manpower_cost					= 1000 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 1000 }
+
+				set_variable = { OG_forceful_manpower_cost					= 10000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 10000 }
+			}
+
+			### CITY ###
+			every_state = {
+				limit = {
+					has_state_category = city
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 90 }
+				set_variable = { OG_peaceful_manpower_cost					= 900 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 900 }
+
+				set_variable = { OG_forceful_manpower_cost					= 9000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 9000 }
+			}
+
+			### LARGE TOWN ###
+			every_state = {
+				limit = {
+					has_state_category = large_town
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 80 }
+				set_variable = { OG_peaceful_manpower_cost					= 800 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 800 }
+
+				set_variable = { OG_forceful_manpower_cost					= 8000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 8000 }
+			}
+
+			### TOWN ###
+			every_state = {
+				limit = {
+					has_state_category = town
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 70 }
+				set_variable = { OG_peaceful_manpower_cost					= 700 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 700 }
+
+				set_variable = { OG_forceful_manpower_cost					= 7000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 7000 }
+			}
+
+			### RURAL ###
+			every_state = {
+				limit = {
+					has_state_category = rural
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 60 }
+				set_variable = { OG_peaceful_manpower_cost					= 600 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 600 }
+
+				set_variable = { OG_forceful_manpower_cost					= 6000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 6000 }
+			}
+
+			### PASTORAL ###
+			every_state = {
+				limit = {
+					has_state_category = pastoral
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 50 }
+				set_variable = { OG_peaceful_manpower_cost					= 500 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 500 }
+
+				set_variable = { OG_forceful_manpower_cost					= 5000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 5000 }
+			}
+
+			### SMALL ISLAND ###
+			every_state = {
+				limit = {
+					has_state_category = small_island
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 40 }
+				set_variable = { OG_peaceful_manpower_cost					= 400 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 400 }
+
+				set_variable = { OG_forceful_manpower_cost					= 4000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 4000 }
+			}
+
+			### TINY ISLAND ###
+			every_state = {
+				limit = {
+					has_state_category = tiny_island
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 30 }
+				set_variable = { OG_peaceful_manpower_cost					= 300 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 300 }
+
+				set_variable = { OG_forceful_manpower_cost					= 3000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 3000 }
+			}
+
+			### ENCLAVE ###
+			every_state = {
+				limit = {
+					has_state_category = enclave
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 20 }
+				set_variable = { OG_peaceful_manpower_cost					= 200 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 200 }
+
+				set_variable = { OG_forceful_manpower_cost					= 2000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 2000 }
+			}
+
+			### WASTELAND ###
+			every_state = {
+				limit = {
+					has_state_category = wasteland
+				}
+				set_variable = { OG_peaceful_political_power_cost			= 10 }
+				set_variable = { OG_peaceful_manpower_cost					= 100 }
+				set_variable = { OG_peaceful_infantry_equipment_cost		= 100 }
+
+				set_variable = { OG_forceful_manpower_cost					= 1000 }
+				set_variable = { OG_forceful_infantry_equipment_cost		= 1000 }
+			}
+
+			### GAME RULE - DEFAULT ###
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL
+						option = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL_DEFAULT
+					}
+				}
+				every_state = {
+					set_variable = { OG_peaceful_compliance_requirement			= 60 }
+					set_variable = { OG_peaceful_resistance_requirement			= 20 }
+
+					set_variable = { OG_forceful_compliance_requirement			= 30 }
+					set_variable = { OG_forceful_resistance_requirement			= 40 }
+				}
+			}
+
+
+			### GAME RULE - HARD ###
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL
+						option = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL_HARD
+					}
+				}
+				every_state = {
+					set_variable = { OG_peaceful_compliance_requirement			= 65 }
+					set_variable = { OG_peaceful_resistance_requirement			= 15 }
+
+					set_variable = { OG_forceful_compliance_requirement			= 35 }
+					set_variable = { OG_forceful_resistance_requirement			= 35 }
+				}
+			}
+
+			### GAME RULE - EXTREME ###
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL
+						option = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL_EXTREME
+					}
+				}
+				every_state = {
+					set_variable = { OG_peaceful_compliance_requirement			= 70 }
+					set_variable = { OG_peaceful_resistance_requirement			= 10 }
+
+					set_variable = { OG_forceful_compliance_requirement			= 40 }
+					set_variable = { OG_forceful_resistance_requirement			= 30 }
+				}
+			}
+			### GAME RULE - EASY ###
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL
+						option = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL_EASY
+					}
+				}
+				every_state = {
+					set_variable = { OG_peaceful_compliance_requirement			= 55 }
+					set_variable = { OG_peaceful_resistance_requirement			= 25 }
+
+					set_variable = { OG_forceful_compliance_requirement			= 25 }
+					set_variable = { OG_forceful_resistance_requirement			= 45 }
+				}
+			}
+
+			### GAME RULE - MINIMAL ###
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL
+						option = WORLD_AT_WAR_STATE_INTEGRATION_LEVEL_MINIMAL
+					}
+				}
+				every_state = {
+					set_variable = { OG_peaceful_compliance_requirement			= 50 }
+					set_variable = { OG_peaceful_resistance_requirement			= 30 }
+
+					set_variable = { OG_forceful_compliance_requirement			= 20 }
+					set_variable = { OG_forceful_resistance_requirement			= 50 }
+				}
+			}
+
+
+
+
+
+		########################################
+		### NATION STARTING DIVISION SPAWNER ###
+		########################################
+
+		### State Categories ###
+		# megalopolis				# 5	#<- number of divisions.
+		# metropolis 				# 5
+		# large_city  				# 4
+		# city         				# 4
+		# large_town   				# 3
+		# town        				# 3
+		# rural        				# 2
+		# pastoral    				# 2
+		# small_island 				# 1
+		# tiny_island				# 1
+		# enclave      				# 0
+		# wasteland   				# 0
+
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL
+						option = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL_DEFAULT
+					}
+				}
+
+				### MEGALOPOLIS ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = megalopolis
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 5
+						}
+					}
+				}
+
+				### METROPOLIS ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = metropolis
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 5
+						}
+					}
+				}
+
+				### LARGE CITY ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = large_city
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 4
+						}
+					}
+				}
+
+				### CITY ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = city
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 4
+						}
+					}
+				}
+
+				### LARGE TOWN ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = large_town
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+
+				### TOWN ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = town
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+
+				### RURAL ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = rural
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+				}
+
+				### PASTORAL ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = pastoral
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+				}
+
+				### SMALL ISLAND ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = small_island
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 1
+						}
+					}
+				}
+
+				### TINY ISLAND ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = tiny_island
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 1
+						}
+					}
+				}
+
+				### ENCLAVE ###
+				#every_country = {
+				#	every_owned_state = {
+				#		limit = {
+				#			has_state_category = enclave
+				#			impassable = no
+				#		}
+				#		create_unit = {
+				#			division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+				#			owner = PREV
+				#			#prioritize_location = PROVINCE_ID
+				#			allow_spawning_on_enemy_provs = no
+				#			count = 0
+				#		}
+				#	}
+				#}
+				#
+				#### WASTELAND ###
+				#every_country = {
+				#	every_owned_state = {
+				#		limit = {
+				#			has_state_category = wasteland
+				#			impassable = no
+				#		}
+				#		create_unit = {
+				#			division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+				#			owner = PREV
+				#			#prioritize_location = PROVINCE_ID
+				#			allow_spawning_on_enemy_provs = no
+				#			count = 0
+				#		}
+				#	}
+				#}
+			}
+
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL
+						option = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL_DEFAULT_LOW
+					}
+				}
+
+				### MEGALOPOLIS ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = megalopolis
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+
+				### METROPOLIS ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = metropolis
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+
+				### LARGE CITY ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = large_city
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+
+				### CITY ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = city
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+
+				### LARGE TOWN ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = large_town
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+				}
+
+				### TOWN ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = town
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+				}
+
+				### RURAL ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = rural
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 1
+						}
+					}
+				}
+
+				### PASTORAL ###
+				every_country = {
+					every_owned_state = {
+						limit = {
+							has_state_category = pastoral
+							impassable = no
+						}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 1
+						}
+					}
+				}
+
+				### SMALL ISLAND ###
+				#every_country = {
+				#	every_owned_state = {
+				#		limit = {
+				#			has_state_category = small_island
+				#			impassable = no
+				#		}
+				#		create_unit = {
+				#			division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+				#			owner = PREV
+				#			#prioritize_location = PROVINCE_ID
+				#			allow_spawning_on_enemy_provs = no
+				#			count = 0
+				#		}
+				#	}
+				#}
+				#
+				#### TINY ISLAND ###
+				#every_country = {
+				#	every_owned_state = {
+				#		limit = {
+				#			has_state_category = tiny_island
+				#			impassable = no
+				#		}
+				#		create_unit = {
+				#			division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+				#			owner = PREV
+				#			#prioritize_location = PROVINCE_ID
+				#			allow_spawning_on_enemy_provs = no
+				#			count = 0
+				#		}
+				#	}
+				#}
+				#
+				#### ENCLAVE ###
+				#every_country = {
+				#	every_owned_state = {
+				#		limit = {
+				#			has_state_category = enclave
+				#			impassable = no
+				#		}
+				#		create_unit = {
+				#			division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+				#			owner = PREV
+				#			#prioritize_location = PROVINCE_ID
+				#			allow_spawning_on_enemy_provs = no
+				#			count = 0
+				#		}
+				#	}
+				#}
+				#
+				#### WASTELAND ###
+				#every_country = {
+				#	every_owned_state = {
+				#		limit = {
+				#			has_state_category = wasteland
+				#			impassable = no
+				#		}
+				#		create_unit = {
+				#			division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+				#			owner = PREV
+				#			#prioritize_location = PROVINCE_ID
+				#			allow_spawning_on_enemy_provs = no
+				#			count = 0
+				#		}
+				#	}
+				#}
+			}
+
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL
+						option = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL_FIXED_12
+					}
+				}
+				every_country = {
+					limit = {is_modded_country_trigger = yes}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL
+						option = WORLD_AT_WAR_STARTING_DIVISIONS_LEVEL_FIXED_6
+					}
+				}
+				every_country = {
+					limit = {is_modded_country_trigger = yes}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+					random_controlled_state = {
+						limit = { impassable = no }
+						prioritize = {}
+						create_unit = {
+							division = "division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+							owner = PREV
+							#prioritize_location = PROVINCE_ID
+							allow_spawning_on_enemy_provs = no
+							count = 2
+						}
+					}
+				}
+			}
+
+
+			#######################################
+			### STATE INTEGRATION TIME DURATION ###
+			#######################################
+
+			# Something like this might work though, but haven't tested it. Leaving it here for documentation...
+			#every_state = {
+			#	set_variable = { global.state_population_variable_@ROOT = ROOT.state_population_k }
+			#	multiply_variable = { global.state_population_variable_@ROOT = 0.1 }
+			#}
+
+			# This would be cool, but doesn't work sadly.
+			### 5 - 10 Million Population ###
+			#every_state = {
+			#	limit = {
+			#		state_population_k > 5000
+			#		state_population_k < 10000
+			#	}
+			#
+			#	set_variable = { OG_peaceful_state_integration_time_variable = 75 }
+			#}
+			#### 1 - 5 Million Population ###
+			#every_state = {
+			#	limit = {
+			#		state_population_k > 1000
+			#		state_population_k < 5000
+			#	}
+			#
+			#	set_variable = { OG_peaceful_state_integration_time_variable = 50 }
+			#}
+
+
+
+
+
+
+
+
+
+###############################################################
+
+
+
+			### GAME RULE - PLAYER NATION STARTING IDEOLOGY ###
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_DEFAULT
+					}
+				}
+
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_DEMOCRATIC
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_politics = {ruling_party = democratic}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_NEUTRALITY
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_politics = {ruling_party = neutrality}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_FASCISM
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_politics = {ruling_party = fascism}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_COMMUNISM
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					set_politics = {ruling_party = communism}
+				}
+			}
+
+			### GAME RULE - AI NATIONS STARTING IDEOLOGIES ###
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_AI_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_AI_STARTING_IDEOLOGY_DEFAULT
+					}
+				}
+
+			}
+			else_if = {		# Randomize both player and AI nations.
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_DEFAULT
+					}
+					has_game_rule = {
+						rule = WORLD_AT_WAR_AI_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_AI_STARTING_IDEOLOGY_RANDOMIZED
+					}
+				}
+				every_country = {
+					#limit = {
+					#	is_ai = yes
+					#}
+					random_list = {
+						10 = {
+							set_politics = {ruling_party = democratic}
+						}
+						10 = {
+							set_politics = {ruling_party = neutrality}
+						}
+						10 = {
+							set_politics = {ruling_party = fascism}
+						}
+						10 = {
+							set_politics = {ruling_party = communism}
+						}
+					}
+				}
+			}
+			else_if = {		# Randomize only AI nations.
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY
+							option = WORLD_AT_WAR_PICK_STARTING_IDEOLOGY_DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = WORLD_AT_WAR_AI_STARTING_IDEOLOGY
+						option = WORLD_AT_WAR_AI_STARTING_IDEOLOGY_RANDOMIZED
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = yes
+					}
+					random_list = {
+						10 = {
+							set_politics = {ruling_party = democratic}
+						}
+						10 = {
+							set_politics = {ruling_party = neutrality}
+						}
+						10 = {
+							set_politics = {ruling_party = fascism}
+						}
+						10 = {
+							set_politics = {ruling_party = communism}
+						}
+					}
+				}
+			}
+
+
+
+			### Set flags (shared cosmetic tags) ###
+			every_possible_country = {	# GROUP 1
+				limit = {
+					OR = {
+						has_country_leader_ideology = socialism
+						has_country_leader_ideology = military_junta_subideology
+						has_country_leader_ideology = gen_nazism
+						has_country_leader_ideology = marxism
+					}
+				}
+				ideology_flag_group_1_scripted_effect = yes
+			}
+			every_possible_country = {	# GROUP 2
+				limit = {
+					OR = {
+						has_country_leader_ideology = liberalism
+						has_country_leader_ideology = oligarchism
+						has_country_leader_ideology = fascism_ideology
+						has_country_leader_ideology = anarchist_communism
+					}
+				}
+				ideology_flag_group_2_scripted_effect = yes
+			}
+			every_possible_country = {	# GROUP 3
+				limit = {
+					OR = {
+						has_country_leader_ideology = conservatism
+						has_country_leader_ideology = despotism
+						has_country_leader_ideology = falangism
+						has_country_leader_ideology = anti_revisionism
+					}
+				}
+				ideology_flag_group_3_scripted_effect = yes
+			}
+			every_possible_country = {	# GROUP 4
+				limit = {
+					OR = {
+						has_country_leader_ideology = centrism_democratic
+						has_country_leader_ideology = theocracy
+						has_country_leader_ideology = ultranationalism
+						has_country_leader_ideology = internationalism_subideology
+					}
+				}
+				ideology_flag_group_4_scripted_effect = yes
+			}
+
+			#every_country = {
+			#	limit = {
+			#		is_ai = yes
+			#	}
+			#	add_ideas = world_at_war_ai_division_amount_idea
+			#}
+			every_country = {
+				limit = {
+					is_ai = yes
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				add_ideas = world_at_war_ai_aggression_idea
+			}
+			every_country = {
+				limit = {
+					is_ai = yes
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				add_ideas = world_at_war_ai_defence_idea
+			}
+			every_country = {
+				limit = {
+					is_ai = yes
+					capital_scope = {is_island_state = yes}
+				}
+				add_ideas = world_at_war_ai_island_nation_idea
+			}
+
+
+
+
+			#####################################
+			### MILITARY DOCTRINE PREFERENCES ###
+			#####################################
+
+			# NOTE: These flags will become very important for the AI's behaviour, ranging from technology selection to equipment production etc. /Snus
+
+			#if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = WORLD_AT_WAR_DOCTRINE_PREFERENCE
+			#			option = WORLD_AT_WAR_DOCTRINE_PREFERENCE_RANDOM_NO_STARTING
+			#		}
+			#	}
+			#	every_country = {
+			#		### LAND DOCTRINE ###
+			#		random_list = {
+			#			1 = {
+			#				set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_land_doctrine_grand_battleplan_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_land_doctrine_mass_assault_preference_flag
+			#			}
+			#		}
+			#		### AIR DOCTRINE ###
+			#		random_list = {
+			#			1 = {
+			#				set_country_flag = OG_air_doctrine_strategic_destruction_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#			}
+			#		}
+			#		### NAVAL DOCTRINE ###
+			#		random_list = {
+			#			1 = {
+			#				set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#			}
+			#			1 = {
+			#				set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#			}
+			#		}
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = WORLD_AT_WAR_DOCTRINE_PREFERENCE
+			#			option = WORLD_AT_WAR_DOCTRINE_PREFERENCE_RANDOM_WITH_STARTING
+			#		}
+			#	}
+				every_country = {
+					### LAND DOCTRINE ###
+					random_list = {
+						1 = {
+							set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+							set_technology = { mobile_warfare = 1 }
+						}
+						1 = {
+							set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+							set_technology = { superior_firepower = 1 }
+						}
+						1 = {
+							set_country_flag = OG_land_doctrine_grand_battleplan_preference_flag
+							set_technology = { superior_firepower = 1 }
+						}
+						1 = {
+							set_country_flag = OG_land_doctrine_mass_assault_preference_flag
+							set_technology = { mass_assault = 1 }
+						}
+					}
+					### AIR DOCTRINE ###
+					random_list = {
+						1 = {
+							set_country_flag = OG_air_doctrine_strategic_destruction_preference_flag
+							set_technology = { air_superiority = 1 }
+						}
+						1 = {
+							set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+							set_technology = { formation_flying = 1 }
+						}
+						1 = {
+							set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+							set_technology = { force_rotation = 1 }
+						}
+					}
+					### NAVAL DOCTRINE ###
+					random_list = {
+						1 = {
+							set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+							set_technology = { fleet_in_being = 1 }
+						}
+						1 = {
+							set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+							set_technology = { trade_interdiction = 1 }
+						}
+						1 = {
+							set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+							set_technology = { base_strike = 1 }
+						}
+					}
+				}
+			#}
+
+			#else_if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = WORLD_AT_WAR_DOCTRINE_PREFERENCE
+			#			option = WORLD_AT_WAR_DOCTRINE_PREFERENCE_FIXED_NO_STARTING
+			#		}
+			#	}
+			#
+			#	every_country = { #1/2/2	#<-- army/air/naval doctrine
+			#		limit = {
+			#			is_red_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#	}
+			#	every_country = { #2/1/3
+			#		limit = {
+			#			is_orange_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#		set_country_flag = OG_air_doctrine_strategic_destruction_preference_flag
+			#		set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#	}
+			#	every_country = { #3/3/1
+			#		limit = {
+			#			is_yellow_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_grand_battleplan_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#	}
+			#	every_country = { #4/2/2
+			#		limit = {
+			#			is_brown_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mass_assault_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#	}
+			#	every_country = { #1/1/1
+			#		limit = {
+			#			is_lime_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#		set_country_flag = OG_air_doctrine_strategic_destruction_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#	}
+			#	every_country = { #2/2/2
+			#		limit = {
+			#			is_green_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#	}
+			#	every_country = { #3/3/3
+			#		limit = {
+			#			is_azure_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_grand_battleplan_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#	}
+			#	every_country = { #4/3/1
+			#		limit = {
+			#			is_blue_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mass_assault_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#	}
+			#	every_country = { #1/2/3
+			#		limit = {
+			#			is_purple_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#	}
+			#	every_country = { #2/3/1
+			#		limit = {
+			#			is_burgundy_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = WORLD_AT_WAR_DOCTRINE_PREFERENCE
+			#			option = WORLD_AT_WAR_DOCTRINE_PREFERENCE_FIXED_WITH_STARTING
+			#		}
+			#	}
+			#	every_country = { #1/2/2	#<-- army/air/naval doctrine
+			#		limit = {
+			#			is_red_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#		set_technology = { mobile_warfare = 1 }
+			#		set_technology = { formation_flying = 1 }
+			#		set_technology = { trade_interdiction = 1 }
+			#	}
+			#	every_country = { #2/1/3
+			#		limit = {
+			#			is_orange_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#		set_country_flag = OG_air_doctrine_strategic_destruction_preference_flag
+			#		set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#		set_technology = { superior_firepower = 1 }
+			#		set_technology = { air_superiority = 1 }
+			#		set_technology = { base_strike = 1 }
+			#	}
+			#	every_country = { #3/3/1
+			#		limit = {
+			#			is_yellow_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_grand_battleplan_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#		set_technology = { superior_firepower = 1 }
+			#		set_technology = { force_rotation = 1 }
+			#		set_technology = { fleet_in_being = 1 }
+			#	}
+			#	every_country = { #4/2/2
+			#		limit = {
+			#			is_brown_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mass_assault_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#		set_technology = { mass_assault = 1 }
+			#		set_technology = { formation_flying = 1 }
+			#		set_technology = { trade_interdiction = 1 }
+			#	}
+			#	every_country = { #1/1/1
+			#		limit = {
+			#			is_lime_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#		set_country_flag = OG_air_doctrine_strategic_destruction_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#		set_technology = { mobile_warfare = 1 }
+			#		set_technology = { air_superiority = 1 }
+			#		set_technology = { fleet_in_being = 1 }
+			#	}
+			#	every_country = { #2/2/2
+			#		limit = {
+			#			is_green_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag
+			#		set_technology = { superior_firepower = 1 }
+			#		set_technology = { formation_flying = 1 }
+			#		set_technology = { trade_interdiction = 1 }
+			#	}
+			#	every_country = { #3/3/3
+			#		limit = {
+			#			is_azure_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_grand_battleplan_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#		set_technology = { superior_firepower = 1 }
+			#		set_technology = { force_rotation = 1 }
+			#		set_technology = { base_strike = 1 }
+			#	}
+			#	every_country = { #4/3/1
+			#		limit = {
+			#			is_blue_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mass_assault_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#		set_technology = { mass_assault = 1 }
+			#		set_technology = { force_rotation = 1 }
+			#		set_technology = { fleet_in_being = 1 }
+			#	}
+			#	every_country = { #1/2/3
+			#		limit = {
+			#			is_purple_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_mobile_warfare_preference_flag
+			#		set_country_flag = OG_air_doctrine_battlefield_support_preference_flag
+			#		set_country_flag = OG_naval_doctrine_base_strike_preference_flag
+			#		set_technology = { mobile_warfare = 1 }
+			#		set_technology = { formation_flying = 1 }
+			#		set_technology = { base_strike = 1 }
+			#	}
+			#	every_country = { #2/3/1
+			#		limit = {
+			#			is_burgundy_country_trigger = yes
+			#		}
+			#		set_country_flag = OG_land_doctrine_superior_firepower_preference_flag
+			#		set_country_flag = OG_air_doctrine_operational_integrity_preference_flag
+			#		set_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag
+			#		set_technology = { superior_firepower = 1 }
+			#		set_technology = { force_rotation = 1 }
+			#		set_technology = { fleet_in_being = 1 }
+			#	}
+			#}
+
+
+
+
+
+
+
+			########################
+			### Military Academy ###
+			########################
+
+			every_possible_country = {
+
+				set_variable = { OG_new_military_academy_training = 0 } #Used to pick a poster slot
+				set_variable = { OG_military_academy_training_to_remove = 0 } #Used to reset a poster slot
+				set_variable = { OG_military_academy_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { OG_military_academy_empty_slot_index = 2 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+
+				set_variable = { OG_officer_in_training_photo_1_icon_frame = OG_military_academy_locked_slot_index } #Set up the appropriate empty slot GFX
+				set_variable = { OG_officer_in_training_photo_2_icon_frame = OG_military_academy_locked_slot_index } #Set up the appropriate locked slot GFX
+				set_variable = { OG_officer_in_training_photo_3_icon_frame = OG_military_academy_locked_slot_index } #Set up the appropriate locked slot GFX
+				set_variable = { OG_officer_in_training_photo_4_icon_frame = OG_military_academy_locked_slot_index } #Set up the appropriate locked slot GFX
+				set_variable = { OG_officer_in_training_photo_5_icon_frame = OG_military_academy_locked_slot_index } #Set up the appropriate locked slot GFX
+				set_variable = { OG_officer_in_training_photo_6_icon_frame = OG_military_academy_locked_slot_index } #Set up the appropriate locked slot GFX
+
+				set_variable = { OG_default_military_training_duration = 365 } #Duration days for military training.
+
+				#set_variable = { SWE_propaganda_cost = 15 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
+				#set_variable = { SWE_propaganda_cost_increase = 2 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
+
+
+				OG_unlock_military_academy_slot_effect = yes			#Everyone begins with 3 slots.
+				OG_unlock_military_academy_slot_effect = yes
+				OG_unlock_military_academy_slot_effect = yes
+
+			}
+
+
+
+
+
+			# Initial cost is for specialist -> expert. Cost then gets multiplied by x2 when going from expert -> genius.
+			every_possible_country = {
+				# ARMY CHIEFS #
+				set_variable = { OG_train_army_chief_reform_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_army_chief_drill_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_army_chief_organizational_decision_pp_cost_variable			= 50 }
+				set_variable = { OG_train_army_chief_planning_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_army_chief_offensive_decision_pp_cost_variable				= 50 }
+				set_variable = { OG_train_army_chief_defensive_decision_pp_cost_variable				= 50 }
+				set_variable = { OG_train_army_chief_maneuver_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_army_chief_morale_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_army_chief_entrenchment_decision_pp_cost_variable				= 50 }
+				# AIRFORCE CHIEFS #
+				set_variable = { OG_train_air_chief_reform_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_air_chief_all_weather_decision_pp_cost_variable				= 50 }
+				set_variable = { OG_train_air_chief_night_operations_decision_pp_cost_variable			= 50 }
+				set_variable = { OG_train_air_chief_safety_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_air_chief_ground_support_decision_pp_cost_variable			= 50 }
+				#	NAVY CHIEFS #
+				set_variable = { OG_train_navy_chief_reform_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_navy_chief_decisive_battle_decision_pp_cost_variable			= 50 }
+				set_variable = { OG_train_navy_chief_commerce_raiding_decision_pp_cost_variable			= 50 }
+				set_variable = { OG_train_navy_chief_naval_aviation_decision_pp_cost_variable			= 50 }
+				set_variable = { OG_train_navy_chief_maneuver_decision_pp_cost_variable					= 50 }
+				set_variable = { OG_train_navy_chief_small_fleet_organizer_decision_pp_cost_variable	= 50 }
+				# ARMY HIGH COMMAND #
+				set_variable = { OG_train_army_infantry_decision_pp_cost_variable						= 25 }
+				set_variable = { OG_train_army_commando_decision_pp_cost_variable						= 25 }
+				set_variable = { OG_train_army_artillery_decision_pp_cost_variable						= 25 }
+				set_variable = { OG_train_army_logistics_decision_pp_cost_variable               		= 25 }
+				set_variable = { OG_train_army_planning_decision_pp_cost_variable               		= 25 }
+				set_variable = { OG_train_army_regrouping_decision_pp_cost_variable                 	= 25 }
+				set_variable = { OG_train_army_entrenchment_decision_pp_cost_variable               	= 25 }
+				set_variable = { OG_train_army_cavalry_decision_pp_cost_variable						= 25 }
+				set_variable = { OG_train_army_CombinedArms_decision_pp_cost_variable               	= 25 }
+				set_variable = { OG_train_army_armored_decision_pp_cost_variable                    	= 25 }
+				set_variable = { OG_train_army_concealment_decision_pp_cost_variable                	= 25 }
+				# AIRFORCE HIGH COMMAND #
+				set_variable = { OG_train_air_air_superiority_decision_pp_cost_variable			    	= 25 }
+				set_variable = { OG_train_air_close_air_support_decision_pp_cost_variable           	= 25 }
+				set_variable = { OG_train_air_tactical_bombing_decision_pp_cost_variable            	= 25 }
+				set_variable = { OG_train_air_strategic_bombing_decision_pp_cost_variable           	= 25 }
+				set_variable = { OG_train_air_bomber_interception_decision_pp_cost_variable         	= 25 }
+				set_variable = { OG_train_air_pilot_training_decision_pp_cost_variable              	= 25 }
+				set_variable = { OG_train_air_air_combat_training_decision_pp_cost_variable         	= 25 }
+				set_variable = { OG_train_air_naval_strike_decision_pp_cost_variable                	= 25 }
+				set_variable = { OG_train_air_airborne_decision_pp_cost_variable                    	= 25 }
+				# NAVY HIGH COMMAND #
+				set_variable = { OG_train_navy_amphibious_assault_decision_pp_cost_variable		    	= 25 }
+				set_variable = { OG_train_navy_fleet_logistics_decision_pp_cost_variable            	= 25 }
+				set_variable = { OG_train_navy_anti_submarine_decision_pp_cost_variable             	= 25 }
+				set_variable = { OG_train_navy_submarine_decision_pp_cost_variable                  	= 25 }
+				set_variable = { OG_train_navy_screen_decision_pp_cost_variable                     	= 25 }
+				set_variable = { OG_train_navy_capital_ship_decision_pp_cost_variable               	= 25 }
+				set_variable = { OG_train_navy_carrier_decision_pp_cost_variable                    	= 25 }
+				set_variable = { OG_train_navy_naval_air_defense_decision_pp_cost_variable          	= 25 }
+
+			}
+
+
+
+			### Stability Balance ###
+			# Note: These variables are for the AI so it knows if the weekly stability is going up or down. Used to regulate its desire to change economy law & social policy.
+			every_country = {
+				set_variable = { social_stability_balance_variable = 0 }
+				set_variable = { economy_stability_balance_variable = 0 }
+			}
+
+
+			### Company Expansion Times ###
+			every_country = {
+				set_variable = { OG_company_project_time = 120 }
+				set_variable = { OG_company_project_cost = 50 }
+			}
+
+
+
+
+			# Make sure not ugly massive global alliances form...
+			### EUROPE ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = europe}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = europe}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = europe}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+			### North America ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = north_america}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = north_america
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = north_america}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = north_america}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+			### South America ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = south_america}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = south_america
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = south_america}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = south_america}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+			### Africa ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = africa}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = africa
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = africa}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = africa}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+			### Asia ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = asia}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = asia
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = asia}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = asia}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+			### Middle East ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = middle_east}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = middle_east
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = middle_east}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = middle_east}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+			### Australia (oceania) ###
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = australia}
+				}
+				every_other_country = {
+					limit = {
+						has_government = PREV
+						capital_scope = {
+							is_on_continent = australia
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {is_on_continent = australia}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							capital_scope = {is_on_continent = australia}
+						}
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = -100
+					}
+				}
+			}
+
+			### AI AGGRESSION LEVELS ###
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AI_AGGRESSION_LEVEL
+						option = WORLD_AI_OPTON_NONE
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AI_AGGRESSION_LEVEL
+						option = WORLD_AI_OPTON_LOW
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 180
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AI_AGGRESSION_LEVEL
+						option = WORLD_AI_OPTON_NORMAL
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 90
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 270
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AI_AGGRESSION_LEVEL
+						option = WORLD_AI_OPTON_HIGH
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 90
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 180
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 270
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AI_AGGRESSION_LEVEL
+						option = WORLD_AI_OPTON_EXTREME
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 90
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 180
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 270
+					}
+				}
+				random_country = {
+					country_event = {
+						id = aggression_event.1
+						days = 360
+					}
+				}
+			}
+
+
+			### Randomize traits for all country leaders ###
+			every_possible_country = {
+				limit = {is_modded_country_trigger = yes}
+
+				country_leader_trait_randomizer_liberalism_scripted_effect = yes
+				country_leader_trait_randomizer_socialism_scripted_effect = yes
+				country_leader_trait_randomizer_conservatism_scripted_effect = yes
+				country_leader_trait_randomizer_centrism_democratic_scripted_effect = yes
+				
+				country_leader_trait_randomizer_military_junta_subideology_scripted_effect = yes
+				country_leader_trait_randomizer_theocracy_scripted_effect = yes
+				country_leader_trait_randomizer_oligarchism_scripted_effect = yes
+				country_leader_trait_randomizer_despotism_scripted_effect = yes
+
+				country_leader_trait_randomizer_gen_nazism_scripted_effect = yes
+				country_leader_trait_randomizer_fascism_ideology_scripted_effect = yes
+				country_leader_trait_randomizer_falangism_scripted_effect = yes
+				country_leader_trait_randomizer_ultranationalism_scripted_effect = yes
+
+				country_leader_trait_randomizer_marxism_scripted_effect = yes
+				country_leader_trait_randomizer_anarchist_communism_scripted_effect = yes
+				country_leader_trait_randomizer_anti_revisionism_scripted_effect = yes
+				country_leader_trait_randomizer_internationalism_subideology_scripted_effect = yes
+
+			}
+
+
+			every_country = {	#Create destroyer template
+				limit = {
+					is_modded_country_trigger = yes
+					#any_owned_state = {is_coastal = yes}
+				}
+				create_equipment_variant = {
+					name = "Destroyer 1922 Class"
+					type = ship_hull_light_1
+					name_group = WORLD_AT_WAR_DD_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = empty
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = empty
+						mid_1_custom_slot = empty
+						rear_1_custom_slot = empty
+					}
+					#obsolete = yes
+				}
+				create_equipment_variant = {
+					name = "Coastal Defense Ship 1922 Class"
+					type = ship_hull_cruiser_coastal_defense_ship
+					name_group = WORLD_AT_WAR_CA_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0	#This is not researched at the start of the game, but whatever...
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						fixed_ship_armor_slot = empty
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						front_1_custom_slot = ship_anti_air_1
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = ship_secondaries_1
+						rear_1_custom_slot = ship_medium_battery_1
+					}
+					#obsolete = yes
+				}
+			}
+
+			every_country = {	#Small starting navy for coastal nations
+				limit = {
+					is_modded_country_trigger = yes
+					any_owned_state = {
+						is_coastal = yes
+						impassable = no
+						naval_base > 0
+					}
+				}
+				create_ship = {
+					name = "Poseidon"
+					type = ship_hull_cruiser_coastal_defense_ship
+					equipment_variant = "Coastal Defense Ship 1922 Class"
+					pride_of_the_fleet = yes
+					#creator = ROOT
+				}
+				create_ship = { #1
+					#name = "Eirene"
+					type = ship_hull_light_1
+					equipment_variant = "Destroyer 1922 Class"
+					#creator = ROOT
+				}
+				create_ship = { #2
+					#name = "Lamia"
+					type = ship_hull_light_1
+					equipment_variant = "Destroyer 1922 Class"
+					#creator = ROOT
+				}
+				create_ship = { #3
+					#name = "Despoena"
+					type = ship_hull_light_1
+					equipment_variant = "Destroyer 1922 Class"
+					#creator = ROOT
+				}
+				create_ship = { #4
+					#name = "Rhode"
+					type = ship_hull_light_1
+					equipment_variant = "Destroyer 1922 Class"
+					#creator = ROOT
+				}
+				create_ship = { #5
+					#name = "Aethusa"
+					type = ship_hull_light_1
+					equipment_variant = "Destroyer 1922 Class"
+					#creator = ROOT
+				}
+			}
+
+
+
+
+
+
+
+
+			 every_state = {		# PURGE ALL BUILDINGS
+				remove_building = {
+					type = industrial_complex
+					level = 10
+				}
+				remove_building = {
+					type = arms_factory
+					level = 10
+				}
+				remove_building = {
+					type = dockyard
+					level = 10
+				}
+				remove_building = {
+					type = anti_air_building
+					level = 10
+				}
+				remove_building = {
+					type = synthetic_refinery
+					level = 10
+				}
+				remove_building = {
+					type = fuel_silo
+					level = 10
+				}
+
+				set_building_level = {
+					type = bunker
+					level = 0
+					province = {
+						all_provinces = yes
+						#limit_to_border = yes
+						#level < 3
+					}
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 0
+					province = {
+						all_provinces = yes
+						#limit_to_border = yes
+						#level < 3
+					}
+				}
+			}
+
+
+			#############################
+			### GOVERNMENT OPPOSITION ###
+			#############################
+			every_country = {
+				#limit = {}
+				set_variable = {democratic_party_opinion_of_government_variable = 0}
+				set_variable = {neutrality_party_opinion_of_government_variable = 0}
+				set_variable = {fascism_party_opinion_of_government_variable = 0}
+				set_variable = {communism_party_opinion_of_government_variable = 0}
+
+				clamp_variable = {	#Reminder - clamps only work as a temporary effect and must be reapplied whenever updating the variable value.
+					var = democratic_party_opinion_of_government_variable
+					min = -10
+					max = 10
+				}
+				clamp_variable = {
+					var = neutrality_party_opinion_of_government_variable
+					min = -10
+					max = 10
+				}
+				clamp_variable = {
+					var = fascism_party_opinion_of_government_variable
+					min = -10
+					max = 10
+				}
+				clamp_variable = {
+					var = communism_party_opinion_of_government_variable
+					min = -10
+					max = 10
+				}
+
+				#The ruling party can't be opposition to itself, in which case the evvent doesn't trigger.
+				#country_event = { id = world_at_war.9 }		#Democratic Opposition
+				#country_event = { id = world_at_war.10 }	#Neutrality Opposition
+				#country_event = { id = world_at_war.11 }	#Fascism Opposition
+				#country_event = { id = world_at_war.12 }	#Communism Opposition
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		### State Categories Building Slots ###
+		# megalopolis - 12			# 4/6 <- Buildings/Infrastructure
+		# metropolis - 10           # 3/6
+		# large_city - 8            # 3/5
+		# city - 6                  # 2/5
+		# large_town - 5            # 2/4
+		# town - 4                  # 2/4
+		# rural - 2					# 1/3
+		# pastoral - 1              # 0/3
+		# small_island - 1          # 0/2
+		# tiny_island - 0           # 0/2
+		# enclave - 0               # 0/1
+		# wasteland - 0             # 0/1
+
+
+		###################
+		### MEGALOPOLIS ###
+		###################
+			every_state = {
+				limit = {
+					has_state_category = megalopolis
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #4
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #4
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #4
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		##################
+		### METROPOLIS ###
+		##################
+			every_state = {
+				limit = {
+					has_state_category = metropolis
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		##################
+		### LARGE CITY ###
+		##################
+			every_state = {
+				limit = {
+					has_state_category = large_city
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #3
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		############
+		### CITY ###
+		############
+			every_state = {
+				limit = {
+					has_state_category = city
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		##################
+		### LARGE TOWN ###
+		##################
+			every_state = {
+				limit = {
+					has_state_category = large_town
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		############
+		### TOWN ###
+		############
+			every_state = {
+				limit = {
+					has_state_category = town
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				if = { #2
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		#############
+		### RURAL ###
+		#############
+			every_state = {
+				limit = {
+					has_state_category = rural
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				### MILITARY FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = arms_factory size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				### CIVILIAN FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = industrial_complex size < 1}
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				### DOCKYARDS FACTORIES ###
+				if = { #1
+					limit = {
+						free_building_slots = {building = dockyard size < 1}
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		################
+		### PASTORAL ###
+		################
+			every_state = {
+				limit = {
+					has_state_category = pastoral
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+
+		####################
+		### SMALL ISLAND ###
+		####################
+			every_state = {
+				limit = {
+					has_state_category = small_island
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		###################
+		### TINY ISLAND ###
+		###################
+			every_state = {
+				limit = {
+					has_state_category = tiny_island
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		###############
+		### ENCLAVE ###
+		###############
+			every_state = {
+				limit = {
+					has_state_category = enclave
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		#################
+		### WASTELAND ###
+		#################
+			every_state = {
+				limit = {
+					has_state_category = wasteland
+					impassable = no
+				}
+				### INFRASTRUCTURE ###
+				set_building_level = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+
+
+
+
+			### ADDITIONAL BUILDING SLOTS ###
+
+			every_state = {		# Add an extra building slots for all full states.
+				limit = {
+					impassable = no
+					free_building_slots = {building = arms_factory size < 1}
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+
+
+		###################
+		### NAVAL BASES ###
+		###################
+
+		### State Categories Naval Base Level ###
+		# megalopolis - 12			# 5 <- Naval Base Level to add. (All startup naval bases start at level 1 already)
+		# metropolis - 10           # 5
+		# large_city - 8            # 4
+		# city - 6                  # 4
+		# large_town - 5            # 3
+		# town - 4                  # 3
+		# rural - 2					# 2
+		# pastoral - 1              # 2
+		# small_island - 1          # 1
+		# tiny_island - 0           # 1
+		# enclave - 0               # 0
+		# wasteland - 0             # 0
+
+		### MEGALOPOLIS ###
+			every_state = {
+				limit = {
+					has_state_category = megalopolis
+					is_coastal = yes
+					#impassable = no
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		### METROPOLIS ###
+			every_state = {
+				limit = {
+					has_state_category = metropolis
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		### LARGE CITY ###
+			every_state = {
+				limit = {
+					has_state_category = large_city
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 4
+					instant_build = yes
+				}
+			}
+		### CITY ###
+			every_state = {
+				limit = {
+					has_state_category = city
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 4
+					instant_build = yes
+				}
+			}
+		### LARGE TOWN ###
+			every_state = {
+				limit = {
+					has_state_category = large_town
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+		### TOWN ###
+			every_state = {
+				limit = {
+					has_state_category = town
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+		### RURAL ###
+			every_state = {
+				limit = {
+					has_state_category = rural
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		### PASTORAL ###
+			every_state = {
+				limit = {
+					has_state_category = pastoral
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		### SMALL ISLAND ###
+			every_state = {
+				limit = {
+					has_state_category = small_island
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+		### TINY ISLAND ###
+			every_state = {
+				limit = {
+					has_state_category = tiny_island
+					is_coastal = yes
+				}
+				# NAVAL BASE #
+				add_building_construction = {
+					type = naval_base
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+		### ENCLAVE ###
+		#	every_state = {
+		#		limit = {
+		#			has_state_category = enclave
+		#			is_coastal = yes
+		#		}
+		#		# NAVAL BASE #
+		#		add_building_construction = {
+		#			type = naval_base
+		#			province = {
+		#				all_provinces = yes
+		#				limit_to_naval_base = yes
+		#			}
+		#			level = 0
+		#			instant_build = yes
+		#		}
+		#	}
+		### WASTELAND ###
+		#	every_state = {
+		#		limit = {
+		#			has_state_category = wasteland
+		#			is_coastal = yes
+		#		}
+		#		# NAVAL BASE #
+		#		add_building_construction = {
+		#			type = naval_base
+		#			province = {
+		#				all_provinces = yes
+		#				limit_to_naval_base = yes
+		#			}
+		#			level = 0
+		#			instant_build = yes
+		#		}
+		#	}
+
+
+
+			################
+			### AIRPORTS ###
+			################
+
+			every_state = {
+				limit = {is_capital = yes}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			every_country = {	# Democratic & non-aligned AI contain fascist and communist neighbors.
+				limit = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				every_neighbor_country = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+					add_ai_strategy = {
+						type = contain
+						target = PREV
+						value = 25
+					}
+				}
+			}
+			every_country = {	# Add democratic & non-aligned AI neighbor friendliness.
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				every_neighbor_country = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+					add_ai_strategy = {
+						type = support
+						target = PREV
+						value = 50
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = PREV
+						value = 25
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10
+					}
+				}
+			}
+
+
+			every_country = {	# Fascist & Communist AI start aggression.
+				#limit = {
+				#	OR = {
+				#		has_government = democratic
+				#		has_government = neutrality
+				#	}
+				#}
+				every_neighbor_country = { # / random_neighbor_country
+					limit = {
+						NOT = {
+							is_guaranteed_by = PREV
+							is_in_faction_with = PREV
+							has_government = PREV
+							PREV = {is_subject_of = THIS}
+							#has_non_aggression_pact_with = PREV
+						}
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+			
+					random_list = {
+						10 = { #Add Aggression
+							modifier = {
+								factor = 2
+								strength_ratio = {
+									tag = PREV
+									ratio < 1
+								}
+							}
+							add_ai_strategy = {
+								type = conquer
+								target = PREV
+								value = 5
+							}
+							add_ai_strategy = {
+								type = declare_war
+								id = PREV
+								value = 5
+							}
+							add_ai_strategy = {
+								type = antagonize
+								id = PREV
+								value = 5
+							}
+							add_ai_strategy = {
+								type = diplo_action_desire
+								id = PREV
+								target = generate_wargoal
+								value = 1
+							}
+							if = {
+								limit = {
+									strength_ratio = {
+										tag = PREV
+										ratio > 1
+									}
+								}
+								add_ai_strategy = {
+									type = consider_weak
+									id = PREV
+									value = 10
+								}
+							}
+						}
+						40 = { #No Aggression
+							modifier = {
+								factor = 2
+								strength_ratio = {
+									tag = PREV
+									ratio < 1
+								}
+							}
+							# Add nothing.
+						}
+					}
+				}
+			}
+
+
+		}# EFFECT END
+	} # ON_STARTUP END
+
+
+
+	on_nuke_drop = {	# FROM is the nuked state
+		effect = {
+			FROM = {
+				if = {	# 0 -> 1
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 0
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_1_state_modifier
+						#scope = THIS
+						#days = 14
+					}
+				}
+				else_if = {	# 1 -> 2
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 1
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_1_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_2_state_modifier
+					}
+				}
+				else_if = {	# 2 -> 3
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 2
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_2_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_3_state_modifier
+					}
+				}
+
+				else_if = {	# 3 -> 4
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 3
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_3_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_4_state_modifier
+					}
+				}
+
+				else_if = {	# 4 -> 5
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 4
+							compare = equals
+						}
+					}
+					add_to_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_4_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_5_state_modifier
+					}
+				}
+
+				set_state_flag = {
+					flag = OG_state_just_got_nuked_flag
+					days = 7
+					value = 1
+				}
+			    set_temp_variable = {
+					var = temp_state_death_variable
+					value = state_population_k			# population ex: 837000 = 837	#Use state_population_k to aviod variable overflows!
+				}
+				multiply_temp_variable = {
+					var = temp_state_death_variable
+					value = -50							# Kills 5% of the current population in the state.
+				}
+				round_temp_variable = temp_state_death_variable
+				add_manpower = temp_state_death_variable
+			}
+		}
+	}
+
+
+
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {has_idea = OG_united_high_command_idea}
+				}
+				add_ideas = OG_united_high_command_idea
+			}
+		}
+	}
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {has_idea = OG_united_high_command_idea}
+				}
+				remove_ideas = OG_united_high_command_idea
+			}
+		}
+	}
+
+	on_declare_war = {	# ROOT is war declarer, FROM is target
+		effect = {
+			set_country_flag = {
+				flag = OG_war_initiation_flag	# Used in the white peace event
+				days = 90
+				value = 1
+			}
+		}
+	}
+
+	# ROOT is capitulated country
+	on_uncapitulation = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = OG_empire_formed_flag
+					OR = {
+						is_subject = yes
+						num_of_controlled_states < 10
+					}
+				}
+				drop_cosmetic_tag = yes
+				clr_country_flag = OG_empire_formed_flag
+				news_event = { id = world_at_war_news.2 hours = 8 }
+			}
+		}
+	}
+
+
+
+	on_government_change = {	#on_ruling_party_change? What's the difference?
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_country_leader_ideology = socialism
+						has_country_leader_ideology = military_junta_subideology
+						has_country_leader_ideology = gen_nazism
+						has_country_leader_ideology = marxism
+					}
+				}
+				ideology_flag_group_1_scripted_effect = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_country_leader_ideology = liberalism
+						has_country_leader_ideology = oligarchism
+						has_country_leader_ideology = fascism_ideology
+						has_country_leader_ideology = anarchist_communism
+					}
+				}
+				ideology_flag_group_2_scripted_effect = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_country_leader_ideology = conservatism
+						has_country_leader_ideology = despotism
+						has_country_leader_ideology = falangism
+						has_country_leader_ideology = anti_revisionism
+					}
+				}
+				ideology_flag_group_3_scripted_effect = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_country_leader_ideology = centrism_democratic
+						has_country_leader_ideology = theocracy
+						has_country_leader_ideology = ultranationalism
+						has_country_leader_ideology = internationalism_subideology
+					}
+				}
+				ideology_flag_group_4_scripted_effect = yes
+			}
+		}
+	}
+
+
+	on_war_relation_added = {	#ROOT is attacker, FROM is defender
+		effect = {
+			if = {
+				limit = {
+					has_civil_war = yes
+					has_focus_tree = OG_generic_focus
+					FROM = {
+						has_civil_war = yes
+						NOT = { has_focus_tree = OG_generic_focus }
+					}
+				}
+				FROM = {
+					load_focus_tree = {
+						tree = OG_generic_focus keep_completed = yes
+					}
+					uncomplete_national_focus = {
+						focus = OG_political_effort
+						uncomplete_children = yes
+						refund_political_power = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_civil_war = yes
+					NOT = { has_focus_tree = OG_generic_focus }
+					FROM = {
+						has_civil_war = yes
+						has_focus_tree = OG_generic_focus
+					}
+				}
+				load_focus_tree = {
+					tree = OG_generic_focus keep_completed = yes
+				}
+				uncomplete_national_focus = {
+					focus = OG_political_effort
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+			}
+		}
+	}
+	on_war = {	#ROOT is country that has just gotten into a war.
+		effect = {
+			if = {
+				limit = {
+					has_idea =social_policy_law_2
+				}
+				add_political_power = 25			# A small refund.
+				add_ideas =social_policy_law_3
+			}
+			if = {
+				limit = {
+					has_idea =social_policy_law_1
+				}
+				add_political_power = 50
+				add_ideas =social_policy_law_3
+			}
+		}
+	}
+
+
+
+	on_puppet = {	#ROOT is puppet, FORM is overlord
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_idea = foreign_policy_subject_guidance	# Subject Guidande Foreign Policy
+					}
+				}
+				add_ideas = OG_subjects_guidance_idea	#This idea cancels itself when subject status is lost.
+			}
+			if = {			#For dynamic countries.
+				limit = {
+					NOT = {has_focus_tree = OG_generic_focus}
+				}
+				load_focus_tree = {
+					tree = OG_generic_focus keep_completed = yes
+				}
+			}
+		}
+	}
+	on_release_as_puppet = {	#ROOT is puppet, FORM is overlord
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_idea = foreign_policy_subject_guidance
+					}
+				}
+				add_ideas = OG_subjects_guidance_idea
+			}
+		}
+	}
+
+
+
+} # ON ACTIONS END CAT

@@ -1,0 +1,101 @@
+music_station = "PB_Ambient"
+
+music = {
+	name = "Zone_of_Fear"
+	file = "Zone_of_Fear.ogg"
+}
+
+music = {
+	name = "Black_Fairy"
+	file = "Black_Fairy.ogg"
+}
+
+music = {
+	name = "LowDown"
+	file = "LowDown.ogg"
+}
+
+music = {
+	name = "Nekrosis"
+	file = "Nekrosis.ogg"
+}
+
+music = {
+	name = "LastSounds"
+	file = "LastSounds.ogg"
+}
+
+music = {
+	name = "EverythingBalloon"
+	file = "EverythingBalloon.ogg"
+}
+
+music = {
+	name = "Moan"
+	file = "Moan.ogg"
+}
+
+music = {
+	name = "Signals"
+	file = "Signals.ogg"
+}
+
+music = {
+	name = "Rachels_Song"
+	file = "Rachels_Song.ogg"
+}
+
+music = {
+	name = "Etsuko"
+	file = "Etsuko.ogg"
+}
+
+music = {
+	name = "WhereAmI"
+	file = "WhereAmI.ogg"
+}
+
+music = {
+	name = "SunFruit"
+	file = "SunFruit.ogg"
+}
+
+music = {
+	name = "FalseGods"
+	file = "FalseGods.ogg"
+}
+
+music = {
+	name = "IsThatSo"
+	file = "IsThatSo.ogg"
+}
+
+music = {
+	name = "Space_Mission"
+	file = "Space_Mission.ogg"
+}
+
+music = {
+	name = "WitchDoctor"
+	file = "WitchDoctor.ogg"
+}
+
+music = {
+	name = "BrokenHearts"
+	file = "BrokenHearts.ogg"
+}
+
+music = {
+	name = "IndoorHorror"
+	file = "IndoorHorror.ogg"
+}
+
+music = {
+	name = "District_Main"
+	file = "District_Main.ogg"
+}
+
+music = {
+	name = "Utroba_Disease"
+	file = "Utroba_Disease.ogg"
+}

@@ -1,0 +1,31 @@
+state=
+{
+	id=147
+	name="STATE_147"
+	manpower = 4630
+	
+	state_category = enclave
+	
+	history = {	
+		owner = X73
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = X73
+		
+		victory_points = {
+			197 1
+		}
+		1935.1.2 = {
+			owner = X74
+			controller = X74
+			add_core_of = X74
+		}
+	}
+
+	provinces={
+		197 9158 11085 	
+	}
+
+	local_supplies=0.0 
+}

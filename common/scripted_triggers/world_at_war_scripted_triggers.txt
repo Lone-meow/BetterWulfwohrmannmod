@@ -1,0 +1,599 @@
+
+
+
+capital_sea_access_scripted_trigger = {	#This is necessary! You cannot achieve the same trigger by putting a NOT= in front of any_controlled_state=.
+	if = {
+		limit = {
+			any_controlled_state = {
+				is_coastal = yes
+				is_in_home_area = yes
+				impassable = no
+			}
+		}
+		always = yes
+	}
+	else = {
+		always = no
+	}
+}
+
+any_cobelligerent_still_fighting_scripted_trigger = {
+	if = {
+		limit = {
+			any_other_country = {
+				has_war_with = ROOT
+				is_neighbor_of = ROOT
+			}
+		}
+		always = yes
+	}
+	else = {
+		always = no
+	}
+}
+
+
+
+
+
+is_modded_country_trigger = {
+	OR = {
+
+		tag = X01
+		tag = X02
+		tag = X03
+		tag = X04
+		tag = X05
+		tag = X06
+		tag = X07
+		tag = X08
+		tag = X09
+
+		tag = X10
+		tag = X11
+		tag = X12
+		tag = X13
+		tag = X14
+		tag = X15
+		tag = X16
+		tag = X17
+		tag = X18
+		tag = X19
+
+		tag = X20
+		tag = X21
+		tag = X22
+		tag = X23
+		tag = X24
+		tag = X25
+		tag = X26
+		tag = X27
+		tag = X28
+		tag = X29
+
+		tag = X30
+		tag = X31
+		tag = X32
+		tag = X33
+		tag = X34
+		tag = X35
+		tag = X36
+		tag = X37
+		tag = X38
+		tag = X39
+
+		tag = X40
+		tag = X41
+		tag = X42
+		tag = X43
+		tag = X44
+		tag = X45
+		tag = X46
+		tag = X47
+		tag = X48
+		tag = X49
+
+		tag = X50
+		tag = X51
+		tag = X52
+		tag = X53
+		tag = X54
+		tag = X55
+		tag = X56
+		tag = X57
+		tag = X58
+		tag = X59
+
+		tag = X60
+		tag = X61
+		tag = X62
+		tag = X63
+		tag = X64
+		tag = X65
+		tag = X66
+		tag = X67
+		tag = X68
+		tag = X69
+
+		tag = X70
+		tag = X71
+		tag = X72
+		tag = X73
+		tag = X74
+		tag = X75
+		tag = X76
+		tag = X77
+		tag = X78
+		tag = X79
+
+		tag = X80
+		tag = X81
+		tag = X82
+		tag = X83
+		tag = X84
+		tag = X85
+		tag = X86
+		tag = X87
+		tag = X88
+		tag = X89
+
+		tag = X90
+		tag = X91
+		tag = X92
+		tag = X93
+		tag = X94
+		tag = X95
+		tag = X96
+		tag = X97
+		tag = X98
+		tag = X99
+
+		tag = Y01
+		tag = Y02
+		tag = Y03
+		tag = Y04
+		tag = Y05
+		tag = Y06
+		tag = Y07
+		tag = Y08
+		tag = Y09
+
+		tag = Y10
+		tag = Y11
+		tag = Y12
+		tag = Y13
+		tag = Y14
+		tag = Y15
+		tag = Y16
+		tag = Y17
+		tag = Y18
+		tag = Y19
+
+		tag = Y20
+		tag = Y21
+		tag = Y22
+		tag = Y23
+		tag = Y24
+		tag = Y25
+		tag = Y26
+		tag = Y27
+		tag = Y28
+		tag = Y29
+
+		tag = Y30
+		tag = Y31
+		tag = Y32
+		tag = Y33
+		tag = Y34
+		tag = Y35
+		tag = Y36
+		tag = Y37
+		tag = Y38
+		tag = Y39
+
+		tag = Y40
+		tag = Y41
+		tag = Y42
+		tag = Y43
+		tag = Y44
+		tag = Y45
+		tag = Y46
+		tag = Y47
+		tag = Y48
+		tag = Y49
+
+		tag = Y50
+		tag = Y51
+		tag = Y52
+		tag = Y53
+		tag = Y54
+		tag = Y55
+		tag = Y56
+		tag = Y57
+		tag = Y58
+		tag = Y59
+
+		tag = Y60
+		tag = Y61
+		tag = Y62
+		tag = Y63
+		tag = Y64
+		tag = Y65
+		tag = Y66
+		tag = Y67
+		tag = Y68
+		tag = Y69
+
+		tag = Y70
+		tag = Y71
+		tag = Y72
+		tag = Y73
+		tag = Y74
+		tag = Y75
+		tag = Y76
+		tag = Y77
+		tag = Y78
+		tag = Y79
+
+		tag = Y80
+		tag = Y81
+		tag = Y82
+		tag = Y83
+		tag = Y84
+		tag = Y85
+		tag = Y86
+		tag = Y87
+		tag = Y88
+		tag = Y89
+
+		tag = Y90
+		tag = Y91
+		tag = Y92
+		tag = Y93
+		tag = Y94
+		tag = Y95
+		tag = Y96
+		tag = Y97
+		tag = Y98
+		tag = Y99
+
+		tag = Z01
+		tag = Z02
+		tag = Z03
+		tag = Z04
+		tag = Z05
+		tag = Z06
+		tag = Z07
+		tag = Z08
+		tag = Z09
+
+		tag = Z10
+		tag = Z11
+		tag = Z12
+		tag = Z13
+		tag = Z14
+		tag = Z15
+		tag = Z16
+		tag = Z17
+
+	}
+}
+
+
+###########################
+### STARTING IDEOLOGIES ###
+###########################
+
+### DEMOCRATIC ###
+
+starting_ideology_socialism_trigger = {
+	OR = {
+
+		tag = X01
+		tag = X11
+		tag = X21
+		tag = X31
+		tag = X41
+		tag = X51
+		tag = X61
+		tag = X71
+		tag = X81
+		tag = X91
+		tag = Y01
+		tag = Y11
+		tag = Y21
+		tag = Y31
+		tag = Y41
+		tag = Y51
+		tag = Y61
+		tag = Y71
+		tag = Y81
+		tag = Y91
+		tag = Z01
+		tag = Z11
+
+	}
+}
+
+starting_ideology_liberalism_trigger = {
+	OR = {
+
+		tag = X02
+		tag = X12
+		tag = X22
+		tag = X32
+		tag = X42
+		tag = X52
+		tag = X62
+		tag = X72
+		tag = X82
+		tag = X92
+		tag = Y02
+		tag = Y12
+		tag = Y22
+		tag = Y32
+		tag = Y42
+		tag = Y52
+		tag = Y62
+		tag = Y72
+		tag = Y82
+		tag = Y92
+		tag = Z02
+		tag = Z12
+
+	}
+}
+
+starting_ideology_conservatism_trigger = {
+	OR = {
+
+		tag = X03
+		tag = X13
+		tag = X23
+		tag = X33
+		tag = X43
+		tag = X53
+		tag = X63
+		tag = X73
+		tag = X83
+		tag = X93
+		tag = Y03
+		tag = Y13
+		tag = Y23
+		tag = Y33
+		tag = Y43
+		tag = Y53
+		tag = Y63
+		tag = Y73
+		tag = Y83
+		tag = Y93
+		tag = Z03
+		tag = Z13
+
+	}
+}
+
+### NEUTRALITY ###
+
+starting_ideology_military_junta_trigger = {
+	OR = {
+
+		tag = X04
+		tag = X14
+		tag = X24
+		tag = X34
+		tag = X44
+		tag = X54
+		tag = X64
+		tag = X74
+		tag = X84
+		tag = X94
+		tag = Y04
+		tag = Y14
+		tag = Y24
+		tag = Y34
+		tag = Y44
+		tag = Y54
+		tag = Y64
+		tag = Y74
+		tag = Y84
+		tag = Y94
+		tag = Z04
+		tag = Z14
+
+	}
+}
+
+starting_ideology_oligarchism_trigger = {
+	OR = {
+
+		tag = X05
+		tag = X15
+		tag = X25
+		tag = X35
+		tag = X45
+		tag = X55
+		tag = X65
+		tag = X75
+		tag = X85
+		tag = X95
+		tag = Y05
+		tag = Y15
+		tag = Y25
+		tag = Y35
+		tag = Y45
+		tag = Y55
+		tag = Y65
+		tag = Y75
+		tag = Y85
+		tag = Y95
+		tag = Z05
+		tag = Z15
+
+	}
+}
+
+starting_ideology_despotism_trigger = {
+	OR = {
+
+		tag = X06
+		tag = X16
+		tag = X26
+		tag = X36
+		tag = X46
+		tag = X56
+		tag = X66
+		tag = X76
+		tag = X86
+		tag = X96
+		tag = Y06
+		tag = Y16
+		tag = Y26
+		tag = Y36
+		tag = Y46
+		tag = Y56
+		tag = Y66
+		tag = Y76
+		tag = Y86
+		tag = Y96
+		tag = Z06
+		tag = Z16
+
+	}
+}
+
+### FASCISM ###
+
+starting_ideology_gen_nazism_trigger = {
+	OR = {
+
+		tag = X07
+		tag = X17
+		tag = X27
+		tag = X37
+		tag = X47
+		tag = X57
+		tag = X67
+		tag = X77
+		tag = X87
+		tag = X97
+		tag = Y07
+		tag = Y17
+		tag = Y27
+		tag = Y37
+		tag = Y47
+		tag = Y57
+		tag = Y67
+		tag = Y77
+		tag = Y87
+		tag = Y97
+		tag = Z07
+		tag = Z17
+
+	}
+}
+
+starting_ideology_fascism_ideology_trigger = {
+	OR = {
+
+		tag = X08
+		tag = X18
+		tag = X28
+		tag = X38
+		tag = X48
+		tag = X58
+		tag = X68
+		tag = X78
+		tag = X88
+		tag = X98
+		tag = Y08
+		tag = Y18
+		tag = Y28
+		tag = Y38
+		tag = Y48
+		tag = Y58
+		tag = Y68
+		tag = Y78
+		tag = Y88
+		tag = Y98
+		tag = Z08
+
+	}
+}
+
+### COMMUNISM ###
+
+starting_ideology_marxism_trigger = {
+	OR = {
+
+		tag = X09
+		tag = X19
+		tag = X29
+		tag = X39
+		tag = X49
+		tag = X59
+		tag = X69
+		tag = X79
+		tag = X89
+		tag = X99
+		tag = Y09
+		tag = Y19
+		tag = Y29
+		tag = Y39
+		tag = Y49
+		tag = Y59
+		tag = Y69
+		tag = Y79
+		tag = Y89
+		tag = Y99
+		tag = Z09
+
+	}
+}
+
+starting_ideology_anarchist_communism_trigger = {
+	OR = {
+
+		tag = X10
+		tag = X20
+		tag = X30
+		tag = X40
+		tag = X50
+		tag = X60
+		tag = X70
+		tag = X80
+		tag = X90
+		tag = Y10
+		tag = Y20
+		tag = Y30
+		tag = Y40
+		tag = Y50
+		tag = Y60
+		tag = Y70
+		tag = Y80
+		tag = Y90
+		tag = Z10
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

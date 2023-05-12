@@ -1,0 +1,285 @@
+spriteTypes = {
+
+
+	SpriteType = {
+		name = "GFX_XYZ_officers_strip"
+		texturefile = "gfx/interface/advisors/XYZ_officers_strip.dds"
+		legacy_lazy_load = no
+		noOfFrames = 53	# unavailable slot + empty slot + 51 officers
+	}
+
+	SpriteType = {
+		name = "GFX_military_academy_bg"
+		texturefile = "gfx/interface/advisors/military_academy_bg.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+	#NOTE: These advisor icons can already be found in vanilla, but I want to keep them here anyway for organizational purposes. /Snus
+
+	### ARMY CHIEFS ###
+
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_old_guard"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_old_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_reform"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_drill"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_drill.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_organizational"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_organizational.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_planning"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_planning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_offensive"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_offensive.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_defensive"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_defensive.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_maneuver"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_maneuver.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_morale"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_chief_entrenchment"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_chief_entrenchment.dds"
+	}
+
+	### AIRFORCE CHIEFS ###
+
+	spriteType = {
+		name = "GFX_idea_XYZ_air_chief_old_guard"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_chief_old_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_chief_reform"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_chief_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_chief_all_weather"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_chief_all_weather.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_chief_night_operations"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_chief_night_operations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_chief_safety"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_chief_safety.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_chief_ground_support"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_chief_ground_support.dds"
+	}
+
+	### NAVY CHIEFS ###
+
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_old_guard"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_old_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_reform"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_decisive_battle"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_decisive_battle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_commerce_raiding"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_commerce_raiding.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_naval_aviation"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_naval_aviation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_maneuver"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_maneuver.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_chief_small_fleet_organizer"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_chief_small_fleet_organizer.dds"
+	}
+
+	### ARMY HIGH COMMAND ###
+
+	spriteType = {
+		name = "GFX_idea_XYZ_army_infantry"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_commando"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_commando.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_artillery"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_logistics"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_logistics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_planning"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_planning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_regrouping"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_regrouping.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_entrenchment"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_entrenchment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_cavalry"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_cavalry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_CombinedArms"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_CombinedArms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_armored"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_armored.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_army_concealment"
+		textureFile = "gfx/interface/advisors/idea_XYZ_army_concealment.dds"
+	}
+
+	### AIRFORCE HIGH COMMAND ###
+
+	spriteType = {
+		name = "GFX_idea_XYZ_air_air_superiority"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_air_superiority.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_close_air_support"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_close_air_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_tactical_bombing"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_tactical_bombing.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_strategic_bombing"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_strategic_bombing.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_bomber_interception"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_bomber_interception.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_pilot_training"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_pilot_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_air_combat_training"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_air_combat_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_naval_strike"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_naval_strike.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_air_airborne"
+		textureFile = "gfx/interface/advisors/idea_XYZ_air_airborne.dds"
+	}
+
+	### NAVY HIGH COMMAND ###
+
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_amphibious_assault"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_amphibious_assault.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_fleet_logistics"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_fleet_logistics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_anti_submarine"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_anti_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_submarine"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_screen"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_screen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_capital_ship"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_capital_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_carrier"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XYZ_navy_naval_air_defense"
+		textureFile = "gfx/interface/advisors/idea_XYZ_navy_naval_air_defense.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} # SPRITE TYPE END CAT

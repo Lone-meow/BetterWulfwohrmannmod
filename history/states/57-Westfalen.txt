@@ -1,0 +1,36 @@
+
+state={
+	id=57
+	name="STATE_57"
+	manpower = 5109333
+	state_category = large_city
+
+	history={
+		owner = X93
+		victory_points = {
+			495 5 
+		}
+		#victory_points = {
+		#	9509 1
+		#}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 1
+			#air_base = 3
+
+		}
+		add_core_of = X93
+		1935.1.2 = {
+			owner = X96
+			controller = X96
+			add_core_of = X96
+		}
+	}
+
+	provinces={
+		405 495 3355 3398 6535 6622 9443 9509 11346 11431 
+	}
+
+	local_supplies=0.0 
+}

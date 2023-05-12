@@ -1,0 +1,118 @@
+operation_targeted_forge_claim = {
+	icon = GFX_operations_fake_intel
+	map_icon = GFX_operations_fake_intel_map
+	name = operation_targeted_forge_claim
+	desc = operation_targeted_forge_claim_desc
+	priority = 10
+	
+	days = 60
+	network_strength = 50
+	operatives = 2
+
+	allowed = {}
+	available = {
+		#has_operation_token = {
+		#	tag = FROM
+		#	token = token_civilian
+		#}
+	}
+	
+	visible = {
+		ROOT = {has_completed_focus = OG_create_agency_focus}
+		num_of_operatives > 0
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+	}
+
+	equipment = {
+		#infantry_equipment = 10000
+		#support_equipment = 1000
+		civilian_factories = {
+			amount = 3
+			days = 14
+		}
+	}
+
+	required_tokens = {
+		token_civilian
+	}
+
+	selection_target = {
+		targets = { FROM }
+	}
+
+	selection_target_state = {
+		#NOT = {					#Can't scope the actual ROOT here for some reason.
+		#	is_claimed_by = ROOT
+		#	is_core_of = ROOT
+		#}
+	}
+
+	risk_chance = 0.35
+	experience = 1.5
+	outcome_extra_chance = 0.50
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_targeted_forge_claim_tt
+	}
+	outcome_execute = {		#Operation SUCCESS
+		ROOT = {
+			country_event = {id = world_at_war.8}
+		}
+		FROM.FROM = {
+			add_claim_by = ROOT
+		}
+	}
+
+	outcome_extra_execute = { # Operation Failure?
+	}
+
+	phases = {
+		infiltration_border = { base = 25 }
+		infiltration_submarine = { base = 25 }
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		infiltration_diplomatic = {
+			base = 75
+			modifier = {
+				factor = 20
+				ROOT = { has_war = no }
+				FROM = {
+					has_war = no
+				}
+			}
+			modifier = {
+				FROM = {
+					has_war_with = ROOT
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		fake_intel_press_releases = { base = 50 }
+		fake_intel_utilize_double_agents = { base = 50 }
+	}
+	phases = {
+		#exfiltration_air_pickup = { base = 15 }
+		#exfiltration_border = { base = 30 }
+		#exfiltration_go_to_ground = { base = 30 }
+		#exfiltration_submarine_pickup = { base = 25 }
+		fake_intel_plant_evidence = { base = 50 }
+		fake_intel_release_pow = { base = 50 }
+	}
+}

@@ -1,0 +1,12 @@
+﻿division_template = {
+	name = "Paratrooper Division"
+	division_names_group = XXX_PAR_01
+	#template_counter =
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+}

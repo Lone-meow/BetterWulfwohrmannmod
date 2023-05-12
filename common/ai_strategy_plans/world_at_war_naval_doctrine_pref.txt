@@ -1,0 +1,141 @@
+
+##################################
+### NAVAL DOCTRINE PREFERENCES ###
+##################################
+
+### Fleet In Being ###
+
+world_at_war_fleet_in_being_plan = {
+	name = "Fleet In Being plan"
+	desc = "Fleet In Being plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_naval_doctrine_fleet_in_being_preference_flag}}}
+
+
+	#ai_national_focuses = {
+	#	OG_submarine_effort = 2
+	#	OG_flexible_navy_focus = 2
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		dd_tech = 5
+		bb_tech = 10
+		fleet_in_being = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		battlefleet_designer = 2
+		navy_capital_ship_1 = 2
+		navy_capital_ship_2 = 2
+		navy_capital_ship_3 = 2
+		navy_chief_decisive_battle_1 = 2
+		navy_chief_decisive_battle_2 = 2
+		navy_chief_decisive_battle_3 = 2
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+### Trade Interdiction ###
+
+world_at_war_trade_interdiction_plan = {
+	name = "Trade Interdiction plan"
+	desc = "Trade Interdiction plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_naval_doctrine_trade_interdiction_preference_flag}}}
+
+	#ai_national_focuses = {
+	#	OG_submarine_effort = 2
+	#	OG_flexible_navy_focus = 2
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		ss_tech = 10
+		trade_interdiction = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		raiding_fleet_naval_manufacturer = 2
+		navy_submarine_1 = 2
+		navy_submarine_2 = 2
+		navy_submarine_3 = 2
+		navy_chief_commerce_raiding_1 = 2
+		navy_chief_commerce_raiding_2 = 2
+		navy_chief_commerce_raiding_3 = 2
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+
+### Base Strike ###
+
+world_at_war_base_strike_plan = {
+	name = "Base Strike plan"
+	desc = "Base Strike plan behaviour"
+
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}}
+
+	#ai_national_focuses = {
+	#	OG_submarine_effort = 2
+	#	OG_flexible_navy_focus = 2
+	#}
+	focus_factors = {
+	}
+
+	research = {
+		dd_tech = 5
+		cv_tech = 10
+		base_strike = 1000
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		battlefleet_designer = 2
+		navy_carrier_1 = 2
+		navy_carrier_2 = 2
+		navy_carrier_3 = 2
+		navy_chief_naval_aviation_1 = 2
+		navy_chief_naval_aviation_2 = 2
+		navy_chief_naval_aviation_3 = 2
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

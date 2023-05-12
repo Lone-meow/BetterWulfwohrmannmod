@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+	
+		survivors_of_the_collapse = {
+		picture = survivors_of_the_collapse
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_cost = -10.00
+			}
+		}
+	}

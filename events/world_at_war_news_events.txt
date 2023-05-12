@@ -1,0 +1,89 @@
+﻿
+	###############
+	# News Events #
+	###############
+
+ add_namespace = world_at_war_news
+
+
+### Formation of a Greater Nation ###
+news_event = {
+	id = world_at_war_news.1
+	title = world_at_war_news.1.t
+	desc = world_at_war_news.1.desc
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = world_at_war_news.1.a		# Enemy response
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+	option = {
+		name = world_at_war_news.1.b		# Neutral response
+		trigger = {
+			NOT = {
+				tag = FROM
+				has_war_with = FROM
+				has_government = FROM
+				is_in_faction_with = FROM
+				is_subject_of = FROM
+			}
+		}
+	}
+	option = {
+		name = world_at_war_news.1.c		# Friendly response
+		trigger = {
+			NOT = {
+				tag = FROM
+				has_war_with = FROM
+			}
+			OR = {
+				has_government = FROM
+				is_in_faction_with = FROM
+				is_subject_of = FROM
+			}
+		}
+	}
+	option = {
+		name = world_at_war_news.1.c		# FROM response
+		trigger = {
+			tag = FROM
+		}
+	}
+}
+
+### Dissolution of a Greater Nation ###
+news_event = {
+	id = world_at_war_news.2
+	title = world_at_war_news.2.t
+	desc = world_at_war_news.2.desc
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = world_at_war_news.2.a		# Others response
+		trigger = {
+			NOT = {tag = FROM}
+		}
+	}
+	option = {
+		name = world_at_war_news.2.b		# FROM response
+		trigger = {
+			tag = FROM
+		}
+		effect_tooltip = {
+			remove_ideas = OG_empire_idea
+		}
+	}
+}
+
+
+
+
+

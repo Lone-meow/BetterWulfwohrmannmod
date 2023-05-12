@@ -1,0 +1,146 @@
+music_station = "PB_Synth"
+
+music = {
+	name = "BladeRunner_Blues"
+	file = "BladeRunner_Blues.ogg"
+}
+
+music = {
+	name = "BladeRunner_Endtitles"
+	file = "BladeRunner_Endtitles.ogg"
+}
+
+music = {
+	name = "BladeRunner_Tears"
+	file = "BladeRunner_Tears.ogg"
+}
+
+music = {
+	name = "Moonlight_Sonata1"
+	file = "Moonlight_Sonata1.ogg"
+}
+
+music = {
+	name = "Salut_dAmour"
+	file = "Salut_dAmour.ogg"
+}
+
+music = {
+	name = "Fur_Elise"
+	file = "Fur_Elise.ogg"
+}
+
+music = {
+	name = "ThePlague"
+	file = "ThePlague.ogg"
+}
+
+music = {
+	name = "AcidRain"
+	file = "AcidRain.ogg"
+}
+
+music = {
+	name = "SeaWall"
+	file = "SeaWall.ogg"
+}
+
+music = {
+	name = "2049"
+	file = "2049.ogg"
+}
+
+music = {
+	name = "Nightstalker"
+	file = "Nightstalker.ogg"
+}
+
+music = {
+	name = "FloatingMuseum"
+	file = "FloatingMuseum.ogg"
+}
+
+music = {
+	name = "UNATCO"
+	file = "UNATCO.ogg"
+}
+
+music = {
+	name = "SynthwaveGoose"
+	file = "SynthwaveGoose.ogg"
+}
+
+music = {
+	name = "BloodRidge"
+	file = "BloodRidge.ogg"
+}
+
+music = {
+	name = "Precinct13"
+	file = "Precinct13.ogg"
+}
+
+music = {
+	name = "ControlCamera"
+	file = "ControlCamera.ogg"
+}
+
+music = {
+	name = "WannaFight"
+	file = "WannaFight.ogg"
+}
+
+music = {
+	name = "PaintedSun"
+	file = "PaintedSun.ogg"
+}
+
+music = {
+	name = "ManHunter"
+	file = "ManHunter.ogg"
+}
+
+music = {
+	name = "DasBoot"
+	file = "DasBoot.ogg"
+}
+
+music = {
+	name = "IF_Detroit"
+	file = "IF_Detroit.ogg"
+}
+
+music = {
+	name = "MakethisRight"
+	file = "MakethisRight.ogg"
+}
+
+music = {
+	name = "TheRebelPath"
+	file = "TheRebelPath.ogg"
+}
+
+music = {
+	name = "SynthWars"
+	file = "SynthWars.ogg"
+}
+
+music = {
+	name = "SegaSunset"
+	file = "SegaSunset.ogg"
+}
+
+music = {
+	name = "RollerMobster"
+	file = "RollerMobster.ogg"
+}
+
+music = {
+	name = "Turbokiller"
+	file = "Turbokiller.ogg"
+}
+
+music = {
+	name = "LePerv"
+	file = "LePerv.ogg"
+}

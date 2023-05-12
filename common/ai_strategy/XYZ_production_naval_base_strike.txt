@@ -1,0 +1,140 @@
+
+XYZ_UNIT_RATIOS_naval_base_strike = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 25
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 50
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 10
+	}
+
+}
+
+
+
+
+
+XYZ_NAVAL_AIR_PRODUCTION_naval_base_strike = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_fighter
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_naval_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = build_airplane
+		id = cv_fighter
+		value = 40
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = cv_naval_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = cv_cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_small_plane_airframe
+		value = 40
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_small_plane_naval_bomber_airframe
+		value = 50
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_small_plane_cas_airframe
+		value = 10
+	}
+}
+
+
+XYZ_ROLE_RATIOS_naval_base_strike = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_naval_doctrine_base_strike_preference_flag}}}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 35
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 15
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 2
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 3
+	}
+}
+

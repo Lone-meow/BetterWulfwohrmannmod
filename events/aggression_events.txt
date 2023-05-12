@@ -1,0 +1,861 @@
+add_namespace = aggression_event
+
+country_event = {
+	id = aggression_event.1
+	title = aggression_event.1.t
+	desc = aggression_event.1.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		world_at_war_ai_aggression_scripted_effect = yes
+		
+		if = {
+			limit = {
+				OR = {
+					threat < 0.99
+					has_game_rule = {
+						rule = WORLD_AI_AGGRESSION_LEVEL
+						option = WORLD_AI_OPTON_EXTREME
+					}
+				}
+			}
+			random_country = {
+				country_event = {
+					id = aggression_event.1
+					days = 120
+					random_days = 30
+				}
+			}
+		}
+		else = {
+			every_country = {
+				limit = {
+					NOT = {has_idea = world_at_war_ai_ally_idea}
+				}
+				add_ideas = world_at_war_ai_ally_idea
+			}
+		}
+	}
+	option = {
+		name = aggression_event.1.a
+	}
+}
+
+# Gunboat Diplomacy Threat #
+country_event = {
+	id = aggression_event.2
+	title = aggression_event.2.t
+	desc = aggression_event.2.desc
+	picture = GFX_report_event_baltic_entente_one
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {	# Accept
+		name = aggression_event.2.a
+		ai_chance = {
+			factor = 10
+			modifier = { # Enemy is 1-100% stronger than us.
+				factor = 1.5
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 1
+					}
+					strength_ratio = {
+						tag = ROOT
+						ratio < 2
+					}
+				}
+			}
+			modifier = { # Enemy is more than 200% stronger than us.
+				factor = 3
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 1.1
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				has_idea = foreign_policy_appeasement
+			}
+			modifier = {
+				factor = 0.8
+				any_core_state = {
+					is_capital = yes
+					has_state_flag = OG_gunboat_diplomacy_target_state_flag
+				}
+			}
+		}
+
+		add_stability = -0.05
+		random_owned_controlled_state = {
+			limit = {
+				has_state_flag = OG_gunboat_diplomacy_target_state_flag
+			}
+			transfer_state_to = FROM
+			clr_state_flag = OG_gunboat_diplomacy_target_state_flag
+			set_state_flag = OG_gunboat_diplomacy_accepted_state_flag
+		}
+		FROM = {
+			country_event = {
+				id = aggression_event.3
+				hours = 4
+				random_hours = 8
+			}
+			add_ai_strategy = {
+				type = consider_weak
+				id = ROOT
+				value = 50
+			}
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = FROM
+			value = 50
+		}
+	}
+	option = {	# Refuse
+		name = aggression_event.2.b
+		ai_chance = {factor = 20}
+
+		add_political_power = -25
+		effect_tooltip = {
+			FROM = {
+				create_wargoal = {
+					type = take_claimed_state
+					target = ROOT
+					expire = 365
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = aggression_event.4
+				hours = 4
+				random_hours = 8
+			}
+			add_ai_strategy = {
+				type = conquer
+				target = ROOT
+				value = 50
+			}
+		}
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = FROM
+			value = 50
+		}
+	}
+	option = {	# Offer to become puppet instead
+		name = aggression_event.2.c
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				num_of_controlled_states < 2		#We super smol.
+			}
+		}
+		trigger = {
+			num_of_controlled_states < 3			#We smol.
+			FROM = {num_of_controlled_states > 3}	#They big.
+			is_subject = no
+			has_war = no							#This would complicate things.
+		}
+		FROM = {
+			country_event = {
+				id = aggression_event.7
+				hours = 4
+				random_hours = 8
+			}
+		}
+		custom_effect_tooltip = aggression_event_2_c_accept_tt
+		effect_tooltip = {
+			FROM = {
+				puppet = ROOT
+				every_state = {
+					limit = {
+						is_claimed_by = FROM
+						is_owned_by = ROOT
+					}
+					remove_claim_by = FROM
+				}
+			}
+		}
+		custom_effect_tooltip = aggression_event_2_c_decline_tt
+		effect_tooltip = {
+			FROM = {
+				create_wargoal = {
+					type = take_claimed_state
+					target = ROOT
+					expire = 365
+				}
+			}
+		}
+	}
+}
+
+# Gunboat Diplomacy ACCEPT #
+country_event = {
+	id = aggression_event.3
+	title = aggression_event.3.t
+	desc = aggression_event.3.desc
+	picture = GFX_report_event_pla_in_beijing
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+
+	option = { # Excellent
+		name = aggression_event.3.a
+		ai_chance = {factor = 10}
+
+		effect_tooltip = {
+			random_owned_controlled_state = {
+				limit = {
+					has_state_flag = OG_gunboat_diplomacy_accepted_state_flag
+				}
+				transfer_state_to = ROOT
+				clr_state_flag = OG_gunboat_diplomacy_accepted_state_flag
+			}
+		}
+		hidden_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_state_flag = OG_gunboat_diplomacy_accepted_state_flag
+				}
+				clr_state_flag = OG_gunboat_diplomacy_accepted_state_flag
+			}
+		}
+	}
+}
+
+# Gunboat Diplomacy DECLINE #
+country_event = {
+	id = aggression_event.4
+	title = aggression_event.4.t
+	desc = aggression_event.4.desc
+	picture = GFX_report_event_german_troops_paris
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {	# To war!
+		name = aggression_event.4.a
+		ai_chance = {factor = 20}
+
+		add_war_support = 0.05
+		create_wargoal = {
+			type = take_claimed_state
+			target = FROM
+			expire = 365
+		}
+	}
+	option = {	# Back down, keep claim
+		name = aggression_event.4.b
+		ai_chance = {
+			factor = 10
+			modifier = { # Enemy is 1-100% stronger than us.
+				factor = 2
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 1
+					}
+					strength_ratio = {
+						tag = ROOT
+						ratio < 2
+					}
+				}
+			}
+			modifier = { # Enemy is more than 200% stronger than us.
+				factor = 5
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 1.1
+				has_war = yes
+			}
+		}
+
+		add_political_power = -25
+		unlock_decision_tooltip = NSB_border_conflict_initiate_incident
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					has_state_flag = OG_gunboat_diplomacy_target_state_flag
+				}
+				clr_state_flag = OG_gunboat_diplomacy_target_state_flag
+			}
+			country_event = {
+				id = aggression_event.5
+				hours = 4
+				random_hours = 8
+			}
+		}
+	}
+	option = {	# Back down...
+		name = aggression_event.4.c
+		ai_chance = {
+			factor = 5
+			modifier = { # Enemy is 300% stronger than us.
+				factor = 2
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 3
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 1.1
+				has_war = yes
+			}
+		}
+
+		add_war_support = -0.05
+		random_state = {
+			limit = {
+				has_state_flag = OG_gunboat_diplomacy_target_state_flag
+				is_claimed_by = ROOT
+				is_owned_by = FROM
+			}
+			remove_claim_by = ROOT
+			clr_state_flag = OG_gunboat_diplomacy_target_state_flag
+		}
+
+		add_ai_strategy = {
+			type = conquer
+			target = FROM
+			value = -50
+		}
+		FROM = {
+			country_event = {
+				id = aggression_event.6
+				hours = 4
+				random_hours = 8
+			}
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = ROOT
+				value = -50
+			}
+		}
+	}
+}
+
+
+# Gunboat Diplomacy Back down but keep claim #
+country_event = {
+	id = aggression_event.5
+	title = aggression_event.5.t
+	desc = aggression_event.5.desc
+	picture = GFX_report_event_german_troops_paris
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {	#
+		name = aggression_event.5.a
+		ai_chance = {factor = 1}
+		add_war_support = 0.01
+	}
+}
+
+# Gunboat Diplomacy Back down #
+country_event = {
+	id = aggression_event.6
+	title = aggression_event.6.t
+	desc = aggression_event.6.desc
+	picture = GFX_report_event_german_troops_paris
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {	#
+		name = aggression_event.6.a
+		ai_chance = {factor = 1}
+		add_political_power = 25
+	}
+}
+
+# Gunboat Diplomacy puppet request #
+country_event = {
+	id = aggression_event.7
+	title = aggression_event.7.t
+	desc = aggression_event.7.desc
+	picture = GFX_report_event_german_troops_paris
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {
+		name = aggression_event.7.a	#Accept
+		ai_chance = {factor = 100}
+
+		puppet = FROM
+
+		if = {
+			limit = {
+				has_idea = foreign_policy_subject_guidance
+			}
+			FROM = {
+				add_ideas = OG_subjects_guidance_idea
+			}
+		}
+		hidden_effect = {
+			random_state = {
+				limit = {
+					has_state_flag = OG_gunboat_diplomacy_target_state_flag
+					is_claimed_by = ROOT
+					is_owned_by = FROM
+				}
+				clr_state_flag = OG_gunboat_diplomacy_target_state_flag
+			}
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = ROOT
+				is_owned_by = FROM
+			}
+			remove_claim_by = ROOT
+		}
+		FROM = {
+			country_event = {
+				id = aggression_event.8
+				hours = 4
+				random_hours = 8
+			}
+		}
+	}
+	option = {
+		name = aggression_event.7.b	#Refuse
+		ai_chance = {factor = 1}
+
+		add_political_power = -25
+
+		create_wargoal = {
+			type = take_claimed_state
+			target = FROM
+			expire = 365
+		}
+		add_ai_strategy = {
+			type = conquer
+			target = FROM
+			value = 50
+		}
+		FROM = {
+			country_event = {
+				id = aggression_event.9
+				hours = 4
+				random_hours = 8
+			}
+		}
+	}
+}
+
+# Gunboat Diplomacy puppet request Accept notification #
+country_event = {
+	id = aggression_event.8
+	title = aggression_event.8.t
+	desc = aggression_event.8.desc
+	picture = GFX_report_event_german_troops_paris
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {
+		name = aggression_event.8.a	#Ok
+		ai_chance = {factor = 1}
+
+	}
+}
+# Gunboat Diplomacy puppet request Decline notification #
+country_event = {
+	id = aggression_event.9
+	title = aggression_event.9.t
+	desc = aggression_event.9.desc
+	picture = GFX_report_event_german_troops_paris
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	option = {
+		name = aggression_event.9.a	#Ok
+		ai_chance = {factor = 1}
+
+		add_ai_strategy = {
+			type = prepare_for_war
+			id = FROM
+			value = 50
+		}
+
+	}
+}
+
+
+
+
+
+
+### Prevent a long stagnant war INITIATE ###
+country_event = {
+	id = aggression_event.10
+	title = aggression_event.10.t
+	desc = aggression_event.10.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	#is_triggered_only = yes
+
+	trigger = {
+		is_subject = no
+		NOT = {
+			has_country_flag = OG_keep_fighting_another_year_flag
+			has_country_flag = OG_white_peace_negotiation_flag
+			has_country_flag = OG_war_initiation_flag					# is set upon war declaration for 90 days.
+		}
+		is_in_faction = no		#Actually, just skip the whole faction thing. Keep it simple.
+		#if = {
+		#	limit = {
+		#		is_in_faction = yes
+		#	}
+		#	is_faction_leader = yes				# If the country is in a faction, the faction leader should decide the outcome. Both ROOT and FROM.
+		#}
+		any_country = {
+			has_defensive_war_with = ROOT
+			is_subject = no
+			surrender_progress < 0.10
+			ROOT = {surrender_progress < 0.10}
+			NOT = {
+				has_country_flag = OG_war_initiation_flag
+				is_neighbor_of = ROOT
+			}
+			OR = {								# If BOTH nations are coastal, naval warfare / invasions are possible.
+				capital_scope = {				# Too goddamn far away
+					any_state = {
+						is_controlled_by = ROOT
+						distance_to = {
+							target = PREV
+							value > 1000		# How long is this exactly? idk
+						}
+					}
+				}
+				AND = {
+					has_navy_size = {
+						size < 10
+					}
+					ROOT = {
+						has_navy_size = {
+							size < 10
+						}
+					}
+				}
+				AND = {
+					capital_sea_access_scripted_trigger = no
+					ROOT = {capital_sea_access_scripted_trigger = no}
+				}
+			}
+			is_in_faction = no		#Actually, just skip the whole faction thing. Keep it simple.
+			#if = {
+			#	limit = {
+			#		is_in_faction = yes
+			#	}
+			#	is_faction_leader = yes
+			#}
+
+			#casualties_inflicted_by = {			# Skip this.
+			#	opponent = ROOT
+			#	thousands < 5
+			#}
+
+
+			if = {
+				limit = {
+					any_state = {			# Is there active fighting in any state by us or any ally?
+						AND = {
+							ROOT = {
+								divisions_in_state = {
+									size > 0
+									state = PREV
+								}
+							}
+							OR = {
+								PREV = {
+									divisions_in_state = {
+										size > 0
+										state = PREV
+									}
+								}
+								any_other_country = {
+									has_war_with = ROOT
+									NOT = {has_war_with = PREV.PREV}
+									divisions_in_state = {
+										size > 0
+										state = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				always = no
+			}
+			else = {
+				always = yes
+			}
+
+		#	any_other_country = {				# Has any ally capitulated? # Don't include this.
+		#		has_war_together_with = PREV
+		#		has_capitulated = yes
+		#	}
+
+		}
+	}
+
+	immediate = {}
+	option = {
+		name = aggression_event.10.a 	# Send offer for white peace.
+		ai_chance = {factor = 1}
+
+		random_country = {
+			limit = {
+				has_war_with = ROOT
+				is_subject = no
+				surrender_progress < 0.10
+				ROOT = {surrender_progress < 0.10}
+				NOT = {
+					has_country_flag = OG_war_initiation_flag
+					is_neighbor_of = ROOT
+				}
+				OR = {
+					capital_scope = {
+						any_state = {
+							is_controlled_by = ROOT
+							distance_to = {
+								target = PREV
+								value > 1000
+							}
+						}
+					}
+					AND = {
+						has_navy_size = {
+							size < 10
+						}
+						ROOT = {
+							has_navy_size = {
+								size < 10
+							}
+						}
+					}
+					AND = {
+						capital_sea_access_scripted_trigger = no
+						ROOT = {capital_sea_access_scripted_trigger = no}
+					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+					}
+					is_faction_leader = yes
+				}
+
+
+
+				#OR = {
+				#	any_guaranteed_country = {
+				#		has_capitulated = yes
+				#	}
+				#	any_allied_country = {
+				#		has_capitulated = yes
+				#	}
+				#	any_other_country = {
+				#		has_war_together_with = PREV
+				#		has_capitulated = yes
+				#	}
+				#}
+
+			}
+			country_event = {
+				id = aggression_event.11
+				hours = 4
+				random_hours = 8
+			}
+			custom_effect_tooltip = aggression_event_10_tt
+			effect_tooltip = {
+				white_peace = ROOT
+				set_truce = {
+					target = ROOT
+					days = 270
+				}
+				#ROOT = {							#Since only nations not in factions are allowed to get this event, this part is suddenly not relevant.
+				#	every_controlled_state = {
+				#		limit = {
+				#			is_fully_controlled_by = ROOT
+				#			OWNER = {
+				#				OR = {
+				#					tag = PREV.PREV.PREV
+				#					is_in_faction_with = PREV.PREV.PREV
+				#				}
+				#			}
+				#		}
+				#		transfer_state_to = ROOT
+				#	}
+				#}
+			}
+		}
+		set_country_flag = {
+			flag = OG_white_peace_negotiation_flag
+			days = 60	# Make sure it clears itself if something goes wrong.
+			value = 1
+		}
+	}
+	option = {
+		name = aggression_event.10.b	# Keep fighting!
+		ai_chance = {factor = 0}
+
+		set_country_flag = {
+			flag = OG_keep_fighting_another_year_flag
+			days = 365
+			value = 1
+		}
+	}
+}
+
+
+### Prevent a long stagnant war REQUEST ###
+country_event = {
+	id = aggression_event.11
+	title = aggression_event.11.t
+	desc = aggression_event.11.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {}
+	option = {
+		name = aggression_event.11.a 	# Accept the white peace offer.
+		ai_chance = {factor = 1}
+
+		FROM = {
+			#every_controlled_state = {
+			#	limit = {
+			#		is_fully_controlled_by = FROM	# Just to specify FULLY.
+			#		OWNER = {
+			#			OR = {
+			#				#AND = {
+			#				#	has_war_together_with = ROOT
+			#				#	# has_capitulated = yes
+			#				#}
+			#				tag = ROOT
+			#				is_in_faction_with = ROOT	# We only need to include faction members. Other co-belligerents will fall by either a repetition of the event or a normal peace conference.
+			#			}
+			#		}
+			#	}
+			#	transfer_state_to = FROM
+			#}
+			country_event = {
+				id = aggression_event.12
+				hours = 4
+				random_hours = 8
+			}
+			clr_country_flag = {flag = OG_white_peace_negotiation_flag}
+		}
+		effect_tooltip = {
+			white_peace = FROM
+			set_truce = {
+				target = FROM
+				days = 120
+			}
+		}
+	}
+	option = {
+		name = aggression_event.11.b	# Decline the white peace offer.
+		ai_chance = {factor = 0}
+
+		FROM = {
+			country_event = {
+				id = aggression_event.13
+				hours = 4
+				random_hours = 8
+			}
+			clr_country_flag = {flag = OG_white_peace_negotiation_flag}
+			set_country_flag = {
+				flag = OG_keep_fighting_another_year_flag
+				days = 365
+				value = 1
+			}
+		}
+	}
+}
+
+### Prevent a long stagnant war request ACCEPT ###
+country_event = {
+	id = aggression_event.12
+	title = aggression_event.12.t
+	desc = aggression_event.12.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			white_peace = FROM
+			set_truce = {
+				target = FROM
+				days = 120
+			}
+		}
+	}
+	option = {
+		name = aggression_event.12.a	# Excellent
+		ai_chance = {factor = 1}
+
+		effect_tooltip = {
+			white_peace = FROM
+			set_truce = {
+				target = FROM
+				days = 270			# 90 + 270 days ensures that a potential mark_for_death_flag timer has ticked out.
+			}
+		}
+	}
+}
+
+### Prevent a long stagnant war request DECLINE ###
+country_event = {
+	id = aggression_event.13
+	title = aggression_event.13.t
+	desc = aggression_event.13.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {}
+	option = {
+		name = aggression_event.13.a	# Fools!
+		ai_chance = {factor = 1}
+
+	}
+}
+
+
+
+
+
+

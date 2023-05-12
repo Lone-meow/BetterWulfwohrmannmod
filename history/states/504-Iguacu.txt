@@ -1,0 +1,29 @@
+
+state={
+	id=504
+	name="STATE_504"
+	
+	state_category = rural
+
+	history={
+		owner = X29
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = X29
+		1935.1.2 = {
+			owner = X30
+			controller = X30
+			add_core_of = X30
+		}
+	}
+
+	provinces={
+		2111 2181 5200 8189 8224 10959 12951 
+	}
+	manpower=229900
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

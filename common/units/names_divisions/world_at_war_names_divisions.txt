@@ -1,0 +1,510 @@
+﻿
+
+XXX_INF_01 = {
+
+	name = "Infantry Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+
+		1 = { "%d. Infantry Division" }
+		2 = { "%d. Infantry Division" }
+		3 = { "%d. Infantry Division" }
+		4 = { "%d. Infantry Division" }
+		5 = { "%d. Infantry Division" }
+		6 = { "%d. Infantry Division" }
+		7 = { "%d. Infantry Division" }
+		8 = { "%d. Infantry Division" }
+		9 = { "%d. Infantry Division" }
+		10 = { "%d. Infantry Division" }
+		11 = { "%d. Infantry Division" }
+		12 = { "%d. Infantry Division" }
+
+	}
+}
+
+XXX_CAV_01 = {
+
+	name = "Cavalry Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Cavalry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Cavalry Division" }
+		2 = { "%d. Cavalry Division" }
+		3 = { "%d. Cavalry Division" }
+		4 = { "%d. Cavalry Division" }
+		5 = { "%d. Cavalry Division" }
+		6 = { "%d. Cavalry Division" }
+		7 = { "%d. Cavalry Division" }
+		8 = { "%d. Cavalry Division" }
+		9 = { "%d. Cavalry Division" }
+		10 = { "%d. Cavalry Division" }
+		11 = { "%d. Cavalry Division" }
+		12 = { "%d. Cavalry Division" }
+	}
+}
+
+XXX_MOT_01 = {
+
+	name = "Motorized Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Motorized Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Motorized Division" }
+		2 = { "%d. Motorized Division" }
+		3 = { "%d. Motorized Division" }
+		4 = { "%d. Motorized Division" }
+		5 = { "%d. Motorized Division" }
+		6 = { "%d. Motorized Division" }
+		7 = { "%d. Motorized Division" }
+		8 = { "%d. Motorized Division" }
+		9 = { "%d. Motorized Division" }
+		10 = { "%d. Motorized Division" }
+		11 = { "%d. Motorized Division" }
+		12 = { "%d. Motorized Division" }
+	}
+}
+
+XXX_MEC_01 = {
+
+	name = "Mechanized Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Mechanized Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Mechanized Division" }
+		2 = { "%d. Mechanized Division" }
+		3 = { "%d. Mechanized Division" }
+		4 = { "%d. Mechanized Division" }
+		5 = { "%d. Mechanized Division" }
+		6 = { "%d. Mechanized Division" }
+		7 = { "%d. Mechanized Division" }
+		8 = { "%d. Mechanized Division" }
+		9 = { "%d. Mechanized Division" }
+		10 = { "%d. Mechanized Division" }
+		11 = { "%d. Mechanized Division" }
+		12 = { "%d. Mechanized Division" }
+	}
+}
+
+XXX_ARM_01 = {
+
+	name = "Armored Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Armored Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Armored Division" }
+		2 = { "%d. Armored Division" }
+		3 = { "%d. Armored Division" }
+		4 = { "%d. Armored Division" }
+		5 = { "%d. Armored Division" }
+		6 = { "%d. Armored Division" }
+		7 = { "%d. Armored Division" }
+		8 = { "%d. Armored Division" }
+		9 = { "%d. Armored Division" }
+		10 = { "%d. Armored Division" }
+		11 = { "%d. Armored Division" }
+		12 = { "%d. Armored Division" }
+	}
+}
+
+XXX_PAR_01 = {
+
+	name = "Paratrooper Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Paratrooper Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Paratrooper Division" }
+		2 = { "%d. Paratrooper Division" }
+		3 = { "%d. Paratrooper Division" }
+		4 = { "%d. Paratrooper Division" }
+		5 = { "%d. Paratrooper Division" }
+		6 = { "%d. Paratrooper Division" }
+		7 = { "%d. Paratrooper Division" }
+		8 = { "%d. Paratrooper Division" }
+		9 = { "%d. Paratrooper Division" }
+		10 = { "%d. Paratrooper Division" }
+		11 = { "%d. Paratrooper Division" }
+		12 = { "%d. Paratrooper Division" }
+	}
+}
+
+XXX_MAR_01 = {
+
+	name = "Marine Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Marine Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Marine Division" }
+		2 = { "%d. Marine Division" }
+		3 = { "%d. Marine Division" }
+		4 = { "%d. Marine Division" }
+		5 = { "%d. Marine Division" }
+		6 = { "%d. Marine Division" }
+		7 = { "%d. Marine Division" }
+		8 = { "%d. Marine Division" }
+		9 = { "%d. Marine Division" }
+		10 = { "%d. Marine Division" }
+		11 = { "%d. Marine Division" }
+		12 = { "%d. Marine Division" }
+	}
+}
+
+XXX_MNT_01 = {
+
+	name = "Mountaineer Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Mountaineer Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Mountaineer Division" }
+		2 = { "%d. Mountaineer Division" }
+		3 = { "%d. Mountaineer Division" }
+		4 = { "%d. Mountaineer Division" }
+		5 = { "%d. Mountaineer Division" }
+		6 = { "%d. Mountaineer Division" }
+		7 = { "%d. Mountaineer Division" }
+		8 = { "%d. Mountaineer Division" }
+		9 = { "%d. Mountaineer Division" }
+		10 = { "%d. Mountaineer Division" }
+		11 = { "%d. Mountaineer Division" }
+		12 = { "%d. Mountaineer Division" }
+	}
+}
+
+XXX_GAR_01 = {
+
+	name = "Garrison Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Garrison Regiment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Garrison Division" }
+		2 = { "%d. Garrison Division" }
+		3 = { "%d. Garrison Division" }
+		4 = { "%d. Garrison Division" }
+		5 = { "%d. Garrison Division" }
+		6 = { "%d. Garrison Division" }
+		7 = { "%d. Garrison Division" }
+		8 = { "%d. Garrison Division" }
+		9 = { "%d. Garrison Division" }
+		10 = { "%d. Garrison Division" }
+		11 = { "%d. Garrison Division" }
+		12 = { "%d. Garrison Division" }
+	}
+}
+
+XXX_ART_01 = {
+
+	name = "Artillery Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "infantry" "artillery" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Artillery Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Artillery Division" }
+		2 = { "%d. Artillery Division" }
+		3 = { "%d. Artillery Division" }
+		4 = { "%d. Artillery Division" }
+		5 = { "%d. Artillery Division" }
+		6 = { "%d. Artillery Division" }
+		7 = { "%d. Artillery Division" }
+		8 = { "%d. Artillery Division" }
+		9 = { "%d. Artillery Division" }
+		10 = { "%d. Artillery Division" }
+		11 = { "%d. Artillery Division" }
+		12 = { "%d. Artillery Division" }
+	}
+}
+
+XXX_ANTI_TANK_01 = {
+
+	name = "Anti-Tank Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "infantry" "artillery" "anti_tank" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Anti-Tank Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Anti-Tank Division" }
+		2 = { "%d. Anti-Tank Division" }
+		3 = { "%d. Anti-Tank Division" }
+		4 = { "%d. Anti-Tank Division" }
+		5 = { "%d. Anti-Tank Division" }
+		6 = { "%d. Anti-Tank Division" }
+		7 = { "%d. Anti-Tank Division" }
+		8 = { "%d. Anti-Tank Division" }
+		9 = { "%d. Anti-Tank Division" }
+		10 = { "%d. Anti-Tank Division" }
+		11 = { "%d. Anti-Tank Division" }
+		12 = { "%d. Anti-Tank Division" }
+	}
+}
+
+XXX_ANTI_AIR_01 = {
+
+	name = "Anti-Air Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "infantry" "artillery" "anti_air" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Anti-Air Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Anti-Air Division" }
+		2 = { "%d. Anti-Air Division" }
+		3 = { "%d. Anti-Air Division" }
+		4 = { "%d. Anti-Air Division" }
+		5 = { "%d. Anti-Air Division" }
+		6 = { "%d. Anti-Air Division" }
+		7 = { "%d. Anti-Air Division" }
+		8 = { "%d. Anti-Air Division" }
+		9 = { "%d. Anti-Air Division" }
+		10 = { "%d. Anti-Air Division" }
+		11 = { "%d. Anti-Air Division" }
+		12 = { "%d. Anti-Air Division" }
+	}
+}
+
+XXX_INF_X = {
+
+	name = "Militia Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = { always = yes }
+	division_types = { "infantry" "militia" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Militia Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Militia Division" }
+		2 = { "%d. Militia Division" }
+		3 = { "%d. Militia Division" }
+		4 = { "%d. Militia Division" }
+		5 = { "%d. Militia Division" }
+		6 = { "%d. Militia Division" }
+		7 = { "%d. Militia Division" }
+		8 = { "%d. Militia Division" }
+		9 = { "%d. Militia Division" }
+		10 = { "%d. Militia Division" }
+		11 = { "%d. Militia Division" }
+		12 = { "%d. Militia Division" }
+	}
+}
+
+	######################################
+	###--- Ideology Specific Names --- ###
+	######################################
+
+
+XXX_INF_MONARCHIST = {
+
+	name = "Royal Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = {
+		ROOT = {has_government = neutrality}
+	}
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Royal Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Royal Division" }
+		2 = { "%d. Royal Division" }
+		3 = { "%d. Royal Division" }
+		4 = { "%d. Royal Division" }
+		5 = { "%d. Royal Division" }
+		6 = { "%d. Royal Division" }
+		7 = { "%d. Royal Division" }
+		8 = { "%d. Royal Division" }
+		9 = { "%d. Royal Division" }
+		10 = { "%d. Royal Division" }
+		11 = { "%d. Royal Division" }
+		12 = { "%d. Royal Division" }
+	}
+}
+
+XXX_INF_COMMUNIST = {
+
+	name = "Revolutionary Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = {
+		ROOT = {has_government = communism}
+	}
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Revolutionary Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Revolutionary Division" }
+		2 = { "%d. Revolutionary Division" }
+		3 = { "%d. Revolutionary Division" }
+		4 = { "%d. Revolutionary Division" }
+		5 = { "%d. Revolutionary Division" }
+		6 = { "%d. Revolutionary Division" }
+		7 = { "%d. Revolutionary Division" }
+		8 = { "%d. Revolutionary Division" }
+		9 = { "%d. Revolutionary Division" }
+		10 = { "%d. Revolutionary Division" }
+		11 = { "%d. Revolutionary Division" }
+		12 = { "%d. Revolutionary Division" }
+	}
+}
+
+XXX_INF_FASCIST = {
+
+	name = "Paramilitary Division"
+	for_countries = { X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12 X13 X14 X15 X16 X17 X18 X19 X20 X21 X22 X23 X24 X25 X26 X27 X28 X29 X30 X31 X32 X34 X35 X36 X37 X38 X39 X40 X41 X42 X43 X44 X45 X46 X47 X48 X49 X50 X51 X52 X53 X54 X55 X56 X57 X58 X59 X60 X61 X62 X63 X64 X65 X66 X67 X68 X69 X70 X71 X72 X73 X74 X75 X76 X77 X78 X79 X80 X81 X82 X83 X84 X85 X86 X87 X88 X89 X90 X91 X92 X93 X94 X95 X96 X97 X98 X99 Y01 Y02 Y03 Y04 Y05 Y06 Y07 Y08 Y09 Y10 Y11 Y12 Y13 Y14 Y15 Y16 Y17 Y18 Y19 Y20 Y21 Y22 Y23 Y24 Y25 Y26 Y27 Y28 Y29 Y30 Y31 Y32 Y33 Y34 Y35 Y36 Y37 Y38 Y39 Y40 Y41 Y42 Y43 Y44 Y45 Y46 Y47 Y48 Y49 Y50 Y51 Y52 Y53 Y54 Y55 Y56 Y57 Y58 Y59 Y60 Y61 Y62 Y63 Y64 Y65 Y66 Y67 Y68 Y69 Y70 Y71 Y72 Y73 Y74 Y75 Y76 Y77 Y78 Y79 Y80 Y81 Y82 Y83 Y84 Y85 Y86 Y87 Y88 Y89 Y90 Y91 Y92 Y93 Y94 Y95 Y96 Y97 Y98 Y99 Z01 Z02 Z03 Z04 Z05 Z06 Z07 Z08 Z09 Z10 Z11 Z12 Z13 Z14 Z15 Z16 Z17
+	}
+	can_use = {
+		ROOT = {has_government = fascism}
+	}
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { }
+
+	fallback_name = "%d. Paramilitary Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Paramilitary Division" }
+		2 = { "%d. Paramilitary Division" }
+		3 = { "%d. Paramilitary Division" }
+		4 = { "%d. Paramilitary Division" }
+		5 = { "%d. Paramilitary Division" }
+		6 = { "%d. Paramilitary Division" }
+		7 = { "%d. Paramilitary Division" }
+		8 = { "%d. Paramilitary Division" }
+		9 = { "%d. Paramilitary Division" }
+		10 = { "%d. Paramilitary Division" }
+		11 = { "%d. Paramilitary Division" }
+		12 = { "%d. Paramilitary Division" }
+	}
+}

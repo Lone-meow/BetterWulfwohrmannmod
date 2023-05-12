@@ -1,0 +1,30 @@
+state = {
+	id = 877
+	name = "STATE_877" # Verkhoyansk
+
+	history = {
+		owner = Y72
+		add_core_of = Y72
+		victory_points = {
+			12549 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+		1935.1.2 = {
+			owner = Z11
+			controller = Z11
+			add_core_of = Z11
+		}
+	}
+
+	provinces = {
+		1745 2877 4878 6211 12549 12634
+	}
+	manpower = 13055
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+	impassable = yes
+	local_supplies = 0.0 
+}

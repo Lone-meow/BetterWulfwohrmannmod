@@ -1,0 +1,196 @@
+add_namespace = ChooseYourLeaderXXX
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderXXX.1
+	title = ChooseYourLeaderXXX.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderXXX.1.a
+		hidden_effect = {
+            random_list = {
+		7 = {
+			activate_decision = CHI_Soong_Ching-Ling
+		}
+		7 = {
+			activate_decision = CHI_Qiu_Jin
+		}
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 1 leaders
+	id = ChooseYourLeaderXXX.2
+	title = ChooseYourLeaderXXX.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderXXX.2.a
+		hidden_effect = {
+            random_list = {
+		13 = {
+			activate_decision = PRC_Jiang_Qing
+		}
+			}
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 6 leaders
+	id = ChooseYourLeaderXXX.3
+	title = ChooseYourLeader.XXX.3.t
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	option = {
+		name= ChooseYourLeaderXXX.3.a
+		hidden_effect = {
+	    random_list = {
+		16 = {
+			activate_decision = SOV_Anastasia
+		}
+		16 = {
+			activate_decision = SOV_Roza_Shanina
+		}
+		16 = {
+			activate_decision = SOV_Nicholas_II
+		}
+		16 = {
+			activate_decision = SOV_Vladimir_Lenin
+		}
+		16 = {
+			activate_decision = SOV_Empress_Anastasia
+		}
+		16 = {
+			activate_decision = SOV_Boris_Savinkov
+		}
+	    }
+	}
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 4 leaders
+	id = ChooseYourLeaderXXX.4
+	title = ChooseYourLeader.XXX.4.t
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	option = {
+		name= ChooseYourLeaderXXX.4.a
+		hidden_effect = {
+	    random_list = {
+		18 = {
+			activate_decision = AUS_Adelheid
+		}
+		18 = {
+			activate_decision = AUS_Security_Council
+		}
+		18 = {
+			activate_decision = AUS_Complete_Anarchy
+		}
+		18 = {
+			activate_decision = AUS_Engelbert_Dollfuss
+		}
+	    }
+	}
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 3 leaders
+	id = ChooseYourLeaderXXX.5
+	title = ChooseYourLeader.XXX.5.t
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	option = {
+		name= ChooseYourLeaderXXX.5.a
+		hidden_effect = {
+	    random_list = {
+		20 = {
+			activate_decision = USA_Al_Capone
+		}
+		20 = {
+			activate_decision = USA_Huey_Long
+		}
+		20 = {
+			activate_decision = USA_Walt_Disney
+		}
+	    }
+	}
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 4 leaders
+	id = ChooseYourLeaderXXX.6
+	title = ChooseYourLeaderXXX.6.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderXXX.6.a
+		hidden_effect = {
+            random_list = {
+		77 = {
+			activate_decision = GER_Albert_Speer
+		}
+		77 = {
+			activate_decision = GER_Bismark
+		}
+		77 = {
+			activate_decision = GER_Heydrich
+		}
+		77 = {
+			activate_decision = GER_SS
+		}
+			}
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 1 leaders
+	id = ChooseYourLeaderXXX.7
+	title = ChooseYourLeaderXXX.7.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderXXX.7.a
+		hidden_effect = {
+            random_list = {
+		80 = {
+			activate_decision = MAN_Wanrong
+		}
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+country_event = { # 1 leaders
+	id = ChooseYourLeaderXXX.8
+	title = ChooseYourLeaderXXX.8.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderXXX.8.a
+		hidden_effect = {
+            random_list = {
+		121 = {
+			activate_decision = AST_Nancy_Wake
+		}
+			}
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

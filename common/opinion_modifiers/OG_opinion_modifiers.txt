@@ -1,0 +1,16 @@
+#########################
+### OPINION MODIFIERS ###
+#########################
+
+opinion_modifiers = {
+
+	border_conflict_started = {
+		value = -15
+		years = 1
+	}
+	
+	border_conflict_started_overlord = {
+		value = -5
+		years = 1
+	}
+}	

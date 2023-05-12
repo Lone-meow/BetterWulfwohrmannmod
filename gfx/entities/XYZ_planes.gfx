@@ -1,0 +1,601 @@
+objectTypes = {
+
+	####################
+	### LIGHT PLANES ###
+	####################
+
+	pdxmesh = {
+		name = "red_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_red_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "orange_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "yellow_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_yellow_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "brown_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_brown_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "lime_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_lime_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "green_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_green_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "azure_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_azure_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "blue_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_blue_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "purple_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_purple_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "burgundy_plane_light_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_plane_burgundy_diffuse.dds"
+			texture_normal = "XYZ_light_plane_specular.dds"
+			texture_specular = "XYZ_light_plane_specular.dds"
+		}
+	}
+
+
+
+
+
+
+	#####################
+	### MEDIUM PLANES ###
+	#####################
+
+	pdxmesh = {
+		name = "red_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_red_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "orange_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "yellow_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_yellow_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "brown_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_brown_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "lime_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_lime_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "green_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_green_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "azure_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_azure_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "blue_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_blue_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "purple_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_purple_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "burgundy_plane_medium_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_plane_burgundy_diffuse.dds"
+			texture_normal = "XYZ_medium_plane_specular.dds"
+			texture_specular = "XYZ_medium_plane_specular.dds"
+		}
+	}
+
+	####################
+	### HEAVY PLANES ###
+	####################
+
+	pdxmesh = {
+		name = "red_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_red_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "orange_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "yellow_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_yellow_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "brown_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_brown_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "lime_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_lime_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "green_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_green_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "azure_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_azure_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "blue_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_blue_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "purple_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_purple_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "burgundy_plane_heavy_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_plane.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_heavy_plane_burgundy_diffuse.dds"
+			texture_normal = "XYZ_heavy_plane_specular.dds"
+			texture_specular = "XYZ_heavy_plane_specular.dds"
+		}
+	}
+
+
+
+##########################################################################################################
+
+#############################
+### LIGHT SPECIFIC PLANES ###
+#############################
+
+
+ ### LIGHT INTERWAR PLANE ###
+
+	pdxmesh = {
+		name = "azure_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_azure_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "blue_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_blue_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "brown_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_brown_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "burgundy_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_burgundy_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "green_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_green_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "lime_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_lime_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "orange_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "purple_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_purple_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "red_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_red_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+	pdxmesh = {
+		name = "yellow_light_interwar_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_interwar_plane_yellow_diffuse.dds"
+			texture_normal = "XYZ_light_interwar_plane_normal.dds"
+			texture_specular = "XYZ_light_interwar_plane_specular.dds"
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+ ### CAS PLANE ###
+
+
+	pdxmesh = {
+		name = "orange_CAS_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_CAS_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_CAS_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_CAS_plane_normal.dds"
+			texture_specular = "XYZ_CAS_plane_specular.dds"
+		}
+	}
+
+
+ ### NAV BOMBER PLANE ###
+
+	pdxmesh = {
+		name = "orange_NAV_bomber_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_NAV_bomber_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+
+		meshsettings = {
+			name = "ITA_carrier_nav_3_modelShape"
+			index = 0
+			texture_diffuse = "XYZ_NAV_bomber_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_NAV_bomber_plane_normal.dds"
+			texture_specular = "XYZ_NAV_bomber_plane_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+
+
+
+ ### LIGHT JET PLANE ###
+
+	pdxmesh = {
+		name = "orange_light_jet_plane_mesh"
+		file = "gfx/models/units/planes/light/XYZ_light_jet_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_light_jet_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_light_jet_plane_normal.dds"
+			texture_specular = "XYZ_light_jet_plane_specular.dds"
+		}
+	}
+
+
+
+##############################
+### MEDIUM SPECIFIC PLANES ###
+##############################
+
+
+### MEDIUM INTERWAR PLANE ###
+
+	pdxmesh = {
+		name = "orange_medium_interwar_plane_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_interwar_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			texture_diffuse = "XYZ_medium_interwar_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_medium_interwar_plane_normal.dds"
+			texture_specular = "XYZ_medium_interwar_plane_specular.dds"
+		}
+	}
+
+### HEAVY FIGHTER PLANE ###
+
+	pdxmesh = {
+		name = "orange_heavy_fighter_plane_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_heavy_fighter_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+
+		meshsettings = {
+			name = "ITA_heavy_fighter_1_modelShape"
+			index = 0
+			texture_diffuse = "XYZ_heavy_fighter_orange_diffuse.dds"
+			texture_normal = "XYZ_heavy_fighter_normal.dds"
+			texture_specular = "XYZ_heavy_fighter_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+
+
+
+
+### MEDIUM JET PLANE ###
+
+	pdxmesh = {
+		name = "orange_medium_jet_plane_mesh"
+		file = "gfx/models/units/planes/medium/XYZ_medium_jet_plane_mesh.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		meshsettings = {
+			name = "ENG_medium_jet_plane_modelShape"
+			index = 0
+			texture_diffuse = "XYZ_medium_jet_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_medium_jet_plane_normal.dds"
+			texture_specular = "XYZ_medium_jet_plane_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+
+
+
+#############################
+### HEAVY SPECIFIC PLANES ###
+#############################
+
+
+### HEAVY INTERWAR PLANE ###
+
+	pdxmesh = {
+		name = "orange_heavy_interwar_plane_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_heavy_interwar_plane_mesh.mesh"
+		scale = 1.0
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		
+		meshsettings = {
+			name = "Poland_LWS_6Shape"
+			index = 0
+			texture_diffuse = "XYZ_heavy_interwar_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_heavy_interwar_plane_normal.dds"
+			texture_specular = "XYZ_heavy_interwar_plane_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+
+
+
+### HEAVY MARITIME PATROL PLANE ###
+
+	pdxmesh = {
+		name = "orange_maritime_patrol_plane_mesh"
+		file = "gfx/models/units/planes/heavy/XYZ_maritime_patrol_plane_mesh.mesh"
+		scale = 1.0
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		
+		meshsettings = {
+			name = "ENG_heavy_plane_1_modelShape"
+			index = 0
+			texture_diffuse = "XYZ_maritime_patrol_plane_orange_diffuse.dds"
+			texture_normal = "XYZ_maritime_patrol_plane_normal.dds"
+			texture_specular = "XYZ_maritime_patrol_plane_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+	}
+
+
+
+
+
+
+
+
+} #CAT END

@@ -1,0 +1,526 @@
+
+
+create_ai_small_aircraft_1933_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			NOT = {has_country_flag = AI_1933_fighter_created_flag}
+		}
+		set_country_flag = AI_1933_fighter_created_flag
+		create_equipment_variant = {
+			name = "1933 Fighter I"
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1933_cas_created_flag}
+		}
+		set_country_flag = AI_1933_cas_created_flag
+		create_equipment_variant = {
+			name = "1933 CAS I"
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1933_nav_bomber_created_flag}
+		}
+		set_country_flag = AI_1933_nav_bomber_created_flag
+		create_equipment_variant = {
+			name = "1933 NAV Bomber I"
+			type = small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+}
+
+create_ai_small_aircraft_1936_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			NOT = {has_country_flag = AI_1936_fighter_created_flag}
+		}
+		set_country_flag = AI_1936_fighter_created_flag
+		create_equipment_variant = {
+			name = "1936 Fighter I"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_cas_created_flag}
+		}
+		set_country_flag = AI_1936_cas_created_flag
+		create_equipment_variant = {
+			name = "1936 CAS I"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_nav_bomber_created_flag}
+		}
+		set_country_flag = AI_1936_nav_bomber_created_flag
+		create_equipment_variant = {
+			name = "1936 NAV Bomber I"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+}
+
+create_ai_cv_small_aircraft_1936_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			NOT = {has_country_flag = AI_1936_cv_fighter_created_flag}
+		}
+		set_country_flag = AI_1936_cv_fighter_created_flag
+		create_equipment_variant = {
+			name = "1936 CV Fighter I"
+			type = cv_small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_cv_cas_created_flag}
+		}
+		set_country_flag = AI_1936_cv_cas_created_flag
+		create_equipment_variant = {
+			name = "1936 CV CAS I"
+			type = cv_small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_cv_nav_bomber_created_flag}
+		}
+		set_country_flag = AI_1936_cv_nav_bomber_created_flag
+		create_equipment_variant = {
+			name = "1936 CV NAV Bomber I"
+			type = cv_small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+}
+
+create_ai_cv_small_aircraft_1940_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			NOT = {has_country_flag = AI_1940_cv_fighter_created_flag}
+		}
+		set_country_flag = AI_1940_cv_fighter_created_flag
+		create_equipment_variant = {
+			name = "1940 CV Fighter I"
+			type = cv_small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1940_cv_cas_created_flag}
+		}
+		set_country_flag = AI_1940_cv_cas_created_flag
+		create_equipment_variant = {
+			name = "1940 CV CAS I"
+			type = cv_small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1940_cv_nav_bomber_created_flag}
+		}
+		set_country_flag = AI_1940_cv_nav_bomber_created_flag
+		create_equipment_variant = {
+			name = "1940 CV NAV Bomber I"
+			type = cv_small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+}
+
+
+create_ai_small_aircraft_1940_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			NOT = {has_country_flag = AI_1940_fighter_created_flag}
+		}
+		set_country_flag = AI_1940_fighter_created_flag
+		create_equipment_variant = {
+			name = "1940 Fighter I"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_cas_created_flag}
+		}
+		set_country_flag = AI_1940_cas_created_flag
+		create_equipment_variant = {
+			name = "1940 CAS I"
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = early_bombs
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_nav_bomber_created_flag}
+		}
+		set_country_flag = AI_1940_nav_bomber_created_flag
+		create_equipment_variant = {
+			name = "1940 NAV Bomber I"
+			type = small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+create_ai_medium_aircraft_1933_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			NOT = {has_country_flag = AI_1933_tac_bomber_created_flag}
+		}
+		set_country_flag = AI_1933_tac_bomber_created_flag
+		create_equipment_variant = {
+			name = "1933 Tactical Bomber"
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = aa_lmg
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1933_heavy_fighter_created_flag}
+		}
+		set_country_flag = AI_1933_heavy_fighter_created_flag
+		create_equipment_variant = {
+			name = "1933 Heavy Fighter"
+			type = medium_plane_fighter_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+	}
+}
+
+
+
+create_ai_medium_aircraft_1936_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			NOT = {has_country_flag = AI_1936_tac_bomber_created_flag}
+		}
+		set_country_flag = AI_1936_tac_bomber_created_flag
+		create_equipment_variant = {
+			name = "1933 Tactical Bomber"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = aa_lmg
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1936_heavy_fighter_created_flag}
+		}
+		set_country_flag = AI_1936_heavy_fighter_created_flag
+		create_equipment_variant = {
+			name = "1936 Heavy Fighter"
+			type = medium_plane_fighter_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+	}
+}
+
+
+create_ai_medium_aircraft_1940_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			NOT = {has_country_flag = AI_1940_tac_bomber_created_flag}
+		}
+		set_country_flag = AI_1940_tac_bomber_created_flag
+		create_equipment_variant = {
+			name = "1940 Tactical Bomber"
+			type = medium_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_tech = aa_lmg
+			has_tech = engines_1
+			NOT = {has_country_flag = AI_1940_heavy_fighter_created_flag}
+		}
+		set_country_flag = AI_1940_heavy_fighter_created_flag
+		create_equipment_variant = {
+			name = "1936 Heavy Fighter"
+			type = medium_plane_fighter_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+	}
+}
+
+
+create_ai_large_aircraft_1933_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			NOT = {has_country_flag = AI_1933_strat_bomber_created_flag}
+		}
+		set_country_flag = AI_1933_strat_bomber_created_flag
+		create_equipment_variant = {
+			name = "1933 Strategic Bomber"
+			type = large_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_1_4x
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+}
+
+
+
+create_ai_large_aircraft_1936_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			NOT = {has_country_flag = AI_1936_strat_bomber_created_flag}
+		}
+		set_country_flag = AI_1936_strat_bomber_created_flag
+		create_equipment_variant = {
+			name = "1936 Strategic Bomber"
+			type = large_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_1_4x
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+}
+
+
+create_ai_large_aircraft_1940_scripted_effect = {
+	if = {
+		limit = {
+			has_tech = engines_1
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			NOT = {has_country_flag = AI_1940_strat_bomber_created_flag}
+		}
+		set_country_flag = AI_1940_strat_bomber_created_flag
+		create_equipment_variant = {
+			name = "1940 Strategic Bomber"
+			type = large_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_1_4x
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2740 @@
+
+
+
+world_at_war_FORMABLE_FRANCE_CATEGORY = {
+	world_at_war_FORMABLE_FRANCE_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_france_flag }
+			count_triggers = {
+				amount = 7	#More than 25%
+				16 = { is_controlled_by = ROOT }    #1
+				1 = { is_controlled_by = ROOT }		#2
+				14 = { is_controlled_by = ROOT }    #3
+				15 = { is_controlled_by = ROOT }    #4
+				17 = { is_controlled_by = ROOT }    #5
+				18 = { is_controlled_by = ROOT }    #6
+				19 = { is_controlled_by = ROOT }    #7
+				20 = { is_controlled_by = ROOT }    #8
+				21 = { is_controlled_by = ROOT }    #9
+				22 = { is_controlled_by = ROOT }    #10
+				23 = { is_controlled_by = ROOT }    #11
+				24 = { is_controlled_by = ROOT }    #12
+				25 = { is_controlled_by = ROOT }    #13
+				26 = { is_controlled_by = ROOT }    #14
+				27 = { is_controlled_by = ROOT }    #15
+				28 = { is_controlled_by = ROOT }    #16
+				29 = { is_controlled_by = ROOT }    #17
+				30 = { is_controlled_by = ROOT }    #18
+				31 = { is_controlled_by = ROOT }    #19
+				32 = { is_controlled_by = ROOT }    #20
+				33 = { is_controlled_by = ROOT }    #21
+				735 = { is_controlled_by = ROOT }   #22
+				785 = { is_controlled_by = ROOT }   #23
+				806 = { is_controlled_by = ROOT }   #24
+				851 = { is_controlled_by = ROOT }   #25
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_france_flag }
+			16 = {	#Paris
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 11	#More than 50%
+				1 = { is_controlled_by = ROOT }
+				14 = { is_controlled_by = ROOT }
+				15 = { is_controlled_by = ROOT }
+				17 = { is_controlled_by = ROOT }
+				18 = { is_controlled_by = ROOT }
+				19 = { is_controlled_by = ROOT }
+				20 = { is_controlled_by = ROOT }
+				21 = { is_controlled_by = ROOT }
+				22 = { is_controlled_by = ROOT }
+				23 = { is_controlled_by = ROOT }
+				24 = { is_controlled_by = ROOT }
+				25 = { is_controlled_by = ROOT }
+				26 = { is_controlled_by = ROOT }
+				27 = { is_controlled_by = ROOT }
+				28 = { is_controlled_by = ROOT }
+				29 = { is_controlled_by = ROOT }
+				30 = { is_controlled_by = ROOT }
+				31 = { is_controlled_by = ROOT }
+				32 = { is_controlled_by = ROOT }
+				33 = { is_controlled_by = ROOT }
+				735 = { is_controlled_by = ROOT }
+				785 = { is_controlled_by = ROOT }
+				806 = { is_controlled_by = ROOT }
+				851 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {	#Decision categories support more than 1 state highlighted, but not individual decisions...
+				state = 16
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_france_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_FRANCE
+			set_capital = {state = 16}	#Paris
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 16
+				add_state_claim = 1
+				add_state_claim = 14
+				add_state_claim = 15
+				add_state_claim = 17
+				add_state_claim = 18
+				add_state_claim = 19
+				add_state_claim = 20
+				add_state_claim = 21
+				add_state_claim = 22
+				add_state_claim = 23
+				add_state_claim = 24
+				add_state_claim = 25
+				add_state_claim = 26
+				add_state_claim = 27
+				add_state_claim = 28
+				add_state_claim = 29
+				add_state_claim = 30
+				add_state_claim = 31
+				add_state_claim = 32
+				add_state_claim = 33
+				add_state_claim = 735
+				add_state_claim = 785
+				add_state_claim = 806
+				add_state_claim = 851
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 16
+				add_state_core = 1
+				add_state_core = 14
+				add_state_core = 15
+				add_state_core = 17
+				add_state_core = 18
+				add_state_core = 19
+				add_state_core = 20
+				add_state_core = 21
+				add_state_core = 22
+				add_state_core = 23
+				add_state_core = 24
+				add_state_core = 25
+				add_state_core = 26
+				add_state_core = 27
+				add_state_core = 28
+				add_state_core = 29
+				add_state_core = 30
+				add_state_core = 31
+				add_state_core = 32
+				add_state_core = 33
+				add_state_core = 735
+				add_state_core = 785
+				add_state_core = 806
+				add_state_core = 851
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+world_at_war_FORMABLE_GERMANY_CATEGORY = {
+	world_at_war_FORMABLE_GERMANY_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_germany_flag }
+			count_triggers = {
+				amount = 7
+				64 = { is_controlled_by = ROOT } 	#1
+				51 = { is_controlled_by = ROOT } 	#2
+				42 = { is_controlled_by = ROOT } 	#3
+				50 = { is_controlled_by = ROOT } 	#4
+				52 = { is_controlled_by = ROOT } 	#5
+				53 = { is_controlled_by = ROOT } 	#6
+				55 = { is_controlled_by = ROOT } 	#7
+				54 = { is_controlled_by = ROOT } 	#8
+				60 = { is_controlled_by = ROOT } 	#9
+				57 = { is_controlled_by = ROOT } 	#10
+				56 = { is_controlled_by = ROOT } 	#11
+				59 = { is_controlled_by = ROOT } 	#12
+				58 = { is_controlled_by = ROOT } 	#13
+				61 = { is_controlled_by = ROOT } 	#14
+				65 = { is_controlled_by = ROOT } 	#15
+				68 = { is_controlled_by = ROOT } 	#16
+				62 = { is_controlled_by = ROOT } 	#17
+				63 = { is_controlled_by = ROOT } 	#18
+				66 = { is_controlled_by = ROOT } 	#19
+				67 = { is_controlled_by = ROOT } 	#20
+				5 = { is_controlled_by = ROOT }  	#21
+				763 = { is_controlled_by = ROOT }	#22
+				848 = { is_controlled_by = ROOT }	#23
+				153 = { is_controlled_by = ROOT }	#24
+				152 = { is_controlled_by = ROOT }	#25
+				4 = { is_controlled_by = ROOT }  	#26
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_germany_flag }
+			64 = {	#Berlin
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 12
+				51 = { is_controlled_by = ROOT }
+				42 = { is_controlled_by = ROOT }
+				50 = { is_controlled_by = ROOT }
+				52 = { is_controlled_by = ROOT }
+				53 = { is_controlled_by = ROOT }
+				55 = { is_controlled_by = ROOT }
+				54 = { is_controlled_by = ROOT }
+				60 = { is_controlled_by = ROOT }
+				57 = { is_controlled_by = ROOT }
+				56 = { is_controlled_by = ROOT }
+				59 = { is_controlled_by = ROOT }
+				58 = { is_controlled_by = ROOT }
+				61 = { is_controlled_by = ROOT }
+				65 = { is_controlled_by = ROOT }
+				68 = { is_controlled_by = ROOT }
+				62 = { is_controlled_by = ROOT }
+				63 = { is_controlled_by = ROOT }
+				66 = { is_controlled_by = ROOT }
+				67 = { is_controlled_by = ROOT }
+				5 = { is_controlled_by = ROOT }
+				763 = { is_controlled_by = ROOT }
+				848 = { is_controlled_by = ROOT }
+				153 = { is_controlled_by = ROOT }
+				152 = { is_controlled_by = ROOT }
+				4 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_germany_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_GERMANY
+			set_capital = {state = 64}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 64
+				add_state_claim = 51
+				add_state_claim = 42
+				add_state_claim = 50
+				add_state_claim = 52
+				add_state_claim = 53
+				add_state_claim = 55
+				add_state_claim = 54
+				add_state_claim = 60
+				add_state_claim = 57
+				add_state_claim = 56
+				add_state_claim = 59
+				add_state_claim = 58
+				add_state_claim = 61
+				add_state_claim = 65
+				add_state_claim = 68
+				add_state_claim = 62
+				add_state_claim = 63
+				add_state_claim = 66
+				add_state_claim = 67
+				add_state_claim = 5
+				add_state_claim = 763
+				add_state_claim = 848
+				add_state_claim = 153
+				add_state_claim = 152
+				add_state_claim = 4
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 64
+				add_state_core = 51
+				add_state_core = 42
+				add_state_core = 50
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 55
+				add_state_core = 54
+				add_state_core = 60
+				add_state_core = 57
+				add_state_core = 56
+				add_state_core = 59
+				add_state_core = 58
+				add_state_core = 61
+				add_state_core = 65
+				add_state_core = 68
+				add_state_core = 62
+				add_state_core = 63
+				add_state_core = 66
+				add_state_core = 67
+				add_state_core = 5
+				add_state_core = 763
+				add_state_core = 848
+				add_state_core = 153
+				add_state_core = 152
+				add_state_core = 4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+world_at_war_FORMABLE_BRITAIN_CATEGORY = {
+	world_at_war_FORMABLE_BRITAIN_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_britain_flag }
+			count_triggers = {
+				amount = 4
+				126 = { is_controlled_by = ROOT } #1
+				123 = { is_controlled_by = ROOT } #2
+				338 = { is_controlled_by = ROOT } #3
+				127 = { is_controlled_by = ROOT } #4
+				125 = { is_controlled_by = ROOT } #5
+				129 = { is_controlled_by = ROOT } #6
+				128 = { is_controlled_by = ROOT } #7
+				122 = { is_controlled_by = ROOT } #8
+				132 = { is_controlled_by = ROOT } #9
+				130 = { is_controlled_by = ROOT } #10
+				131 = { is_controlled_by = ROOT } #11
+				133 = { is_controlled_by = ROOT } #12
+				121 = { is_controlled_by = ROOT } #13
+				136 = { is_controlled_by = ROOT } #14
+				120 = { is_controlled_by = ROOT } #15
+				119 = { is_controlled_by = ROOT } #16
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_britain_flag }
+			126 = {	#London
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 7
+				123 = { is_controlled_by = ROOT }
+				338 = { is_controlled_by = ROOT }
+				127 = { is_controlled_by = ROOT }
+				125 = { is_controlled_by = ROOT }
+				129 = { is_controlled_by = ROOT }
+				128 = { is_controlled_by = ROOT }
+				122 = { is_controlled_by = ROOT }
+				132 = { is_controlled_by = ROOT }
+				130 = { is_controlled_by = ROOT }
+				131 = { is_controlled_by = ROOT }
+				133 = { is_controlled_by = ROOT }
+				121 = { is_controlled_by = ROOT }
+				136 = { is_controlled_by = ROOT }
+				120 = { is_controlled_by = ROOT }
+				119 = { is_controlled_by = ROOT }
+
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_britain_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_BRITAIN
+			set_capital = {state = 126}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 126
+				add_state_claim = 123
+				add_state_claim = 338
+				add_state_claim = 127
+				add_state_claim = 125
+				add_state_claim = 129
+				add_state_claim = 128
+				add_state_claim = 122
+				add_state_claim = 132
+				add_state_claim = 130
+				add_state_claim = 131
+				add_state_claim = 133
+				add_state_claim = 121
+				add_state_claim = 136
+				add_state_claim = 120
+				add_state_claim = 119
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 126
+				add_state_core = 123
+				add_state_core = 338
+				add_state_core = 127
+				add_state_core = 125
+				add_state_core = 129
+				add_state_core = 128
+				add_state_core = 122
+				add_state_core = 132
+				add_state_core = 130
+				add_state_core = 131
+				add_state_core = 133
+				add_state_core = 121
+				add_state_core = 136
+				add_state_core = 120
+				add_state_core = 119
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+world_at_war_FORMABLE_RUSSIA_CATEGORY = {
+	world_at_war_FORMABLE_RUSSIA_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_russia_flag }
+			count_triggers = {
+				amount = 17
+				219 = { is_controlled_by = ROOT } #1
+				213 = { is_controlled_by = ROOT } #2
+				215 = { is_controlled_by = ROOT } #3
+				216 = { is_controlled_by = ROOT } #4
+				879 = { is_controlled_by = ROOT } #5
+				214 = { is_controlled_by = ROOT } #6
+				880 = { is_controlled_by = ROOT } #7
+				825 = { is_controlled_by = ROOT } #8
+				262 = { is_controlled_by = ROOT } #9
+				397 = { is_controlled_by = ROOT } #10
+				581 = { is_controlled_by = ROOT } #11
+				398 = { is_controlled_by = ROOT } #12
+				573 = { is_controlled_by = ROOT } #13
+				651 = { is_controlled_by = ROOT } #14
+				582 = { is_controlled_by = ROOT } #15
+				652 = { is_controlled_by = ROOT } #16
+				400 = { is_controlled_by = ROOT } #17
+				399 = { is_controlled_by = ROOT } #18
+				833 = { is_controlled_by = ROOT } #19
+				249 = { is_controlled_by = ROOT } #20
+				256 = { is_controlled_by = ROOT } #21
+				250 = { is_controlled_by = ROOT } #22
+				251 = { is_controlled_by = ROOT } #23
+				255 = { is_controlled_by = ROOT } #24
+				239 = { is_controlled_by = ROOT } #25
+				829 = { is_controlled_by = ROOT } #26
+				401 = { is_controlled_by = ROOT } #27
+				217 = { is_controlled_by = ROOT } #28
+				236 = { is_controlled_by = ROOT } #29
+				237 = { is_controlled_by = ROOT } #30
+				238 = { is_controlled_by = ROOT } #31
+				234 = { is_controlled_by = ROOT } #32
+				235 = { is_controlled_by = ROOT } #33
+				232 = { is_controlled_by = ROOT } #34
+				821 = { is_controlled_by = ROOT } #35
+				828 = { is_controlled_by = ROOT } #36
+				827 = { is_controlled_by = ROOT } #37
+				233 = { is_controlled_by = ROOT } #38
+				218 = { is_controlled_by = ROOT } #39
+				245 = { is_controlled_by = ROOT } #40
+				265 = { is_controlled_by = ROOT } #41
+				257 = { is_controlled_by = ROOT } #42
+				260 = { is_controlled_by = ROOT } #43
+				240 = { is_controlled_by = ROOT } #44
+				258 = { is_controlled_by = ROOT } #45
+				254 = { is_controlled_by = ROOT } #46
+				253 = { is_controlled_by = ROOT } #47
+				252 = { is_controlled_by = ROOT } #48
+				351 = { is_controlled_by = ROOT } #49
+				248 = { is_controlled_by = ROOT } #50
+				264 = { is_controlled_by = ROOT } #51
+				247 = { is_controlled_by = ROOT } #52
+				246 = { is_controlled_by = ROOT } #53
+				195 = { is_controlled_by = ROOT } #54
+				244 = { is_controlled_by = ROOT } #55
+				263 = { is_controlled_by = ROOT } #56
+				209 = { is_controlled_by = ROOT } #57
+				210 = { is_controlled_by = ROOT } #58
+				242 = { is_controlled_by = ROOT } #59
+				243 = { is_controlled_by = ROOT } #60
+				241 = { is_controlled_by = ROOT } #61
+				224 = { is_controlled_by = ROOT } #62
+				205 = { is_controlled_by = ROOT } #63
+				223 = { is_controlled_by = ROOT } #64
+				222 = { is_controlled_by = ROOT } #65
+				220 = { is_controlled_by = ROOT } #66
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_russia_flag }
+			219 = {	#Moscow
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 32
+				213 = { is_controlled_by = ROOT }
+				215 = { is_controlled_by = ROOT }
+				216 = { is_controlled_by = ROOT }
+				879 = { is_controlled_by = ROOT }
+				214 = { is_controlled_by = ROOT }
+				880 = { is_controlled_by = ROOT }
+				825 = { is_controlled_by = ROOT }
+				262 = { is_controlled_by = ROOT }
+				397 = { is_controlled_by = ROOT }
+				581 = { is_controlled_by = ROOT }
+				398 = { is_controlled_by = ROOT }
+				573 = { is_controlled_by = ROOT }
+				651 = { is_controlled_by = ROOT }
+				582 = { is_controlled_by = ROOT }
+				652 = { is_controlled_by = ROOT }
+				400 = { is_controlled_by = ROOT }
+				399 = { is_controlled_by = ROOT }
+				833 = { is_controlled_by = ROOT }
+				249 = { is_controlled_by = ROOT }
+				256 = { is_controlled_by = ROOT }
+				250 = { is_controlled_by = ROOT }
+				251 = { is_controlled_by = ROOT }
+				255 = { is_controlled_by = ROOT }
+				239 = { is_controlled_by = ROOT }
+				829 = { is_controlled_by = ROOT }
+				401 = { is_controlled_by = ROOT }
+				217 = { is_controlled_by = ROOT }
+				236 = { is_controlled_by = ROOT }
+				237 = { is_controlled_by = ROOT }
+				238 = { is_controlled_by = ROOT }
+				234 = { is_controlled_by = ROOT }
+				235 = { is_controlled_by = ROOT }
+				232 = { is_controlled_by = ROOT }
+				821 = { is_controlled_by = ROOT }
+				828 = { is_controlled_by = ROOT }
+				827 = { is_controlled_by = ROOT }
+				233 = { is_controlled_by = ROOT }
+				218 = { is_controlled_by = ROOT }
+				245 = { is_controlled_by = ROOT }
+				265 = { is_controlled_by = ROOT }
+				257 = { is_controlled_by = ROOT }
+				260 = { is_controlled_by = ROOT }
+				240 = { is_controlled_by = ROOT }
+				258 = { is_controlled_by = ROOT }
+				254 = { is_controlled_by = ROOT }
+				253 = { is_controlled_by = ROOT }
+				252 = { is_controlled_by = ROOT }
+				351 = { is_controlled_by = ROOT }
+				248 = { is_controlled_by = ROOT }
+				264 = { is_controlled_by = ROOT }
+				247 = { is_controlled_by = ROOT }
+				246 = { is_controlled_by = ROOT }
+				195 = { is_controlled_by = ROOT }
+				244 = { is_controlled_by = ROOT }
+				263 = { is_controlled_by = ROOT }
+				209 = { is_controlled_by = ROOT }
+				210 = { is_controlled_by = ROOT }
+				242 = { is_controlled_by = ROOT }
+				243 = { is_controlled_by = ROOT }
+				241 = { is_controlled_by = ROOT }
+				224 = { is_controlled_by = ROOT }
+				205 = { is_controlled_by = ROOT }
+				223 = { is_controlled_by = ROOT }
+				222 = { is_controlled_by = ROOT }
+				220 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 219
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_russia_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_RUSSIA
+			set_capital = {state = 219}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 219
+				add_state_claim = 213
+				add_state_claim = 215
+				add_state_claim = 216
+				add_state_claim = 879
+				add_state_claim = 214
+				add_state_claim = 880
+				add_state_claim = 825
+				add_state_claim = 262
+				add_state_claim = 397
+				add_state_claim = 581
+				add_state_claim = 398
+				add_state_claim = 573
+				add_state_claim = 651
+				add_state_claim = 582
+				add_state_claim = 652
+				add_state_claim = 400
+				add_state_claim = 399
+				add_state_claim = 833
+				add_state_claim = 249
+				add_state_claim = 256
+				add_state_claim = 250
+				add_state_claim = 251
+				add_state_claim = 255
+				add_state_claim = 239
+				add_state_claim = 829
+				add_state_claim = 401
+				add_state_claim = 217
+				add_state_claim = 236
+				add_state_claim = 237
+				add_state_claim = 238
+				add_state_claim = 234
+				add_state_claim = 235
+				add_state_claim = 232
+				add_state_claim = 821
+				add_state_claim = 828
+				add_state_claim = 827
+				add_state_claim = 233
+				add_state_claim = 218
+				add_state_claim = 245
+				add_state_claim = 265
+				add_state_claim = 257
+				add_state_claim = 260
+				add_state_claim = 240
+				add_state_claim = 258
+				add_state_claim = 254
+				add_state_claim = 253
+				add_state_claim = 252
+				add_state_claim = 351
+				add_state_claim = 248
+				add_state_claim = 264
+				add_state_claim = 247
+				add_state_claim = 246
+				add_state_claim = 195
+				add_state_claim = 244
+				add_state_claim = 263
+				add_state_claim = 209
+				add_state_claim = 210
+				add_state_claim = 242
+				add_state_claim = 243
+				add_state_claim = 241
+				add_state_claim = 224
+				add_state_claim = 205
+				add_state_claim = 223
+				add_state_claim = 222
+				add_state_claim = 220
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 219
+				add_state_core = 213
+				add_state_core = 215
+				add_state_core = 216
+				add_state_core = 879
+				add_state_core = 214
+				add_state_core = 880
+				add_state_core = 825
+				add_state_core = 262
+				add_state_core = 397
+				add_state_core = 581
+				add_state_core = 398
+				add_state_core = 573
+				add_state_core = 651
+				add_state_core = 582
+				add_state_core = 652
+				add_state_core = 400
+				add_state_core = 399
+				add_state_core = 833
+				add_state_core = 249
+				add_state_core = 256
+				add_state_core = 250
+				add_state_core = 251
+				add_state_core = 255
+				add_state_core = 239
+				add_state_core = 829
+				add_state_core = 401
+				add_state_core = 217
+				add_state_core = 236
+				add_state_core = 237
+				add_state_core = 238
+				add_state_core = 234
+				add_state_core = 235
+				add_state_core = 232
+				add_state_core = 821
+				add_state_core = 828
+				add_state_core = 827
+				add_state_core = 233
+				add_state_core = 218
+				add_state_core = 245
+				add_state_core = 265
+				add_state_core = 257
+				add_state_core = 260
+				add_state_core = 240
+				add_state_core = 258
+				add_state_core = 254
+				add_state_core = 253
+				add_state_core = 252
+				add_state_core = 351
+				add_state_core = 248
+				add_state_core = 264
+				add_state_core = 247
+				add_state_core = 246
+				add_state_core = 195
+				add_state_core = 244
+				add_state_core = 263
+				add_state_core = 209
+				add_state_core = 210
+				add_state_core = 242
+				add_state_core = 243
+				add_state_core = 241
+				add_state_core = 224
+				add_state_core = 205
+				add_state_core = 223
+				add_state_core = 222
+				add_state_core = 220
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+
+world_at_war_FORMABLE_CHINA_CATEGORY = {
+	world_at_war_FORMABLE_CHINA_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_china_flag }
+			count_triggers = {
+				amount = 17
+				608 = { is_controlled_by = ROOT } #1
+				761 = { is_controlled_by = ROOT } #2
+				714 = { is_controlled_by = ROOT } #3
+				657 = { is_controlled_by = ROOT } #4
+				717 = { is_controlled_by = ROOT } #5
+				328 = { is_controlled_by = ROOT } #6
+				715 = { is_controlled_by = ROOT } #7
+				716 = { is_controlled_by = ROOT } #8
+				745 = { is_controlled_by = ROOT } #
+				612 = { is_controlled_by = ROOT } #10
+				610 = { is_controlled_by = ROOT } #11
+				609 = { is_controlled_by = ROOT } #12
+				611 = { is_controlled_by = ROOT } #13
+				621 = { is_controlled_by = ROOT } #14
+				746 = { is_controlled_by = ROOT } #15
+				622 = { is_controlled_by = ROOT } #16
+				615 = { is_controlled_by = ROOT } #17
+				614 = { is_controlled_by = ROOT } #18
+				597 = { is_controlled_by = ROOT } #19
+				743 = { is_controlled_by = ROOT } #20
+				598 = { is_controlled_by = ROOT } #21
+				606 = { is_controlled_by = ROOT } #22
+				613 = { is_controlled_by = ROOT } #23
+				749 = { is_controlled_by = ROOT } #24
+				596 = { is_controlled_by = ROOT } #25
+				607 = { is_controlled_by = ROOT } #26
+				620 = { is_controlled_by = ROOT } #27
+				744 = { is_controlled_by = ROOT } #28
+				595 = { is_controlled_by = ROOT } #29
+				600 = { is_controlled_by = ROOT } #30
+				602 = { is_controlled_by = ROOT } #31
+				593 = { is_controlled_by = ROOT } #32
+				326 = { is_controlled_by = ROOT } #33
+				729 = { is_controlled_by = ROOT } #34
+				728 = { is_controlled_by = ROOT } #35
+				592 = { is_controlled_by = ROOT } #36
+				599 = { is_controlled_by = ROOT } #37
+				594 = { is_controlled_by = ROOT } #38
+				591 = { is_controlled_by = ROOT } #39
+				325 = { is_controlled_by = ROOT } #40
+				747 = { is_controlled_by = ROOT } #41
+				603 = { is_controlled_by = ROOT } #42
+				748 = { is_controlled_by = ROOT } #43
+				750 = { is_controlled_by = ROOT } #44
+				605 = { is_controlled_by = ROOT } #45
+				751 = { is_controlled_by = ROOT } #46
+				752 = { is_controlled_by = ROOT } #47
+				753 = { is_controlled_by = ROOT } #48
+				283 = { is_controlled_by = ROOT } #49
+				754 = { is_controlled_by = ROOT } #50
+				616 = { is_controlled_by = ROOT } #51
+				756 = { is_controlled_by = ROOT } #52
+				755 = { is_controlled_by = ROOT } #53
+				760 = { is_controlled_by = ROOT } #54
+				759 = { is_controlled_by = ROOT } #55
+				618 = { is_controlled_by = ROOT } #56
+				617 = { is_controlled_by = ROOT } #57
+				287 = { is_controlled_by = ROOT } #58
+				619 = { is_controlled_by = ROOT } #59
+				758 = { is_controlled_by = ROOT } #60
+				322 = { is_controlled_by = ROOT } #61
+				757 = { is_controlled_by = ROOT } #62
+				604 = { is_controlled_by = ROOT } #63
+				601 = { is_controlled_by = ROOT } #64
+				524 = { is_controlled_by = ROOT } #65
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_china_flag }
+			608 = {	#Beijing
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 32
+				761 = { is_controlled_by = ROOT }
+				714 = { is_controlled_by = ROOT }
+				657 = { is_controlled_by = ROOT }
+				717 = { is_controlled_by = ROOT }
+				328 = { is_controlled_by = ROOT }
+				715 = { is_controlled_by = ROOT }
+				716 = { is_controlled_by = ROOT }
+				745 = { is_controlled_by = ROOT }
+				612 = { is_controlled_by = ROOT }
+				610 = { is_controlled_by = ROOT }
+				609 = { is_controlled_by = ROOT }
+				611 = { is_controlled_by = ROOT }
+				621 = { is_controlled_by = ROOT }
+				746 = { is_controlled_by = ROOT }
+				622 = { is_controlled_by = ROOT }
+				615 = { is_controlled_by = ROOT }
+				614 = { is_controlled_by = ROOT }
+				597 = { is_controlled_by = ROOT }
+				743 = { is_controlled_by = ROOT }
+				598 = { is_controlled_by = ROOT }
+				606 = { is_controlled_by = ROOT }
+				613 = { is_controlled_by = ROOT }
+				749 = { is_controlled_by = ROOT }
+				596 = { is_controlled_by = ROOT }
+				607 = { is_controlled_by = ROOT }
+				620 = { is_controlled_by = ROOT }
+				744 = { is_controlled_by = ROOT }
+				595 = { is_controlled_by = ROOT }
+				600 = { is_controlled_by = ROOT }
+				602 = { is_controlled_by = ROOT }
+				593 = { is_controlled_by = ROOT }
+				326 = { is_controlled_by = ROOT }
+				729 = { is_controlled_by = ROOT }
+				728 = { is_controlled_by = ROOT }
+				592 = { is_controlled_by = ROOT }
+				599 = { is_controlled_by = ROOT }
+				594 = { is_controlled_by = ROOT }
+				591 = { is_controlled_by = ROOT }
+				325 = { is_controlled_by = ROOT }
+				747 = { is_controlled_by = ROOT }
+				603 = { is_controlled_by = ROOT }
+				748 = { is_controlled_by = ROOT }
+				750 = { is_controlled_by = ROOT }
+				605 = { is_controlled_by = ROOT }
+				751 = { is_controlled_by = ROOT }
+				752 = { is_controlled_by = ROOT }
+				753 = { is_controlled_by = ROOT }
+				283 = { is_controlled_by = ROOT }
+				754 = { is_controlled_by = ROOT }
+				616 = { is_controlled_by = ROOT }
+				756 = { is_controlled_by = ROOT }
+				755 = { is_controlled_by = ROOT }
+				760 = { is_controlled_by = ROOT }
+				759 = { is_controlled_by = ROOT }
+				618 = { is_controlled_by = ROOT }
+				617 = { is_controlled_by = ROOT }
+				287 = { is_controlled_by = ROOT }
+				619 = { is_controlled_by = ROOT }
+				758 = { is_controlled_by = ROOT }
+				322 = { is_controlled_by = ROOT }
+				757 = { is_controlled_by = ROOT }
+				604 = { is_controlled_by = ROOT }
+				601 = { is_controlled_by = ROOT }
+				524 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_china_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_CHINA
+			set_capital = {state = 608}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 608
+				add_state_claim = 761
+				add_state_claim = 714
+				add_state_claim = 657
+				add_state_claim = 717
+				add_state_claim = 328
+				add_state_claim = 715
+				add_state_claim = 716
+				add_state_claim = 745
+				add_state_claim = 612
+				add_state_claim = 610
+				add_state_claim = 609
+				add_state_claim = 611
+				add_state_claim = 621
+				add_state_claim = 746
+				add_state_claim = 622
+				add_state_claim = 615
+				add_state_claim = 614
+				add_state_claim = 597
+				add_state_claim = 743
+				add_state_claim = 598
+				add_state_claim = 606
+				add_state_claim = 613
+				add_state_claim = 749
+				add_state_claim = 596
+				add_state_claim = 607
+				add_state_claim = 620
+				add_state_claim = 744
+				add_state_claim = 595
+				add_state_claim = 600
+				add_state_claim = 602
+				add_state_claim = 593
+				add_state_claim = 326
+				add_state_claim = 729
+				add_state_claim = 728
+				add_state_claim = 592
+				add_state_claim = 599
+				add_state_claim = 594
+				add_state_claim = 591
+				add_state_claim = 325
+				add_state_claim = 747
+				add_state_claim = 603
+				add_state_claim = 748
+				add_state_claim = 750
+				add_state_claim = 605
+				add_state_claim = 751
+				add_state_claim = 752
+				add_state_claim = 753
+				add_state_claim = 283
+				add_state_claim = 754
+				add_state_claim = 616
+				add_state_claim = 756
+				add_state_claim = 755
+				add_state_claim = 760
+				add_state_claim = 759
+				add_state_claim = 618
+				add_state_claim = 617
+				add_state_claim = 287
+				add_state_claim = 619
+				add_state_claim = 758
+				add_state_claim = 322
+				add_state_claim = 757
+				add_state_claim = 604
+				add_state_claim = 601
+				add_state_claim = 524
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 608
+				add_state_core = 761
+				add_state_core = 714
+				add_state_core = 657
+				add_state_core = 717
+				add_state_core = 328
+				add_state_core = 715
+				add_state_core = 716
+				add_state_core = 745
+				add_state_core = 612
+				add_state_core = 610
+				add_state_core = 609
+				add_state_core = 611
+				add_state_core = 621
+				add_state_core = 746
+				add_state_core = 622
+				add_state_core = 615
+				add_state_core = 614
+				add_state_core = 597
+				add_state_core = 743
+				add_state_core = 598
+				add_state_core = 606
+				add_state_core = 613
+				add_state_core = 749
+				add_state_core = 596
+				add_state_core = 607
+				add_state_core = 620
+				add_state_core = 744
+				add_state_core = 595
+				add_state_core = 600
+				add_state_core = 602
+				add_state_core = 593
+				add_state_core = 326
+				add_state_core = 729
+				add_state_core = 728
+				add_state_core = 592
+				add_state_core = 599
+				add_state_core = 594
+				add_state_core = 591
+				add_state_core = 325
+				add_state_core = 747
+				add_state_core = 603
+				add_state_core = 748
+				add_state_core = 750
+				add_state_core = 605
+				add_state_core = 751
+				add_state_core = 752
+				add_state_core = 753
+				add_state_core = 283
+				add_state_core = 754
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 755
+				add_state_core = 760
+				add_state_core = 759
+				add_state_core = 618
+				add_state_core = 617
+				add_state_core = 287
+				add_state_core = 619
+				add_state_core = 758
+				add_state_core = 322
+				add_state_core = 757
+				add_state_core = 604
+				add_state_core = 601
+				add_state_core = 524
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+
+world_at_war_FORMABLE_JAPAN_CATEGORY = {
+	world_at_war_FORMABLE_JAPAN_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_japan_flag }
+			count_triggers = {
+				amount = 4
+				282 = { is_controlled_by = ROOT } #1
+				537 = { is_controlled_by = ROOT } #2
+				555 = { is_controlled_by = ROOT } #3
+				536 = { is_controlled_by = ROOT } #4
+				533 = { is_controlled_by = ROOT } #5
+				534 = { is_controlled_by = ROOT } #6
+				535 = { is_controlled_by = ROOT } #7
+				532 = { is_controlled_by = ROOT } #8
+				531 = { is_controlled_by = ROOT } #9
+				529 = { is_controlled_by = ROOT } #10
+				530 = { is_controlled_by = ROOT } #11
+				528 = { is_controlled_by = ROOT } #12
+				526 = { is_controlled_by = ROOT } #13
+				645 = { is_controlled_by = ROOT } #14
+				655 = { is_controlled_by = ROOT } #15
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_japan_flag }
+			282 = {	#Tokyo
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 7
+				537 = { is_controlled_by = ROOT }
+				555 = { is_controlled_by = ROOT }
+				536 = { is_controlled_by = ROOT }
+				533 = { is_controlled_by = ROOT }
+				534 = { is_controlled_by = ROOT }
+				535 = { is_controlled_by = ROOT }
+				532 = { is_controlled_by = ROOT }
+				531 = { is_controlled_by = ROOT }
+				529 = { is_controlled_by = ROOT }
+				530 = { is_controlled_by = ROOT }
+				528 = { is_controlled_by = ROOT }
+				526 = { is_controlled_by = ROOT }
+				645 = { is_controlled_by = ROOT }
+				655 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_japan_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_JAPAN
+			set_capital = {state = 282}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 282
+				add_state_claim = 608
+				add_state_claim = 537
+				add_state_claim = 555
+				add_state_claim = 536
+				add_state_claim = 533
+				add_state_claim = 534
+				add_state_claim = 535
+				add_state_claim = 532
+				add_state_claim = 531
+				add_state_claim = 529
+				add_state_claim = 530
+				add_state_claim = 528
+				add_state_claim = 526
+				add_state_claim = 645
+				add_state_claim = 655
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 282
+				add_state_core = 608
+				add_state_core = 537
+				add_state_core = 555
+				add_state_core = 536
+				add_state_core = 533
+				add_state_core = 534
+				add_state_core = 535
+				add_state_core = 532
+				add_state_core = 531
+				add_state_core = 529
+				add_state_core = 530
+				add_state_core = 528
+				add_state_core = 526
+				add_state_core = 645
+				add_state_core = 655
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+world_at_war_FORMABLE_NORDEN_CATEGORY = {
+	world_at_war_FORMABLE_NORDEN_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_norden_flag }
+			count_triggers = {
+				amount = 6
+				141 = { is_controlled_by = ROOT } #1
+				99 = { is_controlled_by = ROOT }  #2
+				37 = { is_controlled_by = ROOT }  #3
+				337 = { is_controlled_by = ROOT } #4
+				100 = { is_controlled_by = ROOT } #5
+				101 = { is_controlled_by = ROOT } #6
+				138 = { is_controlled_by = ROOT } #7
+				124 = { is_controlled_by = ROOT } #8
+				139 = { is_controlled_by = ROOT } #9
+				140 = { is_controlled_by = ROOT } #10
+				38 = { is_controlled_by = ROOT }  #11
+				110 = { is_controlled_by = ROOT } #12
+				142 = { is_controlled_by = ROOT } #13
+				143 = { is_controlled_by = ROOT } #14
+				666 = { is_controlled_by = ROOT } #15
+				144 = { is_controlled_by = ROOT } #16
+				148 = { is_controlled_by = ROOT } #17
+				722 = { is_controlled_by = ROOT } #18
+				147 = { is_controlled_by = ROOT } #19
+				149 = { is_controlled_by = ROOT } #20
+				150 = { is_controlled_by = ROOT } #21
+				111 = { is_controlled_by = ROOT } #22
+				145 = { is_controlled_by = ROOT } #23
+				146 = { is_controlled_by = ROOT } #24
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_norden_flag }
+			141 = {	#Stockholm, Danes on suicide watch lol
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 11
+				99 = { is_controlled_by = ROOT }
+				37 = { is_controlled_by = ROOT }
+				337 = { is_controlled_by = ROOT }
+				100 = { is_controlled_by = ROOT }
+				101 = { is_controlled_by = ROOT }
+				138 = { is_controlled_by = ROOT }
+				124 = { is_controlled_by = ROOT }
+				139 = { is_controlled_by = ROOT }
+				140 = { is_controlled_by = ROOT }
+				38 = { is_controlled_by = ROOT } 
+				110 = { is_controlled_by = ROOT }
+				142 = { is_controlled_by = ROOT }
+				143 = { is_controlled_by = ROOT }
+				666 = { is_controlled_by = ROOT }
+				144 = { is_controlled_by = ROOT }
+				148 = { is_controlled_by = ROOT }
+				722 = { is_controlled_by = ROOT }
+				147 = { is_controlled_by = ROOT }
+				149 = { is_controlled_by = ROOT }
+				150 = { is_controlled_by = ROOT }
+				111 = { is_controlled_by = ROOT }
+				145 = { is_controlled_by = ROOT }
+				146 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 141
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_norden_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_NORDEN
+			set_capital = {state = 141}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 141
+				add_state_claim = 99
+				add_state_claim = 37
+				add_state_claim = 337
+				add_state_claim = 100
+				add_state_claim = 101
+				add_state_claim = 138
+				add_state_claim = 124
+				add_state_claim = 139
+				add_state_claim = 140
+				add_state_claim = 38
+				add_state_claim = 110
+				add_state_claim = 142
+				add_state_claim = 143
+				add_state_claim = 666
+				add_state_claim = 144
+				add_state_claim = 148
+				add_state_claim = 722
+				add_state_claim = 147
+				add_state_claim = 149
+				add_state_claim = 150
+				add_state_claim = 111
+				add_state_claim = 145
+				add_state_claim = 146
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 141
+				add_state_core = 99
+				add_state_core = 37
+				add_state_core = 337
+				add_state_core = 100
+				add_state_core = 101
+				add_state_core = 138
+				add_state_core = 124
+				add_state_core = 139
+				add_state_core = 140
+				add_state_core = 38
+				add_state_core = 110
+				add_state_core = 142
+				add_state_core = 143
+				add_state_core = 666
+				add_state_core = 144
+				add_state_core = 148
+				add_state_core = 722
+				add_state_core = 147
+				add_state_core = 149
+				add_state_core = 150
+				add_state_core = 111
+				add_state_core = 145
+				add_state_core = 146
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+world_at_war_FORMABLE_ITALY_CATEGORY = {
+	world_at_war_FORMABLE_ITALY_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_italy_flag }
+			count_triggers = {
+				amount = 4
+				115 = { is_controlled_by = ROOT } #1
+				156 = { is_controlled_by = ROOT } #2
+				117 = { is_controlled_by = ROOT } #3
+				849 = { is_controlled_by = ROOT } #4
+				2 = { is_controlled_by = ROOT }   #5
+				157 = { is_controlled_by = ROOT } #6
+				162 = { is_controlled_by = ROOT } #7
+				161 = { is_controlled_by = ROOT } #8
+				158 = { is_controlled_by = ROOT } #9
+				159 = { is_controlled_by = ROOT } #10
+				39 = { is_controlled_by = ROOT }  #11
+				850 = { is_controlled_by = ROOT } #12
+				160 = { is_controlled_by = ROOT } #13
+				736 = { is_controlled_by = ROOT } #14
+				852 = { is_controlled_by = ROOT } #15
+				114 = { is_controlled_by = ROOT } #16
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_italy_flag }
+			2 = {	#Rome
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 7
+				115 = { is_controlled_by = ROOT }
+				156 = { is_controlled_by = ROOT }
+				117 = { is_controlled_by = ROOT }
+				849 = { is_controlled_by = ROOT }
+				157 = { is_controlled_by = ROOT }
+				162 = { is_controlled_by = ROOT }
+				161 = { is_controlled_by = ROOT }
+				158 = { is_controlled_by = ROOT }
+				159 = { is_controlled_by = ROOT }
+				39 = { is_controlled_by = ROOT }
+				850 = { is_controlled_by = ROOT }
+				160 = { is_controlled_by = ROOT }
+				736 = { is_controlled_by = ROOT }
+				852 = { is_controlled_by = ROOT }
+				114 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_italy_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_ITALY
+			set_capital = {state = 2}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 2
+				add_state_claim = 115
+				add_state_claim = 156
+				add_state_claim = 117
+				add_state_claim = 849
+				add_state_claim = 157
+				add_state_claim = 162
+				add_state_claim = 161
+				add_state_claim = 158
+				add_state_claim = 159
+				add_state_claim = 39 
+				add_state_claim = 850
+				add_state_claim = 160
+				add_state_claim = 736
+				add_state_claim = 852
+				add_state_claim = 114
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 2
+				add_state_core = 115
+				add_state_core = 156
+				add_state_core = 117
+				add_state_core = 849
+				add_state_core = 157
+				add_state_core = 162
+				add_state_core = 161
+				add_state_core = 158
+				add_state_core = 159
+				add_state_core = 39 
+				add_state_core = 850
+				add_state_core = 160
+				add_state_core = 736
+				add_state_core = 852
+				add_state_core = 114
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+world_at_war_FORMABLE_USA_CATEGORY = {
+	world_at_war_FORMABLE_USA_decision = {
+		icon = generic_form_nation
+
+		visible = {
+			NOT = { has_global_flag = formable_usa_flag }
+			count_triggers = {
+				amount = 12
+				361 = { is_controlled_by = ROOT } #1
+				463 = { is_controlled_by = ROOT } #2
+				386 = { is_controlled_by = ROOT } #3
+				385 = { is_controlled_by = ROOT } #4
+				378 = { is_controlled_by = ROOT } #5
+				379 = { is_controlled_by = ROOT } #6
+				380 = { is_controlled_by = ROOT } #7
+				377 = { is_controlled_by = ROOT } #8
+				387 = { is_controlled_by = ROOT } #9
+				388 = { is_controlled_by = ROOT } #10
+				381 = { is_controlled_by = ROOT } #11
+				389 = { is_controlled_by = ROOT } #12
+				390 = { is_controlled_by = ROOT } #13
+				382 = { is_controlled_by = ROOT } #14
+				384 = { is_controlled_by = ROOT } #15
+				383 = { is_controlled_by = ROOT } #16
+				376 = { is_controlled_by = ROOT } #17
+				375 = { is_controlled_by = ROOT } #18
+				374 = { is_controlled_by = ROOT } #19
+				373 = { is_controlled_by = ROOT } #20
+				372 = { is_controlled_by = ROOT } #21
+				371 = { is_controlled_by = ROOT } #22
+				370 = { is_controlled_by = ROOT } #23
+				391 = { is_controlled_by = ROOT } #24
+				392 = { is_controlled_by = ROOT } #25
+				394 = { is_controlled_by = ROOT } #26
+				395 = { is_controlled_by = ROOT } #27
+				394 = { is_controlled_by = ROOT } #28
+				393 = { is_controlled_by = ROOT } #29
+				396 = { is_controlled_by = ROOT } #30
+				261 = { is_controlled_by = ROOT } #31
+				367 = { is_controlled_by = ROOT } #32
+				365 = { is_controlled_by = ROOT } #33
+				366 = { is_controlled_by = ROOT } #34
+				369 = { is_controlled_by = ROOT } #35
+				368 = { is_controlled_by = ROOT } #36
+				364 = { is_controlled_by = ROOT } #37
+				363 = { is_controlled_by = ROOT } #38
+				362 = { is_controlled_by = ROOT } #39
+				816 = { is_controlled_by = ROOT } #40
+				360 = { is_controlled_by = ROOT } #41
+				358 = { is_controlled_by = ROOT } #42
+				359 = { is_controlled_by = ROOT } #43
+				357 = { is_controlled_by = ROOT } #44
+				629 = { is_controlled_by = ROOT } #45
+			}
+		}
+		available = {
+			NOT = { has_global_flag = formable_usa_flag }
+			361 = {	#Washington DC
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			count_triggers = {
+				amount = 21
+				463 = { is_controlled_by = ROOT }
+				386 = { is_controlled_by = ROOT }
+				385 = { is_controlled_by = ROOT }
+				378 = { is_controlled_by = ROOT }
+				379 = { is_controlled_by = ROOT }
+				380 = { is_controlled_by = ROOT }
+				377 = { is_controlled_by = ROOT }
+				387 = { is_controlled_by = ROOT }
+				388 = { is_controlled_by = ROOT }
+				381 = { is_controlled_by = ROOT }
+				389 = { is_controlled_by = ROOT }
+				390 = { is_controlled_by = ROOT }
+				382 = { is_controlled_by = ROOT }
+				384 = { is_controlled_by = ROOT }
+				383 = { is_controlled_by = ROOT }
+				376 = { is_controlled_by = ROOT }
+				375 = { is_controlled_by = ROOT }
+				374 = { is_controlled_by = ROOT }
+				373 = { is_controlled_by = ROOT }
+				372 = { is_controlled_by = ROOT }
+				371 = { is_controlled_by = ROOT }
+				370 = { is_controlled_by = ROOT }
+				391 = { is_controlled_by = ROOT }
+				392 = { is_controlled_by = ROOT }
+				394 = { is_controlled_by = ROOT }
+				395 = { is_controlled_by = ROOT }
+				394 = { is_controlled_by = ROOT }
+				393 = { is_controlled_by = ROOT }
+				396 = { is_controlled_by = ROOT }
+				261 = { is_controlled_by = ROOT }
+				367 = { is_controlled_by = ROOT }
+				365 = { is_controlled_by = ROOT }
+				366 = { is_controlled_by = ROOT }
+				369 = { is_controlled_by = ROOT }
+				368 = { is_controlled_by = ROOT }
+				364 = { is_controlled_by = ROOT }
+				363 = { is_controlled_by = ROOT }
+				362 = { is_controlled_by = ROOT }
+				816 = { is_controlled_by = ROOT }
+				360 = { is_controlled_by = ROOT }
+				358 = { is_controlled_by = ROOT }
+				359 = { is_controlled_by = ROOT }
+				357 = { is_controlled_by = ROOT }
+				629 = { is_controlled_by = ROOT }
+			}
+		}
+		on_map_mode = decision_view_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = formable_usa_flag
+			set_country_flag = formable_already_created_for_this_nation_flag
+			set_cosmetic_tag = FORMABLE_USA
+			set_capital = {state = 361}
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					NOT = {has_idea = OG_empire_idea}
+				}
+				add_ideas = OG_empire_idea
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CLAIMS
+					}
+				}
+				add_state_claim = 361
+				add_state_claim = 463
+				add_state_claim = 386
+				add_state_claim = 385
+				add_state_claim = 378
+				add_state_claim = 379
+				add_state_claim = 380
+				add_state_claim = 377
+				add_state_claim = 387
+				add_state_claim = 388
+				add_state_claim = 381
+				add_state_claim = 389
+				add_state_claim = 390
+				add_state_claim = 382
+				add_state_claim = 384
+				add_state_claim = 383
+				add_state_claim = 376
+				add_state_claim = 375
+				add_state_claim = 374
+				add_state_claim = 373
+				add_state_claim = 372
+				add_state_claim = 371
+				add_state_claim = 370
+				add_state_claim = 391
+				add_state_claim = 392
+				add_state_claim = 394
+				add_state_claim = 395
+				add_state_claim = 394
+				add_state_claim = 393
+				add_state_claim = 396
+				add_state_claim = 261
+				add_state_claim = 367
+				add_state_claim = 365
+				add_state_claim = 366
+				add_state_claim = 369
+				add_state_claim = 368
+				add_state_claim = 364
+				add_state_claim = 363
+				add_state_claim = 362
+				add_state_claim = 816
+				add_state_claim = 360
+				add_state_claim = 358
+				add_state_claim = 359
+				add_state_claim = 357
+				add_state_claim = 629
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = WORLD_AT_WAR_FORMABLES
+						option = WORLD_AT_WAR_FORMABLES_OPTION_CORES
+					}
+				}
+				add_state_core = 361
+				add_state_core = 463
+				add_state_core = 386
+				add_state_core = 385
+				add_state_core = 378
+				add_state_core = 379
+				add_state_core = 380
+				add_state_core = 377
+				add_state_core = 387
+				add_state_core = 388
+				add_state_core = 381
+				add_state_core = 389
+				add_state_core = 390
+				add_state_core = 382
+				add_state_core = 384
+				add_state_core = 383
+				add_state_core = 376
+				add_state_core = 375
+				add_state_core = 374
+				add_state_core = 373
+				add_state_core = 372
+				add_state_core = 371
+				add_state_core = 370
+				add_state_core = 391
+				add_state_core = 392
+				add_state_core = 394
+				add_state_core = 395
+				add_state_core = 394
+				add_state_core = 393
+				add_state_core = 396
+				add_state_core = 261
+				add_state_core = 367
+				add_state_core = 365
+				add_state_core = 366
+				add_state_core = 369
+				add_state_core = 368
+				add_state_core = 364
+				add_state_core = 363
+				add_state_core = 362
+				add_state_core = 816
+				add_state_core = 360
+				add_state_core = 358
+				add_state_core = 359
+				add_state_core = 357
+				add_state_core = 629
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = formable_already_created_for_this_nation_flag
+			}
+			modifier = {
+				factor = 0
+				date < "1938.1.1"
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+world_at_war_formables_category = {
+	world_at_war_form_empire_decision = {
+		icon = generic_form_nation
+
+		allowed = {always = yes}
+		available = {
+			is_subject = no
+			num_of_factories > 50
+			num_of_controlled_states > 20
+		}
+		visible = {
+			NOT = {has_country_flag = OG_empire_formed_flag}
+			NOT = {has_country_flag = formable_already_created_for_this_nation_flag}
+		}
+
+		complete_effect = {
+
+			if = {
+				limit = {tag = X01}
+				set_cosmetic_tag = X01_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X02}
+				set_cosmetic_tag = X02_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X03}
+				set_cosmetic_tag = X03_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X04}
+				set_cosmetic_tag = X04_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X05}
+				set_cosmetic_tag = X05_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X06}
+				set_cosmetic_tag = X06_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X07}
+				set_cosmetic_tag = X07_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X08}
+				set_cosmetic_tag = X08_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X09}
+				set_cosmetic_tag = X09_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X10}
+				set_cosmetic_tag = X10_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X11}
+				set_cosmetic_tag = X11_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X12}
+				set_cosmetic_tag = X12_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X13}
+				set_cosmetic_tag = X13_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X14}
+				set_cosmetic_tag = X14_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X15}
+				set_cosmetic_tag = X15_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X16}
+				set_cosmetic_tag = X16_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X17}
+				set_cosmetic_tag = X17_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X18}
+				set_cosmetic_tag = X18_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X19}
+				set_cosmetic_tag = X19_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X20}
+				set_cosmetic_tag = X20_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X21}
+				set_cosmetic_tag = X21_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X22}
+				set_cosmetic_tag = X22_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X23}
+				set_cosmetic_tag = X23_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X24}
+				set_cosmetic_tag = X24_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X25}
+				set_cosmetic_tag = X25_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X26}
+				set_cosmetic_tag = X26_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X27}
+				set_cosmetic_tag = X27_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X28}
+				set_cosmetic_tag = X28_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X29}
+				set_cosmetic_tag = X29_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X30}
+				set_cosmetic_tag = X30_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X31}
+				set_cosmetic_tag = X31_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X32}
+				set_cosmetic_tag = X32_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X33}
+				set_cosmetic_tag = X33_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X34}
+				set_cosmetic_tag = X34_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X35}
+				set_cosmetic_tag = X35_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X36}
+				set_cosmetic_tag = X36_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X37}
+				set_cosmetic_tag = X37_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X38}
+				set_cosmetic_tag = X38_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X39}
+				set_cosmetic_tag = X39_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X40}
+				set_cosmetic_tag = X40_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X41}
+				set_cosmetic_tag = X41_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X42}
+				set_cosmetic_tag = X42_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X43}
+				set_cosmetic_tag = X43_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X44}
+				set_cosmetic_tag = X44_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X45}
+				set_cosmetic_tag = X45_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X46}
+				set_cosmetic_tag = X46_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X47}
+				set_cosmetic_tag = X47_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X48}
+				set_cosmetic_tag = X48_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X49}
+				set_cosmetic_tag = X49_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X50}
+				set_cosmetic_tag = X50_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X51}
+				set_cosmetic_tag = X51_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X52}
+				set_cosmetic_tag = X52_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X53}
+				set_cosmetic_tag = X53_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X54}
+				set_cosmetic_tag = X54_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X55}
+				set_cosmetic_tag = X55_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X56}
+				set_cosmetic_tag = X56_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X57}
+				set_cosmetic_tag = X57_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X58}
+				set_cosmetic_tag = X58_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X59}
+				set_cosmetic_tag = X59_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X60}
+				set_cosmetic_tag = X60_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X61}
+				set_cosmetic_tag = X61_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X62}
+				set_cosmetic_tag = X62_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X63}
+				set_cosmetic_tag = X63_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X64}
+				set_cosmetic_tag = X64_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X65}
+				set_cosmetic_tag = X65_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X66}
+				set_cosmetic_tag = X66_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X67}
+				set_cosmetic_tag = X67_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X68}
+				set_cosmetic_tag = X68_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X69}
+				set_cosmetic_tag = X69_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X70}
+				set_cosmetic_tag = X70_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X71}
+				set_cosmetic_tag = X71_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X72}
+				set_cosmetic_tag = X72_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X73}
+				set_cosmetic_tag = X73_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X74}
+				set_cosmetic_tag = X74_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X75}
+				set_cosmetic_tag = X75_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X76}
+				set_cosmetic_tag = X76_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X77}
+				set_cosmetic_tag = X77_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X78}
+				set_cosmetic_tag = X78_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X79}
+				set_cosmetic_tag = X79_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X80}
+				set_cosmetic_tag = X80_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X81}
+				set_cosmetic_tag = X81_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X82}
+				set_cosmetic_tag = X82_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X83}
+				set_cosmetic_tag = X83_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X84}
+				set_cosmetic_tag = X84_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X85}
+				set_cosmetic_tag = X85_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X86}
+				set_cosmetic_tag = X86_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X87}
+				set_cosmetic_tag = X87_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X88}
+				set_cosmetic_tag = X88_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X89}
+				set_cosmetic_tag = X89_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X90}
+				set_cosmetic_tag = X90_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X91}
+				set_cosmetic_tag = X91_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X92}
+				set_cosmetic_tag = X92_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X93}
+				set_cosmetic_tag = X93_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X94}
+				set_cosmetic_tag = X94_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X95}
+				set_cosmetic_tag = X95_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X96}
+				set_cosmetic_tag = X96_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X97}
+				set_cosmetic_tag = X97_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X98}
+				set_cosmetic_tag = X98_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = X99}
+				set_cosmetic_tag = X99_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y01}
+				set_cosmetic_tag = Y01_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y02}
+				set_cosmetic_tag = Y02_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y03}
+				set_cosmetic_tag = Y03_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y04}
+				set_cosmetic_tag = Y04_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y05}
+				set_cosmetic_tag = Y05_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y06}
+				set_cosmetic_tag = Y06_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y07}
+				set_cosmetic_tag = Y07_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y08}
+				set_cosmetic_tag = Y08_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y09}
+				set_cosmetic_tag = Y09_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y10}
+				set_cosmetic_tag = Y10_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y11}
+				set_cosmetic_tag = Y11_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y12}
+				set_cosmetic_tag = Y12_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y13}
+				set_cosmetic_tag = Y13_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y14}
+				set_cosmetic_tag = Y14_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y15}
+				set_cosmetic_tag = Y15_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y16}
+				set_cosmetic_tag = Y16_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y17}
+				set_cosmetic_tag = Y17_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y18}
+				set_cosmetic_tag = Y18_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y19}
+				set_cosmetic_tag = Y19_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y20}
+				set_cosmetic_tag = Y20_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y21}
+				set_cosmetic_tag = Y21_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y22}
+				set_cosmetic_tag = Y22_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y23}
+				set_cosmetic_tag = Y23_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y24}
+				set_cosmetic_tag = Y24_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y25}
+				set_cosmetic_tag = Y25_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y26}
+				set_cosmetic_tag = Y26_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y27}
+				set_cosmetic_tag = Y27_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y28}
+				set_cosmetic_tag = Y28_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y29}
+				set_cosmetic_tag = Y29_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y30}
+				set_cosmetic_tag = Y30_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y31}
+				set_cosmetic_tag = Y31_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y32}
+				set_cosmetic_tag = Y32_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y33}
+				set_cosmetic_tag = Y33_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y34}
+				set_cosmetic_tag = Y34_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y35}
+				set_cosmetic_tag = Y35_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y36}
+				set_cosmetic_tag = Y36_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y37}
+				set_cosmetic_tag = Y37_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y38}
+				set_cosmetic_tag = Y38_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y39}
+				set_cosmetic_tag = Y39_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y40}
+				set_cosmetic_tag = Y40_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y41}
+				set_cosmetic_tag = Y41_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y42}
+				set_cosmetic_tag = Y42_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y43}
+				set_cosmetic_tag = Y43_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y44}
+				set_cosmetic_tag = Y44_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y45}
+				set_cosmetic_tag = Y45_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y46}
+				set_cosmetic_tag = Y46_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y47}
+				set_cosmetic_tag = Y47_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y48}
+				set_cosmetic_tag = Y48_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y49}
+				set_cosmetic_tag = Y49_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y50}
+				set_cosmetic_tag = Y50_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y51}
+				set_cosmetic_tag = Y51_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y52}
+				set_cosmetic_tag = Y52_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y53}
+				set_cosmetic_tag = Y53_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y54}
+				set_cosmetic_tag = Y54_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y55}
+				set_cosmetic_tag = Y55_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y56}
+				set_cosmetic_tag = Y56_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y57}
+				set_cosmetic_tag = Y57_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y58}
+				set_cosmetic_tag = Y58_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y59}
+				set_cosmetic_tag = Y59_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y60}
+				set_cosmetic_tag = Y60_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y61}
+				set_cosmetic_tag = Y61_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y62}
+				set_cosmetic_tag = Y62_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y63}
+				set_cosmetic_tag = Y63_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y64}
+				set_cosmetic_tag = Y64_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y65}
+				set_cosmetic_tag = Y65_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y66}
+				set_cosmetic_tag = Y66_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y67}
+				set_cosmetic_tag = Y67_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y68}
+				set_cosmetic_tag = Y68_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y69}
+				set_cosmetic_tag = Y69_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y70}
+				set_cosmetic_tag = Y70_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y71}
+				set_cosmetic_tag = Y71_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y72}
+				set_cosmetic_tag = Y72_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y73}
+				set_cosmetic_tag = Y73_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y74}
+				set_cosmetic_tag = Y74_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y75}
+				set_cosmetic_tag = Y75_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y76}
+				set_cosmetic_tag = Y76_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y77}
+				set_cosmetic_tag = Y77_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y78}
+				set_cosmetic_tag = Y78_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y79}
+				set_cosmetic_tag = Y79_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y80}
+				set_cosmetic_tag = Y80_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y81}
+				set_cosmetic_tag = Y81_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y82}
+				set_cosmetic_tag = Y82_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y83}
+				set_cosmetic_tag = Y83_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y84}
+				set_cosmetic_tag = Y84_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y85}
+				set_cosmetic_tag = Y85_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y86}
+				set_cosmetic_tag = Y86_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y87}
+				set_cosmetic_tag = Y87_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y88}
+				set_cosmetic_tag = Y88_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y89}
+				set_cosmetic_tag = Y89_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y90}
+				set_cosmetic_tag = Y90_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y91}
+				set_cosmetic_tag = Y91_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y92}
+				set_cosmetic_tag = Y92_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y93}
+				set_cosmetic_tag = Y93_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y94}
+				set_cosmetic_tag = Y94_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y95}
+				set_cosmetic_tag = Y95_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y96}
+				set_cosmetic_tag = Y96_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y97}
+				set_cosmetic_tag = Y97_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y98}
+				set_cosmetic_tag = Y98_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Y99}
+				set_cosmetic_tag = Y99_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z01}
+				set_cosmetic_tag = Z01_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z02}
+				set_cosmetic_tag = Z02_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z03}
+				set_cosmetic_tag = Z03_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z04}
+				set_cosmetic_tag = Z04_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z05}
+				set_cosmetic_tag = Z05_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z06}
+				set_cosmetic_tag = Z06_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z07}
+				set_cosmetic_tag = Z07_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z08}
+				set_cosmetic_tag = Z08_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z09}
+				set_cosmetic_tag = Z09_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z10}
+				set_cosmetic_tag = Z10_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z11}
+				set_cosmetic_tag = Z11_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z12}
+				set_cosmetic_tag = Z12_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z13}
+				set_cosmetic_tag = Z13_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z14}
+				set_cosmetic_tag = Z14_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z15}
+				set_cosmetic_tag = Z15_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z16}
+				set_cosmetic_tag = Z16_EMPIRE_UNIFIED_COSMETIC
+			}
+			else_if = {
+				limit = {tag = Z17}
+				set_cosmetic_tag = Z17_EMPIRE_UNIFIED_COSMETIC
+			}
+
+			set_major = yes
+			set_rule = { can_create_factions = yes }
+			set_country_flag = OG_empire_formed_flag
+
+			add_ideas = OG_empire_idea
+			
+			hidden_effect = {
+				news_event = { id = world_at_war_news.1 hours = 8 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			#modifier = {
+			#	factor = 0
+			#	is_historical_focus_on = yes
+			#}
+		}
+	}
+}

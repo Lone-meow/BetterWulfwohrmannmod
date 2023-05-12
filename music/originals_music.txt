@@ -1,0 +1,96 @@
+music_station = "PB_Original"
+
+music = {
+	song = "Pax_Morientis_title_theme"
+}
+
+music = {
+	song = "Teslas_Lullaby"
+}
+
+music = {
+	song = "Innovation"
+}
+
+music = {
+	song = "Variation_Metal_Heart"
+}
+
+music = {
+	song = "Greed_Punishment"
+}
+
+music = {
+	song = "Song_of_Copper"
+}
+
+music = {
+	song = "Seek_No_End"
+}
+
+music = {
+	song = "Electric_West"
+}
+
+music = {
+	song = "HaigHovels"
+}
+
+music = {
+	song = "MindsMachines"
+}
+
+music = {
+	song = "Underground"
+}
+
+music = {
+	song = "MechanicalMan"
+}
+
+music = {
+	song = "Postwar"
+}
+
+music = {
+	song = "Autofactory"
+}
+
+music = {
+	song = "Ragtag_Commoners"
+}
+
+music = {
+	song = "ANewWorld"
+}
+
+music = {
+	song = "Despondance"
+}
+
+music = {
+	song = "ItHungers"
+}
+
+music = {
+	song = "Misere"
+}
+
+music = {
+	song = "Mefiant"
+}
+
+music = {
+	song = "PunchIn"
+}
+
+music = {
+	song = "Razormaiden"
+}
+
+music = {
+	song = "Requiem"
+}
+
+music = {
+	song = "Kid A"

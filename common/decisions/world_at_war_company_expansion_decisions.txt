@@ -1,0 +1,1646 @@
+
+OG_company_expansions_decisions_category = {
+
+
+	###################
+	###--- DEBUG ---###
+	###################
+
+	OG_debug_FAST_AND_FREE_COMPANY_PROJECTS = {
+		priority = 999
+		icon = eng_propaganda_campaigns
+
+		available = {}
+		visible = {
+			is_debug = yes
+			NOT = { has_country_flag = OG_debug_fast_company_projects_flag }
+		}
+
+		complete_effect = {
+			set_country_flag = OG_debug_fast_company_projects_flag
+			set_variable = { OG_company_project_time = 1 }
+			set_variable = { OG_company_project_cost = 0 }
+		}
+		ai_will_do = {factor = 0}
+	}
+
+	OG_debug_REGULAR_COMPANY_PROJECTS = {
+		priority = 999
+		icon = eng_propaganda_campaigns
+
+		available = {}
+
+		visible = {
+			is_debug = yes
+			has_country_flag = OG_debug_fast_company_projects_flag
+		}
+
+		complete_effect = {
+			clr_country_flag = OG_debug_fast_company_projects_flag
+			set_variable = { OG_company_project_time = 120 }
+			set_variable = { OG_company_project_cost = 50 }
+		}
+		ai_will_do = {factor = 0}
+	}
+
+
+
+
+	#############
+	### TONKS ###
+	#############
+
+	### LIGHT TANKS ###
+
+	OG_generic_light_tank_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_light_tank_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_light_tank_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_light_tank_manufacturer
+					add_idea = OG_generic_light_tank_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_light_tank_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_light_tank_manufacturer
+						add_idea = OG_generic_light_tank_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_light_tank_manufacturer}
+			}
+		}
+	}
+
+	### MEDIUM TANKS ###
+
+	OG_generic_medium_tank_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_medium_tank_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_medium_tank_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_medium_tank_manufacturer
+					add_idea = OG_generic_medium_tank_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_medium_tank_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_medium_tank_manufacturer
+						add_idea = OG_generic_medium_tank_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_medium_tank_manufacturer}
+			}
+		}
+	}
+
+	### HEAVY TANKS ###
+
+	OG_generic_heavy_tank_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_heavy_tank_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_heavy_tank_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_heavy_tank_manufacturer
+					add_idea = OG_generic_heavy_tank_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_heavy_tank_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_heavy_tank_manufacturer
+						add_idea = OG_generic_heavy_tank_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_heavy_tank_manufacturer}
+			}
+		}
+	}
+
+	### TANK REFURBISHMENT ###
+
+	OG_generic_tank_refurbishment_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+			has_completed_focus = OG_armored_production_effort
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_tank_refurbishment_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_tank_refurbishment_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_tank_refurbishment_manufacturer
+					add_idea = OG_generic_tank_refurbishment_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_tank_refurbishment_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_tank_refurbishment_manufacturer
+						add_idea = OG_generic_tank_refurbishment_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_tank_refurbishment_manufacturer}
+			}
+		}
+	}
+
+	#############
+	### SHIPS ###
+	#############
+
+	### BATTLEFLEET ###
+
+	OG_generic_battlefleet_naval_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_ship
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_battlefleet_naval_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_battlefleet_naval_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_battlefleet_naval_manufacturer
+					add_idea = OG_generic_battlefleet_naval_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_battlefleet_naval_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_battlefleet_naval_manufacturer
+						add_idea = OG_generic_battlefleet_naval_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_battlefleet_naval_manufacturer}
+			}
+		}
+	}
+
+	### COASTAL DEFENSE ###
+
+	OG_generic_coastal_naval_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_ship
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_coastal_naval_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_coastal_naval_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_coastal_naval_manufacturer
+					add_idea = OG_generic_coastal_naval_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_coastal_naval_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_coastal_naval_manufacturer
+						add_idea = OG_generic_coastal_naval_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_coastal_naval_manufacturer}
+			}
+		}
+	}
+
+	### RAIDING FLEET ###
+
+	OG_generic_raiding_naval_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_ship
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_raiding_naval_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_raiding_naval_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_raiding_naval_manufacturer
+					add_idea = OG_generic_raiding_naval_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_raiding_naval_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_raiding_naval_manufacturer
+						add_idea = OG_generic_raiding_naval_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_raiding_naval_manufacturer}
+			}
+		}
+	}
+
+	### ESCORT FLEET ###
+
+	OG_generic_convoy_escort_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_ship
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_convoy_escort_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_convoy_escort_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_convoy_escort_manufacturer
+					add_idea = OG_generic_convoy_escort_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_convoy_escort_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_convoy_escort_manufacturer
+						add_idea = OG_generic_convoy_escort_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_convoy_escort_manufacturer}
+			}
+		}
+	}
+
+	##############
+	### PLANES ###
+	##############
+	
+	### LIGHT AIRCRAFT ###
+
+	OG_generic_light_aircraft_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_light_aircraft_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_light_aircraft_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_light_aircraft_manufacturer
+					add_idea = OG_generic_light_aircraft_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_light_aircraft_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_light_aircraft_manufacturer
+						add_idea = OG_generic_light_aircraft_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_light_aircraft_manufacturer}
+			}
+		}
+	}
+
+	### CAS AIRCRAFT ###
+
+	OG_generic_cas_aircraft_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_cas_aircraft_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_cas_aircraft_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_cas_aircraft_manufacturer
+					add_idea = OG_generic_cas_aircraft_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_cas_aircraft_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_cas_aircraft_manufacturer
+						add_idea = OG_generic_cas_aircraft_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_cas_aircraft_manufacturer}
+			}
+		}
+	}
+
+	### MEDIUM AIRCRAFT ###
+
+	OG_generic_medium_aircraft_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_medium_aircraft_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_medium_aircraft_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_medium_aircraft_manufacturer
+					add_idea = OG_generic_medium_aircraft_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_medium_aircraft_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_medium_aircraft_manufacturer
+						add_idea = OG_generic_medium_aircraft_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_medium_aircraft_manufacturer}
+			}
+		}
+	}
+
+	### HEAVY AIRCRAFT ###
+
+	OG_generic_heavy_aircraft_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_heavy_aircraft_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_heavy_aircraft_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_heavy_aircraft_manufacturer
+					add_idea = OG_generic_heavy_aircraft_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_heavy_aircraft_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_heavy_aircraft_manufacturer
+						add_idea = OG_generic_heavy_aircraft_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_heavy_aircraft_manufacturer}
+			}
+		}
+	}
+
+	### NAVAL AIRCRAFT ###
+
+	OG_generic_naval_aircraft_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_naval_aircraft_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_naval_aircraft_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_naval_aircraft_manufacturer
+					add_idea = OG_generic_naval_aircraft_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_naval_aircraft_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_naval_aircraft_manufacturer
+						add_idea = OG_generic_naval_aircraft_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_naval_aircraft_manufacturer}
+			}
+		}
+	}
+
+	### TRANSPORT AIRCRAFT ###
+
+	OG_generic_transport_aircraft_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_transport_aircraft_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_transport_aircraft_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_transport_aircraft_manufacturer
+					add_idea = OG_generic_transport_aircraft_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_transport_aircraft_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_transport_aircraft_manufacturer
+						add_idea = OG_generic_transport_aircraft_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_transport_aircraft_manufacturer}
+			}
+		}
+	}
+
+	################
+	### INDUSTRY ###
+	################
+
+	### INDUSTRIAL ###
+
+	OG_generic_industrial_concern_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_industrial_concern_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_industrial_concern_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_industrial_concern
+					add_idea = OG_generic_industrial_concern_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_industrial_concern
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_industrial_concern
+						add_idea = OG_generic_industrial_concern_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_industrial_concern}
+			}
+		}
+	}
+
+	### ELECTRONIC ###
+
+	OG_generic_electronics_concern_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_electronics_concern_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_electronics_concern_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_electronics_concern
+					add_idea = OG_generic_electronics_concern_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_electronics_concern
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_electronics_concern
+						add_idea = OG_generic_electronics_concern_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_electronics_concern}
+			}
+		}
+	}
+
+	### REFINING ###
+
+	OG_generic_refinery_concern_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+			has_completed_focus = OG_refinery_effort
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_refinery_concern_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_refinery_concern_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_refinery_concern
+					add_idea = OG_generic_refinery_concern_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_refinery_concern
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_refinery_concern
+						add_idea = OG_generic_refinery_concern_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_refinery_concern}
+			}
+		}
+	}
+
+	### MINING ###
+
+	OG_generic_mining_concern_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+			has_completed_focus = OG_resource_excavation_effort
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_mining_concern_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_mining_concern_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_mining_concern
+					add_idea = OG_generic_mining_concern_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_mining_concern
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_mining_concern
+						add_idea = OG_generic_mining_concern_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_mining_concern}
+			}
+		}
+	}
+
+	### RAILWAY ###
+
+	OG_generic_railway_concern_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+			has_completed_focus = OG_railway_effort
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_railway_concern_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_railway_concern_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_railway_concern
+					add_idea = OG_generic_railway_concern_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_railway_concern
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_railway_concern
+						add_idea = OG_generic_railway_concern_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_railway_concern}
+			}
+		}
+	}
+
+	### CONSTRUCTION ###
+
+	OG_generic_construction_concern_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_construction_concern_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_construction_concern_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_construction_concern
+					add_idea = OG_generic_construction_concern_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_construction_concern
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_construction_concern
+						add_idea = OG_generic_construction_concern_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_construction_concern}
+			}
+		}
+	}
+
+	### RESEARCH ###
+
+	OG_generic_research_institute_decision = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_research_institute_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_research_institute_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_research_institute
+					add_idea = OG_generic_research_institute_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_research_institute
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_research_institute
+						add_idea = OG_generic_research_institute_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_research_institute}
+			}
+		}
+	}
+
+	################
+	### MATERIEL ###
+	################
+
+	### ARTILLERY ###
+
+	OG_generic_artillery_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_artillery_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_artillery_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_artillery_manufacturer
+					add_idea = OG_generic_artillery_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_artillery_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_artillery_manufacturer
+						add_idea = OG_generic_artillery_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_artillery_manufacturer}
+			}
+		}
+	}
+
+	### INFANTRY EQUIPMENT ###
+
+	OG_generic_infantry_equipment_company_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_infantry_equipment_company_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_infantry_equipment_company_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_infantry_equipment_company
+					add_idea = OG_generic_infantry_equipment_company_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_infantry_equipment_company
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_infantry_equipment_company
+						add_idea = OG_generic_infantry_equipment_company_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_infantry_equipment_company}
+			}
+		}
+	}
+
+	### MOTORIZED EQUIPMENT ###
+
+	OG_generic_motorization_company_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_motorization_company_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_motorization_company_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_motorization_company
+					add_idea = OG_generic_motorization_company_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_motorization_company
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_motorization_company
+						add_idea = OG_generic_motorization_company_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_motorization_company}
+			}
+		}
+	}
+
+	### MECHANIZED EQUIPMENT ###
+
+	OG_generic_mechanized_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_mechanized_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_mechanized_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_mechanized_manufacturer
+					add_idea = OG_generic_mechanized_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_mechanized_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_mechanized_manufacturer
+						add_idea = OG_generic_mechanized_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_mechanized_manufacturer}
+			}
+		}
+	}
+
+	### ROCKET ARTILLERY ###
+
+	OG_generic_rocketry_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_rocketry_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_rocketry_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_rocketry_manufacturer
+					add_idea = OG_generic_rocketry_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_rocketry_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_rocketry_manufacturer
+						add_idea = OG_generic_rocketry_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_rocketry_manufacturer}
+			}
+		}
+	}
+
+	### SUPPORT EQUIPMENT ###
+
+	OG_generic_support_equipment_manufacturer_decision = {
+		priority = 1
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				has_country_flag = OG_expand_company_decision_ongoing_flag
+			}
+		}
+		visible = {
+			NOT = { has_country_flag = OG_generic_support_equipment_manufacturer_UPGRADED_flag }
+		}
+
+		cancel_trigger = {}
+		cancel_effect = {clr_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		cost = OG_company_project_cost
+		days_remove = OG_company_project_time
+
+		modifier = {civilian_factory_use = 5}
+		complete_effect = {set_country_flag = OG_expand_company_decision_ongoing_flag}
+
+		remove_effect = {
+		
+			clr_country_flag = OG_expand_company_decision_ongoing_flag
+			set_country_flag = OG_generic_support_equipment_manufacturer_UPGRADED_flag
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = OG_generic_support_equipment_manufacturer
+					add_idea = OG_generic_support_equipment_manufacturer_UPGRADED
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = OG_generic_support_equipment_manufacturer
+					}
+					swap_ideas = {
+						remove_idea = OG_generic_support_equipment_manufacturer
+						add_idea = OG_generic_support_equipment_manufacturer_UPGRADED
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				ROOT = {has_idea = OG_generic_support_equipment_manufacturer}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+} #END CAT

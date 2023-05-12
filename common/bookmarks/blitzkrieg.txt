@@ -1,0 +1,229 @@
+bookmarks = {
+	bookmark = {
+		name = "LARGE_NATIONS_SCENARIO"
+		desc = "LARGE_NATIONS_SCENARIO_DESC"
+		date = 1935.1.2.12
+		picture = "GFX_select_date_1939"
+		default_country = "X96"
+		default = yes
+
+#######################
+### FEATURED MAJORS ###
+#######################
+
+		"X96"={# Brandenburg
+			history = "X96_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				OG_neutrality_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"Y17"={# Prussia
+			history = "Y17_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				OG_nationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X88"={# Burgundy
+			history = "X88_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				OG_nationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"Y03"={# Rome
+			history = "Y03_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				OG_democratic_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"Y29"={# Muscovy
+			history = "Y29_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				OG_internationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X11"={# Texas
+			history = "X11_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				OG_democratic_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X30"={# Brazil
+			history = "X30_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				OG_internationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+#######################
+### FEATURED MINORS ###
+#######################
+
+		"Y01"={ # Czechia
+			minor = yes
+			history = "Y01_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				OG_democratic_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X64"={	# England
+			minor = yes
+			history = "X64_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				OG_neutrality_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X70"={	# Sweden
+			minor = yes
+			history = "X70_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				OG_internationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X87"={	# Normandy
+			minor = yes
+			history = "X87_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				OG_nationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"Y87"={	# Canton
+			minor = yes
+			history = "Y87_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				OG_nationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"Y85"={	# Taipei
+			minor = yes
+			history = "Y85_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				OG_neutrality_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"Y79"={	# Honshu
+			minor = yes
+			history = "Y79_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				OG_internationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"X40"={	# Egypt
+			minor = yes
+			history = "X40_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				OG_internationalism_drift_idea
+			}
+			focuses = {
+				OG_army_effort
+				OG_industrial_effort
+				OG_political_effort
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

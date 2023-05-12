@@ -1,0 +1,272 @@
+##################################
+###--- MILITARY ACADEMY GUI ---###
+##################################
+
+###
+
+@BACKGROUND_X = -6	#<-- GUI will 'jump into place' after 1 in game hour or taking a decision.
+@BACKGROUND_Y = 17
+
+###
+
+@LEFT_SIDE_PORTRAITS_X = 28
+@RIGHT_SIDE_PORTRAITS_X = 418
+
+@TOP_SIDE_PORTRAITS_Y = 60
+@CENTER_SIDE_PORTRAITS_Y = 193
+@LOW_SIDE_PORTRAITS_Y = 325
+
+###
+
+@LEFT_SIDE_OFFICER_ROLE_X = 86
+@RIGHT_SIDE_OFFICER_ROLE_X = 260
+
+@TOP_SIDE_OFFICER_ROLE_Y = 37
+@CENTER_SIDE_OFFICER_ROLE_Y = 170
+@LOW_SIDE_OFFICER_ROLE_Y = 305
+
+###
+
+@LEFT_SIDE_OFFICER_LEVEL_X = 86
+@RIGHT_SIDE_OFFICER_LEVEL_X = 260
+
+@TOP_SIDE_OFFICER_LEVEL_Y = 107
+@CENTER_SIDE_OFFICER_LEVEL_Y = 240
+@LOW_SIDE_OFFICER_LEVEL_Y = 373
+
+###
+
+@LEFT_SIDE_DAYS_REMAINING_X = 86
+@RIGHT_SIDE_DAYS_REMAINING_X = 260
+
+@TOP_SIDE_DAYS_REMAINING_Y = 124
+@CENTER_SIDE_DAYS_REMAINING_Y = 257
+@LOW_SIDE_DAYS_REMAINING_Y = 389
+
+###
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "OG_military_academy_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 420 }
+
+		#BACKGROUND
+		iconType = {
+			name ="propaganda_bg"
+			spriteType = "GFX_military_academy_bg"
+			position = { x=@BACKGROUND_X y=@BACKGROUND_Y }
+		}
+
+		### TRAINING SLOT 1 ###
+		iconType = {
+			name ="officer_in_training_photo_1"
+			position = { x=@LEFT_SIDE_PORTRAITS_X	 y=@TOP_SIDE_PORTRAITS_Y }
+			pdx_tooltip = OG_MILITARY_ACADEMY_TT_1
+		}
+
+		#Officer Name & Role
+		instantTextBoxType = {
+			name ="training_slot_1_officer_role_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @TOP_SIDE_OFFICER_ROLE_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_1_officer_role_text"
+			format = center
+			maxWidth = 150
+		}
+		#Officer Level
+		instantTextBoxType = {
+			name ="training_slot_1_officer_level_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @TOP_SIDE_OFFICER_LEVEL_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_1_officer_level_text"
+			format = center
+			maxWidth = 150
+		}
+		#Days remaining
+		instantTextBoxType = {
+			name ="training_slot_1_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @TOP_SIDE_DAYS_REMAINING_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_1_text"
+			format = center
+			maxWidth = 150
+		}
+
+		### TRAINING SLOT 2 ###
+		iconType = {
+			name ="officer_in_training_photo_2"
+			position = { x=@LEFT_SIDE_PORTRAITS_X	 y=@CENTER_SIDE_PORTRAITS_Y }
+			pdx_tooltip = OG_MILITARY_ACADEMY_TT_2
+		}
+
+		#Officer Name & Role
+		instantTextBoxType = {
+			name ="training_slot_2_officer_role_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @CENTER_SIDE_OFFICER_ROLE_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_2_officer_role_text"
+			format = center
+			maxWidth = 150
+		}
+		#Officer Level
+		instantTextBoxType = {
+			name ="training_slot_2_officer_level_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @CENTER_SIDE_OFFICER_LEVEL_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_2_officer_level_text"
+			format = center
+			maxWidth = 150
+		}
+		#Days Remaining
+		instantTextBoxType = {
+			name ="training_slot_2_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @CENTER_SIDE_DAYS_REMAINING_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_2_text"
+			format = center
+			maxWidth = 150
+		}
+
+		### TRAINING SLOT 3 ###
+		iconType = {
+			name ="officer_in_training_photo_3"
+			position = { x=@LEFT_SIDE_PORTRAITS_X	 y=@LOW_SIDE_PORTRAITS_Y }
+			pdx_tooltip = OG_MILITARY_ACADEMY_TT_3
+		}
+
+		#Officer Name & Role
+		instantTextBoxType = {
+			name ="training_slot_3_officer_role_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @LOW_SIDE_OFFICER_ROLE_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_3_officer_role_text"
+			format = center
+			maxWidth = 150
+		}
+		#Officer Level
+		instantTextBoxType = {
+			name ="training_slot_3_officer_level_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @LOW_SIDE_OFFICER_LEVEL_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_3_officer_level_text"
+			format = center
+			maxWidth = 150
+		}
+		#Days Remaining
+		instantTextBoxType = {
+			name ="training_slot_3_text"
+			position = { x = @LEFT_SIDE_OFFICER_ROLE_X y = @LOW_SIDE_DAYS_REMAINING_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_3_text"
+			format = center
+			maxWidth = 150
+		}
+
+		### TRAINING SLOT 4 ###
+		iconType = {
+			name ="officer_in_training_photo_4"
+			position = { x=@RIGHT_SIDE_PORTRAITS_X	 y=@TOP_SIDE_PORTRAITS_Y }
+			pdx_tooltip = OG_MILITARY_ACADEMY_TT_4
+		}
+
+		#Officer Name & Role
+		instantTextBoxType = {
+			name ="training_slot_4_officer_role_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @TOP_SIDE_OFFICER_ROLE_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_4_officer_role_text"
+			format = center
+			maxWidth = 150
+		}
+		#Officer Level
+		instantTextBoxType = {
+			name ="training_slot_4_officer_level_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @TOP_SIDE_OFFICER_LEVEL_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_4_officer_level_text"
+			format = center
+			maxWidth = 150
+		}
+		#Days Remaining
+		instantTextBoxType = {
+			name ="training_slot_4_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @TOP_SIDE_DAYS_REMAINING_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_4_text"
+			format = center
+			maxWidth = 150
+		}
+
+		### TRAINING SLOT 5 ###
+		iconType = {
+			name ="officer_in_training_photo_5"
+			position = { x=@RIGHT_SIDE_PORTRAITS_X	 y=@CENTER_SIDE_PORTRAITS_Y }
+			pdx_tooltip = OG_MILITARY_ACADEMY_TT_5
+		}
+
+		#Officer Name & Role
+		instantTextBoxType = {
+			name ="training_slot_5_officer_role_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @CENTER_SIDE_OFFICER_ROLE_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_5_officer_role_text"
+			format = center
+			maxWidth = 150
+		}
+		#Officer Level
+		instantTextBoxType = {
+			name ="training_slot_5_officer_level_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @CENTER_SIDE_OFFICER_LEVEL_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_5_officer_level_text"
+			format = center
+			maxWidth = 150
+		}
+		#Days Remaining
+		instantTextBoxType = {
+			name ="training_slot_5_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @CENTER_SIDE_DAYS_REMAINING_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_5_text"
+			format = center
+			maxWidth = 150
+		}
+
+		### TRAINING SLOT 6 ###
+		iconType = {
+			name ="officer_in_training_photo_6"
+			position = { x=@RIGHT_SIDE_PORTRAITS_X	 y=@LOW_SIDE_PORTRAITS_Y }
+			pdx_tooltip = OG_MILITARY_ACADEMY_TT_6
+		}
+
+		#Officer Name & Role
+		instantTextBoxType = {
+			name ="training_slot_6_officer_role_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @LOW_SIDE_OFFICER_ROLE_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_6_officer_role_text"
+			format = center
+			maxWidth = 150
+		}
+		#Officer Level
+		instantTextBoxType = {
+			name ="training_slot_6_officer_level_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @LOW_SIDE_OFFICER_LEVEL_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_6_officer_level_text"
+			format = center
+			maxWidth = 150
+		}
+		#Days Remaining
+		instantTextBoxType = {
+			name ="training_slot_6_text"
+			position = { x = @RIGHT_SIDE_OFFICER_ROLE_X y = @LOW_SIDE_DAYS_REMAINING_Y }
+			font = "hoi_18mbs"
+			text = "OG_military_academy_6_text"
+			format = center
+			maxWidth = 150
+		}
+	}
+}

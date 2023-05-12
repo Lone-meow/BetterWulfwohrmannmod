@@ -1,0 +1,4 @@
+choose_your_leader_catagory_2 = {
+	priority = 1000
+	icon = decision_unknown
+}

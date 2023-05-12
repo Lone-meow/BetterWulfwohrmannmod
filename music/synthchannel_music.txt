@@ -1,0 +1,133 @@
+music_station = "PB_Synth"
+
+music = {
+	song = "BladeRunner_Blues"
+}
+
+music = {
+	song = "BladeRunner_Endtitles"
+}
+
+music = {
+	song = "BladeRunner_Tears"
+}
+
+music = {
+	song = "Moonlight_Sonata1"
+}
+
+music = {
+	song = "Salut_dAmour"
+}
+
+music = {
+	song = "Fur_Elise"
+}
+
+music = {
+	song = "ThePlague"
+}
+
+music = {
+	song = "AcidRain"
+}
+
+music = {
+	song = "SeaWall"
+}
+
+music = {
+	song = "2049"
+}
+
+music = {
+	song = "Nightstalker"
+}
+
+music = {
+	song = "FloatingMuseum"
+}
+
+music = {
+	song = "UNATCO"
+}
+
+music = {
+	song = "SynthwaveGoose"
+}
+
+music = {
+	song = "BloodRidge"
+}
+
+music = {
+	song = "Precinct13"
+}
+
+music = {
+	song = "ControlCamera"
+}
+
+music = {
+	song = "WannaFight"
+}
+
+music = {
+	song = "PaintedSun"
+}
+
+music = {
+	song = "ManHunter"
+}
+
+music = {
+	song = "DasBoot"
+}
+
+music = {
+	song = "IF_Detroit"
+}
+
+music = {
+	song = "MakethisRight"
+}
+
+music = {
+	song = "TheRebelPath"
+}
+
+music = {
+	song = "SynthWars"
+}
+
+music = {
+	song = "SegaSunset"
+}
+
+music = {
+	song = "RollerMobster"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}
+}
+
+music = {
+	song = "Turbokiller"
+
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}
+}
+
+music = {
+	song = "LePerv"
+}

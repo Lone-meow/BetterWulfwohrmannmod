@@ -1,0 +1,36 @@
+music_station = "PB_Original_A"
+
+music = {
+	name = "Pax_Morientis_title_theme"
+	file = "01_Pax_Morientis_title_theme.ogg"
+}
+
+music = {
+	name = "Teslas_Lullaby"
+	file = "02_Teslas_Lullaby.ogg"
+}
+
+music = {
+	name = "Innovation"
+	file = "03_Innovation.ogg"
+}
+
+music = {
+	name = "Variation_Metal_Heart"
+	file = "04_Variation_on_a_Metal_Heart.ogg"
+}
+
+music = {
+	name = "Greed_Punishment"
+	file = "05_Greed_and_Punishment.ogg"
+}
+
+music = {
+	name = "Song_of_Copper"
+	file = "06_Song_of_Copper.ogg"
+}
+
+music = {
+	name = "Seek_No_End"
+	file = "07_Seek_no_End.ogg"
+}

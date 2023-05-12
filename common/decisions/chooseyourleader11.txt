@@ -1,0 +1,309 @@
+choose_your_leader_catagory_10 = {
+
+
+	GER_SS = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_GER
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "SS State"
+					desc = "Politics_SS_Desc"
+					picture = "gfx/leaders/GER/portrait_Germany_ss.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						allgemeine_ss
+						waffen_ss
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "SS State"
+					desc = "Politics_SS_Desc"
+					picture = "gfx/leaders/GER/portrait_Germany_ss.dds"
+					expire = "1965.1.1"
+					ideology = socialism
+					traits = {
+						allgemeine_ss
+						waffen_ss
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "SS State"
+					desc = "Politics_SS_Desc"
+					picture = "gfx/leaders/GER/portrait_Germany_ss.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						allgemeine_ss
+						waffen_ss
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "SS State"
+					desc = "Politics_SS_Desc"
+					picture = "gfx/leaders/GER/portrait_Germany_ss.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+						allgemeine_ss
+						waffen_ss
+					}
+				}
+			}	
+		}
+	}
+
+	SOV_Empress_Anastasia = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_SOV
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Empress Anastasia"
+					desc = "Politics_Empress_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_empress_anastasia.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						anastasia_nikolaevna_romanov
+						tsarina_of_the_people
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Empress Anastasia"
+					desc = "Politics_Empress_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_empress_anastasia.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						anastasia_nikolaevna_romanov
+						tsarina_of_the_people
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Empress Anastasia"
+					desc = "Politics_Empress_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_empress_anastasia.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						anastasia_nikolaevna_romanov
+						tsarina_of_the_people
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Empress Anastasia"
+					desc = "Politics_Empress_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_empress_anastasia.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						anastasia_nikolaevna_romanov
+						tsarina_of_the_people
+					}
+				}
+			}
+		}
+	}
+
+	SOV_Boris_Savinkov = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_SOV
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Boris Savinkov"
+					desc = "Politics_Boris_Savinkov_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_boris_savinkov.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						dictator
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Boris Savinkov"
+					desc = "Politics_Boris_Savinkov_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_boris_savinkov.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						dictator
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Boris Savinkov"
+					desc = "Politics_Boris_Savinkov_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_boris_savinkov.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						dictator
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Boris Savinkov"
+					desc = "Politics_Boris_Savinkov_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_empress_anastasia.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						dictator
+					}
+				}
+			}
+		}
+	}
+	AST_Nancy_Wake = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_AST
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Nancy Wake"
+					desc = "Politics_Nancy_Wake_Desc"
+					picture = "gfx/leaders/AST/portrait_Australian_nancy_wake.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						helene
+						australian_bombshell
+						arrogant
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Nancy Wake"
+					desc = "Politics_Nancy_Wake_Desc"
+					picture = "gfx/leaders/AST/portrait_Australia_nancy_wake.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						helene
+						australian_bombshell
+						arrogant
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Nancy Wake"
+					desc = "Politics_Nancy_Wake_Desc"
+					picture = "gfx/leaders/AST/portrait_Australia_nancy_wake.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						helene
+						australian_bombshell
+						arrogant
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Nancy Wake"
+					desc = "Politics_Nancy_Wake_Desc"
+					picture = "gfx/leaders/AST/portrait_Australia_nancy_wake.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						helene
+						australian_bombshell
+						arrogant
+					}
+				}
+			}
+		}
+	}

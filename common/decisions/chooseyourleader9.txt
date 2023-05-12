@@ -1,0 +1,1058 @@
+choose_your_leader_catagory_9 = {
+
+
+	YEM_Imam_Yahya = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YEM
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Imam Yahya"
+				    picture = "GFX_portrait_yemen_imam_yahya"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Imam Yahya"
+				    picture = "GFX_portrait_yemen_imam_yahya"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Imam Yahya"
+				    picture = "GFX_portrait_yemen_imam_yahya"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Imam Yahya"
+				    picture = "GFX_portrait_yemen_imam_yahya"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Prince_Paul = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Prince Paul"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Prince Paul"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Prince Paul"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Prince Paul"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Paul_I = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Paul I"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Paul I"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Paul I"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Paul I"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Milan_Stojadinovic = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Milan Stojadinović"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Milan Stojadinović"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Milan Stojadinović"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Milan Stojadinović"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Milan_Grol = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Milan Grol"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Milan Grol"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Milan Grol"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Milan Grol"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Josip_Broz_Tito = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Josip Broz Tito"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Josip Broz Tito"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Josip Broz Tito"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Josip Broz Tito"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Peter_II = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Peter_II.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Peter_II_2 = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/portrait_YUG_peter_II_young.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/portrait_YUG_peter_II_young.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/portrait_YUG_peter_II_young.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Peter II"
+				    picture = "gfx/leaders/YUG/portrait_YUG_peter_II_young.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Vladimir_Cukavac = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Vladimir Čukavac"
+				    picture = "GFX_Portrait_yugoslavia_vladimir_cukavac"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Vladimir Čukavac"
+				    picture = "GFX_Portrait_yugoslavia_vladimir_cukavac"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Vladimir Čukavac"
+				    picture = "GFX_Portrait_yugoslavia_vladimir_cukavac"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Vladimir Čukavac"
+				    picture = "GFX_Portrait_yugoslavia_vladimir_cukavac"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Ivan_Gosnjak = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Ivan Gošnjak"
+				    picture = "GFX_Portrait_yugoslavia_ivan_gosnjak"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Ivan Gošnjak"
+				    picture = "GFX_Portrait_yugoslavia_ivan_gosnjak"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Ivan Gošnjak"
+				    picture = "GFX_Portrait_yugoslavia_ivan_gosnjak"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Ivan Gošnjak"
+				    picture = "GFX_Portrait_yugoslavia_ivan_gosnjak"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Danilo_Kalafatovic = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Danilo Kalafatović"
+				    picture = "GFX_Portrait_yugoslavia_danilo_kalafatovic"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Danilo Kalafatović"
+				    picture = "GFX_Portrait_yugoslavia_danilo_kalafatovic"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Danilo Kalafatović"
+				    picture = "GFX_Portrait_yugoslavia_danilo_kalafatovic"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Danilo Kalafatović"
+				    picture = "GFX_Portrait_yugoslavia_danilo_kalafatovic"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Milutin_Nedic = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Milutin Nedić"
+				    picture = "GFX_Portrait_yugoslavia_milutin_nedic"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Milutin Nedić"
+				    picture = "GFX_Portrait_yugoslavia_milutin_nedic"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Milutin Nedić"
+				    picture = "GFX_Portrait_yugoslavia_milutin_nedic"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Milutin Nedić"
+				    picture = "GFX_Portrait_yugoslavia_milutin_nedic"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Petar_Kosic = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Petar Kosić"
+				    picture = "GFX_Portrait_yugoslavia_petar_kosic"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Petar Kosić"
+				    picture = "GFX_Portrait_yugoslavia_petar_kosic"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Petar Kosić"
+				    picture = "GFX_Portrait_yugoslavia_petar_kosic"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Petar Kosić"
+				    picture = "GFX_Portrait_yugoslavia_petar_kosic"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Josef_Depre = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Josef Depre"
+				    picture = "GFX_portrait_yugoslavia_josef_depre"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Josef Depre"
+				    picture = "GFX_portrait_yugoslavia_josef_depre"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Josef Depre"
+				    picture = "GFX_portrait_yugoslavia_josef_depre"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Josef Depre"
+				    picture = "GFX_portrait_yugoslavia_josef_depre"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	YUG_Marijan_Polic = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Marijan Polić"
+				    picture = "GFX_Portrait_yugoslavia_marijan_polic"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Marijan Polić"
+				    picture = "GFX_Portrait_yugoslavia_marijan_polic"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Marijan Polić"
+				    picture = "GFX_Portrait_yugoslavia_marijan_polic"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Marijan Polić"
+				    picture = "GFX_Portrait_yugoslavia_marijan_polic"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	Randomize_Your_Leader_YUG = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+		    has_country_flag = CYL_YUG
+		}
+		complete_effect = {
+			country_event = {
+               id = ChooseYourLeaderYZ.1
+            }
+	    }
+    }
+	
+	YUN_Long_Yun = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_YUN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Long Yun"
+				    picture = "GFX_portrait_yun_long_yun"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Long Yun"
+				    picture = "GFX_portrait_yun_long_yun"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Long Yun"
+				    picture = "GFX_portrait_yun_long_yun"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Long Yun"
+				    picture = "GFX_portrait_yun_long_yun"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+}

@@ -1,0 +1,551 @@
+
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+leader_traits = {
+
+
+	### COUNTRY LEADER ###
+
+	OG_people_leader_trait = {		#Same as dictator, but for anarchism.
+		random = no
+		political_power_factor = 0.25
+		weekly_casualties_war_support = 0.001
+		ai_desired_divisions_factor = 0.20
+
+		ai_will_do = {factor = 1}
+	}
+
+
+
+
+	### POLITICAL ###
+
+	professional_agitator = {
+		random = no
+		sprite = 15
+
+		boost_ideology_mission_factor = 0.15
+		propaganda_mission_factor = 0.15
+		operative_slot = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	head_of_national_security = {
+		random = no
+		sprite = 15
+
+		root_out_resistance_effectiveness_factor = 0.15
+		enemy_operative_detection_chance_factor = 0.15
+		foreign_subversive_activites = -0.15
+		intelligence_agency_defense = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spider_in_the_web = {
+		random = no
+		sprite = 15
+
+		own_operative_detection_chance_factor = -0.15
+		intel_from_operatives_factor = 0.15
+		operative_slot = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	agrarian_union_leader = {
+		random = no
+		sprite = 10
+		global_building_slots_factor = 0.10
+		min_export = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	religious_icon = {
+		random = no
+		sprite = 13
+
+		compliance_growth = 0.05
+		army_core_defence_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+	#########################
+	### Ideology Advisors ###
+	#########################
+
+	ideology_advisor_trait_democracy_nepotist = {
+		random = no
+		sprite = 13
+
+		democratic_drift = -0.10
+		drift_defence_factor = -0.10
+		political_power_factor = 0.10
+		political_advisor_cost_factor = -0.30
+		economy_advisor_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ideology_advisor_trait_neutrality_nepotist = {
+		random = no
+		sprite = 13
+
+		neutrality_drift = -0.10
+		drift_defence_factor = -0.10
+		political_power_factor = 0.10
+		political_advisor_cost_factor = -0.30
+		economy_advisor_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ideology_advisor_trait_fascism_nepotist = {
+		random = no
+		sprite = 13
+
+		fascism_drift = -0.10
+		drift_defence_factor = -0.10
+		political_power_factor = 0.10
+		political_advisor_cost_factor = -0.30
+		economy_advisor_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ideology_advisor_trait_communism_nepotist = {
+		random = no
+		sprite = 13
+
+		communism_drift = -0.10
+		drift_defence_factor = -0.10
+		political_power_factor = 0.10
+		political_advisor_cost_factor = -0.30
+		economy_advisor_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+	########################
+	### IdeologySpecific ###
+	########################
+
+	### Democratic ###
+
+	# Socialism #
+	ideology_advisor_trait_socialism = {
+		random = no
+		sprite = 13
+
+		#democratic_drift = 0.10
+		consumer_goods_factor = -0.03
+		production_factory_start_efficiency_factor = 0.05
+		#political_power_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Conservatism #
+	ideology_advisor_trait_conservatism = {
+		random = no
+		sprite = 13
+
+		#democratic_drift = 0.10
+		stability_factor = 0.10
+		drift_defence_factor = 0.20
+		#research_speed_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Liberalism #
+	ideology_advisor_trait_liberalism = {
+		random = no
+		sprite = 13
+
+		#democratic_drift = 0.10
+		research_speed_factor = 0.05
+		send_volunteer_size = 1
+		#drift_defence_factor = -0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### Communism ###
+
+	# Marxism #
+	ideology_advisor_trait_marxism = {
+		random = no
+		sprite = 13
+
+		#communism_drift = 0.10
+		foreign_subversive_activites = 0.20
+		resistance_target_on_our_occupied_states = 0.10
+		#war_support_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Anarcho-Syndicalism #
+	ideology_advisor_trait_anarchist_communism = {
+		random = no
+		sprite = 13
+
+		#communism_drift = 0.10
+		local_non_core_manpower = 0.10
+		required_garrison_factor = -0.10
+		#stability_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Totalism #
+	ideology_advisor_trait_anti_revisionism = {
+		random = no
+		sprite = 13
+
+		#communism_drift = 0.10
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.05
+		#monthly_population = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### Fascism ###
+
+	# Nazism #
+	ideology_advisor_trait_gen_nazism = {
+		random = no
+		sprite = 13
+
+		monthly_population = 0.50
+		research_speed_factor = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Fascism #
+	ideology_advisor_trait_fascism_ideology = {
+		random = no
+		sprite = 13
+
+		#fascism_drift = 0.10
+		conscription_factor = 0.01
+		resistance_damage_to_garrison = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Falangism #
+	ideology_advisor_trait_falangism = {
+		random = no
+		sprite = 13
+
+		#fascism_drift = 0.10
+		justify_war_goal_time = -0.25
+		command_abilities_cost_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### Neutrality ###
+
+	# Centrism #
+	ideology_advisor_trait_centrism = {
+		random = no
+		sprite = 13
+
+		#neutrality_drift = 0.10
+		trade_opinion_factor = 0.10
+		compliance_growth = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Despotism #
+	ideology_advisor_trait_despotism = {
+		random = no
+		sprite = 13
+
+		#neutrality_drift = 0.10
+		political_power_factor = 0.10
+		command_power_gain_mult = 0.10
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Oligarchism #
+	ideology_advisor_trait_oligarchism = {
+		random = no
+		sprite = 13
+
+		#neutrality_drift = 0.10
+		military_leader_cost_factor = -0.25
+		navy_leader_cost_factor = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+	################
+	### MILITARY ###
+	################
+
+	army_planning_1 = { #
+		sprite = 5
+		planning_speed = 0.05
+		##experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_planning_2 = { #
+		sprite = 5
+		planning_speed = 0.10
+		##experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_planning_3 = { #
+		sprite = 5
+		planning_speed = 0.15
+		##experience_gain_army = @experience_gain_high
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	retired_army_officer = {
+		random = no
+		sprite = 14
+		war_support_factor = 0.05
+		army_chief_cost_factor = -0.30
+		army_high_command_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	retired_air_officer = {
+		random = no
+		sprite = 14
+		war_support_factor = 0.05
+		air_chief_cost_factor = -0.30
+		air_high_command_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	retired_navy_officer = {
+		random = no
+		sprite = 14
+		war_support_factor = 0.05
+		navy_chief_cost_factor = -0.30
+		navy_high_command_cost_factor = -0.30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	army_administrator = {
+		random = no
+		sprite = 14
+		max_command_power = 20
+		army_intel_to_others = -10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	air_administrator = {
+		random = no
+		sprite = 14
+		max_command_power = 20
+		airforce_intel_to_others = -10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	navy_administrator = {
+		random = no
+		sprite = 14
+		max_command_power = 20
+		navy_intel_to_others = -10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	navy_chief_small_fleet_organizer_1 = {
+		sprite = 3
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.10
+		#experience_gain_navy = 0.06
+		command_cap = @tier1
+		ai_will_do = {factor = 1}
+	}
+
+	navy_chief_small_fleet_organizer_2 = {
+		sprite = 3
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.15
+		#experience_gain_navy = 0.09
+		command_cap = @tier2
+		ai_will_do = {factor = 2}
+	}
+	
+	navy_chief_small_fleet_organizer_3 = {
+		sprite = 3
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.20
+		#experience_gain_navy = 0.12
+		command_cap = @tier3
+		ai_will_do = {factor = 3}
+	}
+
+
+
+
+
+
+
+	### DESIGNERS ###
+
+
+	OG_research_institute = {
+		random = no
+		ai_will_do = {factor = 1}
+	}
+
+	OG_mining_concern = {
+		random = no
+		ai_will_do = {factor = 1}
+	}
+
+	OG_mechanized_manufacturer = {
+		random = no
+
+		ai_will_do = {factor = 1}
+	}
+
+	OG_vehicle_refurbishment_plant = {
+		random = no
+
+		ai_will_do = {factor = 1}
+	}
+
+	OG_rocketry_equipment_manufacturer = {
+		random = no
+		ai_will_do = {factor = 1}
+	}
+
+	OG_transport_plane_manufacturer = {
+		random = no
+		equipment_bonus = {
+			transport_plane_equipment = {
+				#build_cost_ic = -0.10
+				air_range = 0.15
+				air_defence = 0.15
+				#instant = yes
+			}
+		}
+		ai_will_do = {factor = 1}
+	}
+
+
+
+}

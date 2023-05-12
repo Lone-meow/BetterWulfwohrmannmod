@@ -1,0 +1,10 @@
+b_military_decisions_x = {
+	icon = military_operation
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	priority = 102
+}

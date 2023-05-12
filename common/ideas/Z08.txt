@@ -1,0 +1,72 @@
+ideas = {
+
+	country = {
+	
+		russian_free_army = {
+		picture = russian_free_army
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				experience_gain_army_unit_factor = 0.2
+				experience_loss_factor = -0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.1
+				experience_gain_army = 0.05
+				conscription_factor = -0.10
+			}
+		}
+	
+		Defensive_Redoubts = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = 0.05
+				conscription_factor = -0.10
+				forced_surrender_limit = 0.1
+				war_support_factor = 0.3
+
+			}
+		}
+	
+		Russian_Fascist_Stronghold = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = 0.25
+				forced_surrender_limit = 0.1
+				fascism_acceptance = 50
+				fascism_drift = 0.03
+
+			}
+		}
+	}

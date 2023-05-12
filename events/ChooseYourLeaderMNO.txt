@@ -1,0 +1,195 @@
+﻿add_namespace = ChooseYourLeaderMNO
+
+country_event = { # 9 leaders
+	id = ChooseYourLeaderMNO.1
+	title = ChooseYourLeaderMNO.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderMNO.1.a
+		hidden_effect = {
+            random_list = {
+                11 = {
+                    activate_decision = MAN_Aisin_Gioro_Puyi
+                }
+                11 = {
+                    activate_decision = MAN_Xuantong
+                }
+                11 = {
+                    activate_decision = MAN_Zhang_Haipeng
+                }
+				11 = {
+                    activate_decision = MAN_Zhang_Jinghui
+                }
+				11 = {
+                    activate_decision = MAN_Aisin_Gioro_Xiqia
+                }
+                11 = {
+                    activate_decision = MAN_Yoshiko_Kawashima
+                }
+				11 = {
+                    activate_decision = MAN_Yoshiko_Kawashima_2
+                }
+                11 = {
+                    activate_decision = MAN_Alexander_von_Falkenhausen
+                }
+				11 = {
+                    activate_decision = MAN_Aleksandr_Cherepanov
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 21 leaders
+	id = ChooseYourLeaderMNO.2
+	title = ChooseYourLeaderMNO.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderMNO.2.a
+		hidden_effect = {
+            random_list = {
+                4 = {
+                    activate_decision = MEX_Lazaro_Cardenas
+                }
+                4 = {
+                    activate_decision = MEX_Salvador_Abascal
+                }
+                4 = {
+                    activate_decision = MEX_Adolfo_de_la_Huerta
+                }
+				4 = {
+                    activate_decision = MEX_Dionisio_Encina
+                }
+				4 = {
+                    activate_decision = MEX_Hernan_Laborde
+                }
+                4 = {
+                    activate_decision = MEX_Plutarco_E_Calles
+                }
+                4 = {
+                    activate_decision = MEX_Vicente_Lombardo
+                }
+				4 = {
+                    activate_decision = MEX_Saturnino_Cedillo
+                }
+                4 = {
+                    activate_decision = MEX_Leon_Trotsky
+                }
+                4 = {
+                    activate_decision = MEX_Francisco_Mugica
+                }
+				4 = {
+                    activate_decision = MEX_Luis_Maria_Martinez
+                }
+				4 = {
+                    activate_decision = MEX_Manuel_Avila_Camacho
+                }
+				4 = {
+                    activate_decision = MEX_Luis_Farell
+                }
+                4 = {
+                    activate_decision = MEX_Gildardo_Magana
+                }
+                4 = {
+                    activate_decision = MEX_Abelardo_L_Rodriguez
+                }
+				4 = {
+                    activate_decision = MEX_Othon_P_Blanco_Nunez_de_Caceres
+                }
+                4 = {
+                    activate_decision = MEX_Heriberto_Jara_Corona
+                }
+                4 = {
+                    activate_decision = MEX_Plutarco_E_Calles_General
+                }
+				4 = {
+                    activate_decision = MEX_Saturnino_Cedillo_Martinez
+                }
+				4 = {
+                    activate_decision = MEX_Jose_Gonzalo_Escobar
+                }
+                4 = {
+                    activate_decision = MEX_Jesus_Degollado_Guizar
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderMNO.3
+	title = ChooseYourLeaderMNO.3.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderMNO.3.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = NOR_Johan_Nygaardsvold
+                }
+                50 = {
+                    activate_decision = NOR_Vidkun_Quisling
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 10 leaders
+	id = ChooseYourLeaderMNO.4
+	title = ChooseYourLeaderMNO.4.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderMNO.4.a
+		hidden_effect = {
+            random_list = {
+                10 = {
+                    activate_decision = NZL_Michael_Joseph_Savage
+                }
+                10 = {
+                    activate_decision = NZL_Sidney_Holland
+                }
+				10 = {
+                    activate_decision = NZL_John_Ormond
+                }
+                10 = {
+                    activate_decision = NZL_Elsie_Farrelly
+                }
+				10 = {
+                    activate_decision = NZL_Peter_Fraser
+                }
+                10 = {
+                    activate_decision = NZL_Bernard_Freyberg
+                }
+				10 = {
+                    activate_decision = NZL_Robert_Row
+                }
+                10 = {
+                    activate_decision = NZL_William_Stevens
+                }
+				10 = {
+                    activate_decision = NZL_Edmund_Rupert_Drummond
+                }
+                10 = {
+                    activate_decision = NZL_Peter_Phipps
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

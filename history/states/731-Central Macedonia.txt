@@ -1,0 +1,37 @@
+
+state={
+	id=731
+	name="STATE_731"
+
+	history={
+		owner = Y09
+		victory_points = {
+			11818 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			#air_base = 2
+			11818 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = Y09
+		1935.1.2 = {
+			owner = Y08
+			controller = Y08
+			add_core_of = Y08
+		}
+	}
+
+	provinces={
+		895 936 966 3526 3844 3936 6990 10163 11818 
+	}
+	manpower=1155700
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

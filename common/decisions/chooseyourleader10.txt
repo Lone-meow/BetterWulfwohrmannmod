@@ -1,0 +1,1329 @@
+choose_your_leader_catagory_10 = {
+
+
+	CHI_Soong_Ching-Ling = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_CHI
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Madame Sun Yat-sen"
+					desc = "Politics_Soong_Ching-Ling_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_soong_ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						first_lady
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Soong Ching-ling"
+					desc = "Politics_Soong_Ching-Ling_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_soong_ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = socialism
+					traits = {
+						first_lady
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Soong Ching-ling"
+					desc = "Politics_Soong_Ching-Ling_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_soong_ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						first_lady
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Empress Sun Yat-sen"
+					desc = "Politics_Soong_Ching-Ling_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_soong_ching-ling.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						first_lady
+					}
+				}
+			}	
+		}
+	}
+
+
+	CHI_Qiu_Jin = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_CHI
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+			limit = {
+				has_government = neutrality
+			    }
+			    create_country_leader = {
+					name = "Qiu Jin"
+					desc = "Politics_Qiu_Jin_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_qiu_jin.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {
+						chinas_joan_of_arc
+						feminist
+						
+					}
+				}
+			}
+		    if = {
+			limit = {
+				has_government = democratic
+			    }
+			    create_country_leader = {
+					name = "Qiu Jin"
+					desc = "Politics_Qiu_Jin_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_qiu_jin.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						chinas_joan_of_arc
+						feminist
+					}
+				}
+			}
+		    if = {
+			limit = {
+				has_government = communism
+			    }
+			    create_country_leader = {
+					name = "Qiu Jin"
+					desc = "Politics_Qiu_Jin_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_qiu_jin.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						chinas_joan_of_arc
+						feminist
+					}
+				}
+			}
+		     if = {
+			limit = {
+				has_government = fascism
+			    }
+			    create_country_leader = {
+					name = "Qiu Jin"
+					desc = "Politics_Qiu_Jin_Desc"
+					picture = "gfx/leaders/CHI/portrait_China_qiu_jin.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						chinas_joan_of_arc
+						feminist
+					}
+				}
+			}
+		}
+	}
+	
+	PRC_Jiang_Qing = {
+		
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_PRC
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+			limit = {
+				has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Jiang Qing"
+				    desc = "Politics_Jiang_Qing_Desc"
+				    picture = "gfx/leaders/PRC/portrait_China_jiang qing.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+					popular_idol
+				    }
+			    }
+		    }
+		    if = {
+			limit = {
+				has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Jiang Qing"
+				    desc = "Politics_Jiang_Qing_Desc"
+				    picture = "gfx/leaders/PRC/portrait_China_jiang qing.dds"
+				    expire = "1965.1.1"
+				    ideology = socialism
+				    traits = {
+					popular_idol
+				    }
+			    }
+		    }
+		    if = {
+			limit = {
+				has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Jiang Qing"
+				    desc = "Politics_Jiang_Qing_Desc"
+				    picture = "gfx/leaders/PRC/portrait_China_jiang qing.dds"
+				    expire = "1965.1.1"
+				    ideology = anarchist_communism
+				    traits = {
+					popular_idol
+				    }
+			    }
+		    }	
+		    if = {
+			limit = {
+				has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Jiang Qing"
+				    desc = "Politics_Jiang_Qing_Desc"
+				    picture = "gfx/leaders/PRC/portrait_China_jiang qing.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+					popular_idol
+				    }
+			    }
+		    }	
+		}
+	}
+	
+	SOV_Anastasia = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_SOV
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Anastasia"
+					desc = "Politics_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_anna_anderson.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						questionable_legitimacy
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Anastasia"
+					desc = "Politics_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_anna_anderson.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						questionable_legitimacy
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Anastasia"
+					desc = "Politics_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_anna_anderson.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						questionable_legitimacy
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Anastasia"
+					desc = "Politics_Anastasia_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_anastasia.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						questionable_legitimacy
+					}
+				}
+			}
+		}
+	}
+
+	SOV_Roza_Shanina = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_SOV
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Roza Shanina"
+					desc = "Politics_Roza_Shanina_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Roza_Shanina.dds"
+					ideology = despotism
+					traits = {
+						headstrong
+						stalins_sniper
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Roza Shanina"
+					desc = "Politics_Rosa_Shanina_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Roza_Shanina.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						headstrong
+						stalins_sniper
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Rosa Shanina"
+					desc = "Politics_Rosa_Shanina_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Roza_Shanina.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						headstrong
+						stalins_sniper
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Rosa Shanina"
+					desc = "Politics_Rosa_Shanina_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Roza_Shanina.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						headstrong
+						stalins_sniper
+					}
+				}
+			}
+		}
+	}
+
+	AUS_Adelheid = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_AUS
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Queen Adelheid"
+					desc = "Politics_Adelheid_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_archduchess_adelheid.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						queen_of_the_people
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Adelheid"
+					desc = "Politics_Adelheid_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_archduchess_adelheid.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						queen_of_the_people
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Adelheid"
+					desc = "Politics_Adelheid_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_archduchess_adelheid.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Empress Adelheid"
+					desc = "Politics_Adelheid_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_archduchess_adelheid.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						queen_of_the_people
+					}
+				}
+			}	
+		}
+	}
+
+	USA_Al_Capone = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_USA
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Al Capone"
+					desc = "Politics_Al_Capone_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_al_capone.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						criminal_connections
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Al Capone"
+					desc = "Politics_Al_Capone_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_al_capone.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						criminal_connections
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Al Capone"
+					desc = "Politics_Al_Capone_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_al_capone.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						criminal_connections
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Al Capone"
+					desc = "Politics_Al_Capone_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_al_capone.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						criminal_connections
+					}
+				}
+			}	
+		}
+	}			
+
+	USA_Huey_Long = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_USA
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Huey Long"
+					desc = "Politics_Huey_Long_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_huey_long.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						dictator
+						the_kingfish
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Huey Long"
+					desc = "Politics_Huey_Long_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_huey_long.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						dictator
+						the_kingfish
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Huey Long"
+					desc = "Politics_Huey_Long_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_huey_long.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						dictator
+						the_kingfish
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Huey Long"
+					desc = "Politics_Huey_Long_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_huey_long.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						dictator
+						the_kingfish
+					}
+				}
+			}	
+		}
+	}		
+	SOV_Nicholas_II = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_SOV
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Tsar Nicholas II"
+					desc = "Politics_Nicholas_II_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Nicholas_II.dds"
+					ideology = despotism
+					traits = {
+						political_reformer
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Nicholas II"
+					desc = "Politics_Nicholas_II_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Nicholas_II.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						political_reformer
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Nicholas II"
+					desc = "Politics_Nicholas_II_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Nicholas_II.dds"
+					ideology = marxism
+					traits = {
+						political_reformer
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Tsar Nicholas II"
+					desc = "Politics_Nicholas_II_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_Nicholas_II.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						political_reformer
+					}
+				}
+			}
+		}
+	}		
+
+	AUS_Security_Council = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_AUS
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Security_Council_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_security_council.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						provisional_government
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Security_Council_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_security_council.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						provisional_government
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Security_Council_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_security_council.dds"
+					expire = "1965.1.1"
+					ideology = stalinism
+					traits = {
+						provisional_government
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Security_Council_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_security_council.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						provisional_government
+					}
+				}
+			}	
+		}
+	}
+	
+	AUS_Complete_Anarchy = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_AUS
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Complete Anarchy"
+					desc = "Politics_Complete_Anarchy_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_complete_anarchy.dds"
+					expire = "1965.1.1"
+					ideology = anarchism
+					traits = {
+						lawless_land
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Complete_Anarchy_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_complete_anarchy.dds"
+					expire = "1965.1.1"
+					ideology = socialism
+					traits = {
+						lawless_land
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Complete_Anarchy_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_complete_anarchy.dds"
+					expire = "1965.1.1"
+					ideology = anarchist_communism
+					traits = {
+						lawless_land
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Security Council"
+					desc = "Politics_Complete_Anarchy_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_complete_anarchy.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						lawless_land
+					}
+				}
+			}	
+		}
+	}
+	
+	USA_Walt_Disney = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_USA
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Walt Disney"
+					desc = "Politics_Walt_Disney_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_walt_disney.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						popular_idol
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Walt Disney"
+					desc = "Politics_Walt_Disney_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_walt_disney.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						popular_idol
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Walt Disney"
+					desc = "Politics_Walt_Disney_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_walt_disney.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						popular_idol
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Walt Disney"
+					desc = "Politics_Walt_Disney_Desc"
+					picture = "gfx/leaders/USA/portrait_USA_walt_disney.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						popular_idol
+					}
+				}
+			}	
+		}
+	}
+
+		GER_Albert_Speer = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_GER
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Albert Speer"
+					desc = "Politics_Albert_Speer_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_albert_speer.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						architect_of_germania
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Albert Speer"
+					desc = "Politics_Alber_Speer_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_albert_speer.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						architect_of_germania
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Albert Speer"
+					desc = "Politics_Albert_Speer_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_albert_speer.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						architect_of_germania
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Albert Speer"
+					desc = "Politics_Albert_Speer_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_albert_speer.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						architect_of_germania
+					}
+				}
+			}	
+		}
+	}
+		AUS_Engelbert_Dollfuss = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_AUS
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Engelbert Dollfuss"
+					desc = "Politics_Engelbert_Dollfuss_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_engelbert_dollfuss.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						dictator
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Engelbert Dollfuss"
+					desc = "Politics_Engelbert_Dollfuss_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_engelbert_dollfuss.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						dictator
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Engelbert Dollfuss"
+					desc = "Politics_Engelbert_Dollfuss_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_engelbert_dollfuss.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						dictator
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Engelbert Dollfuss"
+					desc = "Politics_Engelbert_Dollfuss_Desc"
+					picture = "gfx/leaders/AUS/portrait_Austria_engelbert_dollfuss.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						dictator
+					}
+				}
+			}	
+		}
+	}
+
+	SOV_Vladimir_Lenin = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_SOV
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+			if = {
+			     limit = {
+				      has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Vladimir Lenin"
+					desc = "Politics_Lenin_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_lenin.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						father_of_the_bolsheviks
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = democratic
+				}
+				create_country_leader = {
+					name = "Vladimir Lenin"
+					desc = "Politics_LeninDesc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_lenin.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						father_of_the_bolsheviks
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = communism
+				}
+				create_country_leader = {
+					name = "Vladimir Lenin"
+					desc = "Politics_Lenin_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_lenin.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						father_of_the_bolsheviks
+					}
+				}
+			}
+			  if = {
+			     limit = {
+				      has_government = fascism
+				}
+				create_country_leader = {
+					name = "Vladimir Lenin"
+					desc = "Politics_Lenin_Desc"
+					picture = "gfx/leaders/SOV/portrait_Soviet_lenin.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						father_of_the_bolsheviks
+					}
+				}
+			}
+		}
+	}
+
+	GER_Bismark = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_GER
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Otto von Bismark"
+					desc = "Politics_Bismark_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_bismark.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						iron_chancellor
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Otto von Bismark"
+					desc = "Politics_Bismark_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_bismark.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						iron_chancellor
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Otto von Bismark"
+					desc = "Politics_Bismark_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_bismark.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						iron_chancellor
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Otto von Bismark"
+					desc = "Politics_Bismark_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_bismark.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						iron_chancellor
+					}
+				}
+			}	
+		}
+	}
+		
+	GER_Heydrich = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_GER
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Reinhard Heydrich"
+					desc = "Politics_Heydrich_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_heydrich.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						the_man_with_the_iron_heart
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Reinhard Heydrich"
+					desc = "Politics_Heydrich_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_heydrich.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						the_man_with_the_iron_heart
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Reinhard Heydrich"
+					desc = "Politics_Heydrich_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_heydrich.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						the_man_with_the_iron_heart
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Reinhard Heydrich"
+					desc = "Politics_Heydrich_Desc"
+					picture = "gfx/leaders/GER/Portrait_Germany_heydrich.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						the_man_with_the_iron_heart
+					}
+				}
+			}	
+		}
+	}
+
+	MAN_Wanrong = {
+
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_MAN
+		}
+		complete_effect = {
+			kill_country_leader = yes
+			if = {
+			      limit = {
+			               has_government = neutrality
+				}
+				create_country_leader = {
+					name = "Empress Wanrong"
+					desc = "Politics_Wanrong_Desc"
+					picture = "gfx/leaders/MAN/Portrait_Manchukuo_Wanrong.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						western_influences
+						criminal_connections
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = democratic
+			      }
+			      create_country_leader = {
+					name = "Wanrong"
+					desc = "Politics_Wanrong_Desc"
+					picture = "gfx/leaders/MAN/Portrait_Manchukuo_Dem_Wanrong.dds"
+					expire = "1965.1.1"
+					ideology = socialism
+					traits = {
+						western_influences
+						criminal_connections
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = communism
+			      }
+			      create_country_leader = {
+					name = "Wanrong"
+					desc = "Politics_Wanrong_Desc"
+					picture = "gfx/leaders/MAN/portrait_Manchukuo_Dem_Wanrong.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						western_influences
+						criminal_connections
+					}
+				}
+			}
+			if = {
+			      limit = {
+				       has_government = fascism
+			      }
+			      create_country_leader = {
+					name = "Empress Wanrong"
+					desc = "Politics_Wanrong_Desc"
+					picture = "gfx/leaders/MAN/portrait_Manchukuo_Wanrong.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						western_influences
+						criminal_connections
+					}
+				}
+			}	
+		}
+	}

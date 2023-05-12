@@ -1,0 +1,215 @@
+﻿l_japanese:
+#economy
+ a_economy_decisions_x:0 "§Y Economy decisions§!"
+
+ economy_menu_open_x:0 "§O Open Economy menu§! £faction_gre_fascist"
+ economy_menu_close_x:0 "§O Close Economy menu§! £trigger_no"
+
+ research_slot_0:0 "§C Grant Research Facility Subsidies§! £research_icon"
+ research_slot_1:0 "§C Grant Research Facility Subsidies§! £research_icon"
+
+ civilian_bonds:0 "§Y Lease Civilian Factories§! £civ_factory"
+ military_bonds:0 "§7 Lease Military Factories§! £mil_factory"
+
+ Expand_civilian_factory:0 "§Y Buy foreign civilian factories§!"
+ Expand_military_factory:0 "§G Buy foreign military factories§!"
+
+################################################################################################################################################################################################
+
+ sell_menu_open_x:0 "§6 Lease menu open§! £increase_reversed_texticon"
+ sell_menu_close_x:0 "§6 Lease menu close§! £increase_texticon"
+
+ sell_civilian_factory:0 "§Y Lease a civilian factories§! £civ_factory"
+ sell_military_factory:0 "§7 Lease a military factories§! £mil_factory"
+
+################################################################################################################################################################################################
+
+ government_bonds:0 "§9 Government bond§! £pol_idea"
+ government_bonds_mission:0 "§9 Government bond mission§!"
+ government_bonds_extension:0 "§9 Government bond extension§!"
+ government_bonds_repayment:0 "§9 Government bond repayment§!"
+ default_on_a_debt:0 "§9 default on a debt§!"
+
+################################################################################################################################################################################################
+
+ dev_menu_open_x:0 "§g Open National Development Plan Menu§! £decision_icon_small"
+ dev_menu_close_x:0 "§g Close National Development Plan Menu§! £trigger_no"
+
+ inf_dev_menu_open_x:0 "§O Infrastructure development plan menu open§! £increase_reversed_texticon"
+ inf_dev_menu_close_x:0 "§O Infrastructure development plan menu close§! £increase_texticon"
+
+ infrastructure_development_0:0 "§O Infrastructure development§! £infrastructure_texticon"
+
+ state_dev_menu_open_x:0 "§O Open State Development Plan Menu §! £increase_reversed_texticon"
+ state_dev_menu_close_x:0 "§O Close State Development Plan Menu§! £increase_texticon"
+
+ state_development_0:0 "§O Town Development§! £decision_icon_small"
+ state_development_1:0 "§O Large Town Development§! £decision_icon_small"
+ state_development_2:0 "§O City Development§! £decision_icon_small"
+ state_development_3:0 "§O Large City Development§! £decision_icon_small"
+ state_development_4:0 "§O Metropolis Development§! £decision_icon_small"
+ state_development_5:0 "§O Megalopolis Development§! £decision_icon_small"
+
+################################################################################################################################################################################################
+
+ kr_state_dev_menu_open_x:0 "§2 Enable Kaiserreich State Development§! £wing_rebase_status_texticon"
+ kr_state_dev_menu_close_x:0 "§2 Disable Kaiserreich State Development§! £BoP_left_texticon £BoP_right_texticon"
+
+
+ kr_state_development_special_type_0:0 "§O Port Development§! £decision_icon_small"
+ kr_state_development_special_type_1:0 "§O Major Port Development§! £decision_icon_small"
+
+ kr_state_development_0:0 "§O Town Development§! £decision_icon_small"
+ kr_state_development_1:0 "§O Large Town Development§! £decision_icon_small"
+ kr_state_development_2:0 "§O City Development§! £decision_icon_small"
+ kr_state_development_3:0 "§O Large City Development§! £decision_icon_small"
+ kr_state_development_4:0 "§O Metropolis Development§! £decision_icon_small"
+ kr_state_development_5:0 "§O Megalopolis Development§! £decision_icon_small"
+
+################################################################################################################################################################################################
+
+ confiscate_menu_open_x:0 "§W Open Seize Occupied Factory Menu§! £decrease_texticon"
+ confiscate_menu_close_x:0 "§W Close Seize Occupied Factory Menu§! £decrease_reversed_texticon"
+
+ factory_relocation_civ_x:0 "Seize Occupied Factory £civ_factory"
+ factory_relocation_mil_x:0 "Seize Occupied Factory £mil_factory"
+################################################################################################################################################################################################
+#military
+ b_military_decisions_x:0 "§RMilitary decisions§!"
+
+ national_defense_open_x:0 "§W Open Strategic Plan Menu§! £demilitarize_zone_texticon"
+ national_defense_close_x:0 "§W Close Strategic Plan Menu§! £trigger_no"
+
+ intelligence_agency_decision:0 "§0 Establish Intelligence Agency§! £counter_intelligence"
+ expansion_supply_base_decision:0 "§O Supply Infrastructure Expansion§! £infrastructure_texticon £supply_hub_texticon £naval_supply_hub_texticon £railways_texticon"
+ defense_enhancement_decision:0 "§R Fortification Enhancement§! £demilitarize_zone_texticon"
+ 
+ politicalpower:0 "§C Political Power§! £pol_power"
+ commandpower:0 "§R Command Power§! £command_power"
+ 
+ national_emergency_declaration:0 "§R Implementation of National Emergency Powers§!"
+ Formation_of_Community_Defense_Forces:0 "§O Formation of Community Defense Forces§!"
+ 0Formation_of_Community_Defense_Forces:0 "§R Remove§!"
+ propaganda:0 "§YPropaganda§! £change_government"
+
+################################################################################################################################################################################################
+
+ land_menu_open_x:0 "£army_experience §G Open Land Equipment Management Menu§! £text_infiltrate_army_token"
+ land_menu_close_x:0 "£army_experience §G Close Land Equipment Management Menu§! £trigger_no"
+
+
+ land_sell_open_x:0 "£army_experience §G Open Land Equipment Sales Menu§! £increase_reversed_texticon"
+ land_sell_close_x:0 "£army_experience §G Close Land Equipment Sales Menu§! £increase_texticon"
+
+ sell_train_x:0 "§G Sale of Trains§! £train_texticon"
+ sell_infantry_x:0 "§G Sale of Infantry Equipment§! £unit_category_light_infantry_icon_small"
+ sell_support_x:0 "§G Sale of Support Equipment§! £unit_engineer_icon_small"
+ sell_artillery_x:0 "§G Sale of Artillery§! £unit_artillery_icon_small"
+ sell_anti_air_x:0 "§G Sale of Anti Air§! £unit_anti_air_icon_small"
+ sell_anti_tank_x:0 "§G Sale of Anti Tank§! £unit_anti_tank_icon_small"
+ sell_motorized_x:0 "§G Sale of Motorized§! £unit_motorized_icon_small"
+ sell_mechanized_x:0 "§G Sale of Mechanized§! £unit_mechanized_icon_small"
+ sell_armored_car_x:0 "§G Sale of Armored Car§! £unit_armored_car_icon_small"
+ sell_light_tank_x:0 "§G Sale of Light Tank§! £unit_light_armor_icon_small"
+ sell_medium_tank_x:0 "§G Sale of Medium Tank§! £unit_medium_armor_icon_small"
+ sell_heavy_tank_x:0 "§G Sale of Heavy Tank§! £unit_heavy_armor_icon_small"
+ sell_modern_tank_x:0 "§G Sale of Modern Tank§! £unit_modern_armor_icon_small"
+
+
+ land_purchase_open_x:0 "£army_experience §G Open Purchase Land Equipment Menu§! £decrease_texticon"
+ land_purchase_close_x:0 "£army_experience §G Close Purchase Land Equipment Menu§! £decrease_reversed_texticon"
+
+ buy_train_x:0 "§G Purchase of Trains§! £train_texticon"
+ buy_infantry_x:0 "§G Purchase of Infantry Equipment§! £unit_category_light_infantry_icon_small"
+ buy_support_x:0 "§G Purchase of Support Equipment§! £unit_engineer_icon_small"
+ buy_artillery_x:0 "§G Purchase of Artillery§! £unit_artillery_icon_small"
+ buy_anti_air_x:0 "§G Purchase of Anti Air§! £unit_anti_air_icon_small"
+ buy_anti_tank_x:0 "§G Purchase of Anti Tank§! £unit_anti_tank_icon_small"
+ buy_motorized_x:0 "§G Purchase of Motorized§! £unit_motorized_icon_small"
+ buy_mechanized_x:0 "§G Purchase of Mechanized§! £unit_mechanized_icon_small"
+ buy_armored_car_x:0 "§G Purchase of Armored Car§! £unit_armored_car_icon_small"
+ buy_light_tank_x:0 "§G Purchase of Light Tank§! £unit_light_armor_icon_small"
+ buy_medium_tank_x:0 "§G Purchase of Medium Tank§! £unit_medium_armor_icon_small"
+ buy_heavy_tank_x:0 "§G Purchase of Heavy Tank§! £unit_heavy_armor_icon_small"
+ buy_modern_tank_x:0 "§G Purchase of Modern Tank§! £unit_modern_armor_icon_small"
+
+################################################################################################################################################################################################
+
+ naval_menu_open_x:0 "£navy_experience §3 Open Naval Management Menu§! £text_infiltrate_navy_token"
+ naval_menu_close_x:0 "£navy_experience §3 Close Naval Management Menu§! £trigger_no"
+
+
+ naval_sell_open_x:0 "£navy_experience §3 Open Ship Sales Menu§! £increase_reversed_texticon"
+ naval_sell_close_x:0 "£navy_experience §3 Close Ship Sales Menu§! £increase_texticon"
+
+ sell_floating_harbor_x:0 "§3 Sale of Floating Harbor§! £naval_supply_hub_texticon"
+ sell_convoy_x:0 "§3 Sale ofl Convoy§! £convoy_texticon"
+
+
+ naval_purchase_open_x:0 "£navy_experience §3 Open Purchase Vessel Menu§! £decrease_texticon"
+ naval_purchase_close_x:0 "£navy_experience §3 Close Purchase Vessel Menu§! £decrease_reversed_texticon"
+
+ buy_convoy_x:0 "§3 Purchase of Convoy§! £ship_transport_icon_small"
+ buy_submarine_x:0 "§3 Purchase of Submarine§! £ship_submarine_icon_small"
+ buy_destroyer_x:0 "§3 Purchase of Destroyer§! £ship_destroyer_icon_small"
+ buy_light_cruiser_x:0 "§3 Purchase of Light Cruiser§! £ship_light_cruiser_icon_small"
+ buy_heavy_cruiser_x:0 "§3 Purchase of Heavy Cruiser§! £ship_heavy_cruiser_icon_small"
+ buy_heavy_ship_x:0 "§3 Purchase of Battle Ship§! £ship_battleship_icon_small"
+ buy_carrier_x:0 "§3 Purchase of Aircraft Carrier§! £ship_carrier_icon_small"
+
+################################################################################################################################################################################################
+
+ air_menu_open_x:0 "£air_experience §R Open Aircraft Management Menu§! £text_infiltrate_air_token"
+ air_menu_close_x:0 "£air_experience §R Close Aircraft Management Menu§! £trigger_no"
+
+
+ air_sell_open_x:0 "£air_experience §R Open Aircraft Sales Menu§! £increase_reversed_texticon"
+ air_sell_close_x:0 "£air_experience §R Close Aircraft Sales Menu§! £increase_texticon"
+
+ sell_small_plane_x:0 "§R Sale of Small Plane§! £plane_niche_1"
+ sell_small_plane_cas_x:0 "§R Sale of Small Plane CAS§! £plane_niche_3"
+ sell_medium_plane_x:0 "§R Sale of Medium Plane§! £plane_niche_4"
+ sell_large_plane_x:0 "§R Sale of Large Plane§! £plane_niche_6"
+
+
+ air_purchase_open_x:0 "£air_experience §R Open Purchase Aircraft Menu§! £decrease_texticon"
+ air_purchase_close_x:0 "£air_experience §R Close Purchase Aircraft Menu§! £decrease_reversed_texticon"
+
+
+ buy_transport_plane_x:0 "§R Purchase of Transport Plane§! £unit_paratrooper_icon_small"
+
+ buy_small_plane_x:0 "§R Purchase of Small Plane§! £plane_niche_1"
+ buy_small_plane_cas_x:0 "§R Purchase of Small Plane CAS§! £plane_niche_3"
+ buy_medium_plane_x:0 "§R Purchase of Medium Plane§! £plane_niche_4"
+ buy_large_plane_x:0 "§R Purchase of Large Plane§! £plane_niche_6"
+
+################################################################################################################################################################################################
+ #resource
+ a:0 "§§!"
+
+ c_resources_decisions_x:0 "§O Resources decisions§!"
+
+ mining_menu_open_x:0 "§t Open Resources Extraction Menu§! £location_pointer"
+ mining_menu_close_x:0 "§t Close Resources Extraction Menu§! £trigger_no"
+
+ xsteel_resource:0 "§O Build a new steel mill§!"
+ xaluminium_resource:0 "§O Build a new bauxite mine§!"
+ xrubber_resource:0 "§O Build a new rubber plantations§!"
+ xchromium_resource:0 "§O Build a new chromium mine§!"
+ xoil_resource:0 "§O Discovery of new oil field§!"
+ xtungsten_resource:0 "§O Build a new tungsten mine§!"
+ xrandom_resources:0 "§t Resource Exploration§!"
+
+ resources_menu_open_x:0 "§9 Open Resources Development Plan§! £fuel_texticon"
+ resources_menu_close_x:0 "§9 Close Resources Development Plan§! £trigger_no"
+
+ steel_resource_x:0 "§4 Expansion of Steel Mill§!"
+ aluminium_resource_x:0 "§W Expansion of Bauxite Mining§!"
+ rubber_resource_x:0 "§0 Expansion of Rubber Plantations§!"
+ chromium_resource_x:0 "§g Expansion of Chromium Mining§!"
+ oil_resource_x:0 "§Y Expansion of Crude Oil Production§!"
+ tungsten_resource_x:0 "§G Expansion of Tungsten Mining§!"
+
+#idea
+ debt_repayment_civ:0 "§R Debt Repayment§!"
+ debt_repayment_mil:0 "§R Debt Repayment§!"

@@ -1,0 +1,280 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+
+	sub_ship_engine_nuclear_1 = {
+		category = sub_ship_engine
+		parent = sub_ship_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 1500
+			fuel_consumption = -1
+			build_cost_ic = 1000
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			reliability = -0.2
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module = sub_ship_engine_4
+			convert_cost_ic = 750
+		}
+	}
+
+	heavy_ship_engine_nuclear_1 = {
+		category = heavy_ship_engine
+		parent = heavy_ship_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 12
+			naval_range = 1500
+			fuel_consumption = -50
+			build_cost_ic = 4500
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.45
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4500
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_4
+			convert_cost_ic = 4000
+		}
+	}
+
+
+	carrier_ship_engine_nuclear_1 = {
+		category = carrier_ship_engine
+		parent = carrier_ship_engine_4
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			naval_speed = 5
+			naval_range = 1500
+			fuel_consumption = -50
+			build_cost_ic = 2500
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.45
+			reliability = -0.2
+		}
+		
+		can_convert_from = {
+			module_category = carrier_ship_engine
+			convert_cost_ic = 4000
+		}
+		
+		can_convert_from = {
+			module = carrier_ship_engine_4
+			convert_cost_ic = 3500
+		}
+	}
+
+
+	ship_airplane_launcher_3 = {
+		category = ship_airplane_launcher
+		gfx = ship_airplane_launcher_3
+		parent = ship_airplane_launcher_2
+		add_stats = {
+			build_cost_ic = 180
+			surface_detection = 12
+			sub_detection = 4.5
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 144
+		}
+		can_convert_from = {
+			module = ship_airplane_launcher_2
+			convert_cost_ic = 10
+		}
+	}
+	ship_helicopter_pad = {
+		category = ship_airplane_launcher
+		gfx = ship_helicopter_pad
+		parent = ship_airplane_launcher_3
+		add_stats = {
+			build_cost_ic = 200
+			surface_detection = 15
+			sub_detection = 6
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 80
+		}
+		can_convert_from = {
+			module = ship_airplane_launcher_2
+			convert_cost_ic = 30
+		}
+		can_convert_from = {
+			module = ship_airplane_launcher_3
+			convert_cost_ic = 20
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+	}
+
+
+
+	ship_sub_snorkel_3 = {
+		category = ship_sub_snorkel
+		gfx = ship_sub_snorkel_3
+		
+		multiply_stats = {
+			sub_visibility = -0.30
+		}
+		
+		add_stats = {
+			build_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module_category = ship_sub_snorkel
+			convert_cost_ic = 40
+		}
+	}
+
+
+
+
+
+	#ship_mine_sweeper_2 = {
+	#	abbreviation = "scl"
+	#	category = ship_mine_warfare
+	#	gfx = ship_mine_sweeper_2
+	#	parent = ship_mine_sweeper_1
+	#	add_stats = {
+	#		mines_sweeping = 1.5
+	#		build_cost_ic = 40
+	#	}
+	#
+	#	multiply_stats = {
+	#		naval_speed = -0.02
+	#	}
+	#	can_convert_from = {
+	#		module_category = ship_mine_warfare
+	#		convert_cost_ic = 10
+	#	}
+	#}
+	#ship_mine_sweeper_3 = {
+	#	abbreviation = "scl"
+	#	category = ship_mine_warfare
+	#	gfx = ship_mine_sweeper_3
+	#	parent = ship_mine_sweeper_2
+	#	add_stats = {
+	#		mines_sweeping = 2
+	#		build_cost_ic = 50
+	#	}
+	#
+	#	multiply_stats = {
+	#		naval_speed = -0.02
+	#	}
+	#	can_convert_from = {
+	#		module_category = ship_mine_warfare
+	#		convert_cost_ic = 20
+	#	}
+	#}
+
+	#ship_mine_layer_sub_2 = {
+	#	category = ship_mine_layer_sub
+	#	gfx = ship_mine_layer_sub_2
+	#	parent = ship_mine_layer_sub
+	#	add_stats = {
+	#		mines_planting = 1.5
+	#		build_cost_ic = 100
+	#	}
+	#	can_convert_from = {
+	#		module_category = ship_mine_layer_sub
+	#		convert_cost_ic = 10
+	#	}
+	#}
+	#ship_mine_layer_sub_3 = {
+	#	category = ship_mine_layer_sub
+	#	gfx = ship_mine_layer_sub_3
+	#	parent = ship_mine_layer_sub_2
+	#	add_stats = {
+	#		mines_planting = 2
+	#		build_cost_ic = 110
+	#	}
+	#	can_convert_from = {
+	#		module_category = ship_mine_layer_sub
+	#		convert_cost_ic = 20
+	#	}
+	#}
+
+	#ship_mine_layer_2 = {
+	#	category = ship_mine_layer
+	#	gui_category = ship_mine_warfare
+	#	gfx = ship_mine_layer_2
+	#	parent = ship_mine_layer_1
+	#	add_stats = {
+	#		mines_planting = 1.5
+	#		build_cost_ic = 100
+	#	}
+	#	multiply_stats = {
+	#		naval_speed = -0.02			
+	#	}
+	#	can_convert_from = {
+	#		module_category = ship_mine_layer
+	#		convert_cost_ic = 10
+	#	}
+	#}
+	#ship_mine_layer_3 = {
+	#	category = ship_mine_layer
+	#	gui_category = ship_mine_warfare
+	#	gfx = ship_mine_layer_3
+	#	parent = ship_mine_layer_2
+	#	add_stats = {
+	#		mines_planting = 2
+	#		build_cost_ic = 110
+	#	}
+	#	multiply_stats = {
+	#		naval_speed = -0.02			
+	#	}
+	#	can_convert_from = {
+	#		module_category = ship_mine_layer
+	#		convert_cost_ic = 20
+	#	}
+	#}
+
+	ship_sonar_3 = {
+		category = ship_sonar
+		gfx = ship_sonar_3
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_2
+		add_stats = {
+			sub_detection = 14
+			build_cost_ic = 80
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 64
+		}
+		can_convert_from = {
+			module = ship_sonar_2
+			convert_cost_ic = 20
+		}
+	}
+
+}

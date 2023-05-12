@@ -1,0 +1,156 @@
+﻿#Y30
+
+capital = 400
+
+oob = "world_at_war_generic_army_oob"
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "XXX_1936_naval_mtg"
+#	else = {
+#		set_naval_oob = "XXX_1936_naval_legacy"
+#	}
+#}
+#if = {
+#	limit = { has_dlc = "By Blood Alone" }
+#		set_air_oob = "XXX_1936_air_bba"
+#	else = {
+#		set_air_oob = "XXX_1936_air_legacy"
+#	}
+#}
+
+set_variable = { var = ROOT.startup_decision_variable value = 10 }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+	basic_train = 1
+}
+
+#if = {
+#	limit = { has_dlc = "By Blood Alone" }
+#		set_technology = {
+#			iw_small_airframe = 1
+#			iw_medium_airframe = 1
+#			aa_lmg = 1
+#			engines_1 = 1
+#			early_bombs = 1
+#		}
+#	else = {
+#		set_technology = {
+#			early_fighter = 1
+#			early_bomber = 1
+#		}
+#	}
+#}
+#if = {
+#	limit = {has_dlc = "No Step Back"}
+#	set_technology = {
+#		gwtank_chassis = 1
+#	}
+#	else = {
+#		set_technology = {
+#			gwtank = 1
+#		}
+#	}
+#}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_battery = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		#bicycle_infantry = 1
+	}
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			transport = 1
+		}
+	}
+}
+
+
+set_research_slots = 3
+set_convoys = 10
+set_stability = 0.75
+
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+add_ideas = {
+}
+
+#Leaders
+##recruit_character = Y30_democratic_leader
+##recruit_character = Y30_neutrality_leader
+##recruit_character = Y30_fascism_leader
+##recruit_character = Y30_communism_leader
+
+#Political Advisors
+#recruit_character = Y30_fe
+#recruit_character = Y30_wi
+#recruit_character = Y30_pe
+#recruit_character = Y30_pf
+#recruit_character = Y30_stc
+#recruit_character = Y30_qmg
+#recruit_character = Y30_pot
+#recruit_character = Y30_coi
+#recruit_character = Y30_sh
+#recruit_character = Y30_ig
+#recruit_character = Y30_sm
+
+#High Command
+#recruit_character = Y30_ae3
+#recruit_character = Y30_com1
+#recruit_character = Y30_acart2
+#recruit_character = Y30_ai2
+#recruit_character = Y30_ar
+#recruit_character = Y30_cav2
+#recruit_character = Y30_aa2
+#recruit_character = Y30_con2
+#recruit_character = Y30_as2
+#recruit_character = Y30_acas
+#recruit_character = Y30_screen2
+#recruit_character = Y30_ncs
+
+#Theorists
+#recruit_character = Y30_rt
+#recruit_character = Y30_nut
+#recruit_character = Y30_mt
+#recruit_character = Y30_awt
+#recruit_character = Y30_nt
+
+#Army Chiefs
+#recruit_character = Y30_acr2
+#recruit_character = Y30_acd3
+#recruit_character = Y30_aco2
+#recruit_character = Y30_acd2
+
+#Air Chiefs
+#recruit_character = Y30_bw2
+#recruit_character = Y30_acr
+#recruit_character = Y30_acgs
+
+#Navy Chiefs
+#recruit_character = Y30_ncdb2
+#recruit_character = Y30_ncm
+#recruit_character = Y30_nccr
+
+
+
+

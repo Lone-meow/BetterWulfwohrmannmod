@@ -1,0 +1,29 @@
+state={
+	id=752
+	name="STATE_752"
+	provinces={
+		1918 7988 8104 12724 12837 4999
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = Y82
+		add_core_of = Y82
+		victory_points = {
+			4999 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		1935.1.2 = {
+			owner = Y83
+			controller = Y83
+			add_core_of = Y83
+		}
+
+	}
+
+	local_supplies=1.0 
+}

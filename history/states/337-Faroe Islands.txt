@@ -1,0 +1,27 @@
+state=
+{
+	id=337
+	name="STATE_337"
+	manpower = 25900
+	
+	state_category = small_island
+	
+	history={
+		owner = X67
+		buildings = {
+			infrastructure = 2
+			13003 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = X67
+		1935.1.2 = {
+			owner = X76
+			controller = X76
+			add_core_of = X76
+		}
+	}
+	provinces= { 13003 }
+
+	local_supplies=0.0 
+}

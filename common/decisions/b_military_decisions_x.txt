@@ -1,0 +1,2741 @@
+b_military_decisions_x = {
+
+	test_decision = {
+		visible = {
+			always = no
+		}
+		available = {
+		}
+		complete_effect = {
+			create_intelligence_agency = {
+            name = "A.G.E.N.C.Y"
+			icon = agency_logo_bg
+            #icon = GFX_intelligence_agency_logo_agency
+        }
+		}
+		modifier = {
+		}
+    	remove_effect = {
+		}
+
+		cost = 50
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	land_menu_open_x = {
+		icon = category_generic_arms_trade
+		visible = {
+			NOT = {has_country_flag = land_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = land_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	land_menu_close_x = {
+		icon = category_generic
+		visible = {
+			has_country_flag = land_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = land_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	land_sell_open_x = {
+		icon = eng_trade_unions_demand
+		visible = {
+			has_country_flag = land_menu_flag_x
+			NOT = {has_country_flag = land_sell_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = land_sell_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	land_sell_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = land_sell_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_train_x = {
+		icon = generic_factory
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			#has_tech = armored_train
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                train_equipment > 29
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = train_equipment
+                amount = -30
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 100
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_infantry_x = {
+		icon = generic_industry
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                infantry_equipment > 1999
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -2000  #1000(pp)÷0.5(ic cost)
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 100
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_support_x = {
+		#icon = eng_support_imperialist_coup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                support_equipment > 249
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = -250
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 100
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_artillery_x = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                artillery_equipment > 249
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = -250
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 120
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_anti_air_x = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                anti_air_equipment > 249
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = anti_air_equipment
+                amount = -250
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 120
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_anti_tank_x = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                anti_tank_equipment > 249
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = anti_tank_equipment
+                amount = -250
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 120
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_rocket_artillery_x = {
+		icon = ger_military_buildup
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                rocket_artillery_equipment > 249
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = rocket_artillery_equipment
+                amount = -250
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 120
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_motorized_x = {
+		icon = generic_trucks
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                motorized_equipment > 399
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =1 }
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -400
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-1 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ1_pp10
+		days_remove = 140
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_motorized_rocket_x = {
+		icon = generic_trucks
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                motorized_rocket_equipment > 99
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =2 }
+            add_equipment_to_stockpile = {
+                type = motorized_rocket_equipment
+                amount = -100
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp10
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_mechanized_x = {
+		icon = generic_trucks
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                mechanized_equipment > 124
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =2 }
+            add_equipment_to_stockpile = {
+                type = mechanized_equipment
+                amount = -125
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp10
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_amphibious_mechanized_x = {
+		icon = generic_trucks
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			has_dlc = "Man the Guns"
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                amphibious_mechanized_equipment > 124
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =2 }
+            add_equipment_to_stockpile = {
+                type = amphibious_mechanized_equipment
+                amount = -125
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp10
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_armored_car_x = {
+		icon = generic_trucks
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                armored_car_equipment > 149
+            }
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =2 }
+            add_equipment_to_stockpile = {
+                type = armored_car_equipment
+                amount = -150
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp10
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_light_tank_x = {
+		icon = generic_tank
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				has_equipment = {
+                	light_tank_equipment_1 > 199
+            	}
+			}
+			else = {
+				has_equipment = {
+                	light_tank_chassis > 199
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 20
+			add_offsite_building = { type = industrial_complex level =2 }
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				add_equipment_to_stockpile = {
+                	type = light_tank_equipment_1
+                	amount = -200
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = light_tank_chassis
+                	amount = -200
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp15
+		days_remove = 180
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_medium_tank_x = {
+		icon = generic_tank
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				has_equipment = {
+                	medium_tank_equipment_1 > 99
+            	}
+			}
+			else = {
+				has_equipment = {
+                	medium_tank_chassis > 99
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 20
+			add_offsite_building = { type = industrial_complex level =2 }
+            IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				add_equipment_to_stockpile = {
+                	type = medium_tank_equipment_1
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = medium_tank_chassis
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp15
+		days_remove = 180
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_heavy_tank_x = {
+		icon = generic_tank
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				has_equipment = {
+                	heavy_tank_equipment_1 > 99
+            	}
+			}
+			else = {
+				has_equipment = {
+                	heavy_tank_chassis > 99
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 25
+			add_offsite_building = { type = industrial_complex level =2 }
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				add_equipment_to_stockpile = {
+                	type = heavy_tank_equipment_1
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = heavy_tank_chassis
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp15
+		days_remove = 200
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_modern_tank_x = {
+		icon = generic_tank
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				has_equipment = {
+                	modern_tank_equipment_1 > 09
+            	}
+			}
+			else = {
+				has_equipment = {
+                	modern_tank_chassis > 99
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 25
+			add_offsite_building = { type = industrial_complex level =3 }
+			IF = {
+				limit = {
+                	NOT = { has_dlc = "No Step Back" }
+            	}
+				add_equipment_to_stockpile = {
+                	type = modern_tank_equipment_1
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = modern_tank_chassis
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-3 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ3_pp25
+		days_remove = 200
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################	
+################################################################################################################################################################################################
+	land_purchase_open_x = {
+		icon = eng_trade_unions_support
+		visible = {
+			has_country_flag = land_menu_flag_x
+			NOT = {has_country_flag = land_purchase_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = land_purchase_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	land_purchase_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = land_purchase_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_train_x = {
+		icon = generic_factory
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = basic_train
+			#has_tech = wartime_train
+			#has_tech = armored_train
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			random_list = {
+				10 = {
+					add_equipment_to_stockpile = {
+               			type = train_equipment_1
+                		amount = 30
+                		producer = ROOT
+            		}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+               			type = train_equipment_1
+                		amount = 40
+                		producer = ROOT
+            		}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+               			type = train_equipment_1
+                		amount = 50
+                		producer = ROOT
+            		}
+				}
+			}
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 1
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ1_pp15
+		days_remove = 100
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_infantry_x = {
+		icon = generic_industry
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = infantry_weapons
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 70
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_support_x = {
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = tech_support
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 250
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 70
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_artillery_x = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = gw_artillery
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 250
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 13
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 90
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_anti_air_x = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = interwar_antiair
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = anti_air_equipment
+                amount = 250
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 90
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_anti_tank_x = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = interwar_antitank
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = anti_tank_equipment
+                amount = 250
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 90
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_rocket_artillery_x = {
+		icon = ger_military_buildup
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = rocket_artillery
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = rocket_artillery_equipment
+                amount = 250
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 90
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_motorized_x = {
+		icon = generic_trucks
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = motorised_infantry
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 400
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 110
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_motorized_rocket_x = {
+		icon = generic_trucks
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = motorized_rocket_unit
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = motorized_rocket_equipment
+                amount = 100
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 130
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_mechanized_x = {
+		icon = generic_trucks
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = mechanised_infantry
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = mechanized_equipment
+                amount = 125
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 125
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_amphibious_mechanized_x = {
+		icon = generic_trucks
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = amphibious_mechanized_infantry
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = amphibious_mechanized_equipment
+                amount = 125
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 125
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_armored_car_x = {
+		icon = generic_trucks
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			has_tech = armored_car1
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+            add_equipment_to_stockpile = {
+                type = armored_car_equipment
+                amount = 150
+                producer = ROOT
+            }
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 125
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_light_tank_x = {
+		icon = generic_tank
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				has_tech = basic_light_tank
+			}
+			else = {
+				has_tech = basic_light_tank_chassis
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_equipment_to_stockpile = {
+                	type = light_tank_equipment_1
+                	amount = 200
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type =light_tank_chassis
+                	amount = 200
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -20
+			}
+        }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		custom_cost_trigger = {
+			has_political_power > 19
+		}
+		custom_cost_text = cost_civ3_pp20
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_medium_tank_x = {
+		icon = generic_tank
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				has_tech = basic_medium_tank
+			}
+			else = {
+				has_tech = basic_medium_tank_chassis
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_equipment_to_stockpile = {
+                	type = medium_tank_equipment_1
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = medium_tank_chassis
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -20
+			}
+        }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		custom_cost_trigger = {
+			has_political_power > 19
+		}
+		custom_cost_text = cost_civ3_pp20
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_heavy_tank_x = {
+		icon = generic_tank
+		visible = {
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				has_tech = basic_heavy_tank
+			}
+			else = {
+				has_tech = basic_heavy_tank_chassis
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_equipment_to_stockpile = {
+                	type = heavy_tank_equipment_1
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = heavy_tank_chassis
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -20
+			}
+        }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		custom_cost_trigger = {
+			has_political_power > 19
+		}
+		custom_cost_text = cost_civ3_pp20
+		days_remove = 175
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_modern_tank_x = {
+		icon = generic_tank
+		visible = {
+			always = no
+			has_country_flag = land_menu_flag_x
+			has_country_flag = land_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = main_battle_tank
+			}
+			else = {
+				has_tech = main_battle_tank_chassis
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_equipment_to_stockpile = {
+                	type = modern_tank_equipment_1
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = modern_tank_chassis
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -25
+			}
+        }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		custom_cost_trigger = {
+			has_political_power > 24
+		}
+		custom_cost_text = cost_civ3_pp25
+		days_remove = 200
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	naval_menu_open_x = {
+		icon = category_ITA_cooperation_programs
+		visible = {
+			NOT = {has_country_flag = naval_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = naval_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	naval_menu_close_x = {
+		icon = category_generic
+		visible = {
+			has_country_flag = naval_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = naval_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	naval_sell_open_x = {
+		icon = eng_trade_unions_demand
+		visible = {
+			always = no
+			has_country_flag = naval_menu_flag_x
+			NOT = {has_country_flag = naval_sell_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = naval_sell_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	naval_sell_close_x = {
+		icon = generic_decision
+		visible = {
+			always = no
+			has_country_flag = naval_menu_flag_x
+			has_country_flag = naval_sell_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = naval_sell_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_floating_harbor_x = {
+		icon = generic_naval
+		visible = {
+			always = no
+			has_country_flag = naval_menu_flag_x
+			has_country_flag = naval_sell_flag_x
+		}
+		available = {
+			has_dlc = "No Step Back"
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                floating_harbor_equipment > 4
+            }
+		}
+		complete_effect = {
+			add_political_power = 15
+			add_offsite_building = { type = industrial_complex level =2 }
+            add_equipment_to_stockpile = {
+                type = floating_harbor_equipment
+				amount = -5
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp15
+		days_remove = 180
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_convoy_x = {
+		icon = generic_naval
+		visible = {
+			always = no
+			has_country_flag = naval_menu_flag_x
+			has_country_flag = naval_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+            has_equipment = {
+                convoy > 49
+            }
+		}
+		complete_effect = {
+			add_political_power = 15
+			add_offsite_building = { type = industrial_complex level =2 }
+            add_equipment_to_stockpile = {
+                type = convoy_1
+				amount = -50
+                producer = ROOT
+            }
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp15
+		days_remove = 240
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	naval_purchase_open_x = {
+		icon = eng_trade_unions_support
+		visible = {
+			always = no
+			#has_country_flag = naval_menu_flag_x
+			#NOT = {has_country_flag = naval_purchase_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = naval_purchase_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	naval_purchase_close_x = {
+		icon = generic_decision
+		visible = {
+			always = no
+			#has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = naval_purchase_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_convoy_x = {
+		icon = generic_naval
+		visible = {
+			has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = convoy
+                amount = 80
+                producer = ROOT
+            }
+		}
+		custom_cost_trigger = {
+			has_political_power > 29
+		}
+		custom_cost_text = cost_civ3_pp30
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -30
+			}
+		}
+		days_remove = 35
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_submarine_x = {
+		icon = generic_merge_plant_ship
+		visible = {
+        	has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+        }
+        available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 5
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = basic_submarine
+			}
+			else = {
+				has_tech = basic_ship_hull_submarine
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+        custom_cost_trigger = {
+			has_political_power > 49
+		}
+		custom_cost_text = cost_civ5_pp50
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+			}
+		}
+		days_remove = 50
+		days_re_enable = 0
+		fire_only_once = no
+
+        remove_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				ROOT = {
+                    create_equipment_variant = {
+                        name = "[Submarine]"
+                        type = submarine_2
+                    }
+                }
+                create_ship = { type = submarine_2 equipment_variant = "[Submarine]" creator = ROOT }
+                create_ship = { type = submarine_2 equipment_variant = "[Submarine]" creator = ROOT }
+				create_ship = { type = submarine_2 equipment_variant = "[Submarine]" creator = ROOT }
+				create_ship = { type = submarine_2 equipment_variant = "[Submarine]" creator = ROOT }
+			}
+			else = {
+				ROOT= {
+					create_equipment_variant = {
+                		name = "{Submarine}"
+                		type = ship_hull_submarine_2
+                		name_group = ROOT_SS_HISTORICAL
+                		parent_version = 0
+						modules = {
+							fixed_ship_engine_slot = sub_ship_engine_2
+                			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+							front_1_custom_slot = empty
+                			mid_1_custom_slot = empty
+                			rear_1_custom_slot = ship_mine_layer_sub
+                		}
+            		}
+				}
+            	create_ship = { type = ship_hull_submarine_2 equipment_variant = "{Submarine}" creator = ROOT }
+        		create_ship = { type = ship_hull_submarine_2 equipment_variant = "{Submarine}" creator = ROOT }
+				create_ship = { type = ship_hull_submarine_2 equipment_variant = "{Submarine}" creator = ROOT }
+        		create_ship = { type = ship_hull_submarine_2 equipment_variant = "{Submarine}" creator = ROOT }
+			}
+   		}
+    }
+################################################################################################################################################################################################
+	buy_destroyer_x = {
+		icon = generic_merge_plant_ship
+		visible = {
+        	has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+        }
+        available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 6
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = basic_destroyer
+			}
+			else = {
+				has_tech = basic_ship_hull_light
+			}
+		}
+		modifier = {
+			civilian_factory_use = 6
+		}
+        custom_cost_trigger = {
+			has_political_power > 59
+		}
+		custom_cost_text = cost_civ6_pp60
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -60
+			}
+		}
+		days_remove = 60
+		days_re_enable = 0
+		fire_only_once = no
+
+        remove_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				ROOT = {
+                    create_equipment_variant = {
+                        name = "[Destroyer]"
+                        type = destroyer_2
+                    }
+                }
+                create_ship = { type = destroyer_2 equipment_variant = "[Destroyer]" creator = ROOT }
+                create_ship = { type = destroyer_2 equipment_variant = "[Destroyer]" creator = ROOT }
+				create_ship = { type = destroyer_2 equipment_variant = "[Destroyer]" creator = ROOT }
+			}
+			else = {
+				ROOT = {
+					create_equipment_variant = {
+                		name = "{Destroyer}"
+                		type = ship_hull_light_2
+                		name_group = ROOT_DD_HISTORICAL
+                		parent_version = 0
+                		modules = {
+                			fixed_ship_battery_slot = ship_light_battery_2
+                    		fixed_ship_anti_air_slot = ship_anti_air_2
+                			fixed_ship_fire_control_system_slot = empty
+                   			fixed_ship_radar_slot = ship_sonar_2
+                    		fixed_ship_engine_slot = light_ship_engine_2
+                    		fixed_ship_torpedo_slot = ship_torpedo_2
+                    		mid_1_custom_slot = empty
+                    		rear_1_custom_slot = ship_depth_charge_2
+                		}
+            		}
+				}
+				create_ship = { type = ship_hull_light_2 equipment_variant = "{Destroyer}" creator = ROOT }
+    			create_ship = { type = ship_hull_light_2 equipment_variant = "{Destroyer}" creator = ROOT }
+				create_ship = { type = ship_hull_light_2 equipment_variant = "{Destroyer}" creator = ROOT }
+			}
+   		}
+    }
+################################################################################################################################################################################################
+	buy_light_cruiser_x = {
+		icon = generic_merge_plant_ship
+		visible = {
+        	has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+        }
+        available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 7
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = basic_light_cruiser
+			}
+			else = {
+				has_tech = basic_ship_hull_cruiser
+			}
+		}
+		modifier = {
+			civilian_factory_use = 7
+		}
+        custom_cost_trigger = {
+			has_political_power > 69
+		}
+		custom_cost_text = cost_civ7_pp70
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -70
+			}
+		}
+		days_remove = 70
+		days_re_enable = 0
+		fire_only_once = no
+
+        remove_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				ROOT = {
+                    create_equipment_variant = {
+                        name = "[Light Cruiser]"
+                        type = light_cruiser_2
+                    }
+                }
+                create_ship = { type = light_cruiser_2 equipment_variant = "[Light Cruiser]" creator = ROOT }
+                create_ship = { type = light_cruiser_2 equipment_variant = "[Light Cruiser]" creator = ROOT }
+			}
+			else = {
+				ROOT = {
+					create_equipment_variant = {
+                		name = "{Light Cruiser}"
+                		type = ship_hull_cruiser_2
+                		name_group = ROOT_CL_HISTORICAL
+                		parent_version = 0
+               			modules = {
+                			fixed_ship_battery_slot = ship_light_medium_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+							fixed_ship_radar_slot = ship_radar_3
+							fixed_ship_engine_slot = cruiser_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							fixed_ship_armor_slot = empty
+							mid_1_custom_slot = empty
+							mid_2_custom_slot = empty
+							rear_1_custom_slot = empty
+                		}
+            		}
+				}
+				create_ship = { type = ship_hull_cruiser_2 equipment_variant = "{Light Cruiser}" creator = ROOT }
+    			create_ship = { type = ship_hull_cruiser_2 equipment_variant = "{Light Cruiser}" creator = ROOT }
+			}
+   		}
+    }
+################################################################################################################################################################################################
+	buy_heavy_cruiser_x = {
+		icon = generic_merge_plant_ship
+		visible = {
+        	has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+        }
+        available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 8
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = basic_heavy_cruiser
+			}
+			else = {
+				has_tech = basic_ship_hull_cruiser
+			}
+		}
+		modifier = {
+			civilian_factory_use = 8
+		}
+        custom_cost_trigger = {
+			has_political_power > 79
+		}
+		custom_cost_text = cost_civ8_pp80
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -80
+			}
+		}
+		days_remove = 80
+		days_re_enable = 0
+		fire_only_once = no
+
+        remove_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				ROOT = {
+                    create_equipment_variant = {
+                        name = "[Light Cruiser]"
+                        type = heavy_cruiser_2
+                    }
+                }
+                create_ship = { type = heavy_cruiser_2 equipment_variant = "[Heavy Cruiser]" creator = ROOT }
+                create_ship = { type = heavy_cruiser_2 equipment_variant = "[Heavy Cruiser]" creator = ROOT }
+			}
+			else = {
+				ROOT = {
+					create_equipment_variant = {
+                		name = "{Heavy Cruiser}"
+                		type = ship_hull_cruiser_2
+                		name_group = ROOT_CL_HISTORICAL
+                		parent_version = 0
+                		modules = {
+                			fixed_ship_battery_slot = ship_medium_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+							fixed_ship_radar_slot = ship_radar_1
+							fixed_ship_engine_slot = cruiser_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							fixed_ship_armor_slot = empty
+							mid_1_custom_slot = ship_secondaries_2
+							mid_2_custom_slot = empty
+							rear_1_custom_slot = empty
+                		}
+            		}
+				}
+				create_ship = { type = ship_hull_cruiser_2 equipment_variant = "{Heavy Cruiser}" creator = ROOT }
+    			create_ship = { type = ship_hull_cruiser_2 equipment_variant = "{Heavy Cruiser}" creator = ROOT }
+			}
+			
+   		}
+    }
+################################################################################################################################################################################################
+	buy_heavy_ship_x = {
+		icon = generic_merge_plant_ship
+		visible = {
+        	has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+        }
+        available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 9
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = basic_battleship
+			}
+			else = {
+				has_tech = basic_ship_hull_heavy
+			}
+		}
+		modifier = {
+			civilian_factory_use = 9
+		}
+        custom_cost_trigger = {
+			has_political_power > 89
+		}
+		custom_cost_text = cost_civ9_pp90
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -90
+			}
+		}
+		days_remove = 90
+		days_re_enable = 0
+		fire_only_once = no
+
+        remove_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				ROOT = {
+                    create_equipment_variant = {
+                        name = "[Battle Ship]"
+                        type = battleship_2
+                    }
+                }
+                create_ship = { type = battleship_2 equipment_variant = "[Battle Ship]" creator = ROOT }
+			}
+			else = {
+				ROOT = {
+					create_equipment_variant = {
+                		name = "{Battle Ship}"
+                		type = ship_hull_heavy_2
+                		name_group = ROOT_CL_HISTORICAL
+                		parent_version = 0
+                		modules = {
+                			fixed_ship_battery_slot = ship_heavy_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = heavy_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							fixed_ship_armor_slot = ship_armor_bb_2
+							front_1_custom_slot = empty
+							mid_1_custom_slot = empty
+							mid_2_custom_slot = empty
+							rear_1_custom_slot = empty
+                		}
+            		}
+				}
+				create_ship = { type = ship_hull_heavy_2 equipment_variant = "{Battle Ship}" creator = ROOT }
+			}
+			
+   		}
+    }
+################################################################################################################################################################################################
+	buy_carrier_x = {
+		icon = generic_merge_plant_ship
+		visible = {
+        	has_country_flag = naval_menu_flag_x
+			#has_country_flag = naval_purchase_flag_x
+        }
+        available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 10
+			IF = {
+				limit = { 
+					NOT = { has_dlc = "No Step Back" } 
+				}
+				has_tech = basic_carrier
+			}
+			else = {
+				has_tech = basic_ship_hull_carrier
+			}
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+        custom_cost_trigger = {
+			has_political_power > 99
+		}
+		custom_cost_text = cost_civ10_pp100
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+			}
+		}
+		days_remove = 100
+		days_re_enable = 0
+		fire_only_once = no
+
+        remove_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				ROOT = {
+                    create_equipment_variant = {
+                        name = "[Aircraft Carrier]"
+                        type = carrier_2
+                    }
+                }
+                create_ship = { type = carrier_2 equipment_variant = "[Aircraft Carrier]" creator = ROOT }
+			}
+			else = {
+				ROOT = {
+					create_equipment_variant = {
+               			name = "{Aircraft Carrier}"
+                		type = ship_hull_carrier_1
+                		name_group = ROOT_CL_HISTORICAL
+                		parent_version = 0
+                		modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = empty
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = ship_radar_3
+							fixed_ship_engine_slot = carrier_ship_engine_2
+							fixed_ship_secondaries_slot = empty
+							front_1_custom_slot = empty
+                		}
+            		}
+				}
+				create_ship = { type = ship_hull_carrier_1 equipment_variant = "{Aircraft Carrier}" creator = ROOT }
+			}
+   		}
+    }
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	air_menu_open_x = {
+		icon = category_ITA_reggianes_exports
+		visible = {
+			NOT = {has_country_flag = air_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = air_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	air_menu_close_x = {
+		icon = category_generic
+		visible = {
+			has_country_flag = air_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = air_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	air_sell_open_x = {
+		icon = eng_trade_unions_demand
+		visible = {
+			has_country_flag = air_menu_flag_x
+			NOT = {has_country_flag = air_sell_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = air_sell_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	air_sell_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_sell_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = air_sell_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_small_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_equipment = {
+                	fighter_equipment_1 > 99
+            	}
+			}
+			else = {
+				has_equipment = {
+                	small_plane_airframe > 99
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =2 }
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = fighter_equipment_1
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = small_plane_airframe
+                	amount = -100
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp10
+		days_remove = 200
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_small_plane_cas_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_equipment = {
+                	CAS_equipment_1 > 74
+            	}
+			}
+			else = {
+				has_equipment = {
+                	small_plane_cas_airframe > 74
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 10
+			add_offsite_building = { type = industrial_complex level =2 }
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = CAS_equipment_1
+                	amount = -75
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = small_plane_cas_airframe
+                	amount = -75
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp10
+		days_remove = 200
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_medium_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_equipment = {
+                	tac_bomber_equipment_1 > 49
+            	}
+			}
+			else = {
+				has_equipment = {
+                	medium_plane_airframe > 49
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 15
+			add_offsite_building = { type = industrial_complex level =2 }
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = tac_bomber_equipment_1
+                	amount = -50
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = medium_plane_airframe
+                	amount = -50
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-2 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ2_pp15
+		days_remove = 240
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	sell_large_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_sell_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_equipment = {
+                	strat_bomber_equipment_1 > 29
+            	}
+			}
+			else = {
+				has_equipment = {
+                	large_plane_airframe > 29
+            	}
+			}
+		}
+		complete_effect = {
+			add_political_power = 15
+			add_offsite_building = { type = industrial_complex level =3 }
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = strat_bomber_equipment_1
+                	amount = -30
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = large_plane_airframe
+                	amount = -30
+                	producer = ROOT
+            	}
+			}
+        }
+		remove_effect = {
+            add_offsite_building = { type = industrial_complex level =-3 }
+		}
+		custom_cost_trigger = {
+			has_political_power > -501
+		}
+		custom_cost_text = reward_civ3_pp20
+		days_remove = 280
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+################################################################################################################################################################################################
+	air_purchase_open_x = {
+		icon = eng_trade_unions_support
+		visible = {
+			has_country_flag = air_menu_flag_x
+			NOT = {has_country_flag = air_purchase_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = air_purchase_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	air_purchase_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_purchase_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = air_purchase_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_transport_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_purchase_flag_x
+		}
+		available = {
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -10
+			}
+            add_equipment_to_stockpile = {
+                type = transport_plane_equipment
+                amount = 100
+                producer = ROOT
+            }
+        }
+		modifier = {
+			civilian_factory_use = 1
+		}
+		custom_cost_trigger = {
+			has_political_power > 9
+		}
+		custom_cost_text = cost_civ1_pp10
+		days_remove = 100
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_small_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_tech = early_fighter
+			}
+			else = {
+				has_tech = iw_small_airframe
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = fighter_equipment_1
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = small_plane_airframe
+                	amount = 100
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 120
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_small_plane_cas_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_tech = CAS1
+			}
+			else = {
+				has_tech = iw_small_airframe
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = CAS_equipment_1
+                	amount = 75
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = small_plane_cas_airframe
+                	amount = 75
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -15
+			}
+        }
+		modifier = {
+			civilian_factory_use = 2
+		}
+		custom_cost_trigger = {
+			has_political_power > 14
+		}
+		custom_cost_text = cost_civ2_pp15
+		days_remove = 120
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_medium_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_tech = tactical_bomber1
+			}
+			else = {
+				has_tech = iw_medium_airframe
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = tac_bomber_equipment_1
+                	amount = 50
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = medium_plane_airframe
+                	amount = 50
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -20
+			}
+        }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		custom_cost_trigger = {
+			has_political_power > 19
+		}
+		custom_cost_text = cost_civ3_pp20
+		days_remove = 140
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	buy_large_plane_x = {
+		icon = generic_air
+		visible = {
+			has_country_flag = air_menu_flag_x
+			has_country_flag = air_purchase_flag_x
+		}
+		available = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				has_tech = strategic_bomber1
+			}
+			else = {
+				has_tech = iw_large_airframe
+			}
+			NOT = { ROOT = { has_idea = closed_economy }}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+                	type = strat_bomber_equipment_1
+                	amount = 30
+                	producer = ROOT
+            	}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+                	type = large_plane_airframe
+                	amount = 30
+                	producer = ROOT
+            	}
+			}
+			hidden_effect = {
+				add_political_power = -25
+			}
+        }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		custom_cost_trigger = {
+			has_political_power > 24
+		}
+		custom_cost_text = cost_civ3_pp25
+		days_remove = 160
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	national_defense_open_x = {
+		icon = hol_draw_up_staff_plans
+		visible = {
+			NOT = {has_country_flag = national_defense_open_falg_x}
+		}
+		complete_effect = {
+			set_country_flag = national_defense_open_falg_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	national_defense_close_x = {
+		icon = generic_decision
+		visible = {
+			has_country_flag = national_defense_open_falg_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = national_defense_open_falg_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	intelligence_agency_decision = {
+		icon = SWI_expand_covert_operations
+		visible = {
+			has_country_flag = national_defense_open_falg_x
+			has_dlc = "La Resistance"
+			NOT = {has_intelligence_agency = yes}
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		remove_effect = {
+			create_intelligence_agency = {
+            name = "A.G.E.N.C.Y"
+            icon = agency_logo_yug
+            #icon = GFX_intelligence_agency_logo_agency
+            }
+		}
+
+		cost = 0
+		days_remove = 35
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+    expansion_supply_base_decision = {
+        icon = generic_construction
+
+        modifier = {
+			industrial_capacity_factory = -0.25
+
+			production_speed_infrastructure_factor = 0.5
+			production_speed_air_base_factor = 0.5
+			production_speed_supply_node_factor = 0.5
+			production_speed_rail_way_factor = 0.5
+			production_speed_naval_base_factor = 0.5
+        }
+		cost = 25
+        days_remove = 100
+        days_re_enable = 0
+        fire_only_once = no
+		visible = {
+			has_country_flag = national_defense_open_falg_x
+		}
+    }
+################################################################################################################################################################################################
+	defense_enhancement_decision = {
+        icon = generic_mountain_fortification
+
+        modifier = {
+			industrial_capacity_factory = -0.25
+
+			production_speed_bunker_factor = 0.5
+			production_speed_coastal_bunker_factor = 0.5
+			production_speed_anti_air_building_factor = 0.5
+			production_speed_radar_station_factor = 0.5
+			command_power_gain_mult = 0.5
+
+        }
+		complete_effect = {
+			#add_command_power = 50
+		}
+		cost = 25
+        days_remove = 100
+        days_re_enable = 0
+        fire_only_once = no
+		visible = {
+			has_country_flag = national_defense_open_falg_x
+		}
+    }
+################################################################################################################################################################################################
+	military_parade_decision = {
+        icon = generic_mountain_fortification
+		available = {
+		}
+        modifier = {
+			experience_gain_army = 0.05	
+			experience_gain_army_factor = 0.1	
+        }
+		complete_effect = {
+			add_command_power = 150
+		}
+		cost = 25
+        days_remove = 100
+        days_re_enable = 0
+        fire_only_once = no
+		visible = {
+			always = no
+			has_country_flag = national_defense_open_falg_x
+		}
+    }
+}

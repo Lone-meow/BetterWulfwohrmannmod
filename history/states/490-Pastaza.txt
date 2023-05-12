@@ -1,0 +1,29 @@
+
+state={
+	id=490
+	name="STATE_490"
+	manpower = 70020
+	
+	state_category = pastoral
+
+	history={
+		owner = X27
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			#air_base = 1
+		}
+		add_core_of = X27
+		1935.1.2 = {
+			owner = X24
+			controller = X24
+			add_core_of = X24
+		}
+	}
+
+	provinces={
+		8149 10942 
+	}
+
+	local_supplies=6.0 
+}

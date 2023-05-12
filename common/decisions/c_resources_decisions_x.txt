@@ -1,0 +1,815 @@
+c_resources_decisions_x = {
+
+	test_decision = {
+		visible = {
+            always = no
+        }
+		available = {
+		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_ocne = no
+		modifier = {
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+		}
+	}
+################################################################################################################################################################################################
+	mining_menu_open_x = {
+		icon = category_hol_prepare_the_inundation_lines
+		visible = {
+			NOT = {has_country_flag = mining_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = mining_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	mining_menu_close_x = {
+		icon = category_generic
+		visible = {
+			has_country_flag = mining_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = mining_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	xsteel_resource = {
+		icon = steel
+		days_remove = 140
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect={
+			FROM = {
+				add_resource={type = steel amount = 1}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = steel amount > 1 } }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 1999
+		}
+		custom_cost_text = r_cost_civ10_pp100_mp2000
+		complete_effect = {
+			set_country_flag = resources_mining_flag_x
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+		visible = {
+			always = no
+			has_country_flag = mining_menu_flag_x
+		}
+	}
+	xaluminium_resource = {
+		icon = aluminium
+		days_remove = 140
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect={
+			FROM = {
+				add_resource={type = aluminium amount = 1}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = aluminium amount > 1 } }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 1999
+		}
+		custom_cost_text = r_cost_civ10_pp100_mp2000
+		complete_effect = {
+			set_country_flag = resources_mining_flag_x
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+		visible = {
+			always = no
+			has_country_flag = mining_menu_flag_x
+		}
+	}
+	xrubber_resource = {
+		icon = rubber
+		days_remove = 140
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect={
+			FROM = {
+				add_resource={type = rubber amount = 1}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = rubber amount > 1 } }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 1999
+		}
+		custom_cost_text = r_cost_civ10_pp100_mp2000
+		complete_effect = {
+			set_country_flag = resources_mining_flag_x
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+		visible = {
+			always = no
+			has_country_flag = mining_menu_flag_x
+		}
+	}
+	xoil_resource = {
+		icon = oil
+		days_remove = 140
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect={
+			FROM = {
+				add_resource={type = oil amount = 1}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = oil amount > 1 } }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 1999
+		}
+		custom_cost_text = r_cost_civ10_pp100_mp2000
+		complete_effect = {
+			set_country_flag = resources_mining_flag_x
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+		visible = {
+			always = no
+			has_country_flag = mining_menu_flag_x
+		}
+	}
+	xchromium_resource = {
+		icon = chromium
+		days_remove = 140
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect={
+			FROM = {
+				add_resource={type = chromium amount = 1}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = chromium amount > 1 } }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 1999
+		}
+		custom_cost_text = r_cost_civ10_pp100_mp2000
+		complete_effect = {
+			set_country_flag = resources_mining_flag_x
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+		visible = {
+			always = no
+			has_country_flag = mining_menu_flag_x
+		}
+	}
+	xtungsten_resource = {
+		icon = tungsten
+		days_remove = 140
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect={
+			FROM = {
+				add_resource={type = tungsten amount = 1}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = tungsten amount > 1 } }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 99
+			has_manpower > 1999
+		}
+		custom_cost_text = r_cost_civ10_pp100_mp2000
+		complete_effect = {
+			set_country_flag = resources_mining_flag_x
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+		visible = {
+			always = no
+			has_country_flag = mining_menu_flag_x
+		}
+	}
+################################################################################################################################################################################################
+	xrandom_resources = {
+		icon = generic_construction
+		visible = {
+            has_country_flag = mining_menu_flag_x
+        }
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_resources_amount = { resource = steel amount > 1 } }
+				NOT = { has_resources_amount = { resource = aluminium amount > 1 } }
+				NOT = { has_resources_amount = { resource = rubber amount > 1 } }
+				NOT = { has_resources_amount = { resource = chromium amount > 1 } }
+				NOT = { has_resources_amount = { resource = oil amount > 1 } }
+				NOT = { has_resources_amount = { resource = tungsten amount > 1 } }
+			}
+		}
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		custom_cost_trigger = {
+			has_political_power > 29
+		}
+		custom_cost_text = r_cost_civ3_pp30
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -30
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+			random_list = {
+				10 = {
+					FROM = {
+						add_resource={type = steel amount = 1}
+					}
+				}
+				10 = {
+					FROM = {
+						add_resource={type = aluminium amount = 1}
+					}
+				}
+				10 = {
+					FROM = {
+						add_resource={type = rubber amount = 1}
+						}
+					}
+				10 = {
+					FROM = {
+						add_resource={type = chromium amount = 1}
+					}
+				}
+				10 = {
+					FROM = {
+						add_resource={type = oil amount = 1}
+					}
+				}
+				10 = {
+					FROM = {
+						add_resource={type = tungsten amount = 1}
+				    }
+			    }
+				40 = {
+					add_stability = -0.01
+			    }
+	        }
+	    }
+    }
+################################################################################################################################################################################################
+	resources_menu_open_x = {
+		icon = category_hol_prepare_the_inundation_lines
+		visible = {
+			NOT = {has_country_flag = resources_menu_flag_x}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = resources_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+	resources_menu_close_x = {
+		icon = category_generic
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+		available = {
+		}
+		complete_effect = {
+			clr_country_flag = resources_menu_flag_x
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = no
+	}
+################################################################################################################################################################################################
+	steel_resource_x = {
+		icon = steel
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_manpower = 1000
+			FROM = {
+				random_list = {
+					1 = {
+						add_resource={type = steel amount = 160}
+					}
+					4 = {
+						add_resource={type = steel amount = 80}
+					}
+					5 = {
+						add_resource={type = steel amount = 40}
+					}
+					15 = {
+						add_resource={type = steel amount = 20}
+					}
+					25 = {
+						add_resource={type = steel amount = 10}
+					}
+					50 = {
+						add_resource={type = steel amount = 5}
+					}
+				}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_resources_amount = { resource = steel amount < 21 }
+				has_resources_amount = { resource = steel amount > 0 }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+			has_manpower > 999
+		}
+		custom_cost_text = r_cost_civ5_pp50_mp1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -50
+				add_manpower = -1000
+			}
+		}
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+	}
+################################################################################################################################################################################################
+	aluminium_resource_x = {
+		icon = aluminium
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_manpower = 1000
+			FROM = {	
+				random_list = {
+					1 = {
+						add_resource={type = aluminium amount = 160}
+					}
+					4 = {
+						add_resource={type = aluminium amount = 80}
+					}
+					5 = {
+						add_resource={type = aluminium amount = 40}
+					}
+					15 = {
+						add_resource={type = aluminium amount = 20}
+					}
+					25 = {
+						add_resource={type = aluminium amount = 10}
+					}
+					50 = {
+						add_resource={type = aluminium amount = 5}
+					}
+				}
+		    }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_resources_amount = { resource = aluminium amount < 21 }
+				has_resources_amount = { resource = aluminium amount > 0 }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+			has_manpower > 999
+		}
+		custom_cost_text = r_cost_civ5_pp50_mp1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -50
+				add_manpower = -1000
+			}
+		}
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+	}
+################################################################################################################################################################################################
+	rubber_resource_x = {
+		icon = rubber
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_manpower = 1000
+			FROM = {	
+				random_list = {
+					1 = {
+						add_resource={type = rubber amount = 160}
+					}
+					4 = {
+						add_resource={type = rubber amount = 80}
+					}
+					5 = {
+						add_resource={type = rubber amount = 40}
+					}
+					15 = {
+						add_resource={type = rubber amount = 20}
+					}
+					25 = {
+						add_resource={type = rubber amount = 10}
+					}
+					50 = {
+						add_resource={type = rubber amount = 5}
+					}
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_resources_amount = { resource = rubber amount < 21 }
+				has_resources_amount = { resource = rubber amount > 0 }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+			has_manpower > 999
+		}
+		custom_cost_text = r_cost_civ5_pp50_mp1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -50
+				add_manpower = -1000
+			}
+		}
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+	}
+################################################################################################################################################################################################
+	chromium_resource_x = {
+		icon = chromium
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_manpower = 1000
+			FROM = {	
+				random_list = {
+					1 = {
+						add_resource={type = chromium amount = 160}
+					}
+					4 = {
+						add_resource={type = chromium amount = 80}
+					}
+					5 = {
+						add_resource={type = chromium amount = 40}
+					}
+					15 = {
+						add_resource={type = chromium amount = 20}
+					}
+					25 = {
+						add_resource={type = chromium amount = 10}
+					}
+					50 = {
+						add_resource={type = chromium amount = 5}
+					}
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_resources_amount = { resource = chromium amount < 21 }
+				has_resources_amount = { resource = chromium amount > 0 }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+			has_manpower > 999
+		}
+		custom_cost_text = r_cost_civ5_pp50_mp1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -50
+				add_manpower = -1000
+			}
+		}
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+	}
+################################################################################################################################################################################################
+	oil_resource_x = {
+		icon = oil
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_manpower = 1000
+			FROM = {
+				random_list = {
+					1 = {
+						add_resource={type = oil amount = 160}
+					}
+					4 = {
+						add_resource={type = oil amount = 80}
+					}
+					5 = {
+						add_resource={type = oil amount = 40}
+					}
+					15 = {
+						add_resource={type = oil amount = 20}
+					}
+					25 = {
+						add_resource={type = oil amount = 10}
+					}
+					50 = {
+						add_resource={type = oil amount = 5}
+					}
+				}
+	        }
+	    }
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_resources_amount = { resource = oil amount < 21 }
+				has_resources_amount = { resource = oil amount > 0 }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+			has_manpower > 999
+		}
+		custom_cost_text = r_cost_civ5_pp50_mp1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -50
+				add_manpower = -1000
+			}
+		}
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+	}
+################################################################################################################################################################################################
+	tungsten_resource_x = {
+		icon = tungsten
+		days_remove = 70
+		days_re_enable = 0
+		fixed_random_seed = no
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_manpower = 1000
+			FROM = {	
+				random_list = {
+					1 = {
+						add_resource={type = tungsten amount = 160}
+					}
+					4 = {
+						add_resource={type = tungsten amount = 80}
+					}
+					5 = {
+						add_resource={type = tungsten amount = 40}
+					}
+					15 = {
+						add_resource={type = tungsten amount = 20}
+					}
+					25 = {
+						add_resource={type = tungsten amount = 10}
+					}
+					50 = {
+						add_resource={type = tungsten amount = 5}
+					}
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_root_trigger = {
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_resources_amount = { resource = tungsten amount < 21 }
+				has_resources_amount = { resource = tungsten amount > 0 }
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+			has_manpower > 999
+		}
+		custom_cost_text = r_cost_civ5_pp50_mp1000
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = resource_available_flag
+				add_political_power = -50
+				add_manpower = -1000
+			}
+		}
+		visible = {
+			has_country_flag = resources_menu_flag_x
+		}
+	}
+}

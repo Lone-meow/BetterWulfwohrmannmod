@@ -1,0 +1,550 @@
+default = {
+	light_tank_chassis_0 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ford_3ton.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_FT.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_FT_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_FT_kmt.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_fiat_3000.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_fiat_3000_37mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_NC27.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_lkii.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_lkii_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_landsverk_m28.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_suttonskunk.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Renault_Nc.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type79.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_NC27_otsugata.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_I.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-18.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-18M.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-18_30.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-18.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-27.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-27_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-27_r.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ZIS-30.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_M1917.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_M1917_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr35_12.dds"
+			 }
+		}
+	}
+
+	light_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m2a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typea.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typea_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typea_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typeb.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typeb_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typeb_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typeb_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_e_typeb_5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_f.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_f_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_f_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t26_31.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t26_31_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t26_33.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_7TP.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_7TP_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_vickers_carden_loyd_m31.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_carden_loyd_mkvi.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_carden_loyd_mkvi_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_carden_loyd_mkvi_47mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t1_christie.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt2_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_ft_kegresse.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_ft_kegresse_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr33.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_panzeri.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_krupp_lka.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_krupp_lkb.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_cv33.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_cv33_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_landsverk_60.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_ahiv.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type94.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt5_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt5_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t37.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t38.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t38_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t38_20mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t15.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr35_12,7mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_cv35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_landsverk_120.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_CTMS-1tb1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_CTLS-4ta.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type97.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_p38t.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SPW_U304.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Sd.Kfz.251.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_M3_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type92.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type92_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type92_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type92_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type94.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type94_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type94_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type94_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_II.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_II_sand.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_II_Ger.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Spg_Kw_Bison.dds
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_31.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_31_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_33.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_33_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_33_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_33_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_33_5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_38.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_38_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-26_38_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-26.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-5-2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-6.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_HT-26.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_OT-130.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_OT-133.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-46.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-46_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-2_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_D-38.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-2_76,2mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-2-IS.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-5_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-5_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_RBT-5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_RS-132.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m1_combat.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m1_combat_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m1a1_combat.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m2a2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m2a4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr35_12.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_cv35_2.dds"
+			 }
+		}
+	}
+
+	light_tank_chassis_2 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m375.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt5_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_bt5_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t37.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t38.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t38_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t38_20mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t15.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_renault_amr35_12,7mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_cv35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_cv35_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_landsverk_120.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_ckd_tnh_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_CTMS-1tb1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_CTLS-4ta.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type97.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_marderII.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_p38t.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type95.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type95_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type95_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type95_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type5_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type97.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type97_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_II.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_II_sand.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Matilda_II_Ger.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_M-22_Locust.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_Spg_Kw_Bison.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-7.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-7_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-7-2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-7-2_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-7A.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-7A_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BT-SV.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_CTLS-4TA.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_CTMS-1TB1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m3_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m3a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m3a1_satan.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m8.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m8a1.dds"
+			}
+		}
+	}
+
+	light_tank_chassis_3 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type98.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type98_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type98_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type5_keho.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_type5_keho_2.dds
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_M-22_Locust.dds
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-50.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-60.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-60_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-60_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_BM-8-24.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-60_42.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-60_42_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-70.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-70_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-76.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-76_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_SU-76M.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-90.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-80.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_T-80_43.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m7.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m7_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_t21.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m19.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m22.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m24.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/GFX_light_m41.dds"
+			}
+		}
+	}
+
+	amphibious_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/amphibious_type2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/amphibious_type2_2.dds""
+			 }
+		}
+	}
+
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_marka.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_markb.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_renault_NC28.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_morgardshammar_m30.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_T7experiment.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Skeleton_Tank.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Little_Willie.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-24.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_christie_t1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_christie_t3.dds"
+
+			 }
+		}
+	}
+
+	medium_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m11-39.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_renault_D1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_MTLS.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4.50-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_M4A1_SD-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_pz3am.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_pz3_ausf3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_stugat.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Wirbelwind.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Type97.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89B.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89B_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89B_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type89B_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Somua_S35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Somua_S35_Ger.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/Zrinyi_II.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/40m_Nimrod.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_A34_Comet.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Toldia_IIa.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Spg_Hummel.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-28.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-28_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-28_38.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-28_41.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_a-20.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_a-32.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m2_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m2a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m2a1_2.dds"
+			 }
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m13-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m11-39.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_renault_D1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_MTLS.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4Firefly-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_M4A3_105-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4tulip-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m50SS-40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_pz3am.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_stugat.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Tiger1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Kv1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Wirbelwind.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_M7_Priest.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type97_chini.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type97.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type97_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type97_kai.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type97_kai_120mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type1_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type3_honi.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/Zrinyi_II.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/40m_Nimrod.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_A34_Comet.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Toldia_IIa.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Spg_Hummel.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-32.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_41.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_41_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_41_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_42.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_42_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-76_43.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-122.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_a-43.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34M.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_SU-85.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_SU-122.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m3_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m3a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m3a2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t6.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a1-76.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a2-76.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a3e8.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4a3-105.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4_chrysler.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m4_crocodile.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m10.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m10_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m10a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m12.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m36.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m36b1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m7.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m7_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_MTLS.dds"
+			 }
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type3_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type3_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type3_75mm_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type4_hato.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type4_nato.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type5_hori.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_type5_hori_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Panther_1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_Panther_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-43.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-85_43.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-85_43_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-85_44.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t-34-85_44_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_ot-34-85.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_SU-100.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t23.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_t26.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m26.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m18.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m18_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/medium_m37.dds"
+			}
+		}
+	}
+
+	modern_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/modern_type5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/modern_t-44.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/modern_m46.dds"
+			}
+		}
+	}
+
+	heavy_tank_chassis_0 = {
+		pool = {
+			weight = 2
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_markv.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type91.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type91_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_markVI.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_markVII.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Gun_carrier_mkI.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Sturmpanzerwagen_a7v.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mark_IX_Duck.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Saint_Chamond.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_t-22.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_t-35-1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mark_VIII.dds"
+				
+			}
+		}
+	}
+
+	heavy_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mitsu104.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mitsu104_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_jirosha.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_kato.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Tiger_1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Sturmtiger_early.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_jadgtiger_early.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_TAS_44M.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_t-35A.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_smk.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_t-100.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_t1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_m6.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_m6a1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_m6a2e1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_m6a2e2.dds"
+			}
+		}
+	}
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mitsu104.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mitsu104_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_jirosha.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_kato.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Tiger_1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Tiger_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Tiger_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-1_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-1_40.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-1_41.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-1_41_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-1_42.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_su-152.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-7-1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_kv-8.dds"
+			}
+		}
+	}
+
+	heavy_tank_chassis_3 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mitsu104.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_mitsu104_75mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_jirosha.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_type95_kato.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Tiger.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_Konigtiger.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_IS-1.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_IS-1_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_IS-2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_IS-2_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/heavy_t26a4.dds"
+			}
+		}
+	}
+
+	super_heavy_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/super_heavy_type100.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/super_heavy_type120.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/super_heavy_Char_2C.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/super_heavy_t28.dds"
+			}
+		}
+	}
+}

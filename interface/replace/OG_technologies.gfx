@@ -1,0 +1,574 @@
+spriteTypes = {
+
+
+    #####################################
+    ###--- SNUSMUMRIKEN'S NEW TECH ---###
+    #####################################
+
+
+	### VEHICLES ###
+
+	SpriteType = {
+		name = "GFX_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/vehicles/anti_tank_armored_car_tech.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_diesel_train_medium"
+		texturefile = "gfx/interface/technologies/vehicles/tech_diesel_train.dds"
+	}
+	SpriteType = {
+		name = "GFX_flexible_railnetwork_medium"
+		texturefile = "gfx/interface/technologies/vehicles/tech_railnetwork_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_military_railnetwork_medium"
+		texturefile = "gfx/interface/technologies/vehicles/tech_railnetwork_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_military_railnetwork_medium"
+		texturefile = "gfx/interface/technologies/vehicles/tech_railnetwork_3.dds"
+	}
+
+
+#########
+
+
+
+	# WEAPONS & EQUIPMENT
+
+	spriteType = {
+		name = "GFX_subtech_bicycle"
+		textureFile = "gfx/interface/technologies/infantry/subtech_bicycle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_field_uniforms_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_field_uniforms.dds"
+	}
+	SpriteType = {
+		name = "GFX_camo_uniforms1_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_camo_uniforms1.dds"
+	}
+	SpriteType = {
+		name = "GFX_camo_uniforms2_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_camo_uniforms2.dds"
+	}
+	SpriteType = {
+		name = "GFX_camo_uniforms3_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_camo_uniforms3.dds"
+	}
+	SpriteType = {
+		name = "GFX_winter_uniforms1_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_winter_uniforms1.dds"
+	}
+	SpriteType = {
+		name = "GFX_winter_uniforms2_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_winter_uniforms2.dds"
+	}
+	SpriteType = {
+		name = "GFX_winter_uniforms3_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_winter_uniforms3.dds"
+	}
+	SpriteType = {
+		name = "GFX_summer_uniforms1_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_summer_uniforms1.dds"
+	}
+	SpriteType = {
+		name = "GFX_summer_uniforms2_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_summer_uniforms2.dds"
+	}
+	SpriteType = {
+		name = "GFX_summer_uniforms3_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_summer_uniforms3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ammunition1_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_ammunition.dds"
+	}
+	SpriteType = {
+		name = "GFX_sniper1_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_sniper1.dds"
+	}
+	SpriteType = {
+		name = "GFX_sniper2_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_sniper2.dds"
+	}
+	SpriteType = {
+		name = "GFX_sniper3_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_sniper3.dds"
+	}
+	SpriteType = {
+		name = "GFX_flamethrower1_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_flamethrower1.dds"
+	}
+	SpriteType = {
+		name = "GFX_flamethrower2_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_flamethrower2.dds"
+	}
+	SpriteType = {
+		name = "GFX_flamethrower3_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_flamethrower3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/infantry_at.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/infantry_at2.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/infantry/infantry_at3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_night_vision3_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_nightvision_3.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_infantry_weapons0_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry/infantry_weapons4.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry/infantry_weapons5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/infantry/support_weapons5.dds"
+	}
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_tech_mountaineers4_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_mountaineers4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers5_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_mountaineers5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_marines4_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_marines4.dds"
+	}
+	SpriteType = {
+		name = "GFX_marines5_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_marines5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_paratroopers4_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_paratroopers4.dds"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers5_medium"
+		texturefile = "gfx/interface/technologies/infantry/tech_paratroopers5.dds"
+	}
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_coldadvanced_special_forces_medium"
+		texturefile = "gfx/interface/technologies/infantry/coldadvanced.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_coldimproved_special_forces_medium"
+		texturefile = "gfx/interface/technologies/infantry/coldimprove.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_coldextreme_environment_training_medium"
+		texturefile = "gfx/interface/technologies/infantry/coldextreme.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_coldsurvival_training_medium"
+		texturefile = "gfx/interface/technologies/infantry/coldsurvival.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_coldelite_forces_medium"
+		texturefile = "gfx/interface/technologies/infantry/coldelite.dds"
+	}
+
+
+
+#############
+### NAVAL ###
+#############
+
+
+ 	SpriteType = {
+		name = "GFX_basic_airplane_launcher_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_airplane_launcher_1.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_improved_airplane_launcher_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_airplane_launcher_2.dds"
+	}
+ 	SpriteType = {
+		name = "GFX_advanced_airplane_launcher_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_airplane_launcher_3.dds"
+	}
+
+
+ 	SpriteType = {
+		name = "GFX_advanced_submarine_snorkel_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_submarine_snorkel_3.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_advanced_sonar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_mtg_floating_harbour_tech_medium"
+		texturefile = "gfx/interface/technologies/floating_harbor_equipment_1.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+##########################
+
+	spriteType = {
+		name = "GFX_subtech_militia"
+		textureFile = "gfx/interface/technologies/infantry/subtech_militia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_subtech_penal_infantry"
+		textureFile = "gfx/interface/technologies/infantry/subtech_penal_infantry.dds"
+	}
+
+
+
+
+
+
+###############
+### SUPPORT ###
+###############
+
+	SpriteType = {
+		name = "GFX_tech_engineers5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_engineers5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_recon5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_recon5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_military_police5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_military_police5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_logistics_company5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_logistics_company5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_maintenance_company5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_maintenance_company5.dds"
+	}		
+	SpriteType = {
+		name = "GFX_tech_field_hospital5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_field_hospital5.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_signal_company5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_signal_company5.dds"
+	}
+	
+
+
+
+
+
+	################
+	### INDUSTRY ###
+	################
+
+	SpriteType = {
+		name = "GFX_ammunition_production_tech_1_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_ammo_production_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ammunition_production_tech_2_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_ammo_production_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ammunition_production_tech_3_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_ammo_production_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_metal_production_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_metallurgical_casting.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_steel_production_1_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_steel_production_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_steel_production_2_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_steel_production_02.dds"
+	}
+	SpriteType = {
+		name = "GFX_steel_production_3_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_steel_production_03.dds"
+	}
+	SpriteType = {
+		name = "GFX_steel_production_4_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_steel_production_04.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_aluminium_production_1_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_aluminum_production_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_aluminium_production_2_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_aluminum_production_02.dds"
+	}
+	SpriteType = {
+		name = "GFX_aluminium_production_3_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_aluminum_production_03.dds"
+	}
+	SpriteType = {
+		name = "GFX_aluminium_production_4_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_aluminum_production_04.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_concentrated_industry_a_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_dispersed_industry_a_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_combined_industry_b_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_construction_a_medium"
+		texturefile = "gfx/interface/technologies/advanced_construction.dds"
+	}
+	SpriteType = {
+		name = "GFX_construction_b_medium"
+		texturefile = "gfx/interface/technologies/advanced_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_excavation_a_medium"
+		texturefile = "gfx/interface/technologies/excavation5.dds"
+	}
+	SpriteType = {
+		name = "GFX_excavation_b_medium"
+		texturefile = "gfx/interface/technologies/excavation5.dds"
+	}
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_improved_naval_refitting_medium"
+		texturefile = "gfx/interface/technologies/industry/tech_improved_naval_refitting.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_naval_refitting_medium"
+		texturefile = "gfx/interface/technologies/industry/tech_advanced_naval_refitting.dds"
+	}
+
+
+
+
+	SpriteType = {
+		name = "GFX_combined_line_a_medium"
+		texturefile = "gfx/interface/technologies/industry/combined_line.dds"
+	}
+	SpriteType = {
+		name = "GFX_flexible_line_a_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_flexible_line_02.dds"
+	}
+	SpriteType = {
+		name = "GFX_streamlined_line_a_medium"
+		texturefile = "gfx/interface/technologies/industry/OG_tech_streamlined_line_02.dds"
+	}
+
+
+
+ ##### NAVAL #####
+
+
+	SpriteType = {
+		name = "GFX_modern_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_destroyer_05.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_heavy_cruiser_05.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_battleship_05.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_carrier_05.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/naval_MTG/tech_submarine_05.dds"
+	}
+
+
+ ### ARTILLERY ###
+
+
+	SpriteType = {
+		name = "GFX_artillery6_medium"
+		texturefile = "gfx/interface/technologies/artillery4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rocket_artillery5_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rocket_artillery6_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_antitank6_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	SpriteType = {
+		name = "GFX_antitank7_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_antiair6_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}
+	SpriteType = {
+		name = "GFX_antiair7_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
+	}
+
+ ### ELECTRONICAL ENGINEERING ###
+
+
+	SpriteType = {
+		name = "GFX_modern_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_computing_machine_2_medium"
+		texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_nuclear_ship_engines_medium"
+		texturefile = "gfx/interface/technologies/electronical_engineering/nuclear_ship_engines_tech.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_rotor_system_tech_medium"
+		texturefile = "gfx/interface/technologies/electronical_engineering/rotor_system_tech.dds"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_radar_tech_1943_medium"
+		texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_radar_tech_1944_medium"
+		texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_radar_tech_1945_medium"
+		texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_radar_tech_1946_medium"
+		texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+	}
+
+
+}# CAT END

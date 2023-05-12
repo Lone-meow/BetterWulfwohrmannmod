@@ -1,0 +1,247 @@
+
+
+
+# TAG flag colouring conventions
+#
+# 0 - Base Colour: Red          #
+# 1 - Base Colour: Orange       #
+# 2 - Base Colour: Yellow       #
+# 3 - Base Colour: Brown		#
+# 4 - Base Colour: Lime         #
+# 5 - Base Colour: Green        #
+# 6 - Base Colour: Azure        #
+# 7 - Base Colour: Blue         #
+# 8 - Base Colour: Purple       #
+# 9 - Base Colour: Burgundy		#
+
+
+
+	###########
+	### RED ###
+	###########
+
+is_red_country_trigger = {
+	OR = {
+
+		tag = X10
+		tag = X50
+		tag = X60
+		tag = X90
+		tag = Y20
+		tag = Y30
+		tag = Y40
+		tag = Y80
+		tag = Y90
+
+	}
+}
+
+	##############
+	### ORANGE ###
+	##############
+
+is_orange_country_trigger = {
+	OR = {
+
+		tag = X01
+		tag = X21
+		tag = X41
+		tag = X51
+		tag = X71
+		tag = Y31
+		tag = Y61
+		tag = Y81
+		tag = Z01
+
+	}
+}
+
+	##############
+	### YELLOW ###
+	##############
+
+is_yellow_country_trigger = {
+	OR = {
+
+		tag = X12
+		tag = X22
+		tag = X32
+		tag = X42
+		tag = X52
+		tag = X62
+		tag = X72
+		tag = X92
+		tag = Y12
+		tag = Y42
+		tag = Y62
+		tag = Y72
+		tag = Y82
+		tag = Z12
+
+	}
+}
+
+	#############
+	### BROWN ###
+	#############
+
+is_brown_country_trigger = {
+	OR = {
+
+		tag = X23
+		tag = X33
+		tag = X43
+		tag = X53
+		tag = X63
+		tag = X73
+		tag = X93
+		tag = Y33
+		tag = Y53
+		tag = Y73
+		tag = Y93
+		tag = Z13
+
+	}
+}
+
+	############
+	### LIME ###
+	############
+
+is_lime_country_trigger = {
+	OR = {
+
+		tag = X14
+		tag = X44
+		tag = X54
+		tag = X94
+		tag = Y04
+		tag = Y14
+		tag = Y54
+		tag = Z04
+		tag = Z14
+
+	}
+}
+
+	#############
+	### GREEN ###
+	#############
+
+is_green_country_trigger = {
+	OR = {
+
+		tag = X15
+		tag = X25
+		tag = X35
+		tag = X45
+		tag = X55
+		tag = X65
+		tag = X75
+		tag = X95
+		tag = Y15
+		tag = Y35
+		tag = Y65
+		tag = Y95
+		tag = Z05
+		tag = Z15
+
+	}
+}
+
+	#############
+	### AZURE ###
+	#############
+
+is_azure_country_trigger = {
+	OR = {
+
+		tag = X06
+		tag = X36
+		tag = X46
+		tag = X56
+		tag = X66
+		tag = X86
+		tag = Y06
+		tag = Y26
+		tag = Y56
+		tag = Y66
+		tag = Y76
+		tag = Y86
+		tag = Z06
+
+	}
+}
+
+	############
+	### BLUE ###
+	############
+
+is_blue_country_trigger = {
+	OR = {
+
+		tag = X17
+		tag = X27
+		tag = X37
+		tag = X47
+		tag = X57
+		tag = X67
+		tag = X97
+		tag = Y37
+		tag = Y47
+		tag = Y67
+		tag = Y77
+		tag = Z07
+		tag = Z17
+
+	}
+}
+
+	##############
+	### Purple ###
+	##############
+
+is_purple_country_trigger = {
+	OR = {
+
+		tag = X08
+		tag = X38
+		tag = X48
+		tag = X58
+		tag = X68
+		tag = Y18
+		tag = Y28
+		tag = Y78
+		tag = Y88
+		tag = Y98
+		tag = Z18
+
+	}
+}
+
+	################
+	### Burgundy ###
+	################
+
+is_burgundy_country_trigger = {
+	OR = {
+
+		tag = X29
+		tag = X39
+		tag = X49
+		tag = X59
+		tag = X69
+		tag = X79
+		tag = X89
+		tag = Y09
+		tag = Y19
+		tag = Y49
+		tag = Y59
+		tag = Z09
+		tag = Z19
+
+	}
+}
+
+
+

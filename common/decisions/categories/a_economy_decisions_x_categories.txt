@@ -1,0 +1,10 @@
+a_economy_decisions_x = {
+	icon = generic_economy
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	priority = 103
+}

@@ -1,0 +1,338 @@
+﻿add_namespace = ChooseYourLeaderJKL
+
+country_event = { # 49 leaders
+	id = ChooseYourLeaderJKL.1
+	title = ChooseYourLeaderJKL.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderJKL.1.a
+		hidden_effect = {
+            random_list = {
+                2 = {
+                    activate_decision = JAP_Hirohito
+                }
+                2 = {
+                    activate_decision = JAP_Kyuichi_Tokuda
+                }
+                2 = {
+                    activate_decision = JAP_Tetsu_Katayama
+                }
+				2 = {
+                    activate_decision = JAP_Tomoyuki_Yamashita
+                }
+				2 = {
+                    activate_decision = JAP_Hisaichi_Terauchi
+                }
+                2 = {
+                    activate_decision = JAP_Shunroku_Hata
+                }
+                2 = {
+                    activate_decision = JAP_Akira_Muto
+                }
+				2 = {
+                    activate_decision = JAP_Kanji_Ishiwara
+                }
+				2 = {
+                    activate_decision = JAP_Shizuichi_Tanaka
+                }
+                2 = {
+                    activate_decision = JAP_Yasuji_Okamura
+                }
+                2 = {
+                    activate_decision = JAP_Toshizo_Nishio
+                }
+				2 = {
+                    activate_decision = JAP_Rikichi_Ando
+                }
+				2 = {
+                    activate_decision = JAP_Morihiro_Higashikuni
+                }
+				2 = {
+                    activate_decision = JAP_Naruhiko_Higashikuni
+                }
+				2 = {
+                    activate_decision = JAP_Nishizo_Tsukahara
+                }
+                2 = {
+                    activate_decision = JAP_Seishiro_Itagaki
+                }
+                2 = {
+                    activate_decision = JAP_Takashi_Sakai
+                }
+				2 = {
+                    activate_decision = JAP_Kenji_Doihara
+                }
+				2 = {
+                    activate_decision = JAP_Kenkichi_Ueda
+                }
+                2 = {
+                    activate_decision = JAP_Shigeru_Honjo
+                }
+                2 = {
+                    activate_decision = JAP_Yoshijiro_Umezu
+                }
+				2 = {
+                    activate_decision = JAP_Otozo_Yamada
+                }
+				2 = {
+                    activate_decision = JAP_Hatazo_Adachi
+                }
+                2 = {
+                    activate_decision = JAP_Iwane_Matsui
+                }
+                2 = {
+                    activate_decision = JAP_Sadao_Araki
+                }
+				2 = {
+                    activate_decision = JAP_Keisuke_Fujie
+                }
+				2 = {
+                    activate_decision = JAP_Kiichiro_Higuchi
+                }
+                2 = {
+                    activate_decision = JAP_Masaharu_Homma
+                }
+                2 = {
+                    activate_decision = JAP_Harukichi_Hyakutake
+                }
+				2 = {
+                    activate_decision = JAP_Jo_Iimura
+                }
+				2 = {
+                    activate_decision = JAP_Hitoshi_Imamura
+                }
+                2 = {
+                    activate_decision = JAP_Masatane_Kanda
+                }
+                2 = {
+                    activate_decision = JAP_Kuniaki_Koiso
+                }
+				2 = {
+                    activate_decision = JAP_Isoroku_Yamamoto
+                }
+				2 = {
+                    activate_decision = JAP_Mineichi_Koga
+                }
+                2 = {
+                    activate_decision = JAP_Kiyoshi_Hasegawa
+                }
+                2 = {
+                    activate_decision = JAP_Shigeyoshi_Inoue
+                }
+				2 = {
+                    activate_decision = JAP_Nobutake_Kondo
+                }
+				2 = {
+                    activate_decision = JAP_Nobuyoshi_Muto
+                }
+				2 = {
+                    activate_decision = JAP_Takeo_Takagi
+                }
+                2 = {
+                    activate_decision = JAP_Soemu_Toyoda
+                }
+                2 = {
+                    activate_decision = JAP_Jisaburo_Ozawa
+                }
+				2 = {
+                    activate_decision = JAP_Zengo_Yoshida
+                }
+				2 = {
+                    activate_decision = JAP_Hiroaki_Abe
+                }
+                2 = {
+                    activate_decision = JAP_Tadashige_Daigo
+                }
+                2 = {
+                    activate_decision = JAP_Alexander_von_Falkenhausen
+                }
+				2 = {
+                    activate_decision = JAP_Yoshiko_Kawashima
+                }
+                2 = {
+                    activate_decision = JAP_Takeo_Yoshikawa
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderJKL.2
+	title = ChooseYourLeaderJKL.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderJKL.2.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = KAZ_Nikolay_Aleksandrovich_Skvortsov
+                }
+                50 = {
+                    activate_decision = KAZ_Ilyas_Zhansugurov
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 16 leaders
+	id = ChooseYourLeaderJKL.3
+	title = ChooseYourLeaderJKL.3.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderJKL.3.a
+		hidden_effect = {
+            random_list = {
+                6 = {
+                    activate_decision = LAT_Karlis_Ulmanis
+                }
+                6 = {
+                    activate_decision = LAT_Gustavs_Celminsh
+                }
+				6 = {
+                    activate_decision = LAT_Alberts_Kvesis
+                }
+				6 = {
+                    activate_decision = LAT_Fricis_Menders
+                }
+                6 = {
+                    activate_decision = LAT_Augusts_Kirhensteins
+                }
+				6 = {
+                    activate_decision = LAT_Janis_Balodis
+                }
+				6 = {
+                    activate_decision = LAT_Martins_Penikis
+                }
+				6 = {
+                    activate_decision = LAT_Hermanis_Buks
+                }
+                6 = {
+                    activate_decision = LAT_Fricis_Virsaitis
+                }
+				6 = {
+                    activate_decision = LAT_Andrejs_Krustinsh
+                }
+				6 = {
+                    activate_decision = LAT_Zhanis_Bahs
+                }
+                6 = {
+                    activate_decision = LAT_Krisjanis_Berkis
+                }
+				6 = {
+                    activate_decision = LAT_Jukums_Vacietis
+                }
+				6 = {
+                    activate_decision = LAT_Rudolfs_Kocins
+                }
+				6 = {
+                    activate_decision = LAT_Vilis_Lacis
+                }
+				6 = {
+                    activate_decision = LAT_Martin_Latsis
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 3 leaders
+	id = ChooseYourLeaderJKL.4
+	title = ChooseYourLeaderJKL.4.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderJKL.4.a
+		hidden_effect = {
+            random_list = {
+                33 = {
+                    activate_decision = KUR_Ihsan_Nuri
+                }
+                33 = {
+                    activate_decision = KUR_Seyid_Riza
+                }
+				33 = {
+                    activate_decision = KUR_Ihsan_Nuri_Pasa
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 15 leaders
+	id = ChooseYourLeaderJKL.5
+	title = ChooseYourLeaderJKL.5.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderJKL.5.a
+		hidden_effect = {
+            random_list = {
+                6 = {
+                    activate_decision = LIT_Antanas_Smetona
+                }
+                6 = {
+                    activate_decision = LIT_Wilhelm_Karl
+                }
+				6 = {
+                    activate_decision = LIT_Karl_Gero
+                }
+				6 = {
+                    activate_decision = LIT_Zigmas_Angarietis
+                }
+                6 = {
+                    activate_decision = LIT_Antanas_Snieckus
+                }
+				6 = {
+                    activate_decision = LIT_Augustinas_Voldemaras
+                }
+				6 = {
+                    activate_decision = LIT_Kazys_Grinius
+                }
+                6 = {
+                    activate_decision = LIT_Stasys_Rastikis
+                }
+				6 = {
+                    activate_decision = LIT_Edvardas_Adamkavicius
+                }
+				6 = {
+                    activate_decision = LIT_Kazys_Skuchas
+                }
+                6 = {
+                    activate_decision = LIT_Stasys_Pundzevichius
+                }
+				6 = {
+                    activate_decision = LIT_Kazys_Musteikis
+                }
+				6 = {
+                    activate_decision = LIT_Vincas_Vitkauskas
+                }
+				6 = {
+                    activate_decision = LIT_Jonas_Chernius
+                }
+				6 = {
+                    activate_decision = LIT_Antanas_Gustaitis
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

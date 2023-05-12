@@ -1,0 +1,100 @@
+
+OG_nuclear_devestation_1_state_modifier = {	#Moderate Devestation
+	enable = { always = yes }
+	#remove_trigger = {
+	#	ROOT = {
+	#		NOT = {has_state_flag = OG_state_nuked_modifier_flag}
+	#	}
+	#}
+
+	icon = GFX_nuclear_icon
+
+	#disable_strategic_redeployment = 1
+	local_supply_impact_factor = 0.15
+	#state_resources_factor = -0.15
+	#state_production_speed_buildings_factor = -0.15
+	industry_repair_factor = -0.15
+	#local_factories = -0.5
+	#local_manpower = -0.15
+	army_speed_factor_for_controller = -0.15
+	attrition_for_controller = 0.15
+	local_org_regain = -0.15
+	army_attack_factor = -0.15
+	army_defence_factor = -0.15
+}
+
+OG_nuclear_devestation_2_state_modifier = {	#Severe Devestation
+	enable = { always = yes }
+	icon = GFX_nuclear_icon
+	
+	#disable_strategic_redeployment = 1
+	local_supply_impact_factor = 0.30
+	#state_resources_factor = -0.30
+	#state_production_speed_buildings_factor = -0.30
+	industry_repair_factor = -0.30
+	#local_factories = -0.30
+	#local_manpower = -0.30
+	army_speed_factor_for_controller = -0.30
+	attrition_for_controller = 0.30
+	local_org_regain = -0.30
+	army_attack_factor = -0.30
+	army_defence_factor = -0.30
+}
+
+OG_nuclear_devestation_3_state_modifier = {	#Extreme Devestation
+	enable = { always = yes }
+	icon = GFX_nuclear_icon
+	
+	disable_strategic_redeployment = 1
+	local_supply_impact_factor = 0.45
+	#state_resources_factor = -0.45
+	#state_production_speed_buildings_factor = -0.45
+	industry_repair_factor = -0.45
+	#local_factories = -0.45
+	#local_manpower = -0.45
+	army_speed_factor_for_controller = -0.45
+	attrition_for_controller = 0.45
+	local_org_regain = -0.45
+	army_attack_factor = -0.45
+	army_defence_factor = -0.45
+}
+
+OG_nuclear_devestation_4_state_modifier = {	#Catastrophic Devestation
+	enable = { always = yes }
+	icon = GFX_nuclear_icon
+	
+	disable_strategic_redeployment = 1
+	local_supply_impact_factor = 0.60
+	#state_resources_factor = -0.60
+	#state_production_speed_buildings_factor = -0.60
+	industry_repair_factor = -0.60
+	#local_factories = -0.60
+	#local_manpower = -0.60
+	army_speed_factor_for_controller = -0.60
+	attrition_for_controller = 0.60
+	local_org_regain = -0.60
+	army_attack_factor = -0.60
+	army_defence_factor = -0.60
+}
+
+OG_nuclear_devestation_5_state_modifier = {	#Nuclear Winter
+	enable = { always = yes }
+	icon = GFX_nuclear_icon
+	
+	disable_strategic_redeployment = 1
+	local_supply_impact_factor = 0.75
+	#state_resources_factor = -0.75
+	#state_production_speed_buildings_factor = -0.75
+	industry_repair_factor = -0.75
+	#local_factories = -0.75
+	#local_manpower = -0.75
+	army_speed_factor_for_controller = -0.75
+	attrition_for_controller = 0.75
+	local_org_regain = -0.75
+	army_attack_factor = -0.75
+	army_defence_factor = -0.75
+}
+
+
+
+

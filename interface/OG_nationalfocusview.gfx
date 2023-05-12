@@ -1,0 +1,40 @@
+spriteTypes = {
+
+ 	spriteType = {
+		name = "GFX_FOCUS_FILTER_DEMOCRACY"
+		textureFile = "gfx/interface/focusview/filter/OG_democracy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_FASCISM"
+		textureFile = "gfx/interface/focusview/filter/OG_fascism_icon.dds"
+	}
+ 	spriteType = {
+		name = "GFX_FOCUS_FILTER_COMMUNISM"
+		textureFile = "gfx/interface/focusview/filter/OG_communism_icon.dds"
+	}
+  	spriteType = {
+		name = "GFX_FOCUS_FILTER_MONARCHISM"
+		textureFile = "gfx/interface/focusview/filter/OG_monarchism_icon.dds"
+	}
+  	spriteType = {
+		name = "GFX_FOCUS_FILTER_ARMY"
+		textureFile = "gfx/interface/focusview/filter/OG_army_icon.dds"
+	}
+  	spriteType = {
+		name = "GFX_FOCUS_FILTER_NAVY"
+		textureFile = "gfx/interface/focusview/filter/OG_navy_icon.dds"
+	}
+  	spriteType = {
+		name = "GFX_FOCUS_FILTER_AIRFORCE"
+		textureFile = "gfx/interface/focusview/filter/OG_airforce_icon.dds"
+	}
+  	spriteType = {
+		name = "GFX_FOCUS_FILTER_ESPIONAGE"
+		textureFile = "gfx/interface/focusview/filter/OG_espionage_icon.dds"
+	}
+  	spriteType = {
+		name = "GFX_FOCUS_FILTER_ECONOMY"
+		textureFile = "gfx/interface/focusview/filter/OG_economy_icon.dds"
+	}
+
+} #END CAT

@@ -1,0 +1,148 @@
+﻿l_english:
+#tooltip
+
+ fire_only_once_yes_tooltip:0 "§R This decision can be made only once§!"
+
+#economy
+
+ cost_civ1_pp10_mp100:0 "£manpower_texticon  §Y100§! £civ_factory  §Y1§! £pol_power  §Y10§!"
+ cost_civ1_pp10_mp100_blocked:0 "£manpower_texticon  §R100§! £civ_factory  §R1§! £pol_power  §R10§!"
+
+ cost_civ2_pp20_mp200:0 "£manpower_texticon  §Y200§! £civ_factory  §Y2§! £pol_power  §Y20§!"
+ cost_civ2_pp20_mp200_blocked:0 "£manpower_texticon  §R200§! £civ_factory  §R2§! £pol_power  §R20§!"
+
+ cost_civ4_pp40_mp400:0 "£manpower_texticon  §Y400§! £civ_factory  §Y4§! £pol_power  §Y40§!"
+ cost_civ4_pp40_mp400_blocked:0 "£manpower_texticon  §R400§! £civ_factory  §R4§! £pol_power  §R40§!"
+
+ cost_civ6_pp60_mp600:0 "£manpower_texticon  §Y600§! £civ_factory  §Y6§! £pol_power  §Y60§!"
+ cost_civ6_pp60_mp600_blocked:0 "£manpower_texticon  §R600§! £civ_factory  §R6§! £pol_power  §R60§!"
+
+ cost_civ8_pp80_mp800:0 "£manpower_texticon  §Y800§! £civ_factory  §Y8§! £pol_power  §Y80§!"
+ cost_civ8_pp80_mp800_blocked:0 "£manpower_texticon  §R800§! £civ_factory  §R8§! £pol_power  §R80§!"
+
+ cost_civ10_pp100_mp1000:0 "£manpower_texticon  §Y1000§! £civ_factory  §Y10§! £pol_power  §Y100§!"
+ cost_civ10_pp100_mp1000_blocked:0 "£manpower_texticon  §R1000§! £civ_factory  §R10§! £pol_power  §R100§!"
+
+ cost_civ12_pp120_mp5000:0 "£manpower_texticon  §Y5000§! £civ_factory  §Y12§! £pol_power  §Y120§!"
+ cost_civ12_pp120_mp5000_blocked:0 "£manpower_texticon  §R5000§! £civ_factory  §R12§! £pol_power  §R120§!"
+
+ cost_civ14_pp140_mp10000:0 "£manpower_texticon  §Y10000§! £civ_factory  §Y14§! £pol_power  §Y140§!"
+ cost_civ14_pp140_mp10000_blocked:0 "£manpower_texticon  §R10000§! £civ_factory  §R14§! £pol_power  §R140§!"
+
+ cost_civ16_pp160_mp25000:0 "£manpower_texticon  §Y25000§! £civ_factory  §Y16§! £pol_power  §Y160§!"
+ cost_civ16_pp160_mp25000_blocked:0 "£manpower_texticon  §R25000§! £civ_factory  §R16§! £pol_power  §R160§!"
+
+ cost_civ18_pp180_mp50000:0 "£manpower_texticon  §Y50000§! £civ_factory  §Y18§! £pol_power  §Y180§!"
+ cost_civ18_pp180_mp50000_blocked:0 "£manpower_texticon  §R50000§! £civ_factory  §R18§! £pol_power  §R180§!"
+
+ cost_civ20_pp200_mp100000:0 "£manpower_texticon  §Y100000§! £civ_factory  §Y20§! £pol_power  §Y200§!"
+ cost_civ20_pp200_mp100000_blocked:0 "£manpower_texticon  §R100000§! £civ_factory  §R20§! £pol_power  §R200§!"
+
+
+#military
+
+#naval menu
+
+ cost_civ3_pp30:0 "£civ_factory  §Y3§! £pol_power  §Y30§!"
+ cost_civ3_pp30_blocked:0 "£civ_factory  §R3§! £pol_power  §R30§!"
+
+ cost_civ5_pp50:0 "£civ_factory  §Y5§! £pol_power  §Y50§! "
+ cost_civ5_pp50_blocked:0 "£civ_factory  §R5§! £pol_power  §R50§!"
+
+ cost_civ6_pp60:0 "£civ_factory  §Y6§! £pol_power  §Y60§!"
+ cost_civ6_pp60_blocked:0 "£civ_factory  §R6§! £pol_power  §R60§!"
+
+ cost_civ7_pp70:0 "£civ_factory  §Y7§! £pol_power  §Y70§!"
+ cost_civ7_pp70_blocked:0 "£civ_factory  §R7§! £pol_power  §R70§!"
+
+ cost_civ8_pp80:0 "£civ_factory  §Y8§! £pol_power  §Y80§!"
+ cost_civ8_pp80_blocked:0 "£civ_factory  §R8§! £pol_power  §R80§!"
+
+ cost_civ9_pp90:0 "£civ_factory  §Y9§! £pol_power  §Y90§!"
+ cost_civ9_pp90_blocked:0 "£civ_factory  §R9§! £pol_power  §R90§!"
+
+ cost_civ10_pp100:0 "£civ_factory  §Y10§! £pol_power  §Y100§!"
+ cost_civ10_pp100_blocked:0 "£civ_factory  §R10§! £pol_power  §R100§!"
+
+################################################################################################################################################################################################
+
+
+#sell
+
+ reward_civ1_pp10:0 "£civ_factory  §G1§! £pol_power  §G10§!"
+
+ reward_civ2_pp10:0 "£civ_factory  §G2§! £pol_power  §G10§!"
+
+ reward_civ3_pp10:0 "£civ_factory  §G3§! £pol_power  §G10§!"
+
+ reward_civ2_pp15:0 "£civ_factory  §G2§! £pol_power  §G15§!"
+
+ reward_civ3_pp15:0 "£civ_factory  §G3§! £pol_power  §G15§!"
+
+ reward_civ2_pp20:0 "£civ_factory  §G2§! £pol_power  §G20§!"
+
+ reward_civ3_pp20:0 "£civ_factory  §G3§! £pol_power  §G20§!"
+
+ reward_civ3_pp25:0 "£civ_factory  §G3§! £pol_power  §G25§!"
+
+################################################################################################################################################################################################
+
+#purchase
+
+ cost_civ1_pp10:0 "£civ_factory  §Y1§! £pol_power  §Y10§!"
+ cost_civ1_pp10_blocked:0 "£civ_factory  §R1§! £pol_power  §R10§!"
+
+ cost_civ1_pp15:0 "£civ_factory  §Y1§! £pol_power  §Y15§!"
+ cost_civ1_pp15_blocked:0 "£civ_factory  §R1§! £pol_power  §R15§!"
+
+ cost_civ2_pp15:0 "£civ_factory  §Y2§! £pol_power  §Y15§!"
+ cost_civ2_pp15_blocked:0 "£civ_factory  §R2§! £pol_power  §R15§!"
+
+ cost_civ2_pp20:0 "£civ_factory  §Y2§! £pol_power  §Y20§!"
+ cost_civ2_pp20_blocked:0 "£civ_factory  §R2§! £pol_power  §R20§!"
+
+ cost_civ3_pp20:0 "£civ_factory  §Y3§! £pol_power  §Y20§!"
+ cost_civ3_pp20_blocked:0 "£civ_factory  §R3§! £pol_power  §R20§!"
+
+ cost_civ3_pp25:0 "£civ_factory  §Y3§! £pol_power  §Y25§!"
+ cost_civ3_pp25_blocked:0 "£civ_factory  §R3§! £pol_power  §R25§!"
+
+
+################################################################################################################################################################################################
+
+ cost_cp50:0 "£command_power  §Y50§!"
+ cost_cp50_blocked:0 "£command_power  §R50§!"
+ cost_cp50_tooltip:0 "It costs £command_power  §RY50§! to take the decision"
+
+ army_xp_cost_50:0 "§H50§!£army_experience"
+ army_xp_cost_50_blocked:0 "§R50§!£army_experience"
+
+ navy_xp_cost_50:0 "§H50§!£navy_experience"
+ navy_xp_cost_50_blocked:0 "§R50§!£navy_experience"
+ 
+ air_xp_cost_50:0 "§H50§!£air_experience"
+ air_xp_cost_50_blocked:0 "§R50§!£air_experience"
+
+################################################################################################################################################################################################
+
+#resources
+
+ r_cost_civ3_pp30:0 "£civ_factory  §Y3§! £pol_power  §Y30§!"
+ r_cost_civ3_pp30_blocked:0 "£civ_factory  §R3§! £pol_power  §R30§!"
+
+ r_cost_civ5_pp50_mp1000:0 "£manpower_texticon  §Y1000§! £civ_factory  §O5§! £pol_power  §O50§!"
+ r_cost_civ5_pp50_mp1000_blocked:0 "£manpower_texticon  §R1000§! £civ_factory  §R5§! £pol_power  §R50§!"
+
+#swi
+
+ ie_cost_1000:0 "£infantry_equipment_text_icon  §Y1000§!"
+ ie_cost_1000_blocked:0 "£infantry_equipment_text_icon  §R1000§!"
+ ie_cost_1000_tooltip:0 "It costs £infantry_equipment_text_icon  §Y1000§! to take the decision"
+
+ civ_cost_1:0 "£civ_factory  §Y1§!"
+ civ_cost_1_blocked:0 "£civ_factory  §R1§!"
+ civ_cost_1_tooltip:1 "It costs £civ_factory  §Y1§! while this decision is active"
+ 
+ MP_cost_500:0 "£manpower_texticon  §Y500§! £command_power  §Y25§!"
+ MP_cost_500_blocked:0 "£manpower_texticon  §R500§! £command_power  §R25§!"
+ MP_cost_500_tooltip:1 "It costs £manpower_texticon  §Y500§! to take the decision"

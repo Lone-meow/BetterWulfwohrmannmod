@@ -1,0 +1,43 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SMI_heavy_ship_engine_nuclear_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_nuclear_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_engine_nuclear_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_nuclear_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_sub_ship_engine_nuclear_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_nuclear_1.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SMI_ship_sonar_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_sonar_3.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SMI_ship_airplane_launcher_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/airplane_launcher_icn_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_sub_snorkel_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_snorkel_icn_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_helicopter_pad"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_helicopter_pad.dds"
+	}
+
+}
+
+
+
+
+

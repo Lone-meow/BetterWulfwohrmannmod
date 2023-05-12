@@ -1,0 +1,29 @@
+music_station = "PB_Original_A"
+
+music = {
+	song = "Pax_Morientis_title_theme"
+}
+
+music = {
+	song = "Teslas_Lullaby"
+}
+
+music = {
+	song = "Innovation"
+}
+
+music = {
+	song = "Variation_Metal_Heart"
+}
+
+music = {
+	song = "Greed_Punishment"
+}
+
+music = {
+	song = "Song_of_Copper"
+}
+
+music = {
+	song = "Seek_No_End"
+}

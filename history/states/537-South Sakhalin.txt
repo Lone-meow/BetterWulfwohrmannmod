@@ -1,0 +1,36 @@
+state= {
+	id=537
+	name="STATE_537"
+	manpower = 295196
+	resources={
+		oil=3 # was: 4
+	}
+	
+	state_category = rural
+
+	history= {
+		owner = Y78
+		add_core_of = Y78
+		
+		buildings = {
+			infrastructure = 2
+			12446 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			12446 1
+		}
+		1935.1.2 = {
+			owner = Y79
+			controller = Y79
+			add_core_of = Y79
+		}
+	}
+	provinces=
+	{
+1322 1820 12446 	}
+
+	local_supplies=0.0 
+}

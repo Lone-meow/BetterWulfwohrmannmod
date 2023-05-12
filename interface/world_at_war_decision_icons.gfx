@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_decision_nuclear_sanitation"
+		texturefile = "gfx/interface/decisions/decision_nuclear_sanitation.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_decision_train_army_chief_icon"
+		texturefile = "gfx/interface/decisions/train_army_chief_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_train_airforce_chief_icon"
+		texturefile = "gfx/interface/decisions/train_airforce_chief_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_train_navy_chief_icon"
+		texturefile = "gfx/interface/decisions/train_navy_chief_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_train_army_high_command_icon"
+		texturefile = "gfx/interface/decisions/train_army_high_command_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_train_airforce_high_command_icon"
+		texturefile = "gfx/interface/decisions/train_airforce_high_command_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_train_navy_high_command_icon"
+		texturefile = "gfx/interface/decisions/train_navy_high_command_icon.dds"
+	}
+
+
+
+
+} # SPRITE TYPE END CAT

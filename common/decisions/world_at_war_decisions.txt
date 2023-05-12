@@ -1,0 +1,1256 @@
+debug_decisions = {	#Vanilla Generic Category
+
+	world_at_war_debug_test_1 = {
+		icon = generic_research
+
+		available = {
+		}	
+
+		visible = {
+			is_debug = yes
+			always = no
+		}
+
+		fire_only_once = no
+		cost = 0
+		days_remove = 7
+
+		modifier = {
+		}
+		complete_effect = {
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+	world_at_war_debug_test_2 = {
+		icon = generic_research
+
+		available = {
+
+		}
+		visible = {
+			is_debug = yes
+			always = no
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+		}
+
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+
+} #CAT END
+
+war_measures = {	#Vanilla category
+	
+	ammunition_rationing_decision = {
+		icon = generic_industry
+		priority = -100
+		available = {
+		}
+		visible = {
+			has_war = yes		
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		cost = 50
+
+
+		modifier = {
+			custom_modifier_tooltip = ammunition_rationing_decision_modifier_tooltip
+			army_attack_factor = -0.10
+			army_defence_factor	= -0.10
+		}
+		complete_effect = {
+			#custom_effect_tooltip = ammunition_rationing_decision_tt
+			set_country_flag = {
+				flag = OG_ammunition_rationing_flag
+				days = 90
+				value = 1
+			}
+		}
+		remove_effect = {
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+
+
+
+
+
+world_at_war_border_state_aggression_category = {
+
+
+    world_at_war_claim_border_state_decision = {
+        icon = GFX_decision_eng_trade_unions_demand
+
+        visible = {
+			OR = {
+				has_game_rule = {
+					rule = WORLD_AT_WAR_BORDER_AGGRESSION_LEVEL
+					option = WORLD_AT_WAR_BORDER_AGGRESSION_OPTION_DEFAULT
+				}
+				has_game_rule = {
+					rule = WORLD_AT_WAR_BORDER_AGGRESSION_LEVEL
+					option = WORLD_AT_WAR_BORDER_AGGRESSION_OPTION_ONLY_GUNBOAT
+				}
+			}
+
+			NOT = {
+				has_country_flag = OG_state_claiming_in_progress_flag
+				has_country_flag = OG_gunboat_diplomacy_used_flag
+				FROM = {
+					has_state_flag = OG_state_recently_claimed_flag
+				}
+				has_border_war_with = FROM.OWNER
+				has_decision = NSB_border_conflict_initiate_incident	# Just... don't.
+			}
+        }
+        available = {
+			NOT = {
+				has_country_flag = OG_state_claiming_in_progress_flag
+				has_border_war_with = FROM.OWNER
+			}
+        }
+
+        on_map_mode = map_only
+        state_target = yes
+
+		target_root_trigger = {
+			has_completed_focus = OG_gunboat_diplomacy_focus
+		}
+		
+		#target_array = neighbors.owned_controlled_states # Doesn't work
+
+		target_trigger = {	# FROM = the target state
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+				any_neighbor_state = {
+					is_fully_controlled_by = ROOT
+				}
+				OWNER = {
+					is_neighbor_of = ROOT
+					NOT = {
+						tag = ROOT
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+
+		fire_only_once = no
+		cost = 50
+        days_remove = 30
+		days_re_enable = 365
+
+		cancel_trigger = {
+			OR = {
+				has_border_war_with = FROM.OWNER
+				NOT = {
+					FROM = {
+						any_neighbor_state = {
+							is_fully_controlled_by = ROOT
+						}
+						OWNER = {
+							is_neighbor_of = ROOT
+							hidden_trigger = {
+								NOT = {
+									tag = ROOT
+									is_in_faction_with = ROOT
+									is_subject_of = ROOT
+									has_war_with = ROOT
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = OG_state_claiming_in_progress_flag
+			FROM = {clr_state_flag = OG_gunboat_diplomacy_state_flag}
+		}
+
+        complete_effect = { # On click
+			set_country_flag = OG_state_claiming_in_progress_flag
+			FROM = {set_state_flag = OG_gunboat_diplomacy_state_flag}
+        }
+
+        remove_effect = {
+			custom_effect_tooltip = world_at_war_claim_border_state_decision_tt
+			clr_country_flag = OG_state_claiming_in_progress_flag
+				set_country_flag = {
+					flag = OG_gunboat_diplomacy_used_flag
+					days = 180
+					value = 1
+				}
+			FROM = {
+				add_claim_by = ROOT
+				clr_state_flag = OG_gunboat_diplomacy_state_flag
+				set_state_flag = OG_gunboat_diplomacy_target_state_flag
+				set_state_flag = {
+					flag = OG_state_recently_claimed_flag
+					days = 90
+					value = 1
+				}
+				OWNER = {
+					country_event = {
+						id = aggression_event.2
+						hours = 4
+						random_hours = 8
+					}
+				}
+			}
+        }
+		ai_will_do = {
+			factor = 1
+			modifier = {	# Good to avoid border gore
+				factor = 2
+				FROM = {
+					num_owned_neighbour_states = {
+						owner = ROOT
+						count > 1
+					}
+				}
+			}
+			modifier = {	# Good to avoid border gore
+				factor = 0.5
+				FROM = {
+					num_owned_neighbour_states = {
+						owner = ROOT
+						count < 2
+					}
+				}
+			}
+			modifier = {	# Let's not fuck ourselves over...
+				factor = 0.25
+				FROM.OWNER = {
+					is_major = yes
+				}
+			}
+			modifier = {	# Let's not fuck ourselves over...
+				factor = 0.25
+				ROOT = {
+					is_in_faction = no
+				}
+				FROM.OWNER = {
+					is_in_faction = yes
+				}
+			}
+			modifier = {	# Let's not fuck ourselves over...
+				factor = 0.50
+				ROOT = {
+					has_war = yes
+				}
+			}
+			modifier = {	# Let's not fuck ourselves over...
+				factor = 0
+				ROOT = {
+					surrender_progress > 0.2
+				}
+			}
+			modifier = {	# Sea access is nice.
+				factor = 1.5
+				FROM = {
+					is_coastal = yes
+				}
+				ROOT = {
+					any_owned_state = {
+						is_coastal = no
+					}
+				}
+			}
+			modifier = {	# Let's bully them lol.
+				factor = 2
+				FROM = {
+					OWNER = {
+						strength_ratio = {
+							tag = ROOT
+							ratio < 1
+						}
+					}
+				}
+			}
+			modifier = {	# Whatcha gonna do about it, cry?
+				factor = 10
+				ROOT = {
+					is_major = yes
+				}
+				FROM.OWNER = {
+					is_major = no
+					is_in_faction = no
+				}
+			}
+			modifier = {	# Failsafe
+				factor = 0
+				ROOT = {
+					OR = {
+						is_subject = yes
+						has_government = democratic
+					}
+				}
+			}
+
+
+		}
+    }
+
+
+
+
+} #CAT END
+
+
+
+
+
+
+
+
+OG_nuclear_sanitation_decision_category = {
+
+
+    nuclear_sanitation_state_decision = {
+        icon = GFX_decision_nuclear_sanitation
+
+        visible = {
+			FROM = {
+				check_variable = {
+					OG_nuclear_devestation_state_variable > 0
+				}
+			}
+        }
+        available = {
+			custom_trigger_tooltip = {
+				tooltip = nuclear_sanitation_state_decision_trigger_tt
+				FROM = {
+					check_variable = {
+						OG_nuclear_devestation_state_variable > 0
+					}
+				}
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = OG_nuclear_sanitation_work_in_progress_flag
+					has_state_flag = OG_state_just_got_nuked_flag
+				}
+			}
+			num_of_civilian_factories_available_for_projects > 2
+        }
+
+        on_map_mode = map_only
+        state_target = yes
+
+		target_root_trigger = {}
+		#target_array = 
+
+		target_trigger = {	# FROM = the target state
+			FROM = {
+				is_fully_controlled_by = ROOT
+				check_variable = {
+					OG_nuclear_devestation_state_variable > 0
+				}
+			}
+		}
+
+		fire_only_once = no
+		cost = 50
+        days_remove = 60
+		#days_re_enable = 180
+
+		cancel_trigger = {
+			FROM = {
+				has_state_flag = OG_state_just_got_nuked_flag
+				#check_variable = {
+				#	OG_nuclear_devestation_state_variable < 1
+				#}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cancel_effect = {
+			FROM = {clr_state_flag = OG_nuclear_sanitation_work_in_progress_flag}
+		}
+
+        complete_effect = { # On click
+			FROM = {set_state_flag = OG_nuclear_sanitation_work_in_progress_flag}
+        }
+
+        remove_effect = {
+
+			FROM = {
+				clr_state_flag = OG_nuclear_sanitation_work_in_progress_flag
+
+				if = { # 5 -> 4
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 5
+							compare = greater_than_or_equals
+						}
+					}
+					subtract_from_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_5_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_4_state_modifier
+						#scope = THIS
+						#days = 14
+					}
+				}
+
+				else_if = { # 4 -> 3
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 4
+							compare = equals
+						}
+					}
+					subtract_from_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_4_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_3_state_modifier
+					}
+				}
+
+				else_if = { # 3 -> 2
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 3
+							compare = equals
+						}
+					}
+					subtract_from_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_3_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_2_state_modifier
+					}
+				}
+
+				else_if = { # 2 -> 1
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 2
+							compare = equals
+						}
+					}
+					subtract_from_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_2_state_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_1_state_modifier
+					}
+				}
+
+				else_if = { # 1 -> 0
+					limit = {
+						check_variable = {
+							var = OG_nuclear_devestation_state_variable
+							value = 1
+							compare = equals
+						}
+					}
+					subtract_from_variable = {
+						var = OG_nuclear_devestation_state_variable
+						value = 1
+					}
+					remove_dynamic_modifier = {
+						modifier = OG_nuclear_devestation_1_state_modifier
+					}
+				}
+
+
+
+
+			}
+        }
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+
+
+
+
+
+
+
+} #CAT END
+
+
+
+
+
+
+
+
+
+
+
+political_actions = {	#Vanilla category
+
+	internal_politics_decision_elect_new_leader = {	#Reroll for better trait.
+		icon = generic_speech
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = OG_political_effort
+		}
+
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+		cost = 25
+
+		modifier = {}
+		cancel_trigger = {}
+		cancel_effect = {}
+		complete_effect = {}
+		remove_effect = {
+
+			### SOCIALISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = socialism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_socialism
+					days = 1
+					value = 1
+				}
+			}
+			### LIBERALISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = liberalism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_liberalism
+					days = 1
+					value = 1
+				}
+			}
+			### CONSERVATISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = conservatism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_conservatism
+					days = 1
+					value = 1
+				}
+			}
+
+			### CENTRISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = centrism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_centrism
+					days = 1
+					value = 1
+				}
+			}
+			### OLIGARCHISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = oligarchism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_oligarchism
+					days = 1
+					value = 1
+				}
+			}
+			### DESPOTISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = despotism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_despotism
+					days = 1
+					value = 1
+				}
+			}
+
+			### NAZISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = gen_nazism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_gen_nazism
+					days = 1
+					value = 1
+				}
+			}
+			### FASCISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = fascism_ideology
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_fascism_ideology
+					days = 1
+					value = 1
+				}
+			}
+			### FALANGISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = falangism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_falangism
+					days = 1
+					value = 1
+				}
+			}
+
+			### MARXISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = marxism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_marxism
+					days = 1
+					value = 1
+				}
+			}
+			### ANARCHO-SYNDICALISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = anarchist_communism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_anarchist_communism
+					days = 1
+					value = 1
+				}
+			}
+			### TOTALISM ###
+			if = {
+				limit = {
+					has_country_leader_ideology = anti_revisionism
+				}
+				set_country_flag = {
+					flag = sub_ideology_to_set_anti_revisionism
+					days = 1
+					value = 1
+				}
+			}
+
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.01
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.01
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.01
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.01
+				}
+			}
+
+			add_stability = -0.05
+			retire_country_leader = yes
+			custom_effect_tooltip = internal_politics_decision_elect_new_leader_tt
+
+
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_socialism
+					}
+					set_country_leader_ideology = socialism
+					clr_country_flag = sub_ideology_to_set_socialism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = socialism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_liberalism
+					}
+					set_country_leader_ideology = liberalism
+					clr_country_flag = sub_ideology_to_set_liberalism
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_conservatism
+					}
+					set_country_leader_ideology = conservatism
+					clr_country_flag = sub_ideology_to_set_conservatism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = conservatism_leader_flag
+					}
+				}
+
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_centrism
+					}
+					set_country_leader_ideology = centrism
+					clr_country_flag = sub_ideology_to_set_centrism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = centrism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_oligarchism
+					}
+					set_country_leader_ideology = oligarchism
+					clr_country_flag = sub_ideology_to_set_oligarchism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = oligarchism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_despotism
+					}
+					set_country_leader_ideology = despotism
+					clr_country_flag = sub_ideology_to_set_despotism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = despotism_leader_flag
+					}
+				}
+
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_gen_nazism
+					}
+					set_country_leader_ideology = gen_nazism
+					clr_country_flag = sub_ideology_to_set_gen_nazism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = nazism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_fascism_ideology
+					}
+					set_country_leader_ideology = fascism_ideology
+					clr_country_flag = sub_ideology_to_set_fascism_ideology
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = fascism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_falangism
+					}
+					set_country_leader_ideology = falangism
+					clr_country_flag = sub_ideology_to_set_falangism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = falangism_leader_flag
+					}
+				}
+
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_marxism
+					}
+					set_country_leader_ideology = marxism
+					clr_country_flag = sub_ideology_to_set_marxism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = marxism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_anarchist_communism
+					}
+					set_country_leader_ideology = anarchist_communism
+					clr_country_flag = sub_ideology_to_set_anarchist_communism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = anarchism_leader_flag
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sub_ideology_to_set_anti_revisionism
+					}
+					set_country_leader_ideology = anti_revisionism
+					clr_country_flag = sub_ideology_to_set_anti_revisionism
+					random_character = {
+						limit = {
+							is_country_leader = yes
+						}
+						set_character_flag = anti_revisionism_leader_flag
+					}
+				}
+			}
+
+		}
+
+		ai_will_do = {base = 0}
+	}
+
+
+
+
+
+
+}	#END CAT
+
+
+
+
+
+
+
+#	#Scrapped for now, maybe some other day...
+#
+#political_actions = {
+#		#############################
+#		### SUPPORTIVE BEHAVIOURS ###
+#		#############################
+#	OG_fascist_opposition_action_support_war = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {
+#			always = NO
+#		}
+#
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#	
+#		activation = {
+#			always = no
+#		}
+#
+#		modifier = {
+#		
+#		}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#
+#			add_war_support = 0.005
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#	OG_fascist_opposition_action_civil_service = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {
+#			always = NO
+#		}
+#
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#	
+#		activation = {
+#			always = no
+#		}
+#
+#		modifier = {
+#		
+#		}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#
+#			add_political_power = 5
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#	OG_fascist_opposition_action_encourage_unity = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {
+#			always = NO
+#		}
+#
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#	
+#		activation = {
+#			always = no
+#		}
+#
+#		modifier = {
+#		
+#		}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#
+#			add_stability = 0.005
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#	OG_fascist_opposition_action_government_collaboration = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {
+#			always = NO
+#		}
+#
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#	
+#		activation = {
+#			always = no
+#		}
+#
+#		modifier = {
+#		
+#		}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#			if = {
+#				limit = {
+#					has_government = democratic
+#				}
+#				add_popularity = {
+#					ideology = democratic
+#					popularity = 0.005
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					has_government = neutrality
+#				}
+#				add_popularity = {
+#					ideology = neutrality
+#					popularity = 0.005
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					has_government = fascism
+#				}
+#				add_popularity = {
+#					ideology = fascism
+#					popularity = 0.005
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					has_government = communism
+#				}
+#				add_popularity = {
+#					ideology = communism
+#					popularity = 0.005
+#				}
+#			}
+#
+#			add_popularity = {
+#				ideology = fascism
+#				popularity = 0.005
+#			}
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#		#########################
+#		### NORMAL BEHAVIOURS ###
+#		#########################
+#
+#	OG_fascist_opposition_action_gather_support = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {
+#			always = NO
+#		}
+#
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#	
+#		activation = {
+#			always = no
+#		}
+#
+#		modifier = {
+#		
+#		}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#
+#			add_popularity = {
+#				ideology = fascism
+#				popularity = 0.01
+#			}
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#	OG_fascist_opposition_action_arrange_debate = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {always = NO}
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#		activation = {always = no}
+#
+#		modifier = {}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#			random_list = {
+#				10 = {
+#					add_popularity = {
+#						ideology = democratic
+#						popularity = -0.01
+#					}
+#				}
+#				10 = {
+#					add_popularity = {
+#						ideology = neutrality
+#						popularity = -0.01
+#					}
+#				}
+#				#10 = {
+#				#	add_popularity = {
+#				#		ideology = fascism
+#				#		popularity = -0.01
+#				#	}
+#				#}
+#				10 = {
+#					add_popularity = {
+#						ideology = communism
+#						popularity = -0.01
+#					}
+#				}
+#			}
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#	OG_fascist_opposition_action_public_action = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {always = NO}
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#		activation = {always = no}
+#
+#		modifier = {}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#
+#			add_political_power = -5
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#		##########################
+#		### HOSTILE BEHAVIOURS ###
+#		##########################
+#
+#	OG_fascist_opposition_action_condemn_war = {
+#		icon = generic_speech
+#		priority = 10
+#		allowed = {always = NO}
+#		available = {
+#			hidden_trigger = {always = NO}
+#		}
+#
+#		fire_only_once = no
+#		days_mission_timeout = 70
+#		is_good = yes
+#		cancel_if_not_visible = yes
+#		activation = {always = no}
+#
+#		modifier = {}
+#		cancel_trigger = {
+#			hidden_trigger = {has_government = fascism}
+#		}
+#		timeout_effect = {
+#
+#			add_war_support = -0.005
+#
+#			hidden_effect = {
+#				country_event = { id = world_at_war.9 }
+#			}
+#		}
+#	}
+#
+#
+#
+#
+#
+#
+#}# END CAT

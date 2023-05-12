@@ -1,0 +1,42 @@
+music_station = "PB_Original_B"
+
+music = {
+	name = "Electric_West"
+	file = "Electric_West.ogg"
+}
+
+music = {
+	name = "Ragtag_Commoners"
+	file = "Ragtag_Commoners.ogg"
+}
+
+music = {
+	name = "HaigHovels"
+	file = "HaigHovels.ogg"
+}
+
+music = {
+	name = "MindsMachines"
+	file = "MindsMachines.ogg"
+}
+
+music = {
+	name = "Underground"
+	file = "Underground.ogg"
+}
+
+music = {
+	name = "MechanicalMan"
+	file = "MechanicalMan.ogg"
+}
+
+music = {
+	name = "Postwar"
+	file = "Postwar.ogg"
+}
+
+music = {
+	name = "Autofactory"
+	file = "Autofactory.ogg"
+}
+

@@ -1,0 +1,711 @@
+﻿add_namespace = ChooseYourLeaderGHI
+
+country_event = { # 56 leaders
+	id = ChooseYourLeaderGHI.1
+	title = ChooseYourLeaderGHI.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.1.a
+		hidden_effect = {
+            random_list = {
+                1 = {
+                    activate_decision = GER_Adolf_Hitler
+                }
+                1 = {
+                    activate_decision = GER_Konrad_Adenauer
+                }
+                1 = {
+                    activate_decision = GER_Wilhelm_Pieck
+                }
+				1 = {
+                    activate_decision = GER_Heinrich_Himmler
+                }
+				1 = {
+                    activate_decision = GER_Hermann_Goring
+                }
+                1 = {
+                    activate_decision = GER_August_von_Mackensen
+                }
+                1 = {
+                    activate_decision = GER_Wilhelm_II
+                }
+				1 = {
+                    activate_decision = GER_Wilhelm_III
+                }
+				1 = {
+                    activate_decision = GER_Victoria
+                }
+                1 = {
+                    activate_decision = GER_Gerd_von_Rundstedt
+                }
+                1 = {
+                    activate_decision = GER_Gunther_von_Kluge
+                }
+				1 = {
+                    activate_decision = GER_Friedrich_Paulus
+                }
+				1 = {
+                    activate_decision = GER_Erwin_Rommel
+                }
+                1 = {
+                    activate_decision = GER_Erich_von_Manstein
+                }
+                1 = {
+                    activate_decision = GER_Heinz_Guderian
+                }
+				1 = {
+                    activate_decision = GER_Wilhelm_List
+                }
+				1 = {
+                    activate_decision = GER_Ewald_von_Kleist
+                }
+                1 = {
+                    activate_decision = GER_Fedor_von_Bock
+                }
+                1 = {
+                    activate_decision = GER_Walter_Model
+                }
+				1 = {
+                    activate_decision = GER_Maximilian_von_Weichs
+                }
+				1 = {
+                    activate_decision = GER_Wilhelm_Ritter_von_Leeb
+                }
+                1 = {
+                    activate_decision = GER_Georg_Hans_Reinhardt
+                }
+                1 = {
+                    activate_decision = GER_Walter_Kruger
+                }
+				1 = {
+                    activate_decision = GER_Kurt_Student
+                }
+				1 = {
+                    activate_decision = GER_Erwin_von_Witzleben
+                }
+                1 = {
+                    activate_decision = GER_Hermann_Hoth
+                }
+                1 = {
+                    activate_decision = GER_Johannes_Blaskowitz
+                }
+				1 = {
+                    activate_decision = GER_Paul_Hausser
+                }
+				1 = {
+                    activate_decision = GER_Friedrich_Schulz
+                }
+                1 = {
+                    activate_decision = GER_Georg_von_Kuchler
+                }
+                1 = {
+                    activate_decision = GER_Alfred_Jodl
+                }
+				1 = {
+                    activate_decision = GER_Sepp_Dietrich
+                }
+				1 = {
+                    activate_decision = GER_Hasso_von_Manteuffel
+                }
+                1 = {
+                    activate_decision = GER_Albert_Kesselring
+                }
+                1 = {
+                    activate_decision = GER_Gotthard_Heinrici
+                }
+				1 = {
+                    activate_decision = GER_Ernst_Eberhard_Hell
+                }
+				1 = {
+                    activate_decision = GER_Felix_Steiner
+                }
+                1 = {
+                    activate_decision = GER_Karl_Donitz
+                }
+                1 = {
+                    activate_decision = GER_Erich_Raeder
+                }
+				1 = {
+                    activate_decision = GER_Alfred_Saalwachter
+                }
+				1 = {
+                    activate_decision = GER_Hermann_Boehm
+                }
+                1 = {
+                    activate_decision = GER_Wilhelm_Marschall
+                }
+                1 = {
+                    activate_decision = GER_Gunther_Lutjens
+                }
+				1 = {
+                    activate_decision = GER_Alexander_von_Falkenhausen
+                }
+				1 = {
+                    activate_decision = GER_Paul_von_Lettow_Vorbeck
+                }
+				1 = {
+                    activate_decision = GER_Hans_von_Luck
+                }
+				1 = {
+                    activate_decision = GER_Wilhelm_Ritter_von_Thoma
+                }
+				1 = {
+                    activate_decision = GER_Erhard_Milch
+                }
+                1 = {
+                    activate_decision = GER_Hans_Karl_Freiherr_von_Esebeck
+                }
+                1 = {
+                    activate_decision = GER_Willi_Reschke
+                }
+				1 = {
+                    activate_decision = GER_Wolfram_Freiherr_von_Richthofen
+                }
+				1 = {
+                    activate_decision = GER_Otto_Skorzeny
+                }
+                1 = {
+                    activate_decision = GER_Nikolaus_Ritter
+                }
+                1 = {
+                    activate_decision = GER_Eleysa_Bazna
+                }
+				1 = {
+                    activate_decision = GER_Achim_Hund
+                }
+				1 = {
+                    activate_decision = GER_Andrea_Hund
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 22 leaders
+	id = ChooseYourLeaderGHI.2
+	title = ChooseYourLeaderGHI.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.2.a
+		hidden_effect = {
+            random_list = {
+                4 = {
+                    activate_decision = GRE_Ioannis_Metaxas
+                }
+                4 = {
+                    activate_decision = GRE_Markos_Vafiadis
+                }
+				4 = {
+                    activate_decision = GRE_Themistoklis_Sofoulis
+                }
+                4 = {
+                    activate_decision = GRE_Konstantinos_Demertzis
+                }
+				4 = {
+                    activate_decision = GRE_Nikos_Zachariadis
+                }
+                4 = {
+                    activate_decision = GRE_Eleftherios_Venizelos
+                }
+				4 = {
+                    activate_decision = GRE_George_Mercouris
+                }
+                4 = {
+                    activate_decision = GRE_Georgios_Kosmidis
+                }
+				4 = {
+                    activate_decision = GRE_George_II
+                }
+                4 = {
+                    activate_decision = GRE_Adolfos_I
+                }
+				4 = {
+                    activate_decision = GRE_Emmanouil_Tsouderos
+                }
+				4 = {
+                    activate_decision = GRE_Aristotle_Onassis
+                }
+                4 = {
+                    activate_decision = GRE_Alexandros_Papagos
+                }
+				4 = {
+                    activate_decision = GRE_Charalambos_Katsimitros
+                }
+                4 = {
+                    activate_decision = GRE_Markos_Drakos
+                }
+				4 = {
+                    activate_decision = GRE_Nikolaos_Plastiras
+                }
+                4 = {
+                    activate_decision = GRE_Theodoros_Pangalos
+                }
+				4 = {
+                    activate_decision = GRE_Dimitrios_Psarros
+                }
+                4 = {
+                    activate_decision = GRE_Napoleon_Zervas
+                }
+				4 = {
+                    activate_decision = GRE_Aris_Velouchiotis
+                }
+                4 = {
+                    activate_decision = GRE_Panagiotis_Demestichas
+                }
+				4 = {
+                    activate_decision = GRE_Patrick_Leigh_Fermor
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 15 leaders
+	id = ChooseYourLeaderGHI.3
+	title = ChooseYourLeaderGHI.3.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.3.a
+		hidden_effect = {
+            random_list = {
+                6 = {
+                    activate_decision = HOL_Dirk_Jan_de_Geer
+                }
+                6 = {
+                    activate_decision = HOL_Hendrikus_Colijn
+                }
+				6 = {
+                    activate_decision = HOL_Anton_Mussert
+                }
+                6 = {
+                    activate_decision = HOL_Lou_de_Visser
+                }
+				6 = {
+                    activate_decision = HOL_Willem_Schermerhorn
+                }
+                6 = {
+                    activate_decision = HOL_Pieter_Sjoerds_Gerbrandy
+                }
+				6 = {
+                    activate_decision = HOL_Wilhelmina
+                }
+                6 = {
+                    activate_decision = HOL_Izaak_Reijnders
+                }
+				6 = {
+                    activate_decision = HOL_Petrus_Wilhelmus_Best
+                }
+                6 = {
+                    activate_decision = HOL_Godfried_van_Voorst_tot_Voorst
+                }
+				6 = {
+                    activate_decision = HOL_Johannes_Theodorus_Furstner
+                }
+                6 = {
+                    activate_decision = HOL_Conrad_Helfrich
+                }
+				6 = {
+                    activate_decision = HOL_Karel_Doorman
+                }
+                6 = {
+                    activate_decision = HOL_Henri_Winkelman
+                }
+				6 = {
+                    activate_decision = HOL_Prins_Bernhard
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 11 leaders
+	id = ChooseYourLeaderGHI.4
+	title = ChooseYourLeaderGHI.4.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.4.a
+		hidden_effect = {
+            random_list = {
+                9 = {
+                    activate_decision = HUN_Miklos_Horthy
+                }
+                9 = {
+                    activate_decision = HUN_Matyas_Rakosi
+                }
+				9 = {
+                    activate_decision = HUN_Otto_von_Habsburg
+                }
+                9 = {
+                    activate_decision = HUN_Friedrich_Franz_of_Mecklenburg_Schwerin
+                }
+				9 = {
+                    activate_decision = HUN_Bela_Kun
+                }
+                9 = {
+                    activate_decision = HUN_Geza_Lakatos
+                }
+				9 = {
+                    activate_decision = HUN_Ivan_Hindy
+                }
+                9 = {
+                    activate_decision = HUN_Karoly_Beregfy
+                }
+				9 = {
+                    activate_decision = HUN_Lajos_Veress
+                }
+                9 = {
+                    activate_decision = HUN_Ferenc_Feketehalmy_Czeydner
+                }
+				9 = {
+                    activate_decision = HUN_Admiral_Miklos_Horthy
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderGHI.5
+	title = ChooseYourLeaderGHI.5.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.5.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = INS_A_T_van_Starkenborgh_Stachouwer
+                }
+                50 = {
+                    activate_decision = INS_Hein_ter_Poorten
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 89 leaders
+	id = ChooseYourLeaderGHI.6
+	title = ChooseYourLeaderGHI.6.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.6.a
+		hidden_effect = {
+            random_list = {
+                1 = {
+                    activate_decision = ITA_Benito_Mussolini
+                }
+                1 = {
+                    activate_decision = ITA_The_Grand_Council_of_Fascism
+                }
+				1 = {
+                    activate_decision = ITA_Comitato_di_Liberazione_Nazionale
+                }
+                1 = {
+                    activate_decision = ITA_Papa_Pio_XI
+                }
+				1 = {
+                    activate_decision = ITA_Papa_Pio_XII
+                }
+				1 = {
+                    activate_decision = ITA_Antonio_Gramsci
+                }
+                1 = {
+                    activate_decision = ITA_Vittorio_Emanuele_III
+                }
+				1 = {
+                    activate_decision = ITA_Vittorio_Emanuele_III_2
+                }
+                1 = {
+                    activate_decision = ITA_Umberto_II
+                }
+				1 = {
+                    activate_decision = ITA_Tomislav_II
+                }
+                1 = {
+                    activate_decision = ITA_Ferruccio_Parri
+                }
+				1 = {
+                    activate_decision = ITA_Palmiro_Togliatti
+                }
+                1 = {
+                    activate_decision = ITA_Sandro_Pertini
+                }
+				1 = {
+                    activate_decision = ITA_Augustus_Mussolini
+                }
+                1 = {
+                    activate_decision = ITA_Augustus_Vittorio_Emanuele
+                }
+				1 = {
+                    activate_decision = ITA_Augustus_Umberto
+                }
+                1 = {
+                    activate_decision = ITA_Augustus_Balbo
+                }
+				1 = {
+                    activate_decision = ITA_Augustus_Grandi
+                }
+                1 = {
+                    activate_decision = ITA_Ferdinando_Adalberto
+                }
+				1 = {
+                    activate_decision = ITA_Pietro_Badoglio
+                }
+				1 = {
+                    activate_decision = ITA_Emilio_De_Bono
+                }
+                1 = {
+                    activate_decision = ITA_Ugo_Cavallero
+                }
+				1 = {
+                    activate_decision = ITA_Giovanni_Messe
+                }
+                1 = {
+                    activate_decision = ITA_Sebastiano_Visconti_Prasca
+                }
+				1 = {
+                    activate_decision = ITA_Ubaldo_Soddu
+                }
+				1 = {
+                    activate_decision = ITA_Italo_Balbo
+                }
+                1 = {
+                    activate_decision = ITA_Italo_Balbo_2
+                }
+				1 = {
+                    activate_decision = ITA_Dino_Grandi
+                }
+                1 = {
+                    activate_decision = ITA_Ivanoe_Bonomi
+                }
+				1 = {
+                    activate_decision = ITA_Alcide_de_Gasperi
+                }
+                1 = {
+                    activate_decision = ITA_Giuseppe_Pieche
+                }
+				1 = {
+                    activate_decision = ITA_Mario_Ricci
+                }
+                1 = {
+                    activate_decision = ITA_Ettore_Bastico
+                }
+				1 = {
+                    activate_decision = ITA_Ettore_Bastico_2
+                }
+                1 = {
+                    activate_decision = ITA_Italo_Gariboldi
+                }
+				1 = {
+                    activate_decision = ITA_Vittorio_Ambrosio
+                }
+                1 = {
+                    activate_decision = ITA_Alfredo_Guzzoni
+                }
+				1 = {
+                    activate_decision = ITA_Pietro_Pintor
+                }
+                1 = {
+                    activate_decision = ITA_Mario_Berti
+                }
+				1 = {
+                    activate_decision = ITA_Carlo_Geloso
+                }
+				1 = {
+                    activate_decision = ITA_Giuseppe_Tellera
+                }
+                1 = {
+                    activate_decision = ITA_Francesco_Zingales
+                }
+				1 = {
+                    activate_decision = ITA_Ezio_Rosi
+                }
+                1 = {
+                    activate_decision = ITA_Mario_Vercellino
+                }
+				1 = {
+                    activate_decision = ITA_Prince_Filiberto
+                }
+				1 = {
+                    activate_decision = ITA_Prince_Adalberto
+                }
+                1 = {
+                    activate_decision = ITA_Prince_Umberto
+                }
+				1 = {
+                    activate_decision = ITA_Alessandro_Pirzio_Biroli
+                }
+                1 = {
+                    activate_decision = ITA_Carlo_Vecchiarelli
+                }
+				1 = {
+                    activate_decision = ITA_Mario_Robotti
+                }
+                1 = {
+                    activate_decision = ITA_Ettore_Baldassarre
+                }
+				1 = {
+                    activate_decision = ITA_Amedeo_Guillet
+                }
+                1 = {
+                    activate_decision = ITA_Annibale_Bergonzoli
+                }
+				1 = {
+                    activate_decision = ITA_Hamid_Idris_Awate
+                }
+                1 = {
+                    activate_decision = ITA_Ibrahim_Farag_Mohammed
+                }
+				1 = {
+                    activate_decision = ITA_Prince_Aimone
+                }
+                1 = {
+                    activate_decision = ITA_Giuseppe_di_Bartolo
+                }
+				1 = {
+                    activate_decision = ITA_Junio_Valerio_Borghese
+                }
+                1 = {
+                    activate_decision = ITA_Rodolfo_Graziani
+                }
+				1 = {
+                    activate_decision = ITA_Mario_Roatta
+                }
+				1 = {
+                    activate_decision = ITA_Giovanni_Duca
+                }
+                1 = {
+                    activate_decision = ITA_Giuseppe_de_Stefanis
+                }
+				1 = {
+                    activate_decision = ITA_Ugo_Luca
+                }
+                1 = {
+                    activate_decision = ITA_Norma_Barbolini
+                }
+				1 = {
+                    activate_decision = ITA_Ada_Gobetti
+                }
+				1 = {
+                    activate_decision = ITA_Pompeo_Colajanni
+                }
+                1 = {
+                    activate_decision = ITA_Randolfo_Pacciardi
+                }
+				1 = {
+                    activate_decision = ITA_Luigi_Longo
+                }
+                1 = {
+                    activate_decision = ITA_Haile_Selassie_Gugsa
+                }
+				1 = {
+                    activate_decision = ITA_Abba_Jofir
+                }
+                1 = {
+                    activate_decision = ITA_Hailu_Tekle_Haymanot
+                }
+				1 = {
+                    activate_decision = ITA_Seyoum_Mengesha
+                }
+                1 = {
+                    activate_decision = ITA_Inigo_Campioni
+                }
+				1 = {
+                    activate_decision = ITA_Alberto_Da_Zara
+                }
+                1 = {
+                    activate_decision = ITA_Giuseppe_Fioravanzo
+                }
+				1 = {
+                    activate_decision = ITA_Carlo_Bergamini
+                }
+                1 = {
+                    activate_decision = ITA_Angelo_Iachino
+                }
+				1 = {
+                    activate_decision = ITA_Carmelo_Borg_Pisani
+                }
+                1 = {
+                    activate_decision = ITA_Edgardo_Sogno
+                }
+				1 = {
+                    activate_decision = ITA_Emilio_Faldella
+                }
+				1 = {
+                    activate_decision = ITA_Epaminonda_Troya
+                }
+                1 = {
+                    activate_decision = ITA_Francesco_De_Martini
+                }
+				1 = {
+                    activate_decision = ITA_Hugh_OFlaherty
+                }
+                1 = {
+                    activate_decision = ITA_Laura_Garroni
+                }
+				1 = {
+                    activate_decision = ITA_Maurizio_Giglio
+                }
+                1 = {
+                    activate_decision = ITA_Paolo_Caccia_Dominioni
+                }
+				1 = {
+                    activate_decision = ITA_Pietro_Koch
+                }
+                1 = {
+                    activate_decision = ITA_Rosa_Dainelli
+                }
+				1 = {
+                    activate_decision = ITA_Stefanina_Moro
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderGHI.7
+	title = ChooseYourLeaderGHI.7.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderGHI.7.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = IRQ_Ghazi_I
+                }
+                50 = {
+                    activate_decision = IRQ_Rashid_Ali_al_Gaylani
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_nuclear_icon"
+		texturefile = "gfx/interface/state_modifiers/nuclear_icon.dds"
+	}
+
+} # SPRITE TYPE END CAT

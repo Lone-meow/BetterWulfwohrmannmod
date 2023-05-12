@@ -1,0 +1,70 @@
+ideas = {
+
+	country = {
+	
+		divided_island = {
+
+		picture = divided_island
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = -20.00
+
+			}
+		}
+
+		Capital_Devastated = {
+
+		picture = Capital_Devastated
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.50
+				consumer_goods_factor = 0.50
+				industry_repair_factor = 0.30
+
+			}
+		}
+
+		Across_The_Channel = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = 0.25
+				ai_focus_aggressive_factor = 100.0
+				war_support_weekly = 0.01
+				}
+
+			}
+		}
+	}

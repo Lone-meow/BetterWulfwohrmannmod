@@ -1,0 +1,831 @@
+
+X01 = {
+
+	#############
+	### LIGHT ###
+	#############
+
+	#### Fighters ###
+
+	small_plane_airframe = {
+		pool = {
+			#weight = 2
+			icons = {
+			}
+			models = {
+				X10_light_plane_entity
+				X09_light_plane_entity
+				X08_light_plane_entity
+				X07_light_plane_entity
+				X06_light_plane_entity
+				X05_light_plane_entity
+				X04_light_plane_entity
+				X03_light_plane_entity
+				X02_light_plane_entity
+				X01_light_plane_entity
+			}
+		}
+	}
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+
+	small_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	small_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	small_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	small_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	#### CV Fighters ###
+
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				X10_light_plane_entity
+				X09_light_plane_entity
+				X08_light_plane_entity
+				X07_light_plane_entity
+				X06_light_plane_entity
+				X05_light_plane_entity
+				X04_light_plane_entity
+				X03_light_plane_entity
+				X02_light_plane_entity
+				X01_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	#### CAS ###
+
+	small_plane_cas_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_CAS_plane_entity
+			}
+		}
+	}
+	small_plane_cas_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_cas_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	#### CV CAS ###
+
+	cv_small_plane_cas_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_CAS_plane_entity
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	#### Naval Bombers ###
+
+	small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_NAV_bomber_plane_entity
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	#### CV Naval Bombers ###
+
+	cv_small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_NAV_bomber_plane_entity
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	### Suicide Aircraft ###
+
+	small_plane_suicide_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				X10_light_plane_entity
+				X09_light_plane_entity
+				X08_light_plane_entity
+				X07_light_plane_entity
+				X06_light_plane_entity
+				X05_light_plane_entity
+				X04_light_plane_entity
+				X03_light_plane_entity
+				X02_light_plane_entity
+				X01_light_plane_entity
+			}
+		}
+	}
+	small_plane_suicide_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	small_plane_suicide_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_suicide_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_suicide_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_suicide_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	### CV Suicide Aircraft ###
+
+	cv_small_plane_suicide_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				X10_light_plane_entity
+				X09_light_plane_entity
+				X08_light_plane_entity
+				X07_light_plane_entity
+				X06_light_plane_entity
+				X05_light_plane_entity
+				X04_light_plane_entity
+				X03_light_plane_entity
+				X02_light_plane_entity
+				X01_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_suicide_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_azure_light_interwar_plane_entity
+				XYZ_blue_light_interwar_plane_entity
+				XYZ_brown_light_interwar_plane_entity
+				XYZ_burgundy_light_interwar_plane_entity
+				XYZ_green_light_interwar_plane_entity
+				XYZ_lime_light_interwar_plane_entity
+				XYZ_purple_light_interwar_plane_entity
+				XYZ_red_light_interwar_plane_entity
+				XYZ_yellow_light_interwar_plane_entity
+				XYZ_orange_light_interwar_plane_entity
+			}
+		}
+	}
+	cv_small_plane_suicide_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_suicide_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_suicide_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_suicide_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_light_jet_plane_entity
+			}
+		}
+	}
+
+	##############
+	### MEDIUM ###
+	##############
+
+	### Tac Bombers ###
+
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				X01_medium_plane_entity
+			}
+		}
+	}
+
+	medium_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_interwar_plane_entity
+			}
+		}
+	}
+	medium_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_jet_plane_entity
+			}
+		}
+	}
+
+	### Heavy Fighters ###
+
+	medium_plane_fighter_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				X01_medium_plane_entity
+			}
+		}
+	}
+	medium_plane_fighter_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_interwar_plane_entity
+				XYZ_orange_heavy_fighter_plane_entity
+			}
+		}
+	}
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_fighter_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_jet_plane_entity
+			}
+		}
+	}
+
+	### Scout Planes ###
+
+	medium_plane_scout_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_interwar_plane_entity
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_interwar_plane_entity
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_medium_jet_plane_entity
+			}
+		}
+	}
+
+	#############
+	### HEAVY ###
+	#############
+
+	### Heavy Bombers ###
+
+	large_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				X01_heavy_plane_entity
+			}
+		}
+	}
+	large_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_heavy_interwar_plane_entity
+			}
+		}
+	}
+	large_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	### Maritime Patrols ###
+
+	large_plane_maritime_patrol_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				XYZ_orange_maritime_patrol_plane_entity
+			}
+		}
+	}
+	large_plane_maritime_patrol_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_maritime_patrol_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_maritime_patrol_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_maritime_patrol_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_maritime_patrol_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	
+}

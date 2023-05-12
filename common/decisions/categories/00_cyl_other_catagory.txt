@@ -1,0 +1,4 @@
+cyl_other_catagory = {
+	priority = 2000
+	icon = decision_unknown
+}

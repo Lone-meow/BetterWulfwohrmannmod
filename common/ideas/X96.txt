@@ -1,0 +1,48 @@
+ideas = {
+
+	country = {
+	
+		victors_of_the_long_war = {
+		picture = idea_victors_long_war
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				political_power_cost = -5.00
+				experience_gain_army_unit_factor = 0.2
+				army_morale_factor = 0.1
+				experience_gain_army = 0.05
+			}
+		}
+
+		generic_communism_banned = {
+			picture = idea_generic_communism_banned
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
+				communism_drift = -0.50
+			}
+		}
+	}
+}

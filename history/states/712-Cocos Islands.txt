@@ -1,0 +1,28 @@
+state={
+	id=712
+	name="STATE_712"
+	manpower=42	
+	state_category = tiny_island
+	
+	history={
+		owner = Y95
+		add_core_of = Y95
+		buildings = {
+			infrastructure = 2
+			13002 = {
+				naval_base = 1
+			}
+		}
+		1935.1.2 = {
+			owner = Y97
+			controller = Y97
+			add_core_of = Y97
+		}
+	}
+	
+	provinces={
+		13002 
+	}
+
+	local_supplies=0.0 
+}

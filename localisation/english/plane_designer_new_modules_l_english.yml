@@ -1,0 +1,169 @@
+﻿l_english:
+ 
+ radial_engines_1:0 "Radial Engines I"
+ radial_engines_1_desc:0 "Airplane Radial engine must be powerful, but lightweight and reliable. This engine type provides enough power to get a plane in the air, but somewhat limits it from reaching its full potential."
+ radial_engines_2:0 "Radial Engines II"
+ radial_engines_2_desc:0 "The rapid growth of airplanes requires a corresponding growth of engine power."
+ radial_engines_3:0 "Radial Engines III"
+ radial_engines_3_desc:0 "$engine_3_1x_desc$"
+ radial_engines_4:0 "Radial Engines IV"
+ radial_engines_4_desc:0 "$engine_4_1x_desc$" 
+ 
+ radial_engine_1_1x:0 "1x Radial engine I"
+ radial_engine_1_1x_desc:0 "Air-cooled Radial engines, which are heavy and sturdy, produce more raw horse power than inline engines, but are slower due to more drag because of their larger frontal area."
+ radial_engine_1_2x:0 "2x Radial engine I"
+ radial_engine_1_2x_desc:0 "Twin Radial engines give the plane a significant increase in thrust, but at a cost."
+ radial_engine_1_3x:0 "3x Radial engine I"
+ radial_engine_1_3x_desc:0 "Three Radial engines give more thrust than a pair of them, without the additional cost of a fourth radial_engine."
+ radial_engine_1_4x:0 "4x Radial engine I"
+ radial_engine_1_4x_desc:0 "A quartet of Radial engines provides enough thrust to lift a heavy plane and allow it to carry a significant payload."
+ radial_engine_1_6x:0 "6x Radial engine I"
+ radial_engine_1_6x_desc:0 "With six Radial engines, any plane can be made to carry a significant payload over a long range, at a decent speed."
+ radial_engine_2_1x:0 "1x Radial engine II"
+ radial_engine_2_1x_desc:0 "A larger and more powerful Radial engine allows for higher speed and greater payload."
+ radial_engine_2_2x:0 "2x Radial engine II"
+ radial_engine_2_2x_desc:0 "$radial_engine_1_2x_desc$"
+ radial_engine_2_3x:0 "3x Radial engine II"
+ radial_engine_2_3x_desc:0 "$radial_engine_1_3x_desc$"
+ radial_engine_2_4x:0 "4x Radial engine II"
+ radial_engine_2_4x_desc:0 "$radial_engine_1_4x_desc$"
+ radial_engine_2_6x:0 "6x Radial engine II"
+ radial_engine_2_6x_desc:0 "$radial_engine_1_6x_desc$"
+ radial_engine_3_1x:0 "1x Radial engine III"
+ radial_engine_3_1x_desc:0 "Incorporating advanced features such as methanol-injection and automatic mixture, this engine is able to put out significantly more power."
+ radial_engine_3_2x:0 "2x Radial engine III"
+ radial_engine_3_2x_desc:0 "$radial_engine_1_2x_desc$"
+ radial_engine_3_3x:0 "3x Radial engine III"
+ radial_engine_3_3x_desc:0 "$radial_engine_1_3x_desc$"
+ radial_engine_3_4x:0 "4x Radial engine III"
+ radial_engine_3_4x_desc:0 "$radial_engine_1_4x_desc$"
+ radial_engine_3_6x:0 "6x Radial engine III"
+ radial_engine_3_6x_desc:0 "$radial_engine_1_6x_desc$"
+ radial_engine_4_1x:0 "1x Radial engine IV"
+ radial_engine_4_1x_desc:0 "With extensive engineering to capitalize on every possible performance boost, this engine represents the absolute pinnacle of piston-driven engine technology."
+ radial_engine_4_2x:0 "2x Radial engine IV"
+ radial_engine_4_2x_desc:0 "$radial_engine_1_2x_desc$"
+ radial_engine_4_3x:0 "3x Radial engine IV"
+ radial_engine_4_3x_desc:0 "$radial_engine_1_3x_desc$"
+ radial_engine_4_4x:0 "4x Radial engine IV"
+ radial_engine_4_4x_desc:0 "$radial_engine_1_4x_desc$"
+ radial_engine_4_6x:0 "6x Radial engine IV"
+ radial_engine_4_6x_desc:0 "$radial_engine_1_6x_desc$"
+ 
+ reflex_gunsight_1:0 "Reflex Gunsight I"
+ reflex_gunsight_2:0 "Reflex Gunsight II"
+ gyro_gunsight_1:0 "Gyroscopic Gunsight I"
+ gyro_gunsight_2:0 "Gyroscopic Gunsight II"
+ 
+ high_octane_fuel_small:0 "High-Octane Additive" 
+ high_octane_fuel_small_desc:0 "Higher octane aviation gasoline could fuel high-performance aircraft engines, boosting the performance of the planes."
+
+ high_octane_fuel_medium:0 "High-Octane Additive" 
+ high_octane_fuel_medium_desc:0 "Higher octane aviation gasoline could fuel high-performance aircraft engines, boosting the performance of the planes."
+ 
+ high_octane_fuel_large:0 "High-Octane Additive"
+ high_octane_fuel_large_desc:0 "Higher octane aviation gasoline could fuel high-performance aircraft engines, boosting the performance of the planes."  
+ 
+ remote_control_turret_system:0 "Remote Control Turret System"
+ remote_control_turret_system_desc:0 "Turret-gunners can be pretty annoying if they are dead or fall a sleep in the middle of the airbattle, so it be very convenient to replace them with the centralised control system."
+ remote_control_turret_system_category:0 "Remote Control Turret System" 
+  
+ pressurized_cockpit:0 "Pressurized cockpit" 
+ pressurized_cockpit_desc:0 "Aircraft cockpit pressurization allows flying at much higher altitudes with less dense air. Thereby increasing its speed and maneuverability."  
+
+ water_injection_small:0 "Engine injection system" 
+ water_injection_small_desc:0 "Engine injection is used to cool the fuel-air mixture and thus achieve more power and lower consumption. " 
+ water_injection_medium:0 "Engine injection system" 
+ water_injection_medium_desc:0 "Engine injection is used to cool the fuel-air mixture and thus achieve more power and lower consumption. " 
+ water_injection_large:0 "Engine injection system" 
+ water_injection_large_desc:0 "Engine injection is used to cool the fuel-air mixture and thus achieve more power and lower consumption. "  
+
+ turbocharger:0 "Turbocharger"
+ turbocharger_desc:0 "A turbocharger is a turbine driven, forced induction device that is utilised in a piston engine to enable it to produce more power."
+ supercharger:0 "Supercharger"
+ supercharger_desc:0 "A supercharger is a mechanically driven, forced induction device that is utilised in a piston engine to enable it to produce more power. Its purpose and function is similar to a turbocharger with the principal difference being that it is mechanically driven by a direct connection to the engine whereas a turbocharger is turbine driven using engine exhaust gas flow." 
+
+ dive_brakes_medium:0 "Dive Brakes" 
+ dive_brakes_medium_desc:0 "A set of spoilers along the trailing edge of the wing deploy when the plane enters a dive, reducing overall speed and allowing the plane to pull out of steep dives without ripping its wings off. this, in turn, allows the plane to attack from a near-vertical dive, drastically increasing accuracy."
+ 
+ EQ_MOD_CAT_plane_special_module_gunsight_TITLE:1 "Gunsights" 
+ EQ_MOD_CAT_remote_control_turret_system_category_TITLE:0 "Remote Control Turret System"
+ EQ_MOD_CAT_plane_special_module_turrets_additions_TITLE:0 "Remote Control Turret System"  
+ EQ_MOD_CAT_plane_special_module_engine_TITLE:0 "Special Modules Engine"
+ EQ_MOD_CAT_plane_construction_type_module_small_TITLE:0 "Construction Type" 
+ EQ_MOD_CAT_plane_construction_type_module_medium_TITLE:0 "Construction Type"
+ EQ_MOD_CAT_plane_construction_type_module_large_TITLE:0 "Construction Type" 
+ 
+ EQ_MOD_CAT_engine_mounted_cannons_TITLE:0 "Engine-Mounted Cannons" 
+ 
+ aircraft_engine_mounted_cannon_1:0 "Engine-Mounted Cannon I" 
+ aircraft_engine_mounted_cannon_1_desc:0 "Aircraft engine even with big gun mounted between the cylinders is not that useful if it has excessive holes from the enemy bullets, so please shoot first." 
+ 
+ aircraft_engine_mounted_cannon_2:0 "Engine-Mounted Cannon II"
+ aircraft_engine_mounted_cannon_2_desc:0 "Even a bigger gun huh? You can never go wrong with this i guess"  
+ 
+ aircraft_lightweight_construction_small:0 "Lightweight Construction"
+ aircraft_lightweight_construction_small_desc:0 "Perhaps if you fly fast enough enemy will not notice that wings our of planes is paper thin..." 
+ aircraft_lightweight_construction_medium:0 "Lightweight Construction"
+ aircraft_lightweight_construction_medium_desc:0 "Perhaps if you fly fast enough enemy will not notice that wings our of planes is paper thin..."  
+ 
+ medium_plane_naval_bomber_airframe_0:0 "Inter-War Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_1:0 "Basic Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_2:0 "Improved Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_3:0 "Advanced Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_4:0 "Modern Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_desc:0 "A specialized aircraft designed specifically for hunting enemy ships on the high seas."
+ medium_nav_bomber:0 "Medium Naval Bomber" 
+ 
+ rocket_rails_2:0 "Improved rocket rails" 
+ rocket_rails_2_desc:0 "An improved version of air to surface missiles carries a lot of love and respect to our enemies or a lot of explosives i can't really tell, please let me know after you test them.." 
+ 
+ auto_extinguisher_system_small:0 "Fire Extinguishing Systems" 
+ auto_extinguisher_system_small_desc:0 "The name of the system speaks for itself. An engine fire during a flight, and even more so during a battle, is not something we would like to deal with."
+ auto_extinguisher_system_medium:0 "Fire Extinguishing Systems" 
+ auto_extinguisher_system_medium_desc:0 "The name of the system speaks for itself. An engine fire during a flight, and even more so during a battle, is not something we would like to deal with."
+ auto_extinguisher_system_large:0 "Fire Extinguishing Systems"
+ auto_extinguisher_system_large_desc:0 "The name of the system speaks for itself. An engine fire during a flight, and even more so during a battle, is not something we would like to deal with."
+ 
+ aircraft_reinforced_construction_small:0 "Reinforced Construction" 
+ aircraft_reinforced_construction_small_desc:0 "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling." 
+ 
+ aircraft_reinforced_construction_medium:0 "Reinforced Construction"
+ aircraft_reinforced_construction_medium_desc:0 "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+ 
+ aircraft_reinforced_construction_large:0 "Reinforced Construction"
+ aircraft_reinforced_construction_large_desc:0 "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+
+ aircraft_balanced_construction_small:0 "Balanced Construction" 
+ aircraft_balanced_construction_small_desc:0 "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling." 
+ 
+ aircraft_balanced_construction_medium:0 "Balanced Construction"
+ aircraft_balanced_construction_medium_desc:0 "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+ 
+ aircraft_balanced_construction_large:0 "Balanced Construction"
+ aircraft_balanced_construction_large_desc:0 "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+
+
+ aerodynamic_pylons_small:0 "Aerodynamic pylons"
+ aerodynamic_pylons_small_desc:0 "Drag, oddly enough, does not help you fly faster, especially if you hang a couple of bombs under the wings."  
+ aerodynamic_pylons_medium:0 "Aerodynamic pylons"
+ aerodynamic_pylons_medium_desc:0 "Drag, oddly enough, does not help you fly faster, especially if you hang a couple of bombs under the wings." 
+
+ drop_tanks_medium:0 "Drop tanks"
+ drop_tanks_medium_desc:0 "A lot of fuel is always better than a no fuel, more range is better than being shot. Being a airdesigner is that simple don't you know?"
+ 
+ EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "$EQ_MOD_SLOT_special_type_slot_4_TITLE$"
+ 
+ EQ_MOD_CAT_plane_special_module_jet_TITLE:0 "Jet Special Modules"
+ swept_wings:0 "Swept Wings"
+ swept_wings_desc:0 "Swept Wings helps reduce drag in supersonic flights." 
+ improved_compressor:0 "Improved Compressor"
+ improved_compressor_desc:0 "Jet engines take in a great amount of surrounding air through their inlet. Behind the inlet is the compressor section. The compressor's job is to increase the pressure of the incoming air before it reaches the combustion section." 
+ supersonic_air_intake:0 "Supersonic air Intake"
+ supersonic_air_intake_desc:0 "For a supersonic aircraft, the inlet must slow the flow down to subsonic speeds before the air reaches the compressor." 
+ afterburner:0 "Afterburner"
+ afterburner_desc:0 "Now you can overclock your jet engine! How cool is that?" 
+ 
+ jet_engine_improvements:0 "Jet Engine Improvements"
+ 
+

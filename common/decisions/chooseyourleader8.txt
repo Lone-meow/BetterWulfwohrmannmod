@@ -1,0 +1,198 @@
+choose_your_leader_catagory_8 = {
+
+
+	VEN_Eleazar_Lopez_Contreras = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_VEN
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Eleazar López Contreras"
+				    picture = "gfx/leaders/VEN/Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Eleazar López Contreras"
+				    picture = "gfx/leaders/VEN/Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Eleazar López Contreras"
+				    picture = "gfx/leaders/VEN/Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Eleazar López Contreras"
+				    picture = "gfx/leaders/VEN/Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	WGR_Konrad_Adenauer = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_WGR
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Konrad Adenauer"
+				    picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Konrad Adenauer"
+				    picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Konrad Adenauer"
+				    picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Konrad Adenauer"
+				    picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+	
+	XSM_Ma_Bufang = {
+			
+		cost = 0
+		days_re_enable = 0
+		days_remove = 0
+		visible = {
+			has_country_flag = CYL_XSM
+		}
+		complete_effect = {
+		    kill_country_leader = yes
+		    if = {
+		        limit = {
+			        has_government = neutrality
+			    }
+			    create_country_leader = {
+				    name = "Ma Bufang"
+				    picture = "GFX_portrait_xsm_ma_bufang"
+				    expire = "1965.1.1"
+				    ideology = despotism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = democratic
+			    }
+			    create_country_leader = {
+				    name = "Ma Bufang"
+				    picture = "GFX_portrait_xsm_ma_bufang"
+				    expire = "1965.1.1"
+				    ideology = conservatism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = communism
+			    }
+			    create_country_leader = {
+				    name = "Ma Bufang"
+				    picture = "GFX_portrait_xsm_ma_bufang"
+				    expire = "1965.1.1"
+				    ideology = marxism
+				    traits = {
+				    }
+			    }
+		    }
+			if = {
+		        limit = {
+			        has_government = fascism
+			    }
+			    create_country_leader = {
+				    name = "Ma Bufang"
+				    picture = "GFX_portrait_xsm_ma_bufang"
+				    expire = "1965.1.1"
+				    ideology = fascism_ideology
+				    traits = {
+				    }
+			    }
+		    }
+	    }
+    }
+}

@@ -1,0 +1,30 @@
+state={
+	id=770
+	name="STATE_770"
+
+	history={
+		owner = X57
+		add_core_of = X57
+		victory_points = {
+			12986 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		1935.1.2 = {
+			owner = X53
+			controller = X53
+			add_core_of = X53
+			remove_core_of = X57
+		}
+	}
+
+	provinces={
+		2255 12908 12986 13209 
+	}
+	manpower=1603975
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

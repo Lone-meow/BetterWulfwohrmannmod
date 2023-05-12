@@ -1,0 +1,24 @@
+state={
+	id=625
+	name="STATE_625"
+	manpower = 1138724
+	
+	state_category = rural
+	history={
+		owner = Y93
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = Y93
+		1935.1.2 = {
+			owner = Y92
+			controller = Y92
+			add_core_of = Y92
+		}
+	}
+	provinces={
+		1224 1311 1340 4269 4373 
+	}
+
+	local_supplies=0.0 
+}

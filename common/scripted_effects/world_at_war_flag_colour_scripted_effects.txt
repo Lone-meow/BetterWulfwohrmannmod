@@ -1,0 +1,1113 @@
+
+### IDEOLOGY FLAG GROUP 1 ###
+
+ideology_flag_group_1_scripted_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = formable_already_created_for_this_nation_flag
+				has_country_flag = OG_empire_formed_flag
+			}
+		}
+
+		if = {
+			limit = {
+				is_red_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_red
+		}
+		else_if = {
+			limit = {
+				is_orange_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_orange
+		}
+		else_if = {
+			limit = {
+				is_brown_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_brown
+		}
+		else_if = {
+			limit = {
+				is_yellow_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_yellow
+		}
+		else_if = {
+			limit = {
+				is_lime_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_lime
+		}
+		else_if = {
+			limit = {
+				is_green_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_green
+		}
+		else_if = {
+			limit = {
+				is_azure_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_azure
+		}
+		else_if = {
+			limit = {
+				is_blue_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_blue
+		}
+		else_if = {
+			limit = {
+				is_purple_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_purple
+		}
+		else_if = {
+			limit = {
+				is_burgundy_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_1_burgundy
+		}
+	}
+}
+
+### IDEOLOGY FLAG GROUP 2 ###
+
+ideology_flag_group_2_scripted_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = formable_already_created_for_this_nation_flag
+				has_country_flag = OG_empire_formed_flag
+			}
+		}
+		if = {
+			limit = {
+				is_red_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_red
+		}
+		else_if = {
+			limit = {
+				is_orange_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_orange
+		}
+		else_if = {
+			limit = {
+				is_brown_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_brown
+		}
+		else_if = {
+			limit = {
+				is_yellow_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_yellow
+		}
+		else_if = {
+			limit = {
+				is_lime_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_lime
+		}
+		else_if = {
+			limit = {
+				is_green_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_green
+		}
+		else_if = {
+			limit = {
+				is_azure_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_azure
+		}
+		else_if = {
+			limit = {
+				is_blue_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_blue
+		}
+		else_if = {
+			limit = {
+				is_purple_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_purple
+		}
+		else_if = {
+			limit = {
+				is_burgundy_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_2_burgundy
+		}
+	}
+}
+
+### IDEOLOGY FLAG GROUP 3 ###
+
+ideology_flag_group_3_scripted_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = formable_already_created_for_this_nation_flag
+				has_country_flag = OG_empire_formed_flag
+			}
+		}
+		if = {
+			limit = {
+				is_red_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_red
+		}
+		else_if = {
+			limit = {
+				is_orange_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_orange
+		}
+		else_if = {
+			limit = {
+				is_brown_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_brown
+		}
+		else_if = {
+			limit = {
+				is_yellow_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_yellow
+		}
+		else_if = {
+			limit = {
+				is_lime_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_lime
+		}
+		else_if = {
+			limit = {
+				is_green_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_green
+		}
+		else_if = {
+			limit = {
+				is_azure_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_azure
+		}
+		else_if = {
+			limit = {
+				is_blue_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_blue
+		}
+		else_if = {
+			limit = {
+				is_purple_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_purple
+		}
+		else_if = {
+			limit = {
+				is_burgundy_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_3_burgundy
+		}
+	}
+}
+
+### IDEOLOGY FLAG GROUP 4 ###
+
+ideology_flag_group_4_scripted_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = formable_already_created_for_this_nation_flag
+				has_country_flag = OG_empire_formed_flag
+			}
+		}
+		if = {
+			limit = {
+				is_red_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_red
+		}
+		else_if = {
+			limit = {
+				is_orange_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_orange
+		}
+		else_if = {
+			limit = {
+				is_brown_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_brown
+		}
+		else_if = {
+			limit = {
+				is_yellow_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_yellow
+		}
+		else_if = {
+			limit = {
+				is_lime_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_lime
+		}
+		else_if = {
+			limit = {
+				is_green_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_green
+		}
+		else_if = {
+			limit = {
+				is_azure_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_azure
+		}
+		else_if = {
+			limit = {
+				is_blue_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_blue
+		}
+		else_if = {
+			limit = {
+				is_purple_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_purple
+		}
+		else_if = {
+			limit = {
+				is_burgundy_country_trigger = yes
+			}
+			set_cosmetic_tag = XYZ_4_burgundy
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# OLD
+
+###################
+#### DEMOCRATIC ###
+###################
+#
+#### SOCIALISM ###
+#
+#socialism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_socialism_burgundy
+#	}
+#}
+#
+#### LIBERALISM ###
+#
+#liberalism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_liberalism_burgundy
+#	}
+#}
+#
+#### CONSERVATISM ###
+#
+#conservatism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_conservatism_burgundy
+#	}
+#}
+#
+###################
+#### NEUTRALITY ###
+###################
+#
+#### CENTRISM ###
+#
+#centrism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_centrism_burgundy
+#	}
+#}
+#
+#### OLIGARCHISM ###
+#
+#oligarchism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_oligarchism_burgundy
+#	}
+#}
+#
+#### DESPOTISM ###
+#
+#despotism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_despotism_burgundy
+#	}
+#}
+#
+################
+#### FASCISM ###
+################
+#
+#### NAZISM ###
+#
+#nazism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_nazism_burgundy
+#	}
+#}
+#
+#### FASCISM ###
+#
+#fascism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_fascism_burgundy
+#	}
+#}
+#
+#### FALANGISM ###
+#
+#falangism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_falangism_burgundy
+#	}
+#}
+#
+##################
+#### COMMUNISM ###
+##################
+#
+#### MARXISM ###
+#
+#marxism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_marxism_burgundy
+#	}
+#}
+#
+#### ANARCHISM ###
+#
+#anarchism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_anarchism_burgundy
+#	}
+#}
+#
+#### TOTALISM ###
+#
+#totalism_flag_colour_scripted_effect = {
+#	if = {
+#		limit = {
+#			is_red_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_red
+#	}
+#	else_if = {
+#		limit = {
+#			is_orange_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_orange
+#	}
+#	else_if = {
+#		limit = {
+#			is_brown_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_brown
+#	}
+#	else_if = {
+#		limit = {
+#			is_yellow_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_yellow
+#	}
+#	else_if = {
+#		limit = {
+#			is_lime_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_lime
+#	}
+#	else_if = {
+#		limit = {
+#			is_green_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_green
+#	}
+#	else_if = {
+#		limit = {
+#			is_azure_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_azure
+#	}
+#	else_if = {
+#		limit = {
+#			is_blue_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_blue
+#	}
+#	else_if = {
+#		limit = {
+#			is_purple_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_purple
+#	}
+#	else_if = {
+#		limit = {
+#			is_burgundy_country_trigger = yes
+#		}
+#		set_cosmetic_tag = XYZ_totalism_burgundy
+#	}
+#}
+
+

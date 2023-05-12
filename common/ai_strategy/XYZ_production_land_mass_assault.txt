@@ -1,0 +1,144 @@
+
+XYZ_UNIT_RATIOS_land_mass_assault = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}}
+
+	#Idk how these values work to be honest. Uhh lets say that we have 100 points in total and divide them up between all entries...
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 50
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 1
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 1
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 2
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+XYZ_TEMPLATE_PRIO_land_mass_assault = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}}
+
+	ai_strategy = {
+		type = template_prio
+		id = armor
+		value = 5
+	}
+
+}
+
+
+
+XYZ_EQUIPMENT_PRODUCTION_land_mass_assault = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}}
+
+	#Idk how these values work to be honest. Uhh lets say that we have 100 points in total and divide them up between all entries...
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 35
+	}
+	#ai_strategy = {
+	#	type = equipment_production_factor
+	#	id = support_equipment
+	#	value = 10
+	#}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = mechanized
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 20
+	}
+}
+
+
+
+
+
+
+
+
+XYZ_MINIMUM_FACTORY_ASSIGNMENT_land_mass_assault = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_land_doctrine_mass_assault_preference_flag}}}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = infantry
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = armor
+		value = 1
+	}
+}
+

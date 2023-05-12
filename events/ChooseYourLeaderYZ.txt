@@ -1,0 +1,60 @@
+﻿add_namespace = ChooseYourLeaderYZ
+
+country_event = { # 14 leaders
+	id = ChooseYourLeaderYZ.1
+	title = ChooseYourLeaderYZ.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderYZ.1.a
+		hidden_effect = {
+            random_list = {
+                7 = {
+                    activate_decision = YUG_Prince_Paul
+                }
+                7 = {
+                    activate_decision = YUG_Paul_I
+                }
+                7 = {
+                    activate_decision = YUG_Milan_Stojadinovic
+                }
+				7 = {
+                    activate_decision = YUG_Milan_Grol
+                }
+				7 = {
+                    activate_decision = YUG_Josip_Broz_Tito
+                }
+                7 = {
+                    activate_decision = YUG_Peter_II
+                }
+				7 = {
+                    activate_decision = YUG_Peter_II_2
+                }
+                7 = {
+                    activate_decision = YUG_Vladimir_Cukavac
+                }
+                7 = {
+                    activate_decision = YUG_Ivan_Gosnjak
+                }
+				7 = {
+                    activate_decision = YUG_Danilo_Kalafatovic
+                }
+				7 = {
+                    activate_decision = YUG_Milutin_Nedic
+                }
+				7 = {
+                    activate_decision = YUG_Petar_Kosic
+                }
+				7 = {
+                    activate_decision = YUG_Josef_Depre
+                }
+				7 = {
+                    activate_decision = YUG_Marijan_Polic
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

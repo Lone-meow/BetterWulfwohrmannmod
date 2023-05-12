@@ -1,0 +1,26 @@
+state={
+	id=648
+	name="STATE_648"
+	state_category = tiny_island
+	manpower=42
+	history={
+		owner = Y80
+		add_core_of = Y80
+		buildings = {
+			infrastructure = 2
+			#air_base = 1
+			13026 = {
+				naval_base = 1
+			}
+		}
+		1935.1.2 = {
+			owner = Y96
+			controller = Y96
+			add_core_of = Y96
+		}
+	}
+	provinces=
+	{ 13026 }
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,757 @@
+characters={
+
+	#######
+	# X60 #
+	#######
+
+	###########
+	# Leaders #
+	###########
+	X60_democratic_leader={
+		name=X60_democratic_leader
+		portraits={
+			civilian={
+				large=GFX_Portrait_Europe_Generic_2
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="2000.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	X60_neutrality_leader={
+		name=X60_neutrality_leader
+		portraits={
+			civilian={
+				large=GFX_Portrait_Europe_Generic_3
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="2000.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	X60_fascism_leader={
+		name=X60_fascism_leader
+		portraits={
+			civilian={
+				large=GFX_Portrait_Europe_Generic_3
+			}
+		}
+		country_leader={
+			ideology=gen_nazism
+			expire="2000.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+	X60_communism_leader={
+		name=X60_communism_leader
+		portraits={
+			civilian={
+				large=GFX_Portrait_Europe_Generic_1
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="2000.1.1.1"
+			id=-1
+			traits={  }
+		}
+	}
+
+	######################
+	# Political Advisors #
+	######################
+
+	X60_pf={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_pf
+			allowed = {original_tag = X60}
+			traits = {popular_figurehead}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 10
+					has_stability < 0.5
+				}
+				modifier = {
+					factor = 0
+					has_stability > 0.85
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_POL_wojtek"}
+		}
+	}
+	X60_fe={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_fe
+			allowed = {original_tag = X60}
+			traits = {fortification_engineer}
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_1"}
+		}
+	}
+	X60_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_wi
+			allowed = {original_tag = X60}
+			traits = {war_industrialist}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					num_of_military_factories < 5
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_south_america_3"}
+		}
+	}
+	X60_pe={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_pe
+			allowed = {original_tag = X60}
+			traits = {propaganda_expert}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 10
+					has_war_support < 0.5
+				}
+				modifier = {
+					factor = 0
+					has_war_support > 0.9
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_6"}
+		}
+	}
+	X60_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_stc
+			allowed = {original_tag = X60}
+			traits = {smooth_talking_charmer}
+			ai_will_do = {factor = 0.5}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_female_europe"}
+		}
+		gender = female
+	}
+	X60_qmg={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_qmg
+			allowed = {original_tag = X60}
+			traits = {quartermaster_general}
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_5"}
+		}
+	}
+	X60_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_pot
+			allowed = {original_tag = X60}
+			traits = {prince_of_terror}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					garrison_manpower_need > 500
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_4"}
+		}
+	}
+	X60_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_coi
+			allowed = {original_tag = X60}
+			traits = {captain_of_industry}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					num_of_civilian_factories < 5
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_GER_generic_2"}
+		}
+	}
+	X60_sh={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_sh
+			allowed = {original_tag = X60}
+			traits = {silent_workhorse}
+			ai_will_do = {factor = 50}
+		}
+		portraits={
+			army={small="GFX_idea_generic_political_advisor_europe_3"}
+		}
+	}
+	X60_ig={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_ig
+			allowed = {original_tag = X60}
+			available = {has_intelligence_agency = yes}
+			visible = {has_dlc = "La Resistance"}
+			traits = {head_of_intelligence}
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_ger_wilhelm_canaris"}
+		}
+	}
+	X60_sm={
+		advisor={
+			slot = political_advisor
+			idea_token = X60_sm
+			allowed = {original_tag = X60}
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			traits = {staunch_monarchist}
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_ita_mario_roatta_political_advisor"}
+		}
+	}
+
+	################
+	# High Command #
+	################
+
+	X60_cav2={
+		advisor={
+			slot = high_command
+			idea_token = X60_cav2
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {army_cavalry_2}
+			cost = 100
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_template_containing_unit = cavalry
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_ITA_generic_1"}
+		}
+	}
+	X60_ae3={
+		advisor={
+			slot = high_command
+			idea_token = X60_ae3
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {army_entrenchment_3}
+			cost = 200
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_Portrait_Italy_Generic_land_8_small"}
+		}
+	}
+	X60_com1={
+		advisor={
+			slot = high_command
+			idea_token = X60_com1
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {army_commando_1}
+			cost = 50
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					OR = {
+						has_template_containing_unit = mountaineers
+						has_template_containing_unit = paratrooper
+						has_template_containing_unit = marine
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_ENG_generic_land_6"}
+		}
+	}
+	X60_acart2={
+		advisor={
+			slot = high_command
+			idea_token = X60_acart2
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {army_artillery_2}
+			cost = 100
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 10
+					OR =  {
+						has_template_containing_unit = artillery_brigade
+						has_template_containing_unit = artillery
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_ENG_generic_land_1"}
+		}
+	}
+	X60_ai2={
+		advisor={
+			slot = high_command
+			idea_token = X60_ai2
+			ledger = army
+			allowed = {original_tag = X60}
+			traits  = {army_infantry_2}
+			cost = 100
+			ai_will_do = {factor = 50}
+		}
+		portraits={
+			army={small="GFX_idea_generic_army_europe_3"}
+		}
+	}
+	X60_ar={
+		advisor={
+			slot = high_command
+			idea_token = X60_ar
+			ledger = army
+			allowed = {original_tag = X60}
+			traits  = {army_regrouping_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_land_3"}
+		}
+	}
+	X60_aa2={
+		advisor={
+			slot = high_command
+			idea_token = X60_aa2
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {army_armored_2}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 40
+					has_army_size = {
+						size > 0
+						type = armor
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_land_19"}
+		}
+	}
+	X60_con2={
+		advisor={
+			slot = high_command
+			idea_token = X60_con2
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {army_concealment_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_ENG_generic_land_4"}
+		}
+	}
+	X60_as2={
+		advisor={
+			slot = high_command
+			idea_token = X60_as2
+			ledger = air
+			allowed = {original_tag = X60}
+			traits = {air_air_superiority_2}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_deployed_air_force_size = {
+						size > 0
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_land_1"}
+		}
+	}
+	X60_acas={
+		advisor={
+			slot = high_command
+			idea_token = X60_acas
+			ledger = air
+			allowed = {original_tag = X60}
+			traits = {air_close_air_support_2}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_deployed_air_force_size = {
+						size > 0
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_air_europe_3"}
+		}
+	}
+	X60_screen2={
+		advisor={
+			slot = high_command
+			idea_token = X60_screen2
+			ledger = navy
+			allowed = {original_tag = X60}
+			traits = {navy_screen_2}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_navy_size = {
+						size > 0
+						type = screen_ship
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_ITA_generic_navy_1"}
+		}
+	}
+	X60_ncs={
+		advisor={
+			slot = high_command
+			idea_token = X60_ncs
+			ledger = navy
+			allowed = {original_tag = X60}
+			traits = {navy_capital_ship_2}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 1
+					has_navy_size = {
+						size > 0
+						type = capital_ship
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_navy_1"}
+		}
+	}
+
+	#############
+	# Theorists #
+	#############
+
+	X60_rt={
+		advisor={
+			slot = theorist
+			idea_token = X60_rt
+			ledger = air
+			allowed = {original_tag = X60}
+			traits  = {rocket_scientist}
+			research_bonus = {rocketry = 0.15}
+			cost = 100
+			ai_will_do = {factor = 0.5}
+		}
+		portraits={
+			army={small="GFX_idea_von_braun"}
+		}
+	}
+	X60_nut={
+		advisor={
+			slot = theorist
+			idea_token = X60_nut
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {nuclear_scientist}
+			research_bonus = {nuclear = 0.15}
+			cost = 100
+			ai_will_do = {factor = 0.5}
+		}
+		portraits={
+			army={small="GFX_idea_heisenberg"}
+		}
+	}
+	X60_mt={
+		advisor={
+			slot = theorist
+			idea_token = X60_mt
+			ledger = army
+			allowed = {original_tag = X60}
+			traits = {military_theorist}
+			cost = 100
+			ai_will_do = {factor = 5}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_6"}
+		}
+	}
+	X60_awt={
+		advisor={
+			slot = theorist
+			idea_token = X60_awt
+			ledger = air
+			allowed = {original_tag = X60}
+			traits = {air_warfare_theorist}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 3
+					has_deployed_air_force_size = {
+						size > 0
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_air_europe_2"}
+		}
+	}
+	X60_nt={
+		advisor={
+			slot = theorist
+			idea_token = X60_nt
+			ledger = navy 
+			allowed = {original_tag = X60}
+			traits = {naval_theorist}
+			cost = 100
+			ai_will_do = {
+				base = 0
+				modifier = {
+					add = 3
+					has_navy_size = {
+						size > 0
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_navy_europe_3"}
+		}
+	}
+
+	###############
+	# Army Chiefs #
+	###############
+
+	X60_acr2={
+		advisor={
+			slot = army_chief
+			idea_token = X60_acr2
+			allowed = {original_tag = X60}
+			traits = {army_chief_reform_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_ITA_generic_land_2"}
+		}
+	}
+	X60_acd3={
+		advisor={
+			slot = army_chief
+			idea_token = X60_acd3
+			allowed = {original_tag = X60}
+			traits = {army_chief_drill_3}
+			cost = 200
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_land_13"}
+		}
+	}
+	X60_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = X60_aco2
+			allowed = {original_tag = X60}
+			traits = {army_chief_organizational_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_europe_generic_land_4"}
+		}
+	}
+	X60_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = X60_acd2
+			allowed = {original_tag = X60}
+			traits = {army_chief_defensive_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_generic_army_europe_5"}
+		}
+	}
+
+	##############
+	# Air Chiefs #
+	##############
+
+	X60_bw2={
+		advisor={
+			slot = air_chief
+			idea_token = X60_acr
+			allowed = {original_tag = X60}
+			traits  = {air_chief_all_weather_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_SOV_vasily_yanchenko"}
+		}
+	}
+	X60_acr={
+		advisor={
+			slot = air_chief
+			idea_token = X60_acr
+			allowed = {original_tag = X60}
+			traits  = {air_chief_reform_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_generic_air_europe_1"}
+		}
+	}
+	X60_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = X60_acgs
+			allowed = {original_tag = X60}
+			traits = {air_chief_ground_support_2}
+			cost = 100
+			ai_will_do = {factor = 1}
+		}
+		portraits={
+			army={small="GFX_idea_generic_air_europe_3"}
+		}
+	}
+
+	###############
+	# Navy Chiefs #
+	###############
+
+	X60_ncdb2={
+		advisor={
+			slot = navy_chief
+			idea_token = X60_ncdb2
+			allowed = {original_tag = X60}
+			traits = {navy_chief_decisive_battle_2}
+			cost = 100
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_navy_size = {
+						size > 0
+						type = capital_ship
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_SAU_generic_navy_3"}
+		}
+	}
+	X60_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = X60_ncm
+			allowed = {original_tag = X60}
+			traits = {navy_chief_maneuver_2}
+			cost = 100
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_navy_size = {
+						size > 0
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_navy_europe_1"}
+		}
+	}
+	X60_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = X60_nccr
+			allowed = {original_tag = X60}
+			traits = {navy_chief_commerce_raiding_2}
+			cost = 100
+			ai_will_do = {
+				base = 0.5
+				modifier = {
+					factor = 2
+					has_navy_size = {
+						size > 0
+						type = submarine
+					}
+				}
+			}
+		}
+		portraits={
+			army={small="GFX_idea_generic_navy_europe_2"}
+		}
+	}
+
+
+}# END

@@ -1,0 +1,31 @@
+
+state={
+	id=224
+	name="STATE_224"
+	manpower = 1707567
+	
+	state_category = town
+
+	history={
+		owner = X71
+		victory_points = {
+			3335 10
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			#air_base = 2
+		}
+		add_core_of = X71
+		1935.1.2 = {
+			owner = Y29
+			controller = Y29
+			add_core_of = Y29
+		}
+	}
+
+	provinces={
+		288 315 343 371 398 3226 3306 3335 3364 3390 6305 6330 6386 6411 11229 11298 11325 
+	}
+
+	local_supplies=0.0 
+}

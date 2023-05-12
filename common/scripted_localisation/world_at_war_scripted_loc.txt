@@ -1,0 +1,90 @@
+
+defined_text = { #Doesn't work
+	name = GetOGArmyEffortIcon
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = "GFX_focus_generic_commonwealth_build_infantry"
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = "GFX_goal_generic_axis_build_infantry"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+		localization_key = "GFX_goal_generic_allies_build_infantry"
+	}
+}
+
+
+
+
+
+
+
+
+
+defined_text = {
+	name = Get_democratic_opposition_scripted_loc
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = empty_party_opinion_of_government
+	}
+	text = {
+		localization_key = democratic_party_opinion_of_government
+	}
+}
+
+defined_text = {
+	name = Get_neutrality_opposition_scripted_loc
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = empty_party_opinion_of_government
+	}
+	text = {
+		localization_key = neutrality_party_opinion_of_government
+	}
+}
+
+defined_text = {
+	name = Get_fascism_opposition_scripted_loc
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = empty_party_opinion_of_government
+	}
+	text = {
+		localization_key = fascism_party_opinion_of_government
+	}
+}
+
+defined_text = {
+	name = Get_communism_opposition_scripted_loc
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = empty_party_opinion_of_government
+	}
+	text = {
+		localization_key = communism_party_opinion_of_government
+	}
+}
+
+
+
+
+

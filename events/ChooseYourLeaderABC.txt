@@ -1,0 +1,452 @@
+﻿add_namespace = ChooseYourLeaderABC
+
+country_event = { # 3 leaders
+	id = ChooseYourLeaderABC.1
+	title = ChooseYourLeaderABC.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.1.a
+		hidden_effect = {
+            random_list = {
+                33 = {
+                    activate_decision = ARG_Agustin_Pedro_Justo
+                }
+                33 = {
+                    activate_decision = ARG_Fanny_Jabcovsky
+                }
+                33 = {
+                    activate_decision = ARG_Senor_Hilter
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 15 leaders
+	id = ChooseYourLeaderABC.2
+	title = ChooseYourLeaderABC.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.2.a
+		hidden_effect = {
+            random_list = {
+                6 = {
+                    activate_decision = AST_John_Curtin
+                }
+                6 = {
+                    activate_decision = AST_Richard_Dixon
+                }
+                6 = {
+                    activate_decision = AST_Eric_Campbell
+                }
+				6 = {
+                    activate_decision = AST_Rod_Hull
+                }
+				6 = {
+                    activate_decision = AST_Earle_Page
+                }
+				6 = {
+                    activate_decision = AST_Leslie_Morshead
+                }
+				6 = {
+                    activate_decision = AST_Thomas_Blamey
+                }
+				6 = {
+                    activate_decision = AST_Henry_Wynter
+                }
+				6 = {
+                    activate_decision = AST_Alan_Vasey
+                }
+				6 = {
+                    activate_decision = AST_Horace_Robertson
+                }
+				6 = {
+                    activate_decision = AST_John_Northcott
+                }
+				6 = {
+                    activate_decision = AST_Harold_Farncomb
+                }
+				6 = {
+                    activate_decision = AST_Victor_Crutchley
+                }
+				6 = {
+                    activate_decision = AST_Iven_Mackay
+                }
+				6 = {
+                    activate_decision = AST_William_Birdwood
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderABC.3
+	title = ChooseYourLeaderABC.3.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.3.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = AUS_Kurt_Schuschnigg
+                }
+                50 = {
+                    activate_decision = AUS_Otto_von_Habsburg
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 4 leaders
+	id = ChooseYourLeaderABC.4
+	title = ChooseYourLeaderABC.4.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.4.a
+		hidden_effect = {
+            random_list = {
+                25 = {
+                    activate_decision = BRA_Getulio_Vargas
+                }
+                25 = {
+                    activate_decision = BRA_Plinio_Salgado
+                }
+				25 = {
+                    activate_decision = BRA_Arlindo_Veiga_dos_Santos
+                }
+                25 = {
+                    activate_decision = BRA_Prince_Pedro_Henrique
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 24 leaders
+	id = ChooseYourLeaderABC.5
+	title = ChooseYourLeaderABC.5.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.5.a
+		hidden_effect = {
+            random_list = {
+                4 = {
+                    activate_decision = BUL_Hristo_Lukov
+                }
+                4 = {
+                    activate_decision = BUL_Boris_III
+                }
+				4 = {
+                    activate_decision = BUL_Georgi_Dimitrov
+                }
+				4 = {
+                    activate_decision = BUL_Georgi_Dimitrov_2
+                }
+                4 = {
+                    activate_decision = BUL_Nikola_Mushanov
+                }
+				4 = {
+                    activate_decision = BUL_Georgi_Kyoseivanov
+                }
+				4 = {
+                    activate_decision = BUL_Ferdinand_I
+                }
+                4 = {
+                    activate_decision = BUL_Kimon_Georgiev
+                }
+				4 = {
+                    activate_decision = BUL_Aleksandar_Tsankov
+                }
+				4 = {
+                    activate_decision = BUL_Bogdan_Filov
+                }
+                4 = {
+                    activate_decision = BUL_Regency_Council
+                }
+				4 = {
+                    activate_decision = BUL_Nikola_Mihailov_Mihov
+                }
+				4 = {
+                    activate_decision = BUL_Georgi_Popov
+                }
+                4 = {
+                    activate_decision = BUL_Nikola_Hadzhipetkov
+                }
+				4 = {
+                    activate_decision = BUL_Vasil_Tenev_Boydev
+                }
+				4 = {
+                    activate_decision = BUL_Ivan_Markov
+                }
+                4 = {
+                    activate_decision = BUL_Georgi_Markov
+                }
+				4 = {
+                    activate_decision = BUL_Asen_Nikolov
+                }
+				4 = {
+                    activate_decision = BUL_Konstantin_Lukash
+                }
+                4 = {
+                    activate_decision = BUL_Nikola_Stoychev
+                }
+				4 = {
+                    activate_decision = BUL_Damian_Velchev
+                }
+				4 = {
+                    activate_decision = BUL_Angel_Dotsev
+                }
+                4 = {
+                    activate_decision = BUL_Atanas_Shalapatov
+                }
+				4 = {
+                    activate_decision = BUL_Vladimir_Zaimov
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 8 leaders
+	id = ChooseYourLeaderABC.6
+	title = ChooseYourLeaderABC.6.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.6.a
+		hidden_effect = {
+            random_list = {
+                12 = {
+                    activate_decision = CAN_Mackenzie_King
+                }
+				12 = {
+                    activate_decision = CAN_Tim_Buck
+                }
+                12 = {
+                    activate_decision = CAN_Adrien_Arcand
+                }
+				12 = {
+                    activate_decision = CAN_Charles_Foulkes
+                }
+                12 = {
+                    activate_decision = CAN_Bert_Hoffmeister
+                }
+				12 = {
+                    activate_decision = CAN_Leonard_W_Murray
+                }
+                12 = {
+                    activate_decision = CAN_James_D_Prentice
+                }
+				12 = {
+                    activate_decision = CAN_Harry_DeWolf
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 16 leaders
+	id = ChooseYourLeaderABC.7
+	title = ChooseYourLeaderABC.7.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.7.a
+		hidden_effect = {
+            random_list = {
+                6 = {
+                    activate_decision = CHI_Chiang_Kai_Shek
+                }
+                6 = {
+                    activate_decision = CHI_Wang_Jingwei
+                }
+				6 = {
+                    activate_decision = CHI_Weng_Wenhao
+                }
+				6 = {
+                    activate_decision = CHI_Tu_Yu_ming
+                }
+                6 = {
+                    activate_decision = CHI_Hsueh_Yueh
+                }
+				6 = {
+                    activate_decision = CHI_Tai_An_lan
+                }
+                6 = {
+                    activate_decision = CHI_Wang_Yao_wu
+                }
+				6 = {
+                    activate_decision = CHI_Sun_Li_Jen
+                }
+				6 = {
+                    activate_decision = CHI_Hu_Zongnan
+                }
+                6 = {
+                    activate_decision = CHI_Gu_Zhutong
+                }
+				6 = {
+                    activate_decision = CHI_He_Yingqin
+                }
+				6 = {
+                    activate_decision = CHI_Wei_Lihuang
+                }
+                6 = {
+                    activate_decision = CHI_Fu_Zuoyi
+                }
+				6 = {
+                    activate_decision = CHI_Zhang_Xueliang
+                }
+                6 = {
+                    activate_decision = CHI_Alexander_von_Falkenhausen
+                }
+				6 = {
+                    activate_decision = CHI_Aleksandr_Cherepanov
+                }
+				6 = {
+                    activate_decision = CHI_Yoshiko_Kawashima
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 9 leaders
+	id = ChooseYourLeaderABC.8
+	title = ChooseYourLeaderABC.8.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.8.a
+		hidden_effect = {
+            random_list = {
+                11 = {
+                    activate_decision = CZE_Edvard_Benes
+                }
+                11 = {
+                    activate_decision = CZE_Jaroslav_Krejci
+                }
+				11 = {
+                    activate_decision = CZE_Klement_Gottwald
+                }
+                11 = {
+                    activate_decision = CZE_Otto_von_Habsburg
+                }
+				11 = {
+                    activate_decision = CZE_Vojtech_Luza
+                }
+                11 = {
+                    activate_decision = CZE_Josef_Snejdarek
+                }
+				11 = {
+                    activate_decision = CZE_Richard_Tesarik
+                }
+				11 = {
+                    activate_decision = CZE_Sergej_Vojcechovsky
+                }
+				11 = {
+                    activate_decision = CZE_Otto_von_Habsburg
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderABC.9
+	title = ChooseYourLeaderABC.9.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.9.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = CRO_Ante_Pavelic
+                }
+                50 = {
+                    activate_decision = CRO_Vladko_Macek
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderABC.10
+	title = ChooseYourLeaderABC.10.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.10.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = AOI_Prince_Amedeo
+                }
+                50 = {
+                    activate_decision = AOI_Guglielmo_Nasi
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderABC.11
+	title = ChooseYourLeaderABC.11.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderABC.11.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = ALB_King_Zog
+                }
+                50 = {
+                    activate_decision = ALB_Tefik_Mborja
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

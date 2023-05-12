@@ -1,0 +1,38 @@
+scripted_gui = {
+
+	OG_military_academy_ui = {
+		context_type = decision_category
+		window_name = "OG_military_academy_ui_window"
+
+		visible = {
+			ROOT = {is_ai = no}	#<-- Creates unnecessary lag otherwise. Wait... Does this even work? /Snus
+		}
+
+		properties = {
+			officer_in_training_photo_1 = {
+				image = "[OG_GetMilitaryAcademySlot_1]"
+				frame = OG_officer_in_training_photo_1_icon_frame
+			}
+			officer_in_training_photo_2 = {
+				image = "[OG_GetMilitaryAcademySlot_2]"
+				frame = OG_officer_in_training_photo_2_icon_frame
+			}
+			officer_in_training_photo_3 = {
+				image = "[OG_GetMilitaryAcademySlot_3]"
+				frame = OG_officer_in_training_photo_3_icon_frame
+			}
+			officer_in_training_photo_4 = {
+				image = "[OG_GetMilitaryAcademySlot_4]"
+				frame = OG_officer_in_training_photo_4_icon_frame
+			}
+			officer_in_training_photo_5 = {
+				image = "[OG_GetMilitaryAcademySlot_5]"
+				frame = OG_officer_in_training_photo_5_icon_frame
+			}
+			officer_in_training_photo_6 = {
+				image = "[OG_GetMilitaryAcademySlot_6]"
+				frame = OG_officer_in_training_photo_6_icon_frame
+			}
+		}
+	}
+}

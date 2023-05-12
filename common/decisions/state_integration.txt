@@ -1,0 +1,2461 @@
+GLO_state_integration_category = {
+    #show_hide_integration_decisions = {
+    #    priority = 100
+    #    visible = { always = yes }
+	#
+    #    complete_effect = { 
+    #        if = {
+    #            limit = { has_country_flag = show_integration_decisions }
+    #            clr_country_flag = show_integration_decisions
+    #        }
+    #        else = {
+    #            set_country_flag = show_integration_decisions
+    #        }
+    #    }
+    #}
+
+
+ # The state integration decisions must be kept separate due to inability to scope the custom cost text to the state itself.
+
+
+
+
+@stability_peaceful_cost = -0.01
+@stability_forceful_cost = -0.02
+
+
+###################
+### MEGALOPOLIS ###
+###################
+
+    integrate_megalopolis_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = megalopolis
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+
+			# Not implemented /Snus
+			#if = {
+			#	limit = { has_global_flag = medium_difficulty }
+			#	FROM = {
+			#		compliance > 79
+			#		resistance < 21
+			#	}
+			#}
+			#if = {
+			#	limit = { has_global_flag = hard_difficulty }
+			#	FROM = {
+			#		compliance > 89
+			#		resistance < 11
+			#	}
+			#}
+			#if = {
+			#	limit = { has_global_flag = very_hard_difficulty }
+			#	FROM = {
+			#		compliance > 94
+			#		resistance < 6
+			#	}
+			#}
+
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_1
+
+        days_remove = 50					#FROM.OG_peaceful_state_integration_time_variable		# Would be cool, but doesn't work
+
+
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+				#if = {	#What's this?
+				#	limit = { check_variable = { OG_peaceful_political_power_cost < 20 } }
+				#	every_country = {
+				#		set_variable = { OG_peaceful_political_power_cost = 50 }
+				#		set_variable = { OG_peaceful_compliance_requirement = 80 }
+				#		set_variable = { OG_peaceful_resistance_requirement = 20 }
+				#		set_variable = { OG_peaceful_manpower_cost = 500 }
+				#		set_variable = { OG_peaceful_infantry_equipment_cost = 250 }
+				#		set_variable = { OG_forceful_compliance_requirement = 35 }
+				#		set_variable = { OG_forceful_resistance_requirement = 35 }
+				#		set_variable = { OG_forceful_manpower_cost = 8500 }
+				#		set_variable = { OG_forceful_infantry_equipment_cost = 1600 }
+				#	}
+				#}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.012
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_megalopolis_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = megalopolis
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+			# Not implemented. /Snus
+			#if = {
+			#	limit = { has_global_flag = medium_difficulty }
+			#	FROM = {
+			#		compliance > 34
+			#		resistance < 36
+			#	}
+			#}
+			#if = {
+			#	limit = { has_global_flag = hard_difficulty }
+			#	FROM = {
+			#		compliance > 39
+			#		resistance < 31
+			#	}
+			#}
+			#if = {
+			#	limit = { has_global_flag = very_hard_difficulty }
+			#	FROM = {
+			#		compliance > 44
+			#		resistance < 26
+			#	}
+			#}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_1
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+				#if = { #What's this?
+				#	limit = { check_variable = { OG_peaceful_political_power_cost < 20 } }
+				#	every_country = {
+				#		set_variable = { OG_peaceful_political_power_cost = 50 }
+				#		set_variable = { OG_peaceful_compliance_requirement = 80 }
+				#		set_variable = { OG_peaceful_resistance_requirement = 20 }
+				#		set_variable = { OG_peaceful_manpower_cost = 500 }
+				#		set_variable = { OG_peaceful_infantry_equipment_cost = 250 }
+				#		set_variable = { OG_forceful_compliance_requirement = 35 }
+				#		set_variable = { OG_forceful_resistance_requirement = 35 }
+				#		set_variable = { OG_forceful_manpower_cost = 8500 }
+				#		set_variable = { OG_forceful_infantry_equipment_cost = 1600 }
+				#	}
+				#}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.024
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+
+
+
+
+
+
+##################
+### METROPOLIS ###
+##################
+
+    integrate_metropolis_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = metropolis
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_2
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.011
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_metropolis_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = metropolis
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_2
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.022
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+##################
+### LARGE CITY ###
+##################
+
+    integrate_large_city_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = large_city
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_3
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.010
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_large_city_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = large_city
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_3
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.020
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+############
+### CITY ###
+############
+
+    integrate_city_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = city
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_4
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.009
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_city_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = city
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_4
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.018
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+##################
+### LARGE TOWN ###
+##################
+
+    integrate_large_town_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = large_town
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_5
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.008
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_large_town_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = large_town
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_5
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.016
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+############
+### TOWN ###
+############
+
+    integrate_town_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = town
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_6
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.007
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_town_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = town
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_6
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.014
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+#############
+### RURAL ###
+#############
+
+    integrate_rural_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = rural
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_7
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.006
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_rural_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = rural
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_7
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.012
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+################
+### PASTORAL ###
+################
+
+    integrate_pastoral_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = pastoral
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_8
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.005
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_pastoral_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = pastoral
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_8
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.010
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+####################
+### SMALL ISLAND ###
+####################
+
+    integrate_small_island_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = small_island
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_9
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.004
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_small_island_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = small_island
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_9
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.008
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+###################
+### TINY ISLAND ###
+###################
+
+    integrate_tiny_island_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = tiny_island
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_10
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.003
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_tiny_island_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = tiny_island
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_10
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.006
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+###############
+### ENCLAVE ###
+###############
+
+    integrate_enclave_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = enclave
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_11
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.002
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_enclave_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = enclave
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_11
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.004
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+#################
+### WASTELAND ###
+#################
+
+    integrate_wasteland_peacefully = {
+        icon = GFX_decision_generic_nationalism
+        on_map_mode = map_only
+        state_target = yes
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = wasteland
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+			FROM = {
+				compliance > OG_peaceful_compliance_requirement
+				resistance < OG_peaceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_peaceful_manpower_cost
+            has_equipment = {
+                infantry_equipment > FROM.OG_peaceful_infantry_equipment_cost
+            }
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = { 
+				NOT = { is_core_of = ROOT } 
+				NOT = { has_state_flag = being_cored } 
+			}
+        } 
+ 
+        custom_cost_trigger = {
+            has_political_power > FROM.OG_peaceful_political_power_cost
+        }
+
+        custom_cost_text = OG_peaceful_required_political_power_cost_12
+        days_remove = 50
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_peaceful_manpower_cost_t = FROM.OG_peaceful_manpower_cost }
+			set_temp_variable = { OG_peaceful_political_power_cost_t = FROM.OG_peaceful_political_power_cost }
+			set_temp_variable = { OG_peaceful_infantry_equipment_cost_t = FROM.OG_peaceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_peaceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_political_power_cost_t = -1 }
+			multiply_temp_variable = { OG_peaceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_peaceful_manpower_cost_t
+			add_political_power = OG_peaceful_political_power_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_peaceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = {
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.001
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+    integrate_wasteland_by_force = {
+        icon = GFX_decision_oppression
+
+        on_map_mode = map_only
+        state_target = yes 
+        target_array = controlled_states
+
+        target_trigger = {
+            FROM = {
+				has_state_category = wasteland
+                is_fully_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+            }
+        }
+
+        available = {
+            NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			FROM = {
+				compliance > OG_forceful_compliance_requirement
+				resistance < OG_forceful_resistance_requirement
+			}
+            has_manpower > FROM.OG_forceful_manpower_cost
+			has_equipment = {
+				infantry_equipment > FROM.OG_forceful_infantry_equipment_cost
+			}
+        }
+
+        visible = {
+            NOT = { has_country_flag = show_integration_decisions }
+			FROM = {
+				NOT = { is_core_of = ROOT }
+				NOT = { has_state_flag = being_cored }
+			}
+        }
+
+        custom_cost_trigger = {
+            has_manpower > FROM.OG_forceful_manpower_cost
+        }
+
+        custom_cost_text = OG_forceful_required_manpower_cost_12
+
+        days_remove = 75
+
+		modifier = {
+			weekly_manpower = -150
+		}
+        cancel_trigger = {
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			FROM = {
+				clr_state_flag = being_cored
+			}
+        }
+        complete_effect = {
+			set_temp_variable = { OG_forceful_manpower_cost_t = FROM.OG_forceful_manpower_cost }
+			set_temp_variable = { OG_forceful_infantry_equipment_cost_t = FROM.OG_forceful_infantry_equipment_cost }
+			multiply_temp_variable = { OG_forceful_manpower_cost_t = -1 }
+			multiply_temp_variable = { OG_forceful_infantry_equipment_cost_t = -1 }
+            add_manpower = OG_forceful_manpower_cost_t
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = OG_forceful_infantry_equipment_cost_t
+			}
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = being_cored
+				}
+			}
+        }
+
+        remove_effect = {
+			add_stability = -0.002
+            FROM = {
+                add_core_of = ROOT
+				clr_state_flag = being_cored
+            }
+        }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_stability < 0.50
+			}
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} # END CAT

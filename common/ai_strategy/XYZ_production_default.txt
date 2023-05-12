@@ -1,0 +1,480 @@
+
+XYZ_default_air_production = {
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 50
+	}
+}
+#XYZ_default_naval_production = {
+#	enable = { always = yes }
+#	abort = { always = no }
+#
+#	ai_strategy = {
+#		type = dockyard_to_military_factory_ratio
+#		value = 0.50
+#	}
+#}
+
+
+
+
+
+#PP_general_prio = {
+#	enable = {
+#		has_political_power < 200
+#	}
+#	abort = {
+#		NOT = { has_political_power < 200 }
+#	}
+#
+#	ai_strategy = {
+#		type = pp_spend_priority
+#		id = general
+#		value = -100
+#	}
+#}
+
+#PP_admiral_prio = {
+#	enable = {
+#		has_political_power < 300
+#	}
+#	abort = {
+#		NOT = { has_political_power < 300 }
+#	}
+#
+#	ai_strategy = {
+#		type = pp_spend_priority
+#		id = admiral
+#		value = -100
+#	}
+#}
+
+PP_relation_prio = {
+	enable = {
+		has_political_power < 250
+	}
+	abort = {
+		NOT = { has_political_power < 250 }
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -100
+	}
+}
+
+
+default_supply_truck_1 = {
+	enable = {
+		num_of_military_factories > 5
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 250
+	}
+}
+default_supply_truck_2 = {
+	enable = {
+		num_of_military_factories > 10
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 250
+	}
+}
+default_supply_truck_3 = {
+	enable = {
+		num_of_military_factories > 20
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 250
+	}
+}
+default_supply_truck_4 = {
+	enable = { 
+		num_of_military_factories > 30 
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 250
+	}
+}
+
+
+convoy_production_ENABLE = {
+	enable = {has_equipment = { convoy < 500 } }
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = convoy
+		value = 1
+	}
+}
+convoy_production_DISABLE = {
+	enable = {has_equipment = { convoy > 500 } }
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = -15
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = -15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = convoy
+		value = -1
+	}
+}
+
+
+infantry_factory_assignment = {
+	enable = {is_modded_country_trigger = yes}
+	
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = infantry
+		value = 1
+	}
+}
+
+
+train_production_ENABLE = {
+	enable = { has_equipment = { train_equipment < 200 } }
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = train
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
+	ai_strategy = {
+		type = min_wanted_supply_trains
+		value = 10
+	}
+}
+train_production_DISABLE = {
+	enable = { has_equipment = { train_equipment > 200 } }
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = train
+		value = -15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = -1
+	}
+}
+
+
+
+XYZ_variant_production_LAND = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {always = yes}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = heavy_tank_chassis
+		value = 10
+	}
+
+}
+
+XYZ_variant_production_AIR = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {always = yes}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_cas_airframe
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_naval_bomber_airframe
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_plane_airframe
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_plane_fighter_airframe
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_plane_scout_plane_airframe
+		value = 2
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_maritime_patrol_plane_airframe
+		value = 1
+	}
+
+
+}
+
+XYZ_variant_production_NAVY = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {always = yes}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_carrier
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_submarine
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_cruiser
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_heavy
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_light
+		value = 10
+	}
+}
+
+
+
+XYZ_no_cv_planes = {
+	enable = {
+		has_navy_size = {
+			size < 1
+			unit = carrier
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_small_plane_airframe
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_small_plane_naval_bomber_airframe
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_small_plane_cas_airframe
+		value = -100
+	}
+}
+
+
+XYZ_strategic_nukes_strategy = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {has_tech = nukes}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 5
+	}
+}
+
+
+
+
+
+XYZ_shift_infantry_production = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {
+		has_equipment = { infantry_equipment > 20000 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -25
+	}
+}
+
+OG_world_at_war_halt_light_armor_production_in_transitioning = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {
+		has_template_majority_unit = medium_armor
+		OR = {
+			has_equipment = { light_tank_chassis > 600 }
+			date > 1938.1.1
+		}		
+	}
+	abort = {
+		# once we start we never go back to light armor
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis
+		value = -100
+	}
+}
+
+
+OG_world_at_war_highered_armored_production = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {
+		num_of_military_factories > 25
+	}
+	abort = {
+		num_of_military_factories < 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+OG_world_at_war_super_boost_light_for_med_armor = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {
+		OR = {
+			has_tech = basic_medium_tank
+			has_tech = basic_medium_tank_chassis
+		}
+		NOT = { has_template_ai_majority_unit = medium_armor }
+	}
+	abort = {	
+		has_template_ai_majority_unit = medium_armor
+	}
+
+	# lets do changes more often during this period too
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = division_template
+		value = 100
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 150
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 200
+	}
+}
+
+OG_world_at_war_super_boost_light_for_modern_armor = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {
+		OR = {
+			has_tech = main_battle_tank
+			has_tech = main_battle_tank_chassis
+		}
+		NOT = { has_template_ai_majority_unit = modern_armor }
+	}
+
+	abort = {	
+		has_template_ai_majority_unit = modern_armor
+	}
+
+	# lets do changes more often during this period too
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = division_template
+		value = 100
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 150
+	}
+}
+

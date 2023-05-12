@@ -1,0 +1,114 @@
+ideas = {
+
+	country = {
+	
+		undersea_riches = {
+		picture = undersea_riches
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_cost = 0.50
+				trade_opinion_factor = 2.00
+				dockyard_donations = 5
+				base_fuel_gain = 1000
+				local_resources_factor = 0.3
+			}
+		}
+
+		English_Refugees = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = -0.15
+				monthly_population = 0.5
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_lack_of_resource_penalty_factor = 0.25
+				civilian_intel_to_others = 0.5
+			}
+		}
+
+		Scotland_The_Brave = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				equipment_capture_factor = 0.10
+				stability_factor = 0.5
+				female_random_operative_chance = 0.5
+			}
+		}
+
+		scottish_advisors = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.50
+				stability_factor = -0.05
+				experience_gain_navy = 0.5
+				experience_gain_air = 0.5
+				experience_gain_army = 0.5
+				conscription_factor = 0.2
+			}
+		}
+
+		Oppressive_State = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				army_core_defence_factor = 0.2
+				minimum_training_level = 0.5
+				ai_focus_defense_factor = 10.00
+				dig_in_speed = 2
+
+			}
+		}
+	}

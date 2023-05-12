@@ -1,0 +1,109 @@
+music_station = "PB_Oldies"
+
+music = {
+	song = "Music_for_Night_People"
+}
+
+music = {
+	song = "How_Deep_is_the_Ocean"
+}
+
+music = {
+	song = "Change_My_Tune"
+}
+
+music = {
+	song = "My_Foolish_Heart"
+}
+
+music = {
+	song = "Nearer_My_God"
+}
+
+music = {
+	song = "Sposin"
+}
+
+music = {
+	song = "This_Time_Its_Real"
+}
+
+music = {
+	song = "You_were_meant_for_me"
+}
+
+music = {
+	song = "Everybody_Loves_My_Baby"
+}
+
+music = {
+	song = "Roses_in_December"
+}
+
+music = {
+	song = "A_Little_Birdie"
+}
+
+music = {
+	song = "Banana_Bones"
+}
+
+music = {
+	song = "Way_Back_Home"
+}
+
+music = {
+	song = "Meet_Again"
+}
+
+music = {
+	song = "End_of_the_World"
+}
+
+music = {
+	song = "Long_Long_Time"
+}
+
+music = {
+	song = "Shboom"
+}
+
+music = {
+	song = "You_were_there"
+}
+
+music = {
+	song = "Heartaches"
+}
+
+music = {
+	song = "Lullaby_Leaves"
+}
+
+music = {
+	song = "St_James_Infirmary"
+}
+
+music = {
+	song = "Misbehavin"
+}
+
+music = {
+	song = "Forgotten_Now"
+}
+
+music = {
+	song = "Dream_a_Little_Dream"
+}
+
+music = {
+	song = "Midnight_Stars"
+}
+
+music = {
+	song = "Jitters"
+}
+
+music = {
+	song = "Aint_Got_Nobody"
+}

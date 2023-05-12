@@ -1,0 +1,695 @@
+﻿# some changes from Border Conflicts everywhere by Blue
+add_namespace = NSB_border_conflict_won_attacker
+
+country_event = {
+	id = NSB_border_conflict_won_attacker.1
+	title = NSB_border_conflict_won_attacker.1.t
+	desc = NSB_border_conflict_won_attacker.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+
+			FROM = { save_event_target_as = our_state 
+				clr_state_flag = border_incident_active
+			}
+			FROM.FROM = { save_event_target_as = their_country }
+
+			FROM.FROM.FROM = {
+				save_event_target_as = their_state
+				clr_state_flag = border_incident_active
+			}
+											  
+			remove_targeted_decision = { target = event_target:their_country decision = NSB_border_conflict_time_until_cancelled }
+		}
+	}
+	
+	option = {
+		name = NSB_border_conflict_won_attacker.1.a
+# BCE
+		add_political_power = 25
+#		add_threat = -1
+		add_war_support = .01
+		add_named_threat = { threat = 1 name = border_threat }
+        
+		if = {
+			limit = {
+				check_variable = {
+					FROM.FROM.num_owned_states > 1
+				}
+			}
+			transfer_state = FROM.FROM.FROM
+		}
+		else = {
+			FROM.FROM = { ROOT = { annex_country = { target = PREV } } }
+		}
+# BCE	
+		custom_effect_tooltip = NSB_buildings_damaged
+		hidden_effect = {
+			FROM.FROM.FROM = {
+				random_list = {
+					60 = { damage_building = { type = arms_factory damage = 0.6 } }
+					30 = { damage_building = { type = arms_factory damage = 0.3 } }
+					10 = { damage_building = { type = industrial_complex damage = 0.9 } }
+				}
+			}
+		}
+	}	
+}
+
+add_namespace = NSB_border_conflict_won_defender
+
+country_event = {
+	id = NSB_border_conflict_won_defender.1
+	title = NSB_border_conflict_won_defender.1.t
+	desc = NSB_border_conflict_won_defender.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = {
+				save_event_target_as = our_state
+				clr_state_flag = border_incident_active
+			}
+			FROM.FROM = { save_event_target_as = their_country }
+			FROM.FROM.FROM = {
+				save_event_target_as = their_state
+				clr_state_flag = border_incident_active
+			}
+			set_country_flag = show_effect_tooltips
+			clear_variable = attacker_state_vs_@FROM.FROM
+			clear_variable = defender_state_vs_@FROM.FROM
+			remove_targeted_decision = { target = event_target:their_country decision = NSB_border_conflict_time_until_cancelled }
+		}
+	}
+	
+	#Same effect as attacker. Tooltip for their effects
+	option = {
+		name = NSB_border_conflict_won_defender.1.a
+		add_political_power = 25
+		army_experience = 5
+		add_war_support = .01
+#		add_threat = -1
+		add_doctrine_cost_reduction = {
+			name = defensive_border_conflict_won
+			cost_reduction = 0.10
+			uses = 1
+			category = land_doctrine
+		}
+		if = {
+			limit = { has_country_flag = show_effect_tooltips }
+			event_target:their_country = {
+				effect_tooltip = {
+					add_political_power = -25
+					army_experience = 5
+					add_war_support = -.01
+#					add_threat = -1
+				}
+			}
+			clr_country_flag = show_effect_tooltips
+		}
+	}	
+}
+
+add_namespace = NSB_border_conflict_lost_attacker
+
+country_event = {
+	id = NSB_border_conflict_lost_attacker.1
+	title = NSB_border_conflict_lost_attacker.1.t
+	desc = NSB_border_conflict_lost_attacker.1.desc
+	
+	picture = GFX_report_event_dead_soldiers
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = { save_event_target_as = our_state }
+			FROM.FROM = { save_event_target_as = their_country }
+			FROM.FROM.FROM = { save_event_target_as = their_state }
+			set_country_flag = show_effect_tooltips
+			remove_targeted_decision = { target = event_target:their_country decision = NSB_border_conflict_time_until_cancelled }
+		}
+	}
+	
+	#Same effect as defender. Tooltip for their effects	
+	option = {
+		name = NSB_border_conflict_lost_attacker.1.a
+		add_political_power = -25
+		army_experience = 5
+		add_war_support = -.01
+#		add_threat = -1
+		
+		### ideology loss from Border Conflicts Everywhere
+
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.03
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.03
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.03
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.03
+				}
+			}
+
+		###
+		
+		custom_effect_tooltip = NSB_buildings_damaged
+		hidden_effect = {
+			FROM = {
+				random_list = {
+					60 = { damage_building = { type = arms_factory damage = 0.6 } }
+					30 = { damage_building = { type = arms_factory damage = 0.3 } }
+					5 = { damage_building = { type = industrial_complex damage = 0.9 } }
+					5 = { add_manpower = -500 }
+				}
+			}
+		}
+		if = {		
+			limit = { has_country_flag = show_effect_tooltips }
+			event_target:their_country = {
+				effect_tooltip = {
+					add_political_power = 150
+					army_experience = 30
+#					add_threat = -1
+					add_doctrine_cost_reduction = {
+						name = defensive_border_conflict_won
+						cost_reduction = 0.25
+						uses = 1
+						category = land_doctrine
+					}
+				}
+			}
+			clr_country_flag = show_effect_tooltips
+		}
+	}
+}
+
+add_namespace = NSB_border_conflict_lost_defender
+
+country_event = {
+	id = NSB_border_conflict_lost_defender.1
+	title = NSB_border_conflict_lost_defender.1.t
+	desc = NSB_border_conflict_lost_defender.1.desc
+	
+	picture = GFX_report_event_dead_soldiers
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = {
+				save_event_target_as = our_state
+				clr_state_flag = border_incident_active
+			}
+			FROM.FROM = { save_event_target_as = their_country }
+			FROM.FROM.FROM = {
+				save_event_target_as = their_state
+				clr_state_flag = border_incident_active
+			}
+			set_country_flag = show_effect_tooltips
+			clear_variable = attacker_state_vs_@FROM.FROM
+			clear_variable = defender_state_vs_@FROM.FROM
+			remove_targeted_decision = { target = event_target:their_country decision = NSB_border_conflict_time_until_cancelled }
+		}
+	}
+	
+	#Same effect as attacker. Tooltip for their effects
+	option = {
+		name = NSB_border_conflict_lost_defender.1.a
+		if = {
+			limit = { has_country_flag = show_effect_tooltips }
+			effect_tooltip = {
+				add_political_power = 25
+#BCE                
+				add_manpower = -500
+				add_war_support = 0.1
+#				add_threat = -1
+				if = {
+					limit = {
+						check_variable = {
+							num_owned_states > 1
+						}
+					}
+					FROM.FROM = { transfer_state = FROM }
+				}
+				else = {
+					FROM.FROM = { annex_country = { target = ROOT } }
+				}				
+			}
+			clr_country_flag = show_effect_tooltips
+		}
+	}	
+}
+
+add_namespace = NSB_border_conflict_canceled_attacker
+
+country_event = {
+	id = NSB_border_conflict_canceled_attacker.1
+	title = NSB_border_conflict_canceled_attacker.1.t
+	desc = NSB_border_conflict_canceled_attacker.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = { save_event_target_as = our_state }
+			FROM.FROM = { save_event_target_as = their_country }
+			FROM.FROM.FROM = { save_event_target_as = their_state }
+			set_country_flag = show_effect_tooltips
+		}
+	}
+	
+	option = {
+		name = NSB_border_conflict_canceled_attacker.1.a
+		army_experience = 5
+		if = {
+			limit = { has_country_flag = show_effect_tooltips }
+			event_target:their_country = {
+				effect_tooltip = {
+					army_experience = 5
+					add_political_power = 25
+#					add_threat = -1
+				}
+			}
+			clr_country_flag = show_effect_tooltips
+		}
+	}	
+}
+
+add_namespace = NSB_border_conflict_canceled_defender
+
+country_event = {
+	id = NSB_border_conflict_canceled_defender.1
+	title = NSB_border_conflict_canceled_defender.1.t
+	desc = NSB_border_conflict_canceled_defender.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = {
+				save_event_target_as = our_state
+				clr_state_flag = border_incident_active
+			}
+			FROM.FROM = { save_event_target_as = their_country }
+			FROM.FROM.FROM = {
+				save_event_target_as = their_state
+				clr_state_flag = border_incident_active
+			}
+			set_country_flag = show_effect_tooltips
+			clear_variable = attacker_state_vs_@FROM.FROM
+			clear_variable = defender_state_vs_@FROM.FROM
+		}
+	}
+	
+	option = {
+		name = NSB_border_conflict_canceled_defender.1.a
+		army_experience = 5
+		add_political_power = 25
+#		add_threat = -1
+		if = {
+			limit = { has_country_flag = show_effect_tooltips }
+			event_target:their_country = {
+				effect_tooltip = {
+					army_experience = 15
+				}
+			}
+			clr_country_flag = show_effect_tooltips
+		}
+	}	
+}
+
+add_namespace = NSB_border_incident_defender_warning
+
+country_event = {
+	id = NSB_border_incident_defender_warning.1
+	title = NSB_border_incident_defender_warning.1.t
+	desc = NSB_border_incident_defender_warning.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+
+	is_triggered_only = yes
+
+	#Event targets saved
+	#attacker_state
+	#defender_state
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = { save_event_target_as = their_country }
+		}
+	}
+	
+	option = {	#This nibba serious?! Prepare the defenses!
+		name = NSB_border_incident_defender_warning.1.a
+		ai_chance = {
+			factor = 3
+		}
+		if = {
+			limit = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+					has_state_flag = border_incident_active
+					is_demilitarized_zone = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_state_flag = border_incident_active
+					is_demilitarized_zone = yes
+				}
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	option = {	#Demilitarize to deescalate
+		name = NSB_border_incident_defender_warning.1.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+		}
+		trigger = {
+			has_war = no
+			any_owned_state = {
+				is_controlled_by = ROOT
+				has_state_flag = border_incident_active
+				is_demilitarized_zone = yes
+			}
+		}
+
+		FROM = {
+			country_event = {
+				id = NSB_border_incident_deescalate.1
+				hours = 4
+				random_hours = 4
+			}
+		}
+
+
+		custom_effect_tooltip = NSB_border_incident_defender_warning_tt
+		effect_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = border_incident_active
+					is_owned_and_controlled_by = ROOT
+					OR = {
+						is_claimed_by = FROM
+						is_core_of = FROM
+					}
+				}
+				set_demilitarized_zone = yes
+			}
+			FROM = {
+				remove_targeted_decision = { target = ROOT decision = NSB_border_conflict_initiate_incident }
+			}
+
+		}
+	}
+	#option = {	#Ask daddy for help.
+	#	name = NSB_border_incident_defender_warning.1.c
+	#	ai_chance = {
+	#		factor = 500
+	#	}
+	#	trigger = {
+	#		is_subject = yes
+	#	}
+	#
+	#	OVERLORD = {
+	#		country_event = NSB_border_incident_overlord_event.1
+	#	}
+	#
+	#}
+}
+
+add_namespace = NSB_border_conflict_escalation
+
+country_event = {
+	id = NSB_border_conflict_escalation.1
+	title = NSB_border_conflict_escalation.1.t
+	desc = NSB_border_conflict_escalation.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+
+	#Event targets saved
+	#attacker_state
+	#defender_state
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = { save_event_target_as = their_country }
+		}
+	}
+	
+	option = {
+		name = NSB_border_conflict_escalation.1.a
+	}	
+}
+
+add_namespace = NSB_border_conflict_escalate_to_war
+
+country_event = {
+	id = NSB_border_conflict_escalate_to_war.1
+	title = NSB_border_conflict_escalate_to_war.1.t
+	desc = NSB_border_conflict_escalate_to_war.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	#Event targets saved
+	#attacker_state
+	#defender_state
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = { save_event_target_as = their_country }
+		}
+	}
+	
+	option = {
+		name = NSB_border_conflict_escalate_to_war.1.a
+	}	
+}
+
+
+
+
+
+
+
+
+add_namespace = NSB_border_incident_deescalate
+
+country_event = {
+	id = NSB_border_incident_deescalate.1
+	title = NSB_border_incident_deescalate.1.t
+	desc = NSB_border_incident_deescalate.1.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+
+	is_triggered_only = yes
+
+	#Event targets saved
+	#attacker_state
+	#defender_state
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = our_country
+			FROM = { save_event_target_as = their_country }
+		}
+	}
+
+	option = {	#Decline
+		name = NSB_border_incident_deescalate.1.a
+		ai_chance = {
+			factor = 2
+		}
+		
+		add_political_power = -25
+		FROM = {
+			country_event = {
+				id = NSB_border_incident_deescalate.2
+				hours = 4
+				random_hours = 4
+			}
+		}
+	}
+
+	option = {	#Accept
+		name = NSB_border_incident_deescalate.1.b
+		ai_chance = {
+			factor = 1
+		}
+
+		add_political_power = 25
+	
+		FROM = {
+			random_state = {
+				limit = {
+					has_state_flag = border_incident_active
+					is_owned_and_controlled_by = PREV
+					OR = {
+						is_claimed_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+				set_demilitarized_zone = yes
+				set_state_flag = {
+					flag = OG_recent_border_conflict_flag
+					days = 180
+					value = 1
+				}
+			}
+			country_event = {
+				id = NSB_border_incident_deescalate.3
+				hours = 4
+				random_hours = 4
+			}
+		}
+
+		remove_targeted_decision = { target = FROM decision = NSB_border_conflict_initiate_incident }
+		hidden_effect = {
+			FROM = {
+				remove_targeted_decision = { target = ROOT decision = NSB_border_conflict_escalation_warning_defender }
+				var:attacker_state_vs_@ROOT = {clr_state_flag = border_incident_active}
+				var:defender_state_vs_@ROOT = {clr_state_flag = border_incident_active}
+				clear_variable = attacker_state_vs_@ROOT
+				clear_variable = defender_state_vs_@ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSB_border_incident_deescalate.2
+	title = NSB_border_incident_deescalate.2.t
+	desc = NSB_border_incident_deescalate.2.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+	is_triggered_only = yes
+
+	option = {	#Ok
+		name = NSB_border_incident_deescalate.2.a
+		ai_chance = {factor = 1}
+
+	}
+}
+
+country_event = {
+	id = NSB_border_incident_deescalate.3
+	title = NSB_border_incident_deescalate.3.t
+	desc = NSB_border_incident_deescalate.3.desc
+	
+	picture = GFX_report_event_chinese_soldiers_mountain
+	is_triggered_only = yes
+
+	option = {	#Ok
+		name = NSB_border_incident_deescalate.3.a
+		ai_chance = {factor = 1}
+
+		add_war_support = 0.01
+
+	}
+}
+
+
+
+
+
+
+
+add_namespace = NSB_border_incident_overlord_event
+
+
+
+
+country_event = {
+	id = NSB_border_incident_overlord_event.1
+	title = NSB_border_incident_overlord_event.1.t
+	desc = NSB_border_incident_overlord_event.1.desc
+	picture = GFX_report_event_chinese_soldiers_mountain
+	is_triggered_only = yes
+
+	option = {	#Protect our subject!
+		name = NSB_border_incident_deescalate.3.a
+		ai_chance = {factor = 1}
+
+		add_war_support = 0.01
+
+
+	}
+
+	option = {	#Uhh give the aggressor the state form our subject lmao.
+		name = NSB_border_incident_deescalate.3.b
+		ai_chance = {factor = 1}
+
+		add_war_support = 0.01
+
+
+	}
+	option = {	#Not our problem, sort it out yourselves.
+		name = NSB_border_incident_deescalate.3.c
+		ai_chance = {factor = 1}
+
+		add_war_support = 0.01
+
+
+	}
+}
+
+
+
+

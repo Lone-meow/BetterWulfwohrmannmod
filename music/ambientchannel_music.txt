@@ -1,0 +1,81 @@
+music_station = "PB_Ambient"
+
+music = {
+	song = "Zone_of_Fear"
+}
+
+music = {
+	song = "Black_Fairy"
+}
+
+music = {
+	song = "LowDown"
+}
+
+music = {
+	song = "Nekrosis"
+}
+
+music = {
+	song = "LastSounds"
+}
+
+music = {
+	song = "EverythingBalloon"
+}
+
+music = {
+	song = "Moan"
+}
+
+music = {
+	song = "Signals"
+}
+
+music = {
+	song = "Rachels_Song"
+}
+
+music = {
+	song = "Etsuko"
+}
+
+music = {
+	song = "WhereAmI"
+}
+
+music = {
+	song = "SunFruit"
+}
+
+music = {
+	song = "FalseGods"
+}
+
+music = {
+	song = "IsThatSo"
+}
+
+music = {
+	song = "Space_Mission"
+}
+
+music = {
+	song = "WitchDoctor"
+}
+
+music = {
+	song = "BrokenHearts"
+}
+
+music = {
+	song = "IndoorHorror"
+}
+
+music = {
+	song = "District_Main"
+}
+
+music = {
+	song = "Utroba_Disease"
+}

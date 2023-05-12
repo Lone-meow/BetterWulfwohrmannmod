@@ -1,0 +1,217 @@
+
+XYZ_UNIT_RATIOS_air_strategic_destruction = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}}
+
+	#Idk how these values work to be honest. Uhh lets say that we have 100 points in total and divide them up between all entries...
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 0
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = maritime_patrol_plane
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_fighter
+		value = 0
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_naval_bomber
+		value = 0
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_cas
+		value = 0
+	}
+}
+
+XYZ_build_airplane_air_strategic_destruction_support = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}}
+
+	#Idk how these values work to be honest. Uhh lets say that we have 100 points in total and divide them up between all entries...
+
+	ai_strategy = {
+		type = build_airplane
+		id = fighter
+		value = 20
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = cas
+		value = 5
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = naval_bomber
+		value = 5
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = tactical_bomber
+		value = 0
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = heavy_fighter
+		value = 10
+	}
+	#ai_strategy = {
+	#	type = build_airplane
+	#	id = scout_plane
+	#	value = 5
+	#}
+	ai_strategy = {
+		type = build_airplane
+		id = strategic_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = maritime_patrol_plane
+		value = 5
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = cv_fighter
+		value = 0
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = cv_naval_bomber
+		value = 0
+	}
+	ai_strategy = {
+		type = build_airplane
+		id = cv_cas
+		value = 0
+	}
+}
+
+XYZ_EQUIPMENT_PRODUCTION_air_strategic_destruction = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}}
+
+	#Idk how these values work to be honest. Uhh lets say that we have 100 points in total and divide them up between all entries...
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 0
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = maritime_patrol_plane
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cv_fighter
+		value = 0
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cv_naval_bomber
+		value = 0
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cv_cas
+		value = 0
+	}
+}
+
+
+
+
+
+
+
+
+XYZ_MINIMUM_FACTORY_ASSIGNMENT_air_strategic_destruction = {
+	allowed = {is_modded_country_trigger = yes}
+	enable = {ROOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}
+	abort = {ROOT = {NOT = {has_country_flag = OG_air_doctrine_strategic_destruction_preference_flag}}}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = strategic_bomber
+		value = 5
+	}
+}
+

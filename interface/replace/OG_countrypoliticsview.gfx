@@ -1,0 +1,81 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_categories"
+		texturefile = "gfx/interface/idea_categories.dds"
+		noOfFrames = 8
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_slot_political_advisor"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_political_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_intelligence_advisor"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_intelligence_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_economy_advisor"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_economy_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_ideology_advisor"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_ideology_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_high_command"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_high_command.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_navy_high_command"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_high_command.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_army_high_command"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_high_command.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_air_high_command"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_air_chief"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_air_chief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_navy_chief"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_navy_chief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_army_chief"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_army_chief.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_idea_slot_theorist"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_theorist.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_idea_slot_army_theorist"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_army_theorist.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_slot_air_theorist"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_air_theorist.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_slot_navy_theorist"
+		textureFile = "gfx/interface/ideas/advisors/select_advisor_navy_theorist.dds"
+	}
+
+
+
+
+
+}

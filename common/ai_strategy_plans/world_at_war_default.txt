@@ -1,0 +1,33 @@
+world_at_war_historical = {
+	name = "Basic Plan"
+	desc = "Basic behaviour"
+	allowed = {is_modded_country_trigger = yes}
+	enable = {always = yes}
+	abort = {always = no}
+
+	ai_national_focuses = {	#<-- AI will always go for these focuses when they're available.
+		OG_extra_tech_slot
+		OG_extra_tech_slot_2
+	}
+	focus_factors = {	#<-- Increases the focuses ai_will_do factor.
+	}
+
+	research = {
+		basic_machine_tools = 50.0
+	}
+
+	ideas = {
+	}
+
+	traits = {
+		silent_workhorse = 10
+		military_theorist = 5
+		air_warfare_theorist = 4
+		naval_theorist = 3
+	}
+
+	weight = {
+		factor = 1
+		modifier = {factor = 1}
+	}
+}

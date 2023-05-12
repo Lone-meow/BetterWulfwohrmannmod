@@ -1,0 +1,36 @@
+state = {
+	id = 735
+	name = "STATE_735"
+
+	state_category = town
+
+	history = {
+		owner = X44
+		add_core_of = X44
+		victory_points = {
+			778 1 
+		}
+		victory_points = {
+			9909 5 
+		}
+		buildings = {
+			infrastructure = 2
+			9909 = {
+				naval_base = 1
+			}		
+		}
+		1935.1.2 = {
+			owner = X84
+			controller = X84
+			add_core_of = X84
+		}
+	}
+
+	provinces = {
+		764 778 3764 3959 6609 6975 9603 9736 9745 9909 11573 
+	}
+	manpower = 907500
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

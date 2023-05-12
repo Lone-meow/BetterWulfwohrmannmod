@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+	
+		Supply_Depots = {
+		picture = Supply_Depots
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_cost = 1.00
+				trade_opinion_factor = 2.00
+				dockyard_donations = 5
+				refit_speed = .5
+			}
+		}
+	}

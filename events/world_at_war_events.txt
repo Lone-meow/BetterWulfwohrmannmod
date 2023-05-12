@@ -1,0 +1,1988 @@
+add_namespace = world_at_war
+
+### Commit to a democratic ideology ###
+country_event = {
+	id = world_at_war.1
+	title = world_at_war.1.t
+	desc = world_at_war.1.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	
+	##########################
+	### DEMOCRATIC OPTIONS ###
+	##########################
+
+	option = {	### SOCIALISM ###
+		name = world_at_war.1.a
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = socialism
+			}
+		}
+		if = {			# Remain with the current the ruling ideology
+			limit = {
+				has_country_leader_ideology = socialism				# OBS! This trigger is for country leaders only, not characters.
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_1_a1_tt
+			character_list_tooltip = {								#Doesn't work?
+				limit = {
+					has_character_flag = current_democratic_leader_flag
+				}
+			}
+		}
+		else_if = {		# Switch ruling ideology
+			limit = {
+				any_character = {
+					has_character_flag = socialism_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_1_a2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_democratic_leader_flag
+				}
+				clr_character_flag = current_democratic_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = socialism_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_democratic_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = democratic
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_1_scripted_effect = yes
+			}
+		}
+		else = {		# Switch ideology, but not ruling.
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_a1_tt
+		}
+	}
+	option = {	### LIBERALISM ###
+		name = world_at_war.1.b
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = liberalism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = liberalism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_1_b1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = liberalism_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_1_b2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_democratic_leader_flag
+				}
+				clr_character_flag = current_democratic_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = liberalism_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_democratic_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = democratic
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_2_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_b1_tt
+		}
+	}
+	option = {	### CONSERVATISM ###
+		name = world_at_war.1.c
+		#trigger = {}
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = conservatism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = conservatism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_1_c1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = conservatism_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_1_c2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_democratic_leader_flag
+				}
+				clr_character_flag = current_democratic_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = conservatism_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_democratic_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = democratic
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_3_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_c1_tt
+		}
+	}
+	option = {	### CENTRISM ###
+		name = world_at_war.1.d
+		#trigger = {}
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = centrism_democratic
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = centrism_democratic
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_1_d1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = centrism_democratic_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_1_d2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_democratic_leader_flag
+				}
+				clr_character_flag = current_democratic_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = centrism_democratic_leader_flag
+					NOT = {has_character_flag = current_democratic_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_democratic_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = democratic
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_4_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_d1_tt
+		}
+	}
+}
+
+
+
+### Commit to a non-aligned ideology ###
+country_event = {
+	id = world_at_war.2
+	title = world_at_war.2.t
+	desc = world_at_war.2.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	
+	###########################
+	### Non-Aligned OPTIONS ###
+	###########################
+
+	option = {	### Stratocratism ###
+		name = world_at_war.2.a
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = military_junta_subideology
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = military_junta_subideology
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_2_a1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = military_junta_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_2_a2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_neutrality_leader_flag
+				}
+				clr_character_flag = current_neutrality_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = military_junta_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_neutrality_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = neutrality
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_1_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_a1_tt
+		}
+	}
+	option = {	### OLIGARCHISM ###
+		name = world_at_war.2.b
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = oligarchism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = oligarchism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_2_b1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = oligarchism_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_2_b2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_neutrality_leader_flag
+				}
+				clr_character_flag = current_neutrality_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = oligarchism_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_neutrality_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = neutrality
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_2_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_b1_tt
+		}
+	}
+	option = {	### DESPOTISM ###
+		name = world_at_war.2.c
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = despotism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = despotism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_2_c1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = despotism_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_2_c2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_neutrality_leader_flag
+				}
+				clr_character_flag = current_neutrality_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = despotism_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_neutrality_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = neutrality
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_3_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_c1_tt
+		}
+	}
+	option = {	### THEOCRATISM ###
+		name = world_at_war.2.d
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = theocracy
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = theocracy
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_2_d1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = theocracy_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_2_d2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_neutrality_leader_flag
+				}
+				clr_character_flag = current_neutrality_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = theocracy_leader_flag
+					NOT = {has_character_flag = current_neutrality_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_neutrality_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = neutrality
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_4_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_1_c1_tt
+		}
+	}
+}
+
+
+
+### Commit to a fascist ideology ###
+country_event = {
+	id = world_at_war.3
+	title = world_at_war.3.t
+	desc = world_at_war.3.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	
+	#######################
+	### Fascist OPTIONS ###
+	#######################
+
+	option = {	### NAZISM ###
+		name = world_at_war.3.a
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = gen_nazism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = gen_nazism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_3_a1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = nazism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_3_a2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_fascism_leader_flag
+				}
+				clr_character_flag = current_fascism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = nazism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_fascism_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = fascism
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_1_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_3_a1_tt
+		}
+	}
+	option = {	### FASCISM ###
+		name = world_at_war.3.b
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = fascism_ideology
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = fascism_ideology
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_3_b1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = fascism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_3_b2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_fascism_leader_flag
+				}
+				clr_character_flag = current_fascism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = fascism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_fascism_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = fascism
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_2_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_3_b1_tt
+		}
+	}
+	option = {	### FALANGISM ###
+		name = world_at_war.3.c
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = falangism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = falangism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_3_c1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = falangism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_3_c2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_fascism_leader_flag
+				}
+				clr_character_flag = current_fascism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = falangism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_fascism_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = fascism
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_3_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_3_c1_tt
+		}
+	}
+	option = {	### ULTRANATIONALISM ###
+		name = world_at_war.3.d
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = ultranationalism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = ultranationalism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_3_d1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = ultranationalism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_3_d2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_fascism_leader_flag
+				}
+				clr_character_flag = current_fascism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = ultranationalism_leader_flag
+					NOT = {has_character_flag = current_fascism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_fascism_leader_flag
+			}
+			#set_party_name = {
+			#	ideology = fascism
+			#	long_name = ""
+			#	name = ""
+			#}
+			hidden_effect = {
+				ideology_flag_group_4_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_3_d1_tt
+		}
+	}
+}
+
+
+
+### Commit to a communist ideology ###
+country_event = {
+	id = world_at_war.4
+	title = world_at_war.4.t
+	desc = world_at_war.4.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+	
+	#########################
+	### Communist OPTIONS ###
+	#########################
+
+	option = {	### MARXISM ###
+		name = world_at_war.4.a
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = marxism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = marxism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_4_a1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = marxism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_4_a2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_communism_leader_flag
+				}
+				clr_character_flag = current_communism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = marxism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_communism_leader_flag
+			}
+			hidden_effect = {
+				ideology_flag_group_1_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_4_a1_tt
+		}
+	}
+	option = {	### ANARCHO-SYNDICALISM ###
+		name = world_at_war.4.b
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = anarchist_communism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = anarchist_communism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_4_b1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = anarchism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_4_b2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_communism_leader_flag
+				}
+				clr_character_flag = current_communism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = anarchism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_communism_leader_flag
+			}
+			hidden_effect = {
+				ideology_flag_group_2_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_4_b1_tt
+		}
+	}
+	option = {	### TOTALISM ###
+		name = world_at_war.4.c
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = anti_revisionism
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = anti_revisionism
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_4_c1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = anti_revisionism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_4_c2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_communism_leader_flag
+				}
+				clr_character_flag = current_communism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = anti_revisionism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_communism_leader_flag
+			}
+			hidden_effect = {
+				ideology_flag_group_3_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_4_c1_tt
+		}
+	}
+	option = {	### INTERNATIONALISM ###
+		name = world_at_war.4.d
+		#trigger = {}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_leader_ideology = internationalism_subideology
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = internationalism_subideology
+			}
+			add_political_power = 5
+			custom_effect_tooltip = world_at_war_4_d1_tt
+		}
+		else_if = {
+			limit = {
+				any_character = {
+					has_character_flag = internationalism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+			}
+			custom_effect_tooltip = world_at_war_4_d2_tt
+			random_character = {
+				limit = {
+					has_character_flag = current_communism_leader_flag
+				}
+				clr_character_flag = current_communism_leader_flag
+				retire = yes
+			}
+			random_character = {
+				limit = {
+					has_character_flag = internationalism_leader_flag
+					NOT = {has_character_flag = current_communism_leader_flag}
+				}
+				promote_character = yes
+				set_character_flag = current_communism_leader_flag
+			}
+			hidden_effect = {
+				ideology_flag_group_4_scripted_effect = yes
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+			custom_effect_tooltip = world_at_war_4_d1_tt
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	###############################
+	### LAND DOCTRINE EXPERTISE ###
+	###############################
+
+country_event = {
+	id = world_at_war.5
+	title = world_at_war.5.t
+	desc = world_at_war.5.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+
+	option = {	### MOBILE WARFARE ###
+		name = world_at_war.5.a
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = mobile_warfare
+			}
+		}
+		hidden_effect = {
+			if = {								#Also rehire the guy if he's already hired.
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}	#Looks silly, but this trigger works.
+						has_trait = military_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = army_theorist
+							cost = 150			#Increase cost
+							idea_token = XYZ_military_theorist
+							traits = {
+								mobile_warfare_expert
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								mobile_warfare_expert
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = military_theorist
+				}
+				remove_trait = {
+					slot = army_theorist
+					trait = military_theorist
+				}
+				add_trait = {
+					 slot = army_theorist
+					 trait = mobile_warfare_expert
+				}
+			}
+		}
+	}
+
+	option = {	### SUPERIOR FIREPOWER ###
+		name = world_at_war.5.b
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = superior_firepower
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = military_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								superior_firepower_expert
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								superior_firepower_expert
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = military_theorist
+				}
+				remove_trait = {
+					slot = army_theorist
+					trait = military_theorist
+				}
+				add_trait = {
+					 slot = army_theorist
+					 trait = superior_firepower_expert
+				}
+			}
+		}
+	}
+
+	option = {	### GRAND BATTLEPLAN ###
+		name = world_at_war.5.c
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = trench_warfare
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = military_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								grand_battle_plan_expert
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								grand_battle_plan_expert
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = military_theorist
+				}
+				remove_trait = {
+					slot = army_theorist
+					trait = military_theorist
+				}
+				add_trait = {
+					 slot = army_theorist
+					 trait = grand_battle_plan_expert
+				}
+			}
+		}
+	}
+
+	option = {	### MASS ASSAULT ###
+		name = world_at_war.5.d
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = mass_assault
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = military_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								mass_assault_expert
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = military_theorist
+					}
+					remove_advisor_role = {
+					  slot = army_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = army_theorist
+							cost = 150
+							idea_token = XYZ_military_theorist
+							traits = {
+								mass_assault_expert
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = military_theorist
+				}
+				remove_trait = {
+					slot = army_theorist
+					trait = military_theorist
+				}
+				add_trait = {
+					 slot = army_theorist
+					 trait = mass_assault_expert
+				}
+			}
+		}
+	}
+}
+
+	##############################
+	### AIR DOCTRINE EXPERTISE ###
+	##############################
+
+country_event = {
+	id = world_at_war.6
+	title = world_at_war.6.t
+	desc = world_at_war.6.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+
+	option = {	### STRATEGIC DESTRUCTION ###
+		name = world_at_war.6.a
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = air_superiority
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = air_warfare_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = air_warfare_theorist
+					}
+					remove_advisor_role = {
+					  slot = air_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = air_theorist
+							cost = 150
+							idea_token = XYZ_air_warfare_theorist
+							traits = {
+								victory_through_airpower
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = air_warfare_theorist
+					}
+					remove_advisor_role = {
+					  slot = air_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = air_theorist
+							cost = 150
+							idea_token = XYZ_air_warfare_theorist
+							traits = {
+								victory_through_airpower
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = air_warfare_theorist
+				}
+				remove_trait = {
+					slot = air_theorist
+					trait = air_warfare_theorist
+				}
+				add_trait = {
+					 slot = air_theorist
+					 trait = victory_through_airpower
+				}
+			}
+		}
+	}
+
+	option = {	### BATTLEFIELD SUPPORT ###
+		name = world_at_war.6.b
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = formation_flying
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = air_warfare_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = air_warfare_theorist
+					}
+					remove_advisor_role = {
+					  slot = air_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = air_theorist
+							cost = 150
+							idea_token = XYZ_air_warfare_theorist
+							traits = {
+								close_air_support_proponent
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = air_warfare_theorist
+					}
+					remove_advisor_role = {
+					  slot = air_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = air_theorist
+							cost = 150
+							idea_token = XYZ_air_warfare_theorist
+							traits = {
+								close_air_support_proponent
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = air_warfare_theorist
+				}
+				remove_trait = {
+					slot = air_theorist
+					trait = air_warfare_theorist
+				}
+				add_trait = {
+					 slot = air_theorist
+					 trait = close_air_support_proponent
+				}
+			}
+		}
+	}
+
+	option = {	### OPERATIONAL INTEGRITY ###
+		name = world_at_war.6.c
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = force_rotation
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = air_warfare_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = air_warfare_theorist
+					}
+					remove_advisor_role = {
+					  slot = air_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = air_theorist
+							cost = 150
+							idea_token = XYZ_air_warfare_theorist
+							traits = {
+								assault_avaition
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = air_warfare_theorist
+					}
+					remove_advisor_role = {
+					  slot = air_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = air_theorist
+							cost = 150
+							idea_token = XYZ_air_warfare_theorist
+							traits = {
+								assault_avaition
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = air_warfare_theorist
+				}
+				remove_trait = {
+					slot = air_theorist
+					trait = air_warfare_theorist
+				}
+				add_trait = {
+					 slot = air_theorist
+					 trait = assault_avaition
+				}
+			}
+		}
+	}
+}
+
+	################################
+	### NAVAL DOCTRINE EXPERTISE ###
+	################################
+
+country_event = {
+	id = world_at_war.7
+	title = world_at_war.7.t
+	desc = world_at_war.7.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+
+	option = {	### FLEET IN BEING ###
+		name = world_at_war.7.a
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = fleet_in_being
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = naval_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = naval_theorist
+					}
+					remove_advisor_role = {
+					  slot = navy_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = navy_theorist
+							cost = 150
+							idea_token = XYZ_naval_theorist
+							traits = {
+								grand_fleet_proponent
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = naval_theorist
+					}
+					remove_advisor_role = {
+					  slot = navy_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = navy_theorist
+							cost = 150
+							idea_token = XYZ_naval_theorist
+							traits = {
+								grand_fleet_proponent
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = naval_theorist
+				}
+				remove_trait = {
+					slot = navy_theorist
+					trait = naval_theorist
+				}
+				add_trait = {
+					 slot = navy_theorist
+					 trait = grand_fleet_proponent
+				}
+			}
+		}
+	}
+
+	option = {	### TRADE INTERDICTION ###
+		name = world_at_war.7.b
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = trade_interdiction
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = naval_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = naval_theorist
+					}
+					remove_advisor_role = {
+					  slot = navy_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = navy_theorist
+							cost = 150
+							idea_token = XYZ_naval_theorist
+							traits = {
+								submarine_specialist
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = naval_theorist
+					}
+					remove_advisor_role = {
+					  slot = navy_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = navy_theorist
+							cost = 150
+							idea_token = XYZ_naval_theorist
+							traits = {
+								submarine_specialist
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = naval_theorist
+				}
+				remove_trait = {
+					slot = navy_theorist
+					trait = naval_theorist
+				}
+				add_trait = {
+					 slot = navy_theorist
+					 trait = submarine_specialist
+				}
+			}
+		}
+	}
+
+	option = {	### BASE STRIKE ###
+		name = world_at_war.7.c
+		#trigger = {}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_tech = base_strike
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_character = {
+						NOT = {not_already_hired_except_as = political_advisor}
+						has_trait = naval_theorist
+					}
+				}
+				random_character = {
+					limit = {
+						has_trait = naval_theorist
+					}
+					remove_advisor_role = {
+					  slot = navy_theorist
+					}
+					add_advisor_role = {
+						activate = yes
+						advisor = {
+							slot = navy_theorist
+							cost = 150
+							idea_token = XYZ_naval_theorist
+							traits = {
+								naval_aviation_pioneer
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_character = {
+					limit = {
+						has_trait = naval_theorist
+					}
+					remove_advisor_role = {
+					  slot = navy_theorist
+					}
+					add_advisor_role = {
+						advisor = {
+							slot = navy_theorist
+							cost = 150
+							idea_token = XYZ_naval_theorist
+							traits = {
+								naval_aviation_pioneer
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect_tooltip = {
+			random_character = {
+				limit = {
+					has_trait = naval_theorist
+				}
+				remove_trait = {
+					slot = navy_theorist
+					trait = naval_theorist
+				}
+				add_trait = {
+					 slot = navy_theorist
+					 trait = naval_aviation_pioneer
+				}
+			}
+		}
+	}
+}
+
+### Forge State Claim Notification ###
+country_event = {
+	id = world_at_war.8
+	title = world_at_war.8.t
+	desc = world_at_war.8.desc
+	picture = GFX_report_event_soldiers_marching
+	#fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {}
+
+	option = {	#Ok.
+		name = world_at_war.8.a
+		#trigger = {}
+		ai_chance = {factor = 1}
+	}
+}
+
+
+#	#Scrapped for now, maybe some other day
+#
+#### Democratic opposition clock event ###
+#country_event = {
+#	id = world_at_war.9
+#	is_triggered_only = yes
+#	trigger = {
+#		NOT = {has_government = democratic}
+#	}
+#	hidden = yes
+#
+#	immediate = {}
+#}
+#### Neutrality opposition clock event ###
+#country_event = {
+#	id = world_at_war.10
+#	is_triggered_only = yes
+#	trigger = {
+#		NOT = {has_government = neutrality}
+#	}
+#	hidden = yes
+#
+#	immediate = {}
+#}
+#### Fascist opposition clock event ###
+#country_event = {
+#	id = world_at_war.11
+#	is_triggered_only = yes
+#	trigger = {
+#		NOT = {has_government = fascism}
+#	}
+#	hidden = yes
+#
+#	immediate = {
+#		random_list = {
+#		#############################
+#		### SUPPORTIVE BEHAVIOURS ###
+#		#############################
+#			10 = { # SUPPORT WAR
+#				modifier = {
+#					factor = 0
+#					has_war = no
+#				}
+#				modifier = {
+#					factor = 0.5
+#					any_other_country = {
+#						AND = {
+#							has_war_with = ROOT
+#							has_government = fascism
+#						}
+#					}
+#				}
+#				modifier = {
+#					factor = 2
+#					check_variable = { fascism_party_opinion_of_government_variable > 5 }
+#				}
+#				modifier = {
+#					factor = 0.5
+#					check_variable = { fascism_party_opinion_of_government_variable < -5 }
+#				}
+#				activate_mission = OG_fascist_opposition_action_support_war
+#			}
+#			10 = { # CIVIL SERVICE
+#				modifier = {
+#					factor = 2
+#					check_variable = { fascism_party_opinion_of_government_variable > 5 }
+#				}
+#				modifier = {
+#					factor = 0.5
+#					check_variable = { fascism_party_opinion_of_government_variable < -5 }
+#				}
+#				activate_mission = OG_fascist_opposition_action_civil_service
+#			}
+#			10 = { # ENCOURAGE UNITY
+#				modifier = {
+#					factor = 2
+#					check_variable = { fascism_party_opinion_of_government_variable > 5 }
+#				}
+#				modifier = {
+#					factor = 0.5
+#					check_variable = { fascism_party_opinion_of_government_variable < -5 }
+#				}
+#				activate_mission = OG_fascist_opposition_action_encourage_unity
+#			}
+#			10 = { # ADOPT GOVERNMENT POLICIES
+#				modifier = {
+#					factor = 2
+#					check_variable = { fascism_party_opinion_of_government_variable > 5 }
+#				}
+#				modifier = {
+#					factor = 0.5
+#					check_variable = { fascism_party_opinion_of_government_variable < -5 }
+#				}
+#				activate_mission = OG_fascist_opposition_action_government_collaboration
+#			}
+#
+#		#########################
+#		### NORMAL BEHAVIOURS ###
+#		#########################
+#
+#			10 = { # GATHER SUPPORT
+#				modifier = {
+#					factor = 1
+#				}
+#				activate_mission = OG_fascist_opposition_action_gather_support
+#			}
+#			10 = { # ARRANGE DEBATE
+#				modifier = {
+#					factor = 1
+#				}
+#				activate_mission = OG_fascist_opposition_action_arrange_debate
+#			}
+#			10 = { # PUBLIC ACTION
+#				modifier = {
+#					factor = 1
+#				}
+#				activate_mission = OG_fascist_opposition_action_public_action
+#			}
+#		##########################
+#		### HOSTILE BEHAVIOURS ###
+#		##########################
+#			10 = { # CONDEMN WAR
+#				modifier = {
+#					factor = 0
+#					has_war = no
+#				}
+#				modifier = {
+#					factor = 2
+#					any_other_country = {
+#						AND = {
+#							has_war_with = ROOT
+#							has_government = fascism
+#						}
+#					}
+#				}
+#				modifier = {
+#					factor = 0.5
+#					check_variable = { fascism_party_opinion_of_government_variable > 5 }
+#				}
+#				modifier = {
+#					factor = 2
+#					check_variable = { fascism_party_opinion_of_government_variable < -5 }
+#				}
+#				activate_mission = OG_fascist_opposition_action_condemn_war
+#			}
+#
+#
+#
+#
+#
+#
+#		}
+#	}
+#}
+#### Communism opposition clock event ###
+#country_event = {
+#	id = world_at_war.12
+#	is_triggered_only = yes
+#	trigger = {
+#		NOT = {has_government = communism}
+#	}
+#	hidden = yes
+#
+#	immediate = {}
+#}
+
+
+
+
+
+

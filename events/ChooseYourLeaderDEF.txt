@@ -1,0 +1,502 @@
+﻿add_namespace = ChooseYourLeaderDEF
+
+country_event = { # 51 leaders
+	id = ChooseYourLeaderDEF.1
+	title = ChooseYourLeaderDEF.1.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderDEF.1.a
+		hidden_effect = {
+            random_list = {
+                1 = {
+                    activate_decision = ENG_Stanley_Baldwin
+                }
+                1 = {
+                    activate_decision = ENG_Neville_Chamberlain
+                }
+                1 = {
+                    activate_decision = ENG_Winston_Churchill
+                }
+				1 = {
+                    activate_decision = ENG_Lord_Edward_Halifax
+                }
+				1 = {
+                    activate_decision = ENG_Oswald_Mosley
+                }
+                1 = {
+                    activate_decision = ENG_Harry_Pollitt
+                }
+                1 = {
+                    activate_decision = ENG_Rajani_Palme_Dutt
+                }
+				1 = {
+                    activate_decision = ENG_Fallen_Government
+                }
+				1 = {
+                    activate_decision = ENG_Edward_VIII
+                }
+                1 = {
+                    activate_decision = ENG_George_VI
+                }
+                1 = {
+                    activate_decision = ENG_Elizabeth_II
+                }
+				1 = {
+                    activate_decision = ENG_Alan_Brooke
+                }
+				1 = {
+                    activate_decision = ENG_Bernard_Montgomery
+                }
+                1 = {
+                    activate_decision = ENG_Claude_Auchinleck
+                }
+                1 = {
+                    activate_decision = ENG_Neil_Ritchie
+                }
+				1 = {
+                    activate_decision = ENG_Alan_Cunningham
+                }
+				1 = {
+                    activate_decision = ENG_William_Slim
+                }
+                1 = {
+                    activate_decision = ENG_Richard_OConnor
+                }
+                1 = {
+                    activate_decision = ENG_William_Platt
+                }
+				1 = {
+                    activate_decision = ENG_George_Giffard
+                }
+				1 = {
+                    activate_decision = ENG_Harold_Alexander
+                }
+                1 = {
+                    activate_decision = ENG_Jackie_Smyth
+                }
+                1 = {
+                    activate_decision = ENG_Thomas_Jacomb_Hutton
+                }
+				1 = {
+                    activate_decision = ENG_Arthur_Percival
+                }
+				1 = {
+                    activate_decision = ENG_Merton_Beckwith_Smith
+                }
+                1 = {
+                    activate_decision = ENG_Henry_Pownall
+                }
+                1 = {
+                    activate_decision = ENG_John_Vereker_Lord_Gort
+                }
+				1 = {
+                    activate_decision = ENG_Henry_Wilson
+                }
+				1 = {
+                    activate_decision = ENG_William_Gott
+                }
+                1 = {
+                    activate_decision = ENG_Jock_Campbell
+                }
+                1 = {
+                    activate_decision = ENG_Oliver_Leese
+                }
+				1 = {
+                    activate_decision = ENG_Miles_Dempsey
+                }
+				1 = {
+                    activate_decision = ENG_Brian_Horrocks
+                }
+                1 = {
+                    activate_decision = ENG_Archibald_Wavell
+                }
+                1 = {
+                    activate_decision = ENG_James_Fownes_Somerville
+                }
+				1 = {
+                    activate_decision = ENG_Henry_Harwood
+                }
+				1 = {
+                    activate_decision = ENG_Andrew_Cunningham
+                }
+                1 = {
+                    activate_decision = ENG_Bruce_Fraser
+                }
+                1 = {
+                    activate_decision = ENG_John_Tovey
+                }
+				1 = {
+                    activate_decision = ENG_Bernard_Rawlings
+                }
+				1 = {
+                    activate_decision = ENG_John_Cunningham
+                }
+                1 = {
+                    activate_decision = ENG_Charles_Forbes
+                }
+                1 = {
+                    activate_decision = ENG_Algernon_Willis
+                }
+				1 = {
+                    activate_decision = ENG_Arthur_Power
+                }
+				1 = {
+                    activate_decision = ENG_Nancy_Wake
+                }
+				1 = {
+                    activate_decision = ENG_Diana_Rowden
+                }
+                1 = {
+                    activate_decision = ENG_Juan_Pujol
+                }
+                1 = {
+                    activate_decision = ENG_Dusko_Popov
+                }
+				1 = {
+                    activate_decision = ENG_Patrick_Fermor
+                }
+				1 = {
+                    activate_decision = ENG_Krystyna_Skarbek
+                }
+				1 = {
+                    activate_decision = ENG_Roman_Czerniawski
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 25 leaders
+	id = ChooseYourLeaderDEF.2
+	title = ChooseYourLeaderDEF.2.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderDEF.2.a
+		hidden_effect = {
+            random_list = {
+                4 = {
+                    activate_decision = ETH_Haile_Selassie
+                }
+                4 = {
+                    activate_decision = ETH_Haile_Selassie_2
+                }
+				4 = {
+                    activate_decision = ETH_Fitawrari_Yeebio_Woldai
+                }
+                4 = {
+                    activate_decision = ETH_Haile_Selassie_3
+                }
+				4 = {
+                    activate_decision = ETH_Haile_Selassie_4
+                }
+                4 = {
+                    activate_decision = ETH_Haile_Selassie_5
+                }
+				4 = {
+                    activate_decision = ETH_Haile_Selassie_6
+                }
+                4 = {
+                    activate_decision = ETH_Haile_Selassie_Gugsa
+                }
+				4 = {
+                    activate_decision = ETH_Hailu_Tekle_Haymanot
+                }
+                4 = {
+                    activate_decision = ETH_Abba_Jofir
+                }
+				4 = {
+                    activate_decision = ETH_Alemework_Beyene
+                }
+                4 = {
+                    activate_decision = ETH_Anarcho_Communist_Assembly
+                }
+				4 = {
+                    activate_decision = ETH_Military_Administrative_Council
+                }
+                4 = {
+                    activate_decision = ETH_Imru_Haile_Selassie
+                }
+				4 = {
+                    activate_decision = ETH_Amha_Selassie
+                }
+                4 = {
+                    activate_decision = ETH_Seyoum_Mengesha
+                }
+				4 = {
+                    activate_decision = ETH_Desta_Damtew
+                }
+				4 = {
+                    activate_decision = ETH_Mulugeta_Yeggazu_of_Illubabor
+                }
+                4 = {
+                    activate_decision = ETH_Kassa_Haile_Darge
+                }
+				4 = {
+                    activate_decision = ETH_Abebe_Aregai
+                }
+                4 = {
+                    activate_decision = ETH_Ayalew_Birru
+                }
+				4 = {
+                    activate_decision = ETH_Beyene_Merid
+                }
+                4 = {
+                    activate_decision = ETH_Nasibu_Zeamanuel
+                }
+				4 = {
+                    activate_decision = ETH_Balcho_Safo
+                }
+                4 = {
+                    activate_decision = ETH_Shawaraggad_Gadle
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 3 leaders
+	id = ChooseYourLeaderDEF.3
+	title = ChooseYourLeaderDEF.3.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderDEF.3.a
+		hidden_effect = {
+            random_list = {
+                33 = {
+                    activate_decision = FIN_Risto_Heikki_Ryti
+                }
+                33 = {
+                    activate_decision = FIN_Kyosti_Kallio
+                }
+				33 = {
+                    activate_decision = FIN_Carl_Gustaf_Emil_Mannerheim
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 36 leaders
+	id = ChooseYourLeaderDEF.4
+	title = ChooseYourLeaderDEF.4.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderDEF.4.a
+		hidden_effect = {
+            random_list = {
+                2 = {
+                    activate_decision = FRA_Edouard_Daladier
+                }
+                2 = {
+                    activate_decision = FRA_Maurice_Thorez
+                }
+				2 = {
+                    activate_decision = FRA_Philippe_Petain
+                }
+				2 = {
+                    activate_decision = FRA_Charles_De_Gaulle
+                }
+                2 = {
+                    activate_decision = FRA_Paul_Reynaud
+                }
+				2 = {
+                    activate_decision = FRA_Leon_Blum
+                }
+				2 = {
+                    activate_decision = FRA_Pierre_Laval
+                }
+				2 = {
+                    activate_decision = FRA_Francois_de_la_Rocque
+                }
+				2 = {
+                    activate_decision = FRA_Jacques_Doriot
+                }
+				2 = {
+                    activate_decision = FRA_Jean_III
+                }
+				2 = {
+                    activate_decision = FRA_Henri_VI
+                }
+				2 = {
+                    activate_decision = FRA_Alphonse_I
+                }
+				2 = {
+                    activate_decision = FRA_Jacques_II
+                }
+				2 = {
+                    activate_decision = FRA_Napoleon_VI
+                }
+				2 = {
+                    activate_decision = FRA_Jacques_Duclos
+                }
+				2 = {
+                    activate_decision = FRA_Rene_Nicod
+                }
+				2 = {
+                    activate_decision = FRA_Marie_Pierre_Koenig
+                }
+				2 = {
+                    activate_decision = FRA_Georges_Catroux
+                }
+				2 = {
+                    activate_decision = FRA_Jean_de_Lattre_de_Tassigny
+                }
+				2 = {
+                    activate_decision = FRA_Alphonse_Juin
+                }
+                2 = {
+                    activate_decision = FRA_Maurice_Gamelin
+                }
+				2 = {
+                    activate_decision = FRA_Maxime_Weygand
+                }
+				2 = {
+                    activate_decision = FRA_Alphonse_Georges
+                }
+                2 = {
+                    activate_decision = FRA_Philippe_Leclerc
+                }
+				2 = {
+                    activate_decision = FRA_Henri_Giraud
+                }
+				2 = {
+                    activate_decision = FRA_Charles_Huntziger
+                }
+				2 = {
+                    activate_decision = FRA_Emilie_Muselier
+                }
+                2 = {
+                    activate_decision = FRA_Francois_Darlan
+                }
+				2 = {
+                    activate_decision = FRA_Jean_Marie_Charles_Abrial
+                }
+				2 = {
+                    activate_decision = FRA_Jean_Pierre_Esteva
+                }
+                2 = {
+                    activate_decision = FRA_Rene_Emile_Godfroy
+                }
+				2 = {
+                    activate_decision = FRA_Jean_de_Laborde
+                }
+				2 = {
+                    activate_decision = FRA_Jeannie_Rousseau
+                }
+				2 = {
+                    activate_decision = FRA_Odette_Samson
+                }
+				2 = {
+                    activate_decision = FRA_Rene_Joyeuse
+                }
+                2 = {
+                    activate_decision = FRA_Gilbert_Renault
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 2 leaders
+	id = ChooseYourLeaderDEF.5
+	title = ChooseYourLeaderDEF.5.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderDEF.5.a
+		hidden_effect = {
+            random_list = {
+                50 = {
+                    activate_decision = DEN_Thorvald_Stauning
+                }
+                50 = {
+                    activate_decision = DEN_Erik_Scavenius
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}
+
+country_event = { # 16 leaders
+	id = ChooseYourLeaderDEF.6
+	title = ChooseYourLeaderDEF.6.t
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ChooseYourLeaderDEF.6.a
+		hidden_effect = {
+            random_list = {
+                6 = {
+                    activate_decision = EST_Konstantin_Pats
+                }
+                6 = {
+                    activate_decision = EST_Artur_Sirk
+                }
+				6 = {
+                    activate_decision = EST_Jaan_Anvelt
+                }
+                6 = {
+                    activate_decision = EST_Johannes_Kabin
+                }
+				6 = {
+                    activate_decision = EST_Jaan_Tonisson
+                }
+				6 = {
+                    activate_decision = EST_Jakob_Palvadre
+                }
+				6 = {
+                    activate_decision = EST_Karl_Sare
+                }
+                6 = {
+                    activate_decision = EST_Andres_Larka
+                }
+				6 = {
+                    activate_decision = EST_Herbert_Brede
+                }
+                6 = {
+                    activate_decision = EST_Otto_Heinze
+                }
+				6 = {
+                    activate_decision = EST_Aleksander_Jaakson
+                }
+				6 = {
+                    activate_decision = EST_Ants_Kurvits
+                }
+				6 = {
+                    activate_decision = EST_August_Kork
+                }
+                6 = {
+                    activate_decision = EST_Johan_Laidoner
+                }
+				6 = {
+                    activate_decision = EST_Alfons_Rebane
+                }
+                6 = {
+                    activate_decision = EST_Nikolay_G_Karotamm
+                }
+            }
+        }
+		custom_effect_tooltip = Choose_Your_Leader_tooltip
+	}
+}

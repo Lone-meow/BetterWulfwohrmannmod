@@ -1,0 +1,102 @@
+spriteTypes = {
+
+	### NEUTRALITY ###
+
+	spriteType = {
+		name = "GFX_ideology_despotism"
+		texturefile = "gfx/interface/ideologies/neutrality_despotism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_oligarchism"
+		texturefile = "gfx/interface/ideologies/neutrality_oligarchism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_theocracy"
+		texturefile = "gfx/interface/ideologies/neutrality_theocracy_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_military_junta_subideology"
+		texturefile = "gfx/interface/ideologies/neutrality_military_junta_group.dds"
+	}
+
+	### COMMUNISM ###
+	spriteType = {
+		name = "GFX_ideology_anarchist_communism"
+		texturefile = "gfx/interface/ideologies/communism_anarchist_communism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_marxism"
+		texturefile = "gfx/interface/ideologies/communism_marxism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_anti_revisionism"
+		texturefile = "gfx/interface/ideologies/communism_anti_revisionism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_internationalism_subideology"
+		texturefile = "gfx/interface/ideologies/communism_internationalism_group.dds"
+	}
+
+	### FASCISM ###
+	spriteType = {
+		name = "GFX_ideology_falangism"
+		texturefile = "gfx/interface/ideologies/fascism_falangism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_fascism"
+		texturefile = "gfx/interface/ideologies/fascism_fascism_ideology_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_gen_nazism"
+		texturefile = "gfx/interface/ideologies/fascism_gen_nazism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ultranationalism"
+		texturefile = "gfx/interface/ideologies/fascism_ultranationalism_group.dds"
+	}
+
+	### DEMOCRATIC ###
+
+	spriteType = {
+		name = "GFX_ideology_centrism_democratic"
+		texturefile = "gfx/interface/ideologies/democratic_centrism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_conservatism"
+		texturefile = "gfx/interface/ideologies/democratic_conservatism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_liberalism"
+		texturefile = "gfx/interface/ideologies/democratic_liberalism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_socialism"
+		texturefile = "gfx/interface/ideologies/democratic_socialism_group.dds"
+	}
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_ideology_synarchism"
+		texturefile = "gfx/interface/ideologies/fascism_synarchism_group.dds"
+	}		##Dummy-data ideology, Deleted in base game##
+	spriteType = {
+		name = "GFX_ideology_constitutional_monarchy"
+		texturefile = "gfx/interface/ideologies/democratic_constitutional_monarchy_group.dds"
+	}		##Dummy-data ideology, Deleted in base game##
+
+}
