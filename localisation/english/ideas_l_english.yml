@@ -13,6 +13,8 @@
  received_attache_desc:0 "Foreign military attachés residing in our country."
  ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the following effects:"
  porsche:0 "Porsche"
+ dove_red_star:0 "Flight of the Home Fleet"
+ dove_red_star_desc:0 "We have decided that the government of the home isles has failed us, so we have fled to a far off land with the home fleet to build a utopia under the red banner"
  undersea_riches:0 "Undersea Riches"
  undersea_riches_desc:0 "We have direct control over the northsea facilities which were once Britians, Giving us complete authority and control over one of the largest underwater oil fields in Europe. Surely Britian wont mind, Right?"
  English_Refugees:0 "English Specialist Refugees"
