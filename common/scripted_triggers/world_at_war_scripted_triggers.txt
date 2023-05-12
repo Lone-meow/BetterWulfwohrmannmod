@@ -76,7 +76,6 @@ is_modded_country_trigger = {
 		tag = X32
 		tag = X33
 		tag = X34
-		tag = X35
 		tag = X36
 		tag = X37
 		tag = X38
