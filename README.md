@@ -1,2 +1,4 @@
 # Wulfwohrmannmod
- hoi4mod is fung
+This is the Readme for Hoi4 mod.
+
+-Dr. Kos
